@@ -1,0 +1,5 @@
+vhdl xil_defaultlib  \
+"../../../bd/design_ascon/ip/design_ascon_rst_ps7_0_50M_0/sim/design_ascon_rst_ps7_0_50M_0.vhd" \
+
+# Do not sort compile order
+nosort
