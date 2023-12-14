@@ -940,3 +940,15 @@ con
 
 17:09:47 INFO  : Launch script is exported to file '/home/monsud/Scrivania/ascon_project/workspace/ascon_app_system/_ide/scripts/systemdebugger_ascon_app_system_standalone.tcl'
 17:38:48 INFO  : Disconnected from the channel tcfchan#3.
+19:57:18 DEBUG : Logs will be stored at '/home/monsud/Scrivania/ASCON-hw/workspace/IDE.log'.
+19:57:19 INFO  : Launching XSCT server: xsct -n  -interactive /home/monsud/Scrivania/ASCON-hw/workspace/temp_xsdb_launch_script.tcl
+19:57:20 INFO  : Platform repository initialization has completed.
+19:57:21 INFO  : Registering command handlers for Vitis TCF services
+19:57:22 INFO  : XSCT server has started successfully.
+19:57:22 INFO  : plnx-install-location is set to ''
+19:57:22 INFO  : Successfully done setting XSCT server connection channel  
+19:57:22 INFO  : Successfully done query RDI_DATADIR 
+19:57:22 INFO  : Successfully done setting workspace for the tool. 
+19:57:26 INFO  : Checking for BSP changes to sync application flags for project 'ascon_app'...
+19:57:32 ERROR : (XSDB Server)ERROR: [Hsi 55-1571] The design file /home/monsud/Scrivania/ascon_project/workspace/design_ascon_wrapper/export/design_ascon_wrapper/hw/design_ascon_wrapper.xsa is already opened
+

@@ -42,7 +42,6 @@
           <children xsi:type="basic:PartSashContainer" xmi:id="_Ea9ulZkqEe6e7KE6I9RcfQ" selectedElement="_Ea9um5kqEe6e7KE6I9RcfQ" horizontal="true">
             <children xsi:type="basic:PartSashContainer" xmi:id="_Ea9ulpkqEe6e7KE6I9RcfQ" containerData="2500" selectedElement="_Ea9ul5kqEe6e7KE6I9RcfQ">
               <children xsi:type="basic:PartStack" xmi:id="_Ea9ul5kqEe6e7KE6I9RcfQ" elementId="com.xilinx.ide.projectExplorerMStack" containerData="9000" selectedElement="_Ea9umJkqEe6e7KE6I9RcfQ">
-                <tags>active</tags>
                 <children xsi:type="advanced:Placeholder" xmi:id="_Ea9umJkqEe6e7KE6I9RcfQ" elementId="com.xilinx.ide.projectExplorer" ref="_Ea9v2pkqEe6e7KE6I9RcfQ" closeable="true">
                   <tags>View</tags>
                   <tags>categoryTag:Vitis</tags>
@@ -68,6 +67,7 @@
               </children>
               <children xsi:type="basic:PartSashContainer" xmi:id="_Ea9uoJkqEe6e7KE6I9RcfQ" containerData="2500" selectedElement="_Ea9uoZkqEe6e7KE6I9RcfQ" horizontal="true">
                 <children xsi:type="basic:PartStack" xmi:id="_Ea9uoZkqEe6e7KE6I9RcfQ" elementId="org.eclipse.ui.console.ConsoleViewMStack" containerData="6000" selectedElement="_Ea9uopkqEe6e7KE6I9RcfQ">
+                  <tags>active</tags>
                   <children xsi:type="advanced:Placeholder" xmi:id="_Ea9uopkqEe6e7KE6I9RcfQ" elementId="org.eclipse.ui.console.ConsoleView" ref="_Ea-Wr5kqEe6e7KE6I9RcfQ" closeable="true">
                     <tags>View</tags>
                     <tags>categoryTag:General</tags>
@@ -403,7 +403,7 @@
           <tags>org.eclipse.cdt.ui.editor.CEditor</tags>
         </children>
         <children xsi:type="basic:Part" xmi:id="_pFWHoJkxEe6VgoX-I0NDhw" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="main.c" iconURI="platform:/plugin/org.eclipse.cdt.ui/icons/obj16/c_file_obj.gif" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;main.c&quot; partName=&quot;main.c&quot; title=&quot;main.c&quot; tooltip=&quot;ascon_app/src/main.c&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/ascon_app/src/main.c&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;2261&quot; selectionTopPixel=&quot;80&quot;/>&#xA;&lt;/editor>"/>
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;main.c&quot; partName=&quot;main.c&quot; title=&quot;main.c&quot; tooltip=&quot;ascon_app/src/main.c&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/ascon_app/src/main.c&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;2261&quot; selectionTopPixel=&quot;95&quot;/>&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>removeOnHide</tags>
           <tags>org.eclipse.cdt.ui.editor.CEditor</tags>
@@ -416,8 +416,6 @@
       <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;view CommonNavigator.LINKING_ENABLED=&quot;1&quot; org.eclipse.cdt.ui.cview.groupincludes=&quot;false&quot; org.eclipse.cdt.ui.cview.groupmacros=&quot;false&quot; org.eclipse.cdt.ui.editor.CUChildren=&quot;true&quot;>&#xA;&lt;lastRecentlyUsedFilters/>&#xA;&lt;/view>"/>
       <tags>View</tags>
       <tags>categoryTag:Vitis</tags>
-      <tags>active</tags>
-      <tags>activeOnClose</tags>
       <menus xmi:id="_Ea9v25kqEe6e7KE6I9RcfQ" elementId="com.xilinx.ide.projectExplorer">
         <tags>ViewMenu</tags>
         <tags>menuContribution:menu</tags>
@@ -429,6 +427,9 @@
         <tags>menuContribution:popup</tags>
       </menus>
       <menus xsi:type="menu:PopupMenu" xmi:id="_5K7PYJnGEe64HbAYBvCYmg" elementId="com.xilinx.ide.projectExplorer#PopupMenu">
+        <tags>menuContribution:popup</tags>
+      </menus>
+      <menus xsi:type="menu:PopupMenu" xmi:id="_nDuSMJqyEe6kPOSk89S_NQ" elementId="com.xilinx.ide.projectExplorer#PopupMenu">
         <tags>menuContribution:popup</tags>
       </menus>
       <toolbar xmi:id="_Ea-WnpkqEe6e7KE6I9RcfQ" elementId="com.xilinx.ide.projectExplorer"/>
@@ -451,6 +452,8 @@
       <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;view/>"/>
       <tags>View</tags>
       <tags>categoryTag:General</tags>
+      <tags>active</tags>
+      <tags>activeOnClose</tags>
       <menus xmi:id="_Ea-WsJkqEe6e7KE6I9RcfQ" elementId="org.eclipse.ui.console.ConsoleView">
         <tags>ViewMenu</tags>
         <tags>menuContribution:menu</tags>
@@ -3428,6 +3431,7 @@
   <addons xmi:id="_EbBb8ZkqEe6e7KE6I9RcfQ" elementId="com.xilinx.sdk.targetmanager.ui.addon.view" contributionURI="bundleclass://com.xilinx.sdk.targetmanager/com.xilinx.sdk.targetmanager.ui.ViewVisibilityAdapterAddon"/>
   <addons xmi:id="_HamrUJkxEe6VgoX-I0NDhw" elementId="com.xilinx.sdk.targetmanager.ui.addon.view" contributionURI="bundleclass://com.xilinx.sdk.targetmanager/com.xilinx.sdk.targetmanager.ui.ViewVisibilityAdapterAddon"/>
   <addons xmi:id="_zh2HAZnGEe64HbAYBvCYmg" elementId="com.xilinx.sdk.targetmanager.ui.addon.view" contributionURI="bundleclass://com.xilinx.sdk.targetmanager/com.xilinx.sdk.targetmanager.ui.ViewVisibilityAdapterAddon"/>
+  <addons xmi:id="_mDwqAZqyEe6kPOSk89S_NQ" elementId="com.xilinx.sdk.targetmanager.ui.addon.view" contributionURI="bundleclass://com.xilinx.sdk.targetmanager/com.xilinx.sdk.targetmanager.ui.ViewVisibilityAdapterAddon"/>
   <categories xmi:id="_EbBb8pkqEe6e7KE6I9RcfQ" elementId="org.eclipse.team.ui.category.team" name="Team" description="Actions that apply when working with a Team"/>
   <categories xmi:id="_EbBb85kqEe6e7KE6I9RcfQ" elementId="org.eclipse.ui.category.views" name="Views" description="Commands for opening views"/>
   <categories xmi:id="_EbBb9JkqEe6e7KE6I9RcfQ" elementId="org.eclipse.ui.category.edit" name="Edit"/>

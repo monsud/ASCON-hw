@@ -4,7 +4,7 @@
 <!-- Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.                   -->
 <!-- Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.   -->
 
-<Project Product="Vivado" Version="7" Minor="65" Path="/home/monsud/ASCON-hw/ASCON-hw.xpr">
+<Project Product="Vivado" Version="7" Minor="65" Path="/home/monsud/Scrivania/ASCON-hw/ASCON-hw.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="23e3404c7bd14813afd78f43462eb4d3"/>
@@ -47,7 +47,7 @@
     <Option Name="ActiveSimSet" Val="sim_1"/>
     <Option Name="DefaultLib" Val="xil_defaultlib"/>
     <Option Name="ProjectType" Val="Default"/>
-    <Option Name="IPRepoPath" Val="$PPRDIR/../Scrivania/ascon_project/ip_repo/ascon_core_1_0"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/../ascon_project/ip_repo/ascon_core_1_0"/>
     <Option Name="IPOutputRepo" Val="$PCACHEDIR/ip"/>
     <Option Name="IPDefaultOutputPath" Val="$PGENDIR/sources_1"/>
     <Option Name="IPCachePermission" Val="read"/>
@@ -102,7 +102,7 @@
       <Filter Type="Srcs"/>
       <File Path="$PSRCDIR/sources_1/bd/design_ascon/design_ascon.bd">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../Scrivania/ascon_project/ascon_project.srcs/sources_1/bd/design_ascon/design_ascon.bd"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../ascon_project/ascon_project.srcs/sources_1/bd/design_ascon/design_ascon.bd"/>
           <Attr Name="ImportTime" Val="1702579393"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -123,7 +123,7 @@
       </File>
       <File Path="$PGENDIR/sources_1/bd/design_ascon/hdl/design_ascon_wrapper.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../Scrivania/ascon_project/ascon_project.gen/sources_1/bd/design_ascon/hdl/design_ascon_wrapper.v"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../ascon_project/ascon_project.gen/sources_1/bd/design_ascon/hdl/design_ascon_wrapper.v"/>
           <Attr Name="ImportTime" Val="1702414318"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -133,7 +133,7 @@
       <File Path="$PSRCDIR/sources_1/new/ascon_fsm.sv">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../Scrivania/ascon_project/ascon_project.srcs/sources_1/new/ascon_fsm.sv"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../ascon_project/ascon_project.srcs/sources_1/new/ascon_fsm.sv"/>
           <Attr Name="ImportTime" Val="1702406163"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -143,7 +143,7 @@
       <File Path="$PSRCDIR/sources_1/new/ascon_add_constant.sv">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../Scrivania/ascon_project/ascon_project.srcs/sources_1/new/ascon_add_constant.sv"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../ascon_project/ascon_project.srcs/sources_1/new/ascon_add_constant.sv"/>
           <Attr Name="ImportTime" Val="1702405535"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -153,7 +153,7 @@
       <File Path="$PSRCDIR/sources_1/new/ascon_finalization.sv">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../Scrivania/ascon_project/ascon_project.srcs/sources_1/new/ascon_finalization.sv"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../ascon_project/ascon_project.srcs/sources_1/new/ascon_finalization.sv"/>
           <Attr Name="ImportTime" Val="1702405509"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -163,7 +163,7 @@
       <File Path="$PSRCDIR/sources_1/new/ascon_initialization.sv">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../Scrivania/ascon_project/ascon_project.srcs/sources_1/new/ascon_initialization.sv"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../ascon_project/ascon_project.srcs/sources_1/new/ascon_initialization.sv"/>
           <Attr Name="ImportTime" Val="1702405389"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -173,7 +173,7 @@
       <File Path="$PSRCDIR/sources_1/new/ascon_key_schedule.sv">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../Scrivania/ascon_project/ascon_project.srcs/sources_1/new/ascon_key_schedule.sv"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../ascon_project/ascon_project.srcs/sources_1/new/ascon_key_schedule.sv"/>
           <Attr Name="ImportTime" Val="1702405491"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -183,7 +183,7 @@
       <File Path="$PSRCDIR/sources_1/new/ascon_linear_diffusion.sv">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../Scrivania/ascon_project/ascon_project.srcs/sources_1/new/ascon_linear_diffusion.sv"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../ascon_project/ascon_project.srcs/sources_1/new/ascon_linear_diffusion.sv"/>
           <Attr Name="ImportTime" Val="1702405549"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -193,7 +193,7 @@
       <File Path="$PSRCDIR/sources_1/new/ascon_round.sv">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../Scrivania/ascon_project/ascon_project.srcs/sources_1/new/ascon_round.sv"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../ascon_project/ascon_project.srcs/sources_1/new/ascon_round.sv"/>
           <Attr Name="ImportTime" Val="1702405524"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -203,7 +203,7 @@
       <File Path="$PSRCDIR/sources_1/new/ascon_sbox.sv">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../Scrivania/ascon_project/ascon_project.srcs/sources_1/new/ascon_sbox.sv"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../ascon_project/ascon_project.srcs/sources_1/new/ascon_sbox.sv"/>
           <Attr Name="ImportTime" Val="1702405543"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -213,7 +213,7 @@
       <File Path="$PSRCDIR/sources_1/new/ascon_top.sv">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../Scrivania/ascon_project/ascon_project.srcs/sources_1/new/ascon_top.sv"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../ascon_project/ascon_project.srcs/sources_1/new/ascon_top.sv"/>
           <Attr Name="ImportTime" Val="1702405667"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -223,7 +223,7 @@
       <File Path="$PSRCDIR/sources_1/new/ascon_hash.sv">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../Scrivania/ascon_project/ascon_project.srcs/sources_1/new/ascon_hash.sv"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../ascon_project/ascon_project.srcs/sources_1/new/ascon_hash.sv"/>
           <Attr Name="ImportTime" Val="1700320705"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -233,7 +233,7 @@
       <File Path="$PSRCDIR/sources_1/new/ascon_hmac.sv">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../Scrivania/ascon_project/ascon_project.srcs/sources_1/new/ascon_hmac.sv"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../ascon_project/ascon_project.srcs/sources_1/new/ascon_hmac.sv"/>
           <Attr Name="ImportTime" Val="1700222954"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -249,7 +249,7 @@
       <Filter Type="Constrs"/>
       <File Path="$PSRCDIR/constrs_1/imports/ascon_project/Zybo-Master.xdc">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../Scrivania/ascon_project/Zybo-Master.xdc"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../ascon_project/Zybo-Master.xdc"/>
           <Attr Name="ImportTime" Val="1702402068"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -264,7 +264,7 @@
       <Filter Type="Srcs"/>
       <File Path="$PSRCDIR/sim_1/new/tb_ascon_top.sv">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../Scrivania/ascon_project/ascon_project.srcs/sim_1/new/tb_ascon_top.sv"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../ascon_project/ascon_project.srcs/sim_1/new/tb_ascon_top.sv"/>
           <Attr Name="ImportTime" Val="1702405719"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -274,7 +274,7 @@
       <File Path="$PSRCDIR/sim_1/new/tb_ascon_fsm.sv">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../Scrivania/ascon_project/ascon_project.srcs/sim_1/new/tb_ascon_fsm.sv"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../ascon_project/ascon_project.srcs/sim_1/new/tb_ascon_fsm.sv"/>
           <Attr Name="ImportTime" Val="1702056015"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -284,7 +284,7 @@
       <File Path="$PSRCDIR/sim_1/new/tb_ascon_hmac.sv">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../Scrivania/ascon_project/ascon_project.srcs/sim_1/new/tb_ascon_hmac.sv"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../ascon_project/ascon_project.srcs/sim_1/new/tb_ascon_hmac.sv"/>
           <Attr Name="ImportTime" Val="1700222544"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -309,7 +309,7 @@
       <Filter Type="Utils"/>
       <File Path="$PSRCDIR/utils_1/imports/synth_1/design_ascon_wrapper.dcp">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../Scrivania/ascon_project/ascon_project.srcs/utils_1/imports/synth_1/design_ascon_wrapper.dcp"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../ascon_project/ascon_project.srcs/utils_1/imports/synth_1/design_ascon_wrapper.dcp"/>
           <Attr Name="ImportTime" Val="1702414309"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
