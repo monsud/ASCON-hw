@@ -2,38 +2,33 @@
 
 ## Overview
 
-This project showcases both hardware and software implementations of the ASCON cryptographic algorithm. ASCON is a lightweight and secure authenticated encryption algorithm.
+This GitHub repository contains implementations of ASCON 128 in hardware and ASCON HMAC (Hash-based Message Authentication Code) and KMAC (Keccak Message Authentication Code) in software.
 
-### ASCON 128 - Hardware Implementation
+## ASCON 128 Hardware Implementation
 
-In the hardware implementation, we have designed and implemented ASCON 128 on FPGA for efficient and high-performance cryptographic operations. The hardware implementation provides accelerated encryption and decryption processes, making it suitable for resource-constrained environments.
+### Description
 
-#### Hardware Requirements
+The hardware implementation of ASCON 128 is designed for efficient and secure cryptographic operations. ASCON 128 is a lightweight cryptographic permutation designed for hardware and software implementation. In this project, we focus on the hardware aspect, optimizing ASCON 128 for speed and resource utilization.
 
-- FPGA Board (e.g., [Specify the FPGA board model])
-- FPGA Development Environment (e.g., [Specify the development tools])
+### Hardware Specifications
 
-#### Hardware Implementation Details
+- Platform: [Zybo]
+- Language: [System Verilog]
+- Synthesis Tool: [Xilinx Vivado and Vitis]
 
-[Provide details about the hardware implementation, including any optimizations or features specific to the FPGA platform.]
+### How to Use
 
-### ASCON HMAC and KMAC - Software Implementation
+1. Clone the repository:
 
-In addition to the hardware implementation, this project includes software implementations of ASCON HMAC and KMAC. These are cryptographic hash functions that use the ASCON algorithm for secure message authentication and key derivation.
+   git clone https://github.com/monsud/ASCON-hw
 
-#### Software Requirements
+2. Open project with Vivado:
 
-- Programming Language: [Specify the programming language used, e.g., C, Python]
-- Dependencies: [List any external libraries or tools required]
+   File -> Open Project -> ASCON-hw.xpr
 
-#### Software Implementation Details
-
-[Explain the software implementations of ASCON HMAC and KMAC, including usage instructions and any specific considerations for developers or users.]
-
-## Getting Started
-
-Follow the steps below to get started with the project:
-
-1. **Clone the Repository:**
-   ```bash
-   git clone https://github.com/your-username/ascon-implementation.git
+3. Run Synthesis and Implementation before Generate Bistream
+4. Export hardware form File
+5. Open Vitis and select open workspace folder
+6. Build project and Run as Hardware
+7. Enjoy!
+   
