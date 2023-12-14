@@ -12,9 +12,9 @@ The hardware implementation of ASCON 128 is designed for efficient and secure cr
 
 ### Hardware Specifications
 
-- Platform: [Zybo]
-- Language: [System Verilog]
-- Synthesis Tool: [Xilinx Vivado and Vitis]
+- Platform: Diligent Zybo
+- Language: System Verilog
+- Synthesis Tool: Xilinx Vivado and Vitis
 
 ### How to Use
 
