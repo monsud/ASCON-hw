@@ -1,0 +1,52 @@
+17:07:22 **** Incremental Build of configuration Debug for project ascon_app ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+ 
+make --no-print-directory main-build
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I/home/monsud/Scrivania/ascon_project/workspace/design_ascon_wrapper/export/design_ascon_wrapper/sw/design_ascon_wrapper/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'ascon_hashing':
+../src/main.c:29:19: warning: passing argument 1 of 'Xil_Out32' makes integer from pointer without a cast [-Wint-conversion]
+   29 |         Xil_Out32((uint32_t *)(ptr + REG_CTRL_OFFSET), *((uint32_t *)&control_reg));
+      |                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                   |
+      |                   uint32_t * {aka long unsigned int *}
+In file included from ../src/ascon_hw.h:8,
+                 from ../src/main.c:2:
+/home/monsud/Scrivania/ascon_project/workspace/design_ascon_wrapper/export/design_ascon_wrapper/sw/design_ascon_wrapper/standalone_ps7_cortexa9_0/bspinclude/include/xil_io.h:209:38: note: expected 'UINTPTR' {aka 'unsigned int'} but argument is of type 'uint32_t *' {aka 'long unsigned int *'}
+  209 | static INLINE void Xil_Out32(UINTPTR Addr, u32 Value)
+      |                              ~~~~~~~~^~~~
+../src/main.c:44:19: warning: passing argument 1 of 'Xil_Out32' makes integer from pointer without a cast [-Wint-conversion]
+   44 |         Xil_Out32((uint32_t *)(ptr + REG_CTRL_OFFSET), *((uint32_t *)&control_reg));
+      |                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                   |
+      |                   uint32_t * {aka long unsigned int *}
+/home/monsud/Scrivania/ascon_project/workspace/design_ascon_wrapper/export/design_ascon_wrapper/sw/design_ascon_wrapper/standalone_ps7_cortexa9_0/bspinclude/include/xil_io.h:209:38: note: expected 'UINTPTR' {aka 'unsigned int'} but argument is of type 'uint32_t *' {aka 'long unsigned int *'}
+  209 | static INLINE void Xil_Out32(UINTPTR Addr, u32 Value)
+      |                              ~~~~~~~~^~~~
+../src/main.c:65:15: warning: passing argument 1 of 'Xil_Out32' makes integer from pointer without a cast [-Wint-conversion]
+   65 |     Xil_Out32((uint32_t *)(ptr + REG_CTRL_OFFSET), *((uint32_t *)&control_reg));
+      |               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |               |
+      |               uint32_t * {aka long unsigned int *}
+/home/monsud/Scrivania/ascon_project/workspace/design_ascon_wrapper/export/design_ascon_wrapper/sw/design_ascon_wrapper/standalone_ps7_cortexa9_0/bspinclude/include/xil_io.h:209:38: note: expected 'UINTPTR' {aka 'unsigned int'} but argument is of type 'uint32_t *' {aka 'long unsigned int *'}
+  209 | static INLINE void Xil_Out32(UINTPTR Addr, u32 Value)
+      |                              ~~~~~~~~^~~~
+Finished building: ../src/main.c
+ 
+Building target: ascon_app.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L/home/monsud/Scrivania/ascon_project/workspace/design_ascon_wrapper/export/design_ascon_wrapper/sw/design_ascon_wrapper/standalone_ps7_cortexa9_0/bsplib/lib -o "ascon_app.elf" ./src/ascon_lib/ascon-c32.o ./src/ascon_lib/ascon-clean.o ./src/ascon_lib/ascon-direct-xor.o ./src/ascon_lib/ascon-hash.o ./src/ascon_lib/ascon-hex.o ./src/ascon_lib/ascon-hmac.o ./src/ascon_lib/ascon-kmac.o ./src/ascon_lib/ascon-sliced32.o ./src/ascon_lib/ascon-xof.o  ./src/ascon_hw.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ascon_app.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size ascon_app.elf  |tee "ascon_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  86499	   2552	  22632	 111683	  1b443	ascon_app.elf
+Finished building: ascon_app.elf.size
+ 
+
+17:07:23 Build Finished (took 882ms)
+

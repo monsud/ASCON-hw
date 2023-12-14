@@ -1,0 +1,88 @@
+#include <string.h>
+#include "ascon_hw.h"
+#include "ascon_lib/hmac.h"
+#include "ascon_lib/kmac.h"
+
+void ascon_hashing(uint8_t *ptr, int hash_mode) {
+    // Example key and input data
+    const unsigned char key[] = "my_secret_key";
+    const unsigned char input[] = "data_to_hash";
+
+    // Only for KMAC implementation
+    const unsigned char custom[] = "custom_data";
+
+    // Buffer to store the HMAC and KMAC result
+    unsigned char hmacResult[ASCON_HMAC_SIZE];
+    unsigned char kmacResult[ASCON_KMAC_SIZE];
+
+    // Create a control register instance
+    ControlRegister control_reg;
+
+    // Set control register for HMAC or KMAC
+    control_reg.start = 1;
+    control_reg.hash_select = 1;
+
+    if (hash_mode == HASH_MODE_HMAC) {
+        printf("HMAC processing\n");
+
+        control_reg.hmac_select = 1;
+        Xil_Out32((uint32_t *)(ptr + REG_CTRL_OFFSET), *((uint32_t *)&control_reg));
+
+        // Perform HMAC hashing
+        ascon_hmac(hmacResult, key, strlen((const char *)key), input, strlen((const char *)input));
+
+        // Print the HMAC result
+        printf("HMAC Output: ");
+        for (size_t i = 0; i < ASCON_HMAC_SIZE; ++i) {
+            printf("%02x", hmacResult[i]);
+        }
+        printf("\n");
+    } else if (hash_mode == HASH_MODE_KMAC) {
+        printf("KMAC processing\n");
+
+        control_reg.kmac_select = 1;
+        Xil_Out32((uint32_t *)(ptr + REG_CTRL_OFFSET), *((uint32_t *)&control_reg));
+
+        // Perform KMAC hashing
+        ascon_kmac(key, strlen((const char *)key), input, strlen((const char *)input),
+                   custom, strlen((const char *)custom), kmacResult, ASCON_KMAC_SIZE);
+
+        // Print the KMAC result
+        printf("KMAC Output: ");
+        for (size_t i = 0; i < ASCON_KMAC_SIZE; ++i) {
+            printf("%02x", kmacResult[i]);
+        }
+        printf("\n");
+    } else {
+        printf("Invalid hash mode\n");
+    }
+
+    // Stop hashing and reset control register
+    control_reg.stop = 1;
+    control_reg.hmac_select = 0;
+    control_reg.kmac_select = 0;
+    control_reg.start = 0;
+    Xil_Out32((uint32_t *)(ptr + REG_CTRL_OFFSET), *((uint32_t *)&control_reg));
+}
+
+int main() {
+    uint8_t *ptr = (uint8_t *)BASE_ADDRESS;
+
+    init_platform();
+
+    initialize_registers(ptr);
+
+    //ascon_128_encrypt(ptr);
+
+    // Expected output: 19714801F49FF5DE77EDB2999A030F46
+
+    // Perform ASCON hashing (HMAC mode)
+    ascon_hashing(ptr, HASH_MODE_HMAC);
+
+    // Perform ASCON hashing (KMAC mode)
+    ascon_hashing(ptr, HASH_MODE_KMAC);
+    cleanup_platform();
+
+    return 0;
+}
+
