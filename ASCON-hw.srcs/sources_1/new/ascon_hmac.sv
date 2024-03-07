@@ -26,15 +26,15 @@ module ascon_hmac (
     input enable,
     input  [127:0] key, // HMAC key input
     input  [127:0] data, // Data input
-    output reg [127:0] hmac_output // HMAC output
+    output logic [127:0] hmac_output // HMAC output
 );
     // Internal signals
-    reg [127:0] ipad;
-    reg [127:0] opad;
-    reg [127:0] key_state;
-    reg [127:0] data_state;
-    wire [127:0] inner_hash_result;
-    wire [127:0] outer_hash_result;
+    logic [127:0] ipad;
+    logic [127:0] opad;
+    logic [127:0] key_state;
+    logic [127:0] data_state;
+    logic [127:0] inner_hash_result;
+    logic [127:0] outer_hash_result;
 
     // Key Padding
     always_comb begin

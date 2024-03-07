@@ -249,8 +249,8 @@
     <Step Id="write_bitstream"/>
     <Step Id="write_device_image"/>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="design_ascon_processing_system7_0_4"/>
-  <BlockFileSet Type="BlockSrcs" Name="design_ascon_rst_ps7_0_100M_2"/>
-  <BlockFileSet Type="BlockSrcs" Name="design_ascon_xbar_1"/>
   <BlockFileSet Type="BlockSrcs" Name="design_ascon_ascon_core_0_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_ascon_xbar_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_ascon_rst_ps7_0_100M_2"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_ascon_processing_system7_0_4"/>
 </GenRun>
