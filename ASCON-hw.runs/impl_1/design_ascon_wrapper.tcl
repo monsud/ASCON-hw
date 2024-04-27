@@ -17,7 +17,7 @@ proc create_report { reportName command } {
   }
 }
 namespace eval ::optrace {
-  variable script "/home/monsud/Scrivania/ascon_project/ascon_project.runs/impl_1/design_ascon_wrapper.tcl"
+  variable script "/home/monsud/Scrivania/ASCON-hw/ASCON-hw.runs/impl_1/design_ascon_wrapper.tcl"
   variable category "vivado_impl"
 }
 
@@ -115,7 +115,6 @@ proc step_failed { step } {
 OPTRACE "impl_1" END { }
 }
 
-set_msg_config -id {HDL-1065} -limit 10000
 
 OPTRACE "impl_1" START { ROLLUP_1 }
 OPTRACE "Phase: Write Bitstream" START { ROLLUP_AUTO }
@@ -127,7 +126,7 @@ set rc [catch {
   set_param chipscope.maxJobs 1
   set_param runs.launchOptions { -jobs 2  }
   open_checkpoint design_ascon_wrapper_routed.dcp
-  set_property webtalk.parent_dir /home/monsud/Scrivania/ascon_project/ascon_project.cache/wt [current_project]
+  set_property webtalk.parent_dir /home/monsud/Scrivania/ASCON-hw/ASCON-hw.cache/wt [current_project]
 set_property TOP design_ascon_wrapper [current_fileset]
 OPTRACE "read constraints: write_bitstream" START { }
 OPTRACE "read constraints: write_bitstream" END { }

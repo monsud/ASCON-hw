@@ -23,7 +23,6 @@
 module ascon_hmac (
     input clk, 
     input rst, 
-    input enable,
     input  [127:0] key, // HMAC key input
     input  [127:0] data, // Data input
     output logic [127:0] hmac_output // HMAC output
@@ -64,7 +63,6 @@ module ascon_hmac (
     ascon_hash inner_hash_instance(
         .clk(clk),
         .rst(rst),
-        .enable(enable),
         .key(key_state),
         .data(ipad),
         .hash_output(inner_hash_result)
@@ -83,7 +81,6 @@ module ascon_hmac (
     ascon_hash outer_hash_instance(
         .clk(clk),
         .rst(rst),
-        .enable(enable),
         .key(key_state),
         .data(opad),
         .hash_output(outer_hash_result)

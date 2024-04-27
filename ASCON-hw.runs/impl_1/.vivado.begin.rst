@@ -1,55 +1,10 @@
 <?xml version="1.0"?>
 <ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado" Owner="monsud" Host="archbook" Pid="188693" HostCore="8" HostMemory="7868616">
+    <Process Command="vivado" Owner="monsud" Host="archbook" Pid="22809" HostCore="8" HostMemory="7868728">
     </Process>
 </ProcessHandle>
 <?xml version="1.0"?>
 <ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado" Owner="monsud" Host="archbook" Pid="194464" HostCore="8" HostMemory="7868616">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado" Owner="monsud" Host="archbook" Pid="203671" HostCore="8" HostMemory="7868616">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado" Owner="monsud" Host="archbook" Pid="204213" HostCore="8" HostMemory="7868616">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado" Owner="monsud" Host="archbook" Pid="215511" HostCore="8" HostMemory="7868616">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado" Owner="monsud" Host="archbook" Pid="216694" HostCore="8" HostMemory="7868616">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado" Owner="monsud" Host="archbook" Pid="234298" HostCore="8" HostMemory="7868616">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado" Owner="monsud" Host="archbook" Pid="239179" HostCore="8" HostMemory="7868616">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado" Owner="monsud" Host="archbook" Pid="4223" HostCore="8" HostMemory="7868616">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado" Owner="monsud" Host="archbook" Pid="7150" HostCore="8" HostMemory="7868616">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado" Owner="monsud" Host="archbook" Pid="13103" HostCore="8" HostMemory="7868616">
+    <Process Command="vivado" Owner="monsud" Host="archbook" Pid="31210" HostCore="8" HostMemory="7868728">
     </Process>
 </ProcessHandle>

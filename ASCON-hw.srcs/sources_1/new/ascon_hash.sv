@@ -22,7 +22,6 @@
 module ascon_hash (
     input clk,
     input rst, 
-    input enable, 
     input [127:0] key, 
     input [7:0] data, 
     output reg [127:0] hash_output 
@@ -35,7 +34,6 @@ module ascon_hash (
     ascon_initialization init_inst(
         .clk(clk),
         .rst(rst),
-        .enable(),
         .key(key),
         .nonce(nonce),
         .state_out(state)
@@ -49,7 +47,6 @@ module ascon_hash (
         ascon_round round_inst (
             .clk(clk),
             .rst(rst),
-            .enable(enable),
             .state_in(round_state[i-1]),
             .state_out(round_state[i]),
             .round_number(i)
@@ -61,7 +58,6 @@ module ascon_hash (
     ascon_finalization final_inst(
         .clk(clk),
         .rst(rst),
-        .enable(enable),
         .state(round_state[11]),
         .state_out(hash_output)
     );
