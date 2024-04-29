@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1714220056" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/design_ascon_wrapper.dcp">
+<GenRun Id="synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1714385119" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/design_ascon_wrapper.dcp">
+  <File Type="VDS-TIMINGSUMMARY" Name="design_ascon_wrapper_timing_summary_synth.rpt"/>
   <File Type="RDS-DCP" Name="design_ascon_wrapper.dcp"/>
   <File Type="RDS-UTIL-PB" Name="design_ascon_wrapper_utilization_synth.pb"/>
-  <File Type="PA-TCL" Name="design_ascon_wrapper.tcl"/>
   <File Type="RDS-UTIL" Name="design_ascon_wrapper_utilization_synth.rpt"/>
-  <File Type="REPORTS-TCL" Name="design_ascon_wrapper_reports.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="design_ascon_wrapper_drc_synth.rpt"/>
   <File Type="RDS-RDS" Name="design_ascon_wrapper.vds"/>
+  <File Type="REPORTS-TCL" Name="design_ascon_wrapper_reports.tcl"/>
+  <File Type="VDS-TIMING-PB" Name="design_ascon_wrapper_timing_summary_synth.pb"/>
+  <File Type="PA-TCL" Name="design_ascon_wrapper.tcl"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/bd/design_ascon/design_ascon.bd">
@@ -185,8 +188,7 @@
     <Step Id="synth_design"/>
   </Strategy>
   <BlockFileSet Type="BlockSrcs" Name="design_ascon_ascon_core_0_1"/>
-  <BlockFileSet Type="BlockSrcs" Name="design_ascon_auto_pc_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="design_ascon_processing_system7_0_4"/>
-  <BlockFileSet Type="BlockSrcs" Name="design_ascon_rst_ps7_0_100M_2"/>
   <BlockFileSet Type="BlockSrcs" Name="design_ascon_xbar_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_ascon_rst_ps7_0_100M_2"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_ascon_processing_system7_0_4"/>
 </GenRun>
