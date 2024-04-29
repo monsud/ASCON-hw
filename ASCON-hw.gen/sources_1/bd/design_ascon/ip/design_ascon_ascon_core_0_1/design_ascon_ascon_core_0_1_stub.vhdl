@@ -2,7 +2,7 @@
 -- Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2023.2 (lin64) Build 4029153 Fri Oct 13 20:13:54 MDT 2023
--- Date        : Mon Apr 29 12:04:38 2024
+-- Date        : Mon Apr 29 12:18:24 2024
 -- Host        : archbook running 64-bit Arch Linux
 -- Command     : write_vhdl -force -mode synth_stub
 --               /home/monsud/Scrivania/ASCON-hw/ASCON-hw.gen/sources_1/bd/design_ascon/ip/design_ascon_ascon_core_0_1/design_ascon_ascon_core_0_1_stub.vhdl

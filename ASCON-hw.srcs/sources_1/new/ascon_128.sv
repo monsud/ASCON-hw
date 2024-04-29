@@ -22,7 +22,7 @@
   localparam int LENGTH = 128;
   localparam int ROUNDS = 12;
 
-module ascon_top (
+module ascon_128 (
   input logic clk,
   input logic rst,
   input logic [127:0] key,
@@ -63,13 +63,15 @@ module ascon_top (
     .key(key),
     .state_out(key_schedule_state)
   );
-
+  
   //Instantiate 12 round modules
+  ascon_round round_inst [ROUNDS-1:0];
   assign round_state[0] = key_schedule_state ^ plaintext;
   genvar i;
   generate
     for (i = 1; i < ROUNDS; i = i + 1) begin
-      ascon_round round_inst (
+      assign round_state[i] = round_inst[i-1].state_out;
+      ascon_round round_inst[i] (
         .clk(clk),
         .rst(rst),
         .state_in(round_state[i-1]),
@@ -78,7 +80,7 @@ module ascon_top (
       );
     end
   endgenerate
-  
+      
   // Instantiate finalization module
   ascon_finalization final_inst(
     .clk(clk),

@@ -11,7 +11,7 @@
     ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 
 source design_ascon_ascon_core_0_1.tcl -notrace
-create_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1259.770 ; gain = 5.961 ; free physical = 1040 ; free virtual = 3675
+create_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1258.738 ; gain = 6.961 ; free physical = 1280 ; free virtual = 3471
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/monsud/Scrivania/ASCON-hw/ip_repo/ascon_core_1_0'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/monsud/Xilinx/Vivado/2023.2/data/ip'.
@@ -23,44 +23,44 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010
 INFO: [Device 21-403] Loading part xc7z010clg400-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 8648
+INFO: [Synth 8-7075] Helper process launched with PID 17082
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2011.602 ; gain = 404.715 ; free physical = 498 ; free virtual = 2888
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2009.602 ; gain = 404.715 ; free physical = 251 ; free virtual = 2445
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-11241] undeclared symbol 'nonce', assumed default net type 'wire' [/home/monsud/Scrivania/ASCON-hw/ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/9a5b/ASCON-hw.srcs/sources_1/new/ascon_hash.sv:38]
+INFO: [Synth 8-11241] undeclared symbol 'nonce', assumed default net type 'wire' [/home/monsud/Scrivania/ASCON-hw/ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/329f/ASCON-hw.srcs/sources_1/new/ascon_hash.sv:38]
 INFO: [Synth 8-6157] synthesizing module 'design_ascon_ascon_core_0_1' [/home/monsud/Scrivania/ASCON-hw/ASCON-hw.gen/sources_1/bd/design_ascon/ip/design_ascon_ascon_core_0_1/synth/design_ascon_ascon_core_0_1.sv:53]
-INFO: [Synth 8-6157] synthesizing module 'ascon_core_v1_0' [/home/monsud/Scrivania/ASCON-hw/ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/9a5b/src/ascon_core_v1_0.sv:4]
-INFO: [Synth 8-6157] synthesizing module 'ascon_core_v1_0_S00_AXI' [/home/monsud/Scrivania/ASCON-hw/ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/9a5b/src/ascon_core_v1_0_S00_AXI.sv:17]
-INFO: [Synth 8-6157] synthesizing module 'ascon_top' [/home/monsud/Scrivania/ASCON-hw/ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/9a5b/ASCON-hw.srcs/sources_1/new/ascon_top.sv:25]
-INFO: [Synth 8-6157] synthesizing module 'ascon_round' [/home/monsud/Scrivania/ASCON-hw/ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/9a5b/ASCON-hw.srcs/sources_1/new/ascon_round.sv:22]
-INFO: [Synth 8-6157] synthesizing module 'ascon_add_constant' [/home/monsud/Scrivania/ASCON-hw/ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/9a5b/ASCON-hw.srcs/sources_1/new/ascon_add_constant.sv:23]
-INFO: [Synth 8-6155] done synthesizing module 'ascon_add_constant' (0#1) [/home/monsud/Scrivania/ASCON-hw/ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/9a5b/ASCON-hw.srcs/sources_1/new/ascon_add_constant.sv:23]
-INFO: [Synth 8-6157] synthesizing module 'ascon_sbox' [/home/monsud/Scrivania/ASCON-hw/ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/9a5b/ASCON-hw.srcs/sources_1/new/ascon_sbox.sv:23]
-INFO: [Synth 8-6155] done synthesizing module 'ascon_sbox' (0#1) [/home/monsud/Scrivania/ASCON-hw/ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/9a5b/ASCON-hw.srcs/sources_1/new/ascon_sbox.sv:23]
-INFO: [Synth 8-6157] synthesizing module 'ascon_linear_diffusion' [/home/monsud/Scrivania/ASCON-hw/ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/9a5b/ASCON-hw.srcs/sources_1/new/ascon_linear_diffusion.sv:22]
-INFO: [Synth 8-6155] done synthesizing module 'ascon_linear_diffusion' (0#1) [/home/monsud/Scrivania/ASCON-hw/ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/9a5b/ASCON-hw.srcs/sources_1/new/ascon_linear_diffusion.sv:22]
-INFO: [Synth 8-6155] done synthesizing module 'ascon_round' (0#1) [/home/monsud/Scrivania/ASCON-hw/ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/9a5b/ASCON-hw.srcs/sources_1/new/ascon_round.sv:22]
-INFO: [Synth 8-6157] synthesizing module 'ascon_fsm' [/home/monsud/Scrivania/ASCON-hw/ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/9a5b/ASCON-hw.srcs/sources_1/new/ascon_fsm.sv:30]
-INFO: [Synth 8-6155] done synthesizing module 'ascon_fsm' (0#1) [/home/monsud/Scrivania/ASCON-hw/ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/9a5b/ASCON-hw.srcs/sources_1/new/ascon_fsm.sv:30]
-INFO: [Synth 8-6157] synthesizing module 'ascon_initialization' [/home/monsud/Scrivania/ASCON-hw/ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/9a5b/ASCON-hw.srcs/sources_1/new/ascon_initialization.sv:22]
-INFO: [Synth 8-6155] done synthesizing module 'ascon_initialization' (0#1) [/home/monsud/Scrivania/ASCON-hw/ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/9a5b/ASCON-hw.srcs/sources_1/new/ascon_initialization.sv:22]
-INFO: [Synth 8-6157] synthesizing module 'ascon_key_schedule' [/home/monsud/Scrivania/ASCON-hw/ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/9a5b/ASCON-hw.srcs/sources_1/new/ascon_key_schedule.sv:22]
-INFO: [Synth 8-6155] done synthesizing module 'ascon_key_schedule' (0#1) [/home/monsud/Scrivania/ASCON-hw/ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/9a5b/ASCON-hw.srcs/sources_1/new/ascon_key_schedule.sv:22]
-INFO: [Synth 8-6157] synthesizing module 'ascon_finalization' [/home/monsud/Scrivania/ASCON-hw/ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/9a5b/ASCON-hw.srcs/sources_1/new/ascon_finalization.sv:23]
-INFO: [Synth 8-6155] done synthesizing module 'ascon_finalization' (0#1) [/home/monsud/Scrivania/ASCON-hw/ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/9a5b/ASCON-hw.srcs/sources_1/new/ascon_finalization.sv:23]
-INFO: [Synth 8-6155] done synthesizing module 'ascon_top' (0#1) [/home/monsud/Scrivania/ASCON-hw/ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/9a5b/ASCON-hw.srcs/sources_1/new/ascon_top.sv:25]
-WARNING: [Synth 8-689] width (128) of port connection 'control_register' does not match port width (32) of module 'ascon_top' [/home/monsud/Scrivania/ASCON-hw/ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/9a5b/src/ascon_core_v1_0_S00_AXI.sv:617]
-WARNING: [Synth 8-689] width (128) of port connection 'status_register' does not match port width (32) of module 'ascon_top' [/home/monsud/Scrivania/ASCON-hw/ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/9a5b/src/ascon_core_v1_0_S00_AXI.sv:618]
-INFO: [Synth 8-6155] done synthesizing module 'ascon_core_v1_0_S00_AXI' (0#1) [/home/monsud/Scrivania/ASCON-hw/ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/9a5b/src/ascon_core_v1_0_S00_AXI.sv:17]
-INFO: [Synth 8-6157] synthesizing module 'ascon_core_v1_0_S_AXI_INTR' [/home/monsud/Scrivania/ASCON-hw/ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/9a5b/src/ascon_core_v1_0_S_AXI_INTR.sv:4]
-INFO: [Synth 8-6155] done synthesizing module 'ascon_core_v1_0_S_AXI_INTR' (0#1) [/home/monsud/Scrivania/ASCON-hw/ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/9a5b/src/ascon_core_v1_0_S_AXI_INTR.sv:4]
-INFO: [Synth 8-6155] done synthesizing module 'ascon_core_v1_0' (0#1) [/home/monsud/Scrivania/ASCON-hw/ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/9a5b/src/ascon_core_v1_0.sv:4]
+INFO: [Synth 8-6157] synthesizing module 'ascon_core_v1_0' [/home/monsud/Scrivania/ASCON-hw/ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/329f/src/ascon_core_v1_0.sv:4]
+INFO: [Synth 8-6157] synthesizing module 'ascon_core_v1_0_S00_AXI' [/home/monsud/Scrivania/ASCON-hw/ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/329f/src/ascon_core_v1_0_S00_AXI.sv:17]
+INFO: [Synth 8-6157] synthesizing module 'ascon_128' [/home/monsud/Scrivania/ASCON-hw/ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/329f/ASCON-hw.srcs/sources_1/new/ascon_128.sv:25]
+INFO: [Synth 8-6157] synthesizing module 'ascon_round' [/home/monsud/Scrivania/ASCON-hw/ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/329f/ASCON-hw.srcs/sources_1/new/ascon_round.sv:22]
+INFO: [Synth 8-6157] synthesizing module 'ascon_add_constant' [/home/monsud/Scrivania/ASCON-hw/ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/329f/ASCON-hw.srcs/sources_1/new/ascon_add_constant.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'ascon_add_constant' (0#1) [/home/monsud/Scrivania/ASCON-hw/ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/329f/ASCON-hw.srcs/sources_1/new/ascon_add_constant.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ascon_sbox' [/home/monsud/Scrivania/ASCON-hw/ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/329f/ASCON-hw.srcs/sources_1/new/ascon_sbox.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'ascon_sbox' (0#1) [/home/monsud/Scrivania/ASCON-hw/ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/329f/ASCON-hw.srcs/sources_1/new/ascon_sbox.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ascon_linear_diffusion' [/home/monsud/Scrivania/ASCON-hw/ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/329f/ASCON-hw.srcs/sources_1/new/ascon_linear_diffusion.sv:22]
+INFO: [Synth 8-6155] done synthesizing module 'ascon_linear_diffusion' (0#1) [/home/monsud/Scrivania/ASCON-hw/ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/329f/ASCON-hw.srcs/sources_1/new/ascon_linear_diffusion.sv:22]
+INFO: [Synth 8-6155] done synthesizing module 'ascon_round' (0#1) [/home/monsud/Scrivania/ASCON-hw/ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/329f/ASCON-hw.srcs/sources_1/new/ascon_round.sv:22]
+INFO: [Synth 8-6157] synthesizing module 'ascon_fsm' [/home/monsud/Scrivania/ASCON-hw/ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/329f/ASCON-hw.srcs/sources_1/new/ascon_fsm.sv:30]
+INFO: [Synth 8-6155] done synthesizing module 'ascon_fsm' (0#1) [/home/monsud/Scrivania/ASCON-hw/ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/329f/ASCON-hw.srcs/sources_1/new/ascon_fsm.sv:30]
+INFO: [Synth 8-6157] synthesizing module 'ascon_initialization' [/home/monsud/Scrivania/ASCON-hw/ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/329f/ASCON-hw.srcs/sources_1/new/ascon_initialization.sv:22]
+INFO: [Synth 8-6155] done synthesizing module 'ascon_initialization' (0#1) [/home/monsud/Scrivania/ASCON-hw/ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/329f/ASCON-hw.srcs/sources_1/new/ascon_initialization.sv:22]
+INFO: [Synth 8-6157] synthesizing module 'ascon_key_schedule' [/home/monsud/Scrivania/ASCON-hw/ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/329f/ASCON-hw.srcs/sources_1/new/ascon_key_schedule.sv:22]
+INFO: [Synth 8-6155] done synthesizing module 'ascon_key_schedule' (0#1) [/home/monsud/Scrivania/ASCON-hw/ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/329f/ASCON-hw.srcs/sources_1/new/ascon_key_schedule.sv:22]
+INFO: [Synth 8-6157] synthesizing module 'ascon_finalization' [/home/monsud/Scrivania/ASCON-hw/ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/329f/ASCON-hw.srcs/sources_1/new/ascon_finalization.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'ascon_finalization' (0#1) [/home/monsud/Scrivania/ASCON-hw/ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/329f/ASCON-hw.srcs/sources_1/new/ascon_finalization.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'ascon_128' (0#1) [/home/monsud/Scrivania/ASCON-hw/ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/329f/ASCON-hw.srcs/sources_1/new/ascon_128.sv:25]
+WARNING: [Synth 8-689] width (128) of port connection 'control_register' does not match port width (32) of module 'ascon_128' [/home/monsud/Scrivania/ASCON-hw/ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/329f/src/ascon_core_v1_0_S00_AXI.sv:617]
+WARNING: [Synth 8-689] width (128) of port connection 'status_register' does not match port width (32) of module 'ascon_128' [/home/monsud/Scrivania/ASCON-hw/ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/329f/src/ascon_core_v1_0_S00_AXI.sv:618]
+INFO: [Synth 8-6155] done synthesizing module 'ascon_core_v1_0_S00_AXI' (0#1) [/home/monsud/Scrivania/ASCON-hw/ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/329f/src/ascon_core_v1_0_S00_AXI.sv:17]
+INFO: [Synth 8-6157] synthesizing module 'ascon_core_v1_0_S_AXI_INTR' [/home/monsud/Scrivania/ASCON-hw/ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/329f/src/ascon_core_v1_0_S_AXI_INTR.sv:4]
+INFO: [Synth 8-6155] done synthesizing module 'ascon_core_v1_0_S_AXI_INTR' (0#1) [/home/monsud/Scrivania/ASCON-hw/ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/329f/src/ascon_core_v1_0_S_AXI_INTR.sv:4]
+INFO: [Synth 8-6155] done synthesizing module 'ascon_core_v1_0' (0#1) [/home/monsud/Scrivania/ASCON-hw/ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/329f/src/ascon_core_v1_0.sv:4]
 INFO: [Synth 8-6155] done synthesizing module 'design_ascon_ascon_core_0_1' (0#1) [/home/monsud/Scrivania/ASCON-hw/ASCON-hw.gen/sources_1/bd/design_ascon/ip/design_ascon_ascon_core_0_1/synth/design_ascon_ascon_core_0_1.sv:53]
-WARNING: [Synth 8-3848] Net key in module/entity ascon_core_v1_0_S00_AXI does not have driver. [/home/monsud/Scrivania/ASCON-hw/ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/9a5b/src/ascon_core_v1_0_S00_AXI.sv:109]
-WARNING: [Synth 8-3848] Net nonce in module/entity ascon_core_v1_0_S00_AXI does not have driver. [/home/monsud/Scrivania/ASCON-hw/ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/9a5b/src/ascon_core_v1_0_S00_AXI.sv:110]
-WARNING: [Synth 8-3848] Net plaintext in module/entity ascon_core_v1_0_S00_AXI does not have driver. [/home/monsud/Scrivania/ASCON-hw/ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/9a5b/src/ascon_core_v1_0_S00_AXI.sv:111]
-WARNING: [Synth 8-3848] Net control_register in module/entity ascon_core_v1_0_S00_AXI does not have driver. [/home/monsud/Scrivania/ASCON-hw/ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/9a5b/src/ascon_core_v1_0_S00_AXI.sv:113]
-WARNING: [Synth 8-6014] Unused sequential element intr_all_ff_reg was removed.  [/home/monsud/Scrivania/ASCON-hw/ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/9a5b/src/ascon_core_v1_0_S_AXI_INTR.sv:511]
+WARNING: [Synth 8-3848] Net key in module/entity ascon_core_v1_0_S00_AXI does not have driver. [/home/monsud/Scrivania/ASCON-hw/ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/329f/src/ascon_core_v1_0_S00_AXI.sv:109]
+WARNING: [Synth 8-3848] Net nonce in module/entity ascon_core_v1_0_S00_AXI does not have driver. [/home/monsud/Scrivania/ASCON-hw/ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/329f/src/ascon_core_v1_0_S00_AXI.sv:110]
+WARNING: [Synth 8-3848] Net plaintext in module/entity ascon_core_v1_0_S00_AXI does not have driver. [/home/monsud/Scrivania/ASCON-hw/ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/329f/src/ascon_core_v1_0_S00_AXI.sv:111]
+WARNING: [Synth 8-3848] Net control_register in module/entity ascon_core_v1_0_S00_AXI does not have driver. [/home/monsud/Scrivania/ASCON-hw/ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/329f/src/ascon_core_v1_0_S00_AXI.sv:113]
+WARNING: [Synth 8-6014] Unused sequential element intr_all_ff_reg was removed.  [/home/monsud/Scrivania/ASCON-hw/ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/329f/src/ascon_core_v1_0_S_AXI_INTR.sv:511]
 WARNING: [Synth 8-7129] Port S_AXI_AWPROT[2] in module ascon_core_v1_0_S_AXI_INTR is either unconnected or has no load
 WARNING: [Synth 8-7129] Port S_AXI_AWPROT[1] in module ascon_core_v1_0_S_AXI_INTR is either unconnected or has no load
 WARNING: [Synth 8-7129] Port S_AXI_AWPROT[0] in module ascon_core_v1_0_S_AXI_INTR is either unconnected or has no load
@@ -135,45 +135,45 @@ WARNING: [Synth 8-7129] Port S_AXI_ARPROT[2] in module ascon_core_v1_0_S00_AXI i
 WARNING: [Synth 8-7129] Port S_AXI_ARPROT[1] in module ascon_core_v1_0_S00_AXI is either unconnected or has no load
 WARNING: [Synth 8-7129] Port S_AXI_ARPROT[0] in module ascon_core_v1_0_S00_AXI is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2098.570 ; gain = 491.684 ; free physical = 360 ; free virtual = 2751
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2098.539 ; gain = 493.652 ; free physical = 604 ; free virtual = 2670
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2116.383 ; gain = 509.496 ; free physical = 350 ; free virtual = 2741
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2116.352 ; gain = 511.465 ; free physical = 597 ; free virtual = 2663
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2116.383 ; gain = 509.496 ; free physical = 350 ; free virtual = 2741
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2116.352 ; gain = 511.465 ; free physical = 597 ; free virtual = 2663
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.1 . Memory (MB): peak = 2116.383 ; gain = 0.000 ; free physical = 350 ; free virtual = 2741
+Netlist sorting complete. Time (s): cpu = 00:00:00.1 ; elapsed = 00:00:00.09 . Memory (MB): peak = 2116.352 ; gain = 0.000 ; free physical = 606 ; free virtual = 2672
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2262.133 ; gain = 0.000 ; free physical = 342 ; free virtual = 2733
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2262.102 ; gain = 0.000 ; free physical = 536 ; free virtual = 2602
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.22 ; elapsed = 00:00:00.06 . Memory (MB): peak = 2262.168 ; gain = 0.000 ; free physical = 341 ; free virtual = 2732
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.22 ; elapsed = 00:00:00.06 . Memory (MB): peak = 2262.137 ; gain = 0.000 ; free physical = 531 ; free virtual = 2598
 INFO: [Designutils 20-5008] Incremental synthesis strategy off
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 2262.168 ; gain = 655.281 ; free physical = 336 ; free virtual = 2727
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 2262.137 ; gain = 657.250 ; free physical = 525 ; free virtual = 2592
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z010clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 2262.168 ; gain = 655.281 ; free physical = 336 ; free virtual = 2727
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 2262.137 ; gain = 657.250 ; free physical = 525 ; free virtual = 2592
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 2262.168 ; gain = 655.281 ; free physical = 336 ; free virtual = 2727
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 2262.137 ; gain = 657.250 ; free physical = 525 ; free virtual = 2592
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'ascon_fsm'
 ---------------------------------------------------------------------------------------------------
@@ -188,7 +188,7 @@ INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in modul
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'one-hot' in module 'ascon_fsm'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 2262.168 ; gain = 655.281 ; free physical = 334 ; free virtual = 2726
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 2262.137 ; gain = 657.250 ; free physical = 524 ; free virtual = 2591
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -269,25 +269,25 @@ INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instan
 WARNING: [Synth 8-3332] Sequential element (FSM_onehot_current_state_reg[3]) is unused and will be removed from module ascon_fsm.
 WARNING: [Synth 8-3332] Sequential element (FSM_onehot_current_state_reg[0]) is unused and will be removed from module ascon_fsm.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 2262.168 ; gain = 655.281 ; free physical = 317 ; free virtual = 2709
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 2262.137 ; gain = 657.250 ; free physical = 535 ; free virtual = 2603
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 2262.168 ; gain = 655.281 ; free physical = 321 ; free virtual = 2714
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 2262.137 ; gain = 657.250 ; free physical = 541 ; free virtual = 2608
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 2262.168 ; gain = 655.281 ; free physical = 321 ; free virtual = 2714
+Finished Timing Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 2262.137 ; gain = 657.250 ; free physical = 541 ; free virtual = 2609
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 2262.168 ; gain = 655.281 ; free physical = 321 ; free virtual = 2713
+Finished Technology Mapping : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 2262.137 ; gain = 657.250 ; free physical = 541 ; free virtual = 2609
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -305,37 +305,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:29 ; elapsed = 00:00:29 . Memory (MB): peak = 2262.168 ; gain = 655.281 ; free physical = 321 ; free virtual = 2713
+Finished IO Insertion : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 2262.137 ; gain = 657.250 ; free physical = 541 ; free virtual = 2609
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:29 ; elapsed = 00:00:29 . Memory (MB): peak = 2262.168 ; gain = 655.281 ; free physical = 321 ; free virtual = 2713
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 2262.137 ; gain = 657.250 ; free physical = 541 ; free virtual = 2609
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 2262.168 ; gain = 655.281 ; free physical = 321 ; free virtual = 2713
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 2262.137 ; gain = 657.250 ; free physical = 541 ; free virtual = 2609
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 2262.168 ; gain = 655.281 ; free physical = 321 ; free virtual = 2713
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 2262.137 ; gain = 657.250 ; free physical = 541 ; free virtual = 2609
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:30 ; elapsed = 00:00:30 . Memory (MB): peak = 2262.168 ; gain = 655.281 ; free physical = 321 ; free virtual = 2713
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:30 ; elapsed = 00:00:30 . Memory (MB): peak = 2262.137 ; gain = 657.250 ; free physical = 541 ; free virtual = 2609
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:30 ; elapsed = 00:00:30 . Memory (MB): peak = 2262.168 ; gain = 655.281 ; free physical = 321 ; free virtual = 2713
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:30 ; elapsed = 00:00:30 . Memory (MB): peak = 2262.137 ; gain = 657.250 ; free physical = 541 ; free virtual = 2609
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -365,33 +365,33 @@ Report Cell Usage:
 |12    |FDSE   |     6|
 +------+-------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:30 ; elapsed = 00:00:30 . Memory (MB): peak = 2262.168 ; gain = 655.281 ; free physical = 321 ; free virtual = 2713
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 2262.137 ; gain = 657.250 ; free physical = 541 ; free virtual = 2609
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 76 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:28 ; elapsed = 00:00:28 . Memory (MB): peak = 2262.168 ; gain = 509.496 ; free physical = 321 ; free virtual = 2713
-Synthesis Optimization Complete : Time (s): cpu = 00:00:30 ; elapsed = 00:00:30 . Memory (MB): peak = 2262.168 ; gain = 655.281 ; free physical = 321 ; free virtual = 2713
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 2262.137 ; gain = 511.465 ; free physical = 541 ; free virtual = 2609
+Synthesis Optimization Complete : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 2262.137 ; gain = 657.250 ; free physical = 543 ; free virtual = 2611
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.05 . Memory (MB): peak = 2262.168 ; gain = 0.000 ; free physical = 600 ; free virtual = 2992
+Netlist sorting complete. Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.05 . Memory (MB): peak = 2262.137 ; gain = 0.000 ; free physical = 839 ; free virtual = 2907
 INFO: [Netlist 29-17] Analyzing 200 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2262.168 ; gain = 0.000 ; free physical = 601 ; free virtual = 2993
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2262.137 ; gain = 0.000 ; free physical = 839 ; free virtual = 2907
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Synth Design complete | Checksum: f2ecb7eb
+Synth Design complete | Checksum: eea3b0a5
 INFO: [Common 17-83] Releasing license: Synthesis
 49 Infos, 110 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:37 ; elapsed = 00:00:35 . Memory (MB): peak = 2262.168 ; gain = 982.586 ; free physical = 601 ; free virtual = 2993
-INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1841.171; main = 1509.422; forked = 381.769
-INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3213.262; main = 2262.137; forked = 983.141
-Write ShapeDB Complete: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2286.145 ; gain = 0.000 ; free physical = 601 ; free virtual = 2993
+synth_design: Time (s): cpu = 00:00:38 ; elapsed = 00:00:35 . Memory (MB): peak = 2262.137 ; gain = 981.586 ; free physical = 838 ; free virtual = 2906
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1867.177; main = 1537.717; forked = 379.632
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3213.227; main = 2262.105; forked = 983.137
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00 . Memory (MB): peak = 2286.113 ; gain = 0.000 ; free physical = 838 ; free virtual = 2906
 INFO: [Common 17-1381] The checkpoint '/home/monsud/Scrivania/ASCON-hw/ASCON-hw.runs/design_ascon_ascon_core_0_1_synth_1/design_ascon_ascon_core_0_1.dcp' has been generated.
-INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_ascon_ascon_core_0_1, cache-ID = d10f764d60eb2cc1
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_ascon_ascon_core_0_1, cache-ID = 93efa243decf89fc
 INFO: [Coretcl 2-1174] Renamed 35 cell refs.
-Write ShapeDB Complete: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00 . Memory (MB): peak = 2286.145 ; gain = 0.000 ; free physical = 590 ; free virtual = 2987
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2286.113 ; gain = 0.000 ; free physical = 817 ; free virtual = 2890
 INFO: [Common 17-1381] The checkpoint '/home/monsud/Scrivania/ASCON-hw/ASCON-hw.runs/design_ascon_ascon_core_0_1_synth_1/design_ascon_ascon_core_0_1.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file design_ascon_ascon_core_0_1_utilization_synth.rpt -pb design_ascon_ascon_core_0_1_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Mon Apr 29 12:04:38 2024...
+INFO: [Common 17-206] Exiting Vivado at Mon Apr 29 12:18:25 2024...

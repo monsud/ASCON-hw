@@ -22,7 +22,7 @@
   localparam int LENGTH = 128;
   localparam int ROUNDS = 12;
 
-module ascon_top (
+module ascon_128 (
   input logic clk,
   input logic rst,
   input logic [127:0] key,

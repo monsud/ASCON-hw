@@ -1,4 +1,4 @@
-`include "ascon_top.sv"
+`include "ascon_128.sv"
 `include "ascon_round.sv"
 `include "ascon_add_constant.sv"
 `include "ascon_sbox.sv"
@@ -607,7 +607,7 @@ always @( posedge S_AXI_ACLK )
 
 	// Add user logic here
     // Instantiate your_ascon_top module
-      ascon_top u_ascon_top (
+      ascon_128 u_ascon_top (
         .clk(S_AXI_ACLK),
         .rst(S_AXI_ARESETN),
         .key(key),

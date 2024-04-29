@@ -25,12 +25,22 @@ module ascon_kmac (
     input logic rst, 
     input logic [127:0] key, // KMAC key input
     input logic [127:0] data, // Data input
-    output logic [127:0] kmac_output // KMAC output
+    output logic [127:0] kmac_output, // KMAC output
+    input logic [31:0] control_register,
+    output logic [31:0] status_register
 );
     // Internal signals
     logic [127:0] key_state;
     logic [127:0] data_state;
     logic [127:0] kmac_result;
+    
+    // Istantiate state machine
+    ascon_fsm fsm_inst(
+      .clk(clk),
+      .rst(rst),
+      .control(control_register),
+      .status(status_register)
+    );
 
     // Instantiate ascon_hash module for key and data padding
     ascon_hash key_hash_inst (

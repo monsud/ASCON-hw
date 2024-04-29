@@ -25,7 +25,9 @@ module ascon_hmac (
     input rst, 
     input  [127:0] key, // HMAC key input
     input  [127:0] data, // Data input
-    output logic [127:0] hmac_output // HMAC output
+    output logic [127:0] hmac_output, // HMAC output
+    input logic [31:0] control_register,
+    output logic [31:0] status_register
 );
     // Internal signals
     logic [127:0] ipad;
@@ -34,6 +36,14 @@ module ascon_hmac (
     logic [127:0] data_state;
     logic [127:0] inner_hash_result;
     logic [127:0] outer_hash_result;
+    
+    // Istantiate state machine
+    ascon_fsm fsm_inst(
+        .clk(clk),
+        .rst(rst),
+        .control(control_register),
+        .status(status_register)
+    );
 
     // Key Padding
     always_comb begin

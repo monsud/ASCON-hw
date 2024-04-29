@@ -2,7 +2,7 @@
 // Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2023.2 (lin64) Build 4029153 Fri Oct 13 20:13:54 MDT 2023
-// Date        : Mon Apr 29 12:04:38 2024
+// Date        : Mon Apr 29 12:18:24 2024
 // Host        : archbook running 64-bit Arch Linux
 // Command     : write_verilog -force -mode funcsim
 //               /home/monsud/Scrivania/ASCON-hw/ASCON-hw.gen/sources_1/bd/design_ascon/ip/design_ascon_ascon_core_0_1/design_ascon_ascon_core_0_1_sim_netlist.v
@@ -216,6 +216,731 @@ module design_ascon_ascon_core_0_1
         .s_axi_intr_wdata(s_axi_intr_wdata[0]),
         .s_axi_intr_wready(s_axi_intr_wready),
         .s_axi_intr_wvalid(s_axi_intr_wvalid));
+endmodule
+
+(* ORIG_REF_NAME = "ascon_128" *) 
+module design_ascon_ascon_core_0_1_ascon_128
+   (D,
+    \s00_axi_wdata[31] ,
+    \s00_axi_wdata[31]_0 ,
+    \s00_axi_wdata[31]_1 ,
+    \slv_reg15_reg[31] ,
+    s00_axi_wstrb,
+    s00_axi_wdata,
+    \slv_reg13_reg[31] ,
+    \slv_reg14_reg[31] ,
+    \slv_reg12_reg[23] ,
+    \slv_reg12_reg[31] ,
+    s00_axi_aclk,
+    s00_axi_aresetn);
+  output [31:0]D;
+  output [31:0]\s00_axi_wdata[31] ;
+  output [30:0]\s00_axi_wdata[31]_0 ;
+  output [31:0]\s00_axi_wdata[31]_1 ;
+  input \slv_reg15_reg[31] ;
+  input [3:0]s00_axi_wstrb;
+  input [31:0]s00_axi_wdata;
+  input \slv_reg13_reg[31] ;
+  input \slv_reg14_reg[31] ;
+  input \slv_reg12_reg[23] ;
+  input \slv_reg12_reg[31] ;
+  input s00_axi_aclk;
+  input s00_axi_aresetn;
+
+  wire [31:0]D;
+  wire [63:4]add_const_state;
+  wire [63:1]add_const_state_0;
+  wire [63:1]add_const_state_10;
+  wire [63:2]add_const_state_13;
+  wire [63:2]add_const_state_16;
+  wire [63:1]add_const_state_19;
+  wire [63:1]add_const_state_22;
+  wire [20:4]add_const_state_5;
+  wire \genblk1[10].round_inst_n_250 ;
+  wire \genblk1[10].round_inst_n_251 ;
+  wire \genblk1[10].round_inst_n_252 ;
+  wire \genblk1[10].round_inst_n_253 ;
+  wire \genblk1[10].round_inst_n_254 ;
+  wire \genblk1[10].round_inst_n_255 ;
+  wire \genblk1[10].round_inst_n_256 ;
+  wire \genblk1[10].round_inst_n_257 ;
+  wire \genblk1[10].round_inst_n_258 ;
+  wire \genblk1[10].round_inst_n_259 ;
+  wire \genblk1[10].round_inst_n_260 ;
+  wire \genblk1[10].round_inst_n_261 ;
+  wire \genblk1[10].round_inst_n_262 ;
+  wire \genblk1[10].round_inst_n_263 ;
+  wire \genblk1[10].round_inst_n_264 ;
+  wire \genblk1[10].round_inst_n_265 ;
+  wire \genblk1[10].round_inst_n_266 ;
+  wire \genblk1[10].round_inst_n_267 ;
+  wire \genblk1[10].round_inst_n_268 ;
+  wire \genblk1[10].round_inst_n_269 ;
+  wire \genblk1[10].round_inst_n_270 ;
+  wire \genblk1[10].round_inst_n_271 ;
+  wire \genblk1[10].round_inst_n_272 ;
+  wire \genblk1[10].round_inst_n_273 ;
+  wire \genblk1[10].round_inst_n_274 ;
+  wire \genblk1[10].round_inst_n_275 ;
+  wire \genblk1[10].round_inst_n_276 ;
+  wire \genblk1[10].round_inst_n_277 ;
+  wire \genblk1[10].round_inst_n_278 ;
+  wire \genblk1[10].round_inst_n_279 ;
+  wire \genblk1[10].round_inst_n_280 ;
+  wire \genblk1[10].round_inst_n_281 ;
+  wire \genblk1[10].round_inst_n_282 ;
+  wire \genblk1[10].round_inst_n_283 ;
+  wire \genblk1[10].round_inst_n_60 ;
+  wire \genblk1[11].round_inst_n_63 ;
+  wire \genblk1[2].round_inst_n_25 ;
+  wire \genblk1[2].round_inst_n_27 ;
+  wire \genblk1[2].round_inst_n_29 ;
+  wire \genblk1[2].round_inst_n_34 ;
+  wire \genblk1[2].round_inst_n_39 ;
+  wire \genblk1[2].round_inst_n_44 ;
+  wire \genblk1[2].round_inst_n_45 ;
+  wire \genblk1[2].round_inst_n_46 ;
+  wire \genblk1[2].round_inst_n_49 ;
+  wire \genblk1[2].round_inst_n_56 ;
+  wire \genblk1[2].round_inst_n_57 ;
+  wire \genblk1[2].round_inst_n_58 ;
+  wire \genblk1[2].round_inst_n_59 ;
+  wire \genblk1[2].round_inst_n_60 ;
+  wire \genblk1[2].round_inst_n_61 ;
+  wire \genblk1[2].round_inst_n_62 ;
+  wire \genblk1[2].round_inst_n_63 ;
+  wire \genblk1[2].round_inst_n_64 ;
+  wire \genblk1[2].round_inst_n_9 ;
+  wire \genblk1[3].round_inst_n_10 ;
+  wire \genblk1[3].round_inst_n_116 ;
+  wire \genblk1[3].round_inst_n_138 ;
+  wire \genblk1[3].round_inst_n_139 ;
+  wire \genblk1[3].round_inst_n_145 ;
+  wire \genblk1[3].round_inst_n_146 ;
+  wire \genblk1[3].round_inst_n_147 ;
+  wire \genblk1[3].round_inst_n_19 ;
+  wire \genblk1[3].round_inst_n_20 ;
+  wire \genblk1[3].round_inst_n_21 ;
+  wire \genblk1[3].round_inst_n_28 ;
+  wire \genblk1[3].round_inst_n_50 ;
+  wire \genblk1[3].round_inst_n_51 ;
+  wire \genblk1[3].round_inst_n_54 ;
+  wire \genblk1[3].round_inst_n_85 ;
+  wire \genblk1[4].round_inst_n_196 ;
+  wire \genblk1[4].round_inst_n_197 ;
+  wire \genblk1[4].round_inst_n_198 ;
+  wire \genblk1[4].round_inst_n_199 ;
+  wire \genblk1[4].round_inst_n_200 ;
+  wire \genblk1[4].round_inst_n_201 ;
+  wire \genblk1[4].round_inst_n_202 ;
+  wire \genblk1[4].round_inst_n_203 ;
+  wire \genblk1[4].round_inst_n_204 ;
+  wire \genblk1[4].round_inst_n_205 ;
+  wire \genblk1[4].round_inst_n_206 ;
+  wire \genblk1[4].round_inst_n_207 ;
+  wire \genblk1[4].round_inst_n_208 ;
+  wire \genblk1[4].round_inst_n_209 ;
+  wire \genblk1[4].round_inst_n_210 ;
+  wire \genblk1[4].round_inst_n_211 ;
+  wire \genblk1[4].round_inst_n_212 ;
+  wire \genblk1[4].round_inst_n_213 ;
+  wire \genblk1[4].round_inst_n_214 ;
+  wire \genblk1[4].round_inst_n_215 ;
+  wire \genblk1[4].round_inst_n_216 ;
+  wire \genblk1[4].round_inst_n_217 ;
+  wire \genblk1[4].round_inst_n_218 ;
+  wire \genblk1[4].round_inst_n_219 ;
+  wire \genblk1[4].round_inst_n_220 ;
+  wire \genblk1[4].round_inst_n_221 ;
+  wire \genblk1[4].round_inst_n_222 ;
+  wire \genblk1[4].round_inst_n_223 ;
+  wire \genblk1[4].round_inst_n_224 ;
+  wire \genblk1[4].round_inst_n_225 ;
+  wire \genblk1[4].round_inst_n_226 ;
+  wire \genblk1[4].round_inst_n_227 ;
+  wire \genblk1[4].round_inst_n_228 ;
+  wire \genblk1[4].round_inst_n_229 ;
+  wire \genblk1[4].round_inst_n_230 ;
+  wire \genblk1[4].round_inst_n_231 ;
+  wire \genblk1[4].round_inst_n_232 ;
+  wire \genblk1[5].round_inst_n_133 ;
+  wire \genblk1[5].round_inst_n_254 ;
+  wire \genblk1[5].round_inst_n_255 ;
+  wire \genblk1[5].round_inst_n_256 ;
+  wire \genblk1[5].round_inst_n_257 ;
+  wire \genblk1[5].round_inst_n_258 ;
+  wire \genblk1[5].round_inst_n_259 ;
+  wire \genblk1[5].round_inst_n_260 ;
+  wire \genblk1[5].round_inst_n_261 ;
+  wire \genblk1[5].round_inst_n_262 ;
+  wire \genblk1[5].round_inst_n_263 ;
+  wire \genblk1[5].round_inst_n_264 ;
+  wire \genblk1[5].round_inst_n_265 ;
+  wire \genblk1[5].round_inst_n_266 ;
+  wire \genblk1[5].round_inst_n_267 ;
+  wire \genblk1[5].round_inst_n_268 ;
+  wire \genblk1[5].round_inst_n_269 ;
+  wire \genblk1[5].round_inst_n_270 ;
+  wire \genblk1[5].round_inst_n_271 ;
+  wire \genblk1[5].round_inst_n_272 ;
+  wire \genblk1[5].round_inst_n_273 ;
+  wire \genblk1[5].round_inst_n_274 ;
+  wire \genblk1[5].round_inst_n_275 ;
+  wire \genblk1[5].round_inst_n_276 ;
+  wire \genblk1[5].round_inst_n_277 ;
+  wire \genblk1[5].round_inst_n_278 ;
+  wire \genblk1[5].round_inst_n_279 ;
+  wire \genblk1[5].round_inst_n_280 ;
+  wire \genblk1[5].round_inst_n_281 ;
+  wire \genblk1[5].round_inst_n_282 ;
+  wire \genblk1[5].round_inst_n_283 ;
+  wire \genblk1[5].round_inst_n_284 ;
+  wire \genblk1[5].round_inst_n_285 ;
+  wire \genblk1[5].round_inst_n_286 ;
+  wire \genblk1[5].round_inst_n_287 ;
+  wire \genblk1[5].round_inst_n_63 ;
+  wire \genblk1[6].round_inst_n_132 ;
+  wire \genblk1[6].round_inst_n_253 ;
+  wire \genblk1[6].round_inst_n_254 ;
+  wire \genblk1[6].round_inst_n_255 ;
+  wire \genblk1[6].round_inst_n_256 ;
+  wire \genblk1[6].round_inst_n_257 ;
+  wire \genblk1[6].round_inst_n_258 ;
+  wire \genblk1[6].round_inst_n_259 ;
+  wire \genblk1[6].round_inst_n_260 ;
+  wire \genblk1[6].round_inst_n_261 ;
+  wire \genblk1[6].round_inst_n_262 ;
+  wire \genblk1[6].round_inst_n_263 ;
+  wire \genblk1[6].round_inst_n_264 ;
+  wire \genblk1[6].round_inst_n_265 ;
+  wire \genblk1[6].round_inst_n_266 ;
+  wire \genblk1[6].round_inst_n_267 ;
+  wire \genblk1[6].round_inst_n_268 ;
+  wire \genblk1[6].round_inst_n_269 ;
+  wire \genblk1[6].round_inst_n_270 ;
+  wire \genblk1[6].round_inst_n_271 ;
+  wire \genblk1[6].round_inst_n_272 ;
+  wire \genblk1[6].round_inst_n_273 ;
+  wire \genblk1[6].round_inst_n_274 ;
+  wire \genblk1[6].round_inst_n_275 ;
+  wire \genblk1[6].round_inst_n_276 ;
+  wire \genblk1[6].round_inst_n_277 ;
+  wire \genblk1[6].round_inst_n_278 ;
+  wire \genblk1[6].round_inst_n_279 ;
+  wire \genblk1[6].round_inst_n_280 ;
+  wire \genblk1[6].round_inst_n_281 ;
+  wire \genblk1[6].round_inst_n_282 ;
+  wire \genblk1[6].round_inst_n_283 ;
+  wire \genblk1[6].round_inst_n_284 ;
+  wire \genblk1[6].round_inst_n_285 ;
+  wire \genblk1[6].round_inst_n_286 ;
+  wire \genblk1[6].round_inst_n_287 ;
+  wire \genblk1[6].round_inst_n_288 ;
+  wire \genblk1[6].round_inst_n_289 ;
+  wire \genblk1[6].round_inst_n_290 ;
+  wire \genblk1[6].round_inst_n_291 ;
+  wire \genblk1[6].round_inst_n_292 ;
+  wire \genblk1[6].round_inst_n_293 ;
+  wire \genblk1[6].round_inst_n_294 ;
+  wire \genblk1[6].round_inst_n_295 ;
+  wire \genblk1[6].round_inst_n_62 ;
+  wire \genblk1[7].round_inst_n_254 ;
+  wire \genblk1[7].round_inst_n_255 ;
+  wire \genblk1[7].round_inst_n_256 ;
+  wire \genblk1[7].round_inst_n_257 ;
+  wire \genblk1[7].round_inst_n_258 ;
+  wire \genblk1[7].round_inst_n_259 ;
+  wire \genblk1[7].round_inst_n_260 ;
+  wire \genblk1[7].round_inst_n_261 ;
+  wire \genblk1[7].round_inst_n_262 ;
+  wire \genblk1[7].round_inst_n_263 ;
+  wire \genblk1[7].round_inst_n_264 ;
+  wire \genblk1[7].round_inst_n_265 ;
+  wire \genblk1[7].round_inst_n_266 ;
+  wire \genblk1[7].round_inst_n_267 ;
+  wire \genblk1[7].round_inst_n_268 ;
+  wire \genblk1[7].round_inst_n_269 ;
+  wire \genblk1[7].round_inst_n_270 ;
+  wire \genblk1[7].round_inst_n_271 ;
+  wire \genblk1[7].round_inst_n_272 ;
+  wire \genblk1[7].round_inst_n_273 ;
+  wire \genblk1[7].round_inst_n_274 ;
+  wire \genblk1[7].round_inst_n_275 ;
+  wire \genblk1[7].round_inst_n_276 ;
+  wire \genblk1[7].round_inst_n_277 ;
+  wire \genblk1[7].round_inst_n_278 ;
+  wire \genblk1[7].round_inst_n_279 ;
+  wire \genblk1[7].round_inst_n_280 ;
+  wire \genblk1[7].round_inst_n_281 ;
+  wire \genblk1[7].round_inst_n_282 ;
+  wire \genblk1[7].round_inst_n_283 ;
+  wire \genblk1[7].round_inst_n_284 ;
+  wire \genblk1[7].round_inst_n_285 ;
+  wire \genblk1[7].round_inst_n_286 ;
+  wire \genblk1[7].round_inst_n_287 ;
+  wire \genblk1[7].round_inst_n_288 ;
+  wire \genblk1[7].round_inst_n_62 ;
+  wire \genblk1[8].round_inst_n_255 ;
+  wire \genblk1[8].round_inst_n_256 ;
+  wire \genblk1[8].round_inst_n_257 ;
+  wire \genblk1[8].round_inst_n_258 ;
+  wire \genblk1[8].round_inst_n_259 ;
+  wire \genblk1[8].round_inst_n_260 ;
+  wire \genblk1[8].round_inst_n_261 ;
+  wire \genblk1[8].round_inst_n_262 ;
+  wire \genblk1[8].round_inst_n_263 ;
+  wire \genblk1[8].round_inst_n_264 ;
+  wire \genblk1[8].round_inst_n_265 ;
+  wire \genblk1[8].round_inst_n_266 ;
+  wire \genblk1[8].round_inst_n_267 ;
+  wire \genblk1[8].round_inst_n_268 ;
+  wire \genblk1[8].round_inst_n_269 ;
+  wire \genblk1[8].round_inst_n_270 ;
+  wire \genblk1[8].round_inst_n_271 ;
+  wire \genblk1[8].round_inst_n_272 ;
+  wire \genblk1[8].round_inst_n_273 ;
+  wire \genblk1[8].round_inst_n_274 ;
+  wire \genblk1[8].round_inst_n_275 ;
+  wire \genblk1[8].round_inst_n_276 ;
+  wire \genblk1[8].round_inst_n_277 ;
+  wire \genblk1[8].round_inst_n_278 ;
+  wire \genblk1[8].round_inst_n_279 ;
+  wire \genblk1[8].round_inst_n_280 ;
+  wire \genblk1[8].round_inst_n_281 ;
+  wire \genblk1[8].round_inst_n_282 ;
+  wire \genblk1[8].round_inst_n_283 ;
+  wire \genblk1[8].round_inst_n_284 ;
+  wire \genblk1[8].round_inst_n_285 ;
+  wire \genblk1[8].round_inst_n_286 ;
+  wire \genblk1[8].round_inst_n_287 ;
+  wire \genblk1[8].round_inst_n_288 ;
+  wire \genblk1[8].round_inst_n_289 ;
+  wire \genblk1[8].round_inst_n_290 ;
+  wire \genblk1[8].round_inst_n_63 ;
+  wire \genblk1[9].round_inst_n_139 ;
+  wire \genblk1[9].round_inst_n_252 ;
+  wire \genblk1[9].round_inst_n_253 ;
+  wire \genblk1[9].round_inst_n_254 ;
+  wire \genblk1[9].round_inst_n_255 ;
+  wire \genblk1[9].round_inst_n_256 ;
+  wire \genblk1[9].round_inst_n_257 ;
+  wire \genblk1[9].round_inst_n_258 ;
+  wire \genblk1[9].round_inst_n_259 ;
+  wire \genblk1[9].round_inst_n_260 ;
+  wire \genblk1[9].round_inst_n_261 ;
+  wire \genblk1[9].round_inst_n_262 ;
+  wire \genblk1[9].round_inst_n_263 ;
+  wire \genblk1[9].round_inst_n_264 ;
+  wire \genblk1[9].round_inst_n_265 ;
+  wire \genblk1[9].round_inst_n_266 ;
+  wire \genblk1[9].round_inst_n_267 ;
+  wire \genblk1[9].round_inst_n_268 ;
+  wire \genblk1[9].round_inst_n_269 ;
+  wire \genblk1[9].round_inst_n_270 ;
+  wire \genblk1[9].round_inst_n_271 ;
+  wire \genblk1[9].round_inst_n_272 ;
+  wire \genblk1[9].round_inst_n_273 ;
+  wire \genblk1[9].round_inst_n_274 ;
+  wire \genblk1[9].round_inst_n_275 ;
+  wire \genblk1[9].round_inst_n_276 ;
+  wire \genblk1[9].round_inst_n_277 ;
+  wire \genblk1[9].round_inst_n_278 ;
+  wire \genblk1[9].round_inst_n_279 ;
+  wire \genblk1[9].round_inst_n_63 ;
+  wire [0:0]linear_state;
+  wire [0:0]linear_state_11;
+  wire [0:0]linear_state_14;
+  wire [0:0]linear_state_17;
+  wire [0:0]linear_state_20;
+  wire [0:0]linear_state_3;
+  wire [0:0]linear_state_6;
+  wire [0:0]linear_state_8;
+  wire [63:7]p_0_in;
+  wire [124:0]\round_state[10]_9 ;
+  wire [127:0]\round_state[11]_10 ;
+  wire [22:22]\round_state[1]_0 ;
+  wire [123:51]\round_state[2]_1 ;
+  wire [121:22]\round_state[3]_2 ;
+  wire [124:0]\round_state[4]_3 ;
+  wire [125:1]\round_state[5]_4 ;
+  wire [125:1]\round_state[6]_5 ;
+  wire [124:0]\round_state[7]_6 ;
+  wire [124:0]\round_state[8]_7 ;
+  wire [123:3]\round_state[9]_8 ;
+  wire s00_axi_aclk;
+  wire s00_axi_aresetn;
+  wire [31:0]s00_axi_wdata;
+  wire [31:0]\s00_axi_wdata[31] ;
+  wire [30:0]\s00_axi_wdata[31]_0 ;
+  wire [31:0]\s00_axi_wdata[31]_1 ;
+  wire [3:0]s00_axi_wstrb;
+  wire [127:29]sbox_state;
+  wire [51:51]sbox_state_1;
+  wire [127:30]sbox_state_12;
+  wire [127:29]sbox_state_15;
+  wire [127:29]sbox_state_18;
+  wire [127:1]sbox_state_2;
+  wire [127:1]sbox_state_21;
+  wire [127:1]sbox_state_4;
+  wire [127:29]sbox_state_7;
+  wire [127:30]sbox_state_9;
+  wire \slv_reg12_reg[23] ;
+  wire \slv_reg12_reg[31] ;
+  wire \slv_reg13_reg[31] ;
+  wire \slv_reg14_reg[31] ;
+  wire \slv_reg15_reg[31] ;
+
+  design_ascon_ascon_core_0_1_ascon_finalization final_inst
+       (.D(D),
+        .s00_axi_aclk(s00_axi_aclk),
+        .s00_axi_aresetn(s00_axi_aresetn),
+        .s00_axi_wdata(s00_axi_wdata),
+        .\s00_axi_wdata[31] (\s00_axi_wdata[31] ),
+        .\s00_axi_wdata[31]_0 (\s00_axi_wdata[31]_0 ),
+        .\s00_axi_wdata[31]_1 (\s00_axi_wdata[31]_1 ),
+        .s00_axi_wstrb(s00_axi_wstrb),
+        .\slv_reg12_reg[23] (\slv_reg12_reg[23] ),
+        .\slv_reg12_reg[31] (\slv_reg12_reg[31] ),
+        .\slv_reg13_reg[31] (\slv_reg13_reg[31] ),
+        .\slv_reg14_reg[31] (\slv_reg14_reg[31] ),
+        .\slv_reg15_reg[31] (\slv_reg15_reg[31] ),
+        .\temp_state_reg[127]_0 ({\round_state[11]_10 [127:65],p_0_in[63],\round_state[11]_10 [62:56],p_0_in[55],\round_state[11]_10 [54:48],p_0_in[47],\round_state[11]_10 [46:40],p_0_in[39],\round_state[11]_10 [38:32],p_0_in[31],\round_state[11]_10 [30:24],p_0_in[23],\round_state[11]_10 [22:16],p_0_in[15],\round_state[11]_10 [14:8],p_0_in[7],\round_state[11]_10 [6:0]}));
+  design_ascon_ascon_core_0_1_ascon_round \genblk1[10].round_inst 
+       (.CO(\genblk1[10].round_inst_n_60 ),
+        .D({sbox_state[127:65],sbox_state[62:61],sbox_state[32],sbox_state[30:29],linear_state}),
+        .Q({\round_state[10]_9 [124:97],\round_state[10]_9 [92:65],\round_state[10]_9 [63:0]}),
+        .S({\genblk1[9].round_inst_n_264 ,\genblk1[9].round_inst_n_265 }),
+        .add_const_state(add_const_state),
+        .add_const_state_0(add_const_state_0),
+        .s00_axi_aclk(s00_axi_aclk),
+        .s00_axi_aresetn(s00_axi_aresetn),
+        .sbox_state({sbox_state[63],sbox_state[31]}),
+        .state_out({\round_state[9]_8 [123:100],\round_state[9]_8 [91:68],\round_state[9]_8 [63:3]}),
+        .\state_out_reg[127]_0 ({\genblk1[9].round_inst_n_252 ,\genblk1[9].round_inst_n_253 ,\genblk1[9].round_inst_n_254 }),
+        .\state_out_reg[127]_1 ({sbox_state_21[127:65],sbox_state_21[63:60],sbox_state_21[35:28],\genblk1[9].round_inst_n_139 ,sbox_state_21[2:1],linear_state_20}),
+        .\state_out_reg[12]_0 ({\genblk1[10].round_inst_n_279 ,\genblk1[10].round_inst_n_280 ,\genblk1[10].round_inst_n_281 }),
+        .\state_out_reg[14]_0 ({\genblk1[10].round_inst_n_277 ,\genblk1[10].round_inst_n_278 }),
+        .\state_out_reg[20]_0 ({\genblk1[10].round_inst_n_275 ,\genblk1[10].round_inst_n_276 }),
+        .\state_out_reg[22]_0 ({\genblk1[10].round_inst_n_273 ,\genblk1[10].round_inst_n_274 }),
+        .\state_out_reg[25]_0 (\genblk1[10].round_inst_n_272 ),
+        .\state_out_reg[32]_0 ({\genblk1[10].round_inst_n_268 ,\genblk1[10].round_inst_n_269 ,\genblk1[10].round_inst_n_270 ,\genblk1[10].round_inst_n_271 }),
+        .\state_out_reg[33]_0 (\genblk1[10].round_inst_n_267 ),
+        .\state_out_reg[35]_0 (\genblk1[9].round_inst_n_279 ),
+        .\state_out_reg[39]_0 ({\genblk1[9].round_inst_n_277 ,\genblk1[9].round_inst_n_278 }),
+        .\state_out_reg[40]_0 ({\genblk1[10].round_inst_n_264 ,\genblk1[10].round_inst_n_265 ,\genblk1[10].round_inst_n_266 }),
+        .\state_out_reg[43]_0 (\genblk1[9].round_inst_n_263 ),
+        .\state_out_reg[43]_1 (\genblk1[9].round_inst_n_276 ),
+        .\state_out_reg[44]_0 ({\genblk1[10].round_inst_n_261 ,\genblk1[10].round_inst_n_262 ,\genblk1[10].round_inst_n_263 }),
+        .\state_out_reg[47]_0 ({\genblk1[9].round_inst_n_274 ,\genblk1[9].round_inst_n_275 }),
+        .\state_out_reg[48]_0 ({\genblk1[10].round_inst_n_258 ,\genblk1[10].round_inst_n_259 ,\genblk1[10].round_inst_n_260 }),
+        .\state_out_reg[4]_0 ({\genblk1[10].round_inst_n_282 ,\genblk1[10].round_inst_n_283 }),
+        .\state_out_reg[51]_0 ({\genblk1[9].round_inst_n_260 ,\genblk1[9].round_inst_n_261 ,\genblk1[9].round_inst_n_262 }),
+        .\state_out_reg[51]_1 ({\genblk1[9].round_inst_n_271 ,\genblk1[9].round_inst_n_272 ,\genblk1[9].round_inst_n_273 }),
+        .\state_out_reg[52]_0 ({\genblk1[10].round_inst_n_256 ,\genblk1[10].round_inst_n_257 }),
+        .\state_out_reg[55]_0 ({\genblk1[9].round_inst_n_257 ,\genblk1[9].round_inst_n_258 ,\genblk1[9].round_inst_n_259 }),
+        .\state_out_reg[55]_1 (\genblk1[9].round_inst_n_270 ),
+        .\state_out_reg[56]_0 ({\genblk1[10].round_inst_n_254 ,\genblk1[10].round_inst_n_255 }),
+        .\state_out_reg[59]_0 ({\genblk1[9].round_inst_n_255 ,\genblk1[9].round_inst_n_256 }),
+        .\state_out_reg[59]_1 ({\genblk1[9].round_inst_n_266 ,\genblk1[9].round_inst_n_267 ,\genblk1[9].round_inst_n_268 ,\genblk1[9].round_inst_n_269 }),
+        .\state_out_reg[60]_0 ({\genblk1[10].round_inst_n_251 ,\genblk1[10].round_inst_n_252 ,\genblk1[10].round_inst_n_253 }),
+        .\state_out_reg[61]_0 (\genblk1[10].round_inst_n_250 ),
+        .\state_out_reg[96]_0 (\genblk1[11].round_inst_n_63 ));
+  design_ascon_ascon_core_0_1_ascon_round_0 \genblk1[11].round_inst 
+       (.D(linear_state),
+        .Q({\round_state[10]_9 [124:97],\round_state[10]_9 [92:65],\round_state[10]_9 [63:0]}),
+        .add_const_state(add_const_state_0),
+        .s00_axi_aclk(s00_axi_aclk),
+        .s00_axi_aresetn(s00_axi_aresetn),
+        .\state_out_reg[127]_0 ({\round_state[11]_10 [127:65],p_0_in[63],\round_state[11]_10 [62:56],p_0_in[55],\round_state[11]_10 [54:48],p_0_in[47],\round_state[11]_10 [46:40],p_0_in[39],\round_state[11]_10 [38:32],p_0_in[31],\round_state[11]_10 [30:24],p_0_in[23],\round_state[11]_10 [22:16],p_0_in[15],\round_state[11]_10 [14:8],p_0_in[7],\round_state[11]_10 [6:0]}),
+        .\state_out_reg[127]_1 ({sbox_state[127:65],sbox_state[63:61],sbox_state[32:29]}),
+        .\state_out_reg[32]_0 ({\genblk1[10].round_inst_n_268 ,\genblk1[10].round_inst_n_269 ,\genblk1[10].round_inst_n_270 ,\genblk1[10].round_inst_n_271 }),
+        .\state_out_reg[36]_0 ({\genblk1[10].round_inst_n_282 ,\genblk1[10].round_inst_n_283 }),
+        .\state_out_reg[36]_1 (\genblk1[10].round_inst_n_267 ),
+        .\state_out_reg[40]_0 ({\genblk1[10].round_inst_n_264 ,\genblk1[10].round_inst_n_265 ,\genblk1[10].round_inst_n_266 }),
+        .\state_out_reg[44]_0 ({\genblk1[10].round_inst_n_279 ,\genblk1[10].round_inst_n_280 ,\genblk1[10].round_inst_n_281 }),
+        .\state_out_reg[44]_1 ({\genblk1[10].round_inst_n_261 ,\genblk1[10].round_inst_n_262 ,\genblk1[10].round_inst_n_263 }),
+        .\state_out_reg[48]_0 ({\genblk1[10].round_inst_n_277 ,\genblk1[10].round_inst_n_278 }),
+        .\state_out_reg[48]_1 ({\genblk1[10].round_inst_n_258 ,\genblk1[10].round_inst_n_259 ,\genblk1[10].round_inst_n_260 }),
+        .\state_out_reg[52]_0 ({\genblk1[10].round_inst_n_275 ,\genblk1[10].round_inst_n_276 }),
+        .\state_out_reg[52]_1 ({\genblk1[10].round_inst_n_256 ,\genblk1[10].round_inst_n_257 }),
+        .\state_out_reg[56]_0 ({\genblk1[10].round_inst_n_273 ,\genblk1[10].round_inst_n_274 }),
+        .\state_out_reg[56]_1 ({\genblk1[10].round_inst_n_254 ,\genblk1[10].round_inst_n_255 }),
+        .\state_out_reg[60]_0 (\genblk1[10].round_inst_n_272 ),
+        .\state_out_reg[60]_1 ({\genblk1[10].round_inst_n_251 ,\genblk1[10].round_inst_n_252 ,\genblk1[10].round_inst_n_253 }),
+        .\state_out_reg[63] (\genblk1[11].round_inst_n_63 ),
+        .\state_out_reg[96]_0 (\genblk1[10].round_inst_n_250 ));
+  design_ascon_ascon_core_0_1_ascon_round_1 \genblk1[1].round_inst 
+       (.D({\round_state[1]_0 ,sbox_state_1}),
+        .s00_axi_aclk(s00_axi_aclk),
+        .s00_axi_aresetn(s00_axi_aresetn));
+  design_ascon_ascon_core_0_1_ascon_round_2 \genblk1[2].round_inst 
+       (.CO(\genblk1[3].round_inst_n_20 ),
+        .D({sbox_state_2[127],sbox_state_2[124],\round_state[2]_1 [57],sbox_state_2[120],sbox_state_2[117:113],\genblk1[2].round_inst_n_9 ,sbox_state_2[108:107],sbox_state_2[104:100],sbox_state_2[88],\round_state[2]_1 [51],sbox_state_2[84:80],sbox_state_2[78],\genblk1[2].round_inst_n_25 ,sbox_state_2[72],\genblk1[2].round_inst_n_27 ,sbox_state_2[70],\genblk1[2].round_inst_n_29 ,sbox_state_2[65],\round_state[2]_1 [123],sbox_state_2[53:52],\genblk1[2].round_inst_n_34 ,sbox_state_2[43],sbox_state_2[40:39],sbox_state_2[24],\genblk1[2].round_inst_n_39 ,sbox_state_2[20:17],\genblk1[2].round_inst_n_44 ,\genblk1[2].round_inst_n_45 ,\genblk1[2].round_inst_n_46 ,sbox_state_2[11:10],\genblk1[2].round_inst_n_49 ,sbox_state_2[8:4],sbox_state_2[1]}),
+        .S(\genblk1[2].round_inst_n_56 ),
+        .add_const_state({add_const_state_5[20:17],add_const_state_5[11],add_const_state_5[8:4]}),
+        .s00_axi_aclk(s00_axi_aclk),
+        .s00_axi_aresetn(s00_axi_aresetn),
+        .\state_out_reg[108] (\genblk1[3].round_inst_n_10 ),
+        .\state_out_reg[10] ({sbox_state_2[106:105],sbox_state_2[51:48],sbox_state_2[46],sbox_state_2[38]}),
+        .\state_out_reg[117] (\genblk1[3].round_inst_n_19 ),
+        .\state_out_reg[123]_0 (\genblk1[2].round_inst_n_57 ),
+        .\state_out_reg[51]_0 (\genblk1[2].round_inst_n_64 ),
+        .\state_out_reg[57]_0 ({\genblk1[2].round_inst_n_58 ,\genblk1[2].round_inst_n_59 ,\genblk1[2].round_inst_n_60 }),
+        .\state_out_reg[57]_1 ({\genblk1[2].round_inst_n_61 ,\genblk1[2].round_inst_n_62 ,\genblk1[2].round_inst_n_63 }),
+        .\state_out_reg[57]_2 ({\round_state[1]_0 ,sbox_state_1}),
+        .\state_out_reg[84] (\genblk1[3].round_inst_n_21 ));
+  design_ascon_ascon_core_0_1_ascon_round_3 \genblk1[3].round_inst 
+       (.CO(\genblk1[3].round_inst_n_20 ),
+        .D({sbox_state_2[127],sbox_state_2[124],\round_state[2]_1 [57],sbox_state_2[120],sbox_state_2[117:113],\genblk1[2].round_inst_n_9 ,sbox_state_2[108:107],sbox_state_2[104:100],sbox_state_2[88],\round_state[2]_1 [51],sbox_state_2[84:80],sbox_state_2[78],\genblk1[2].round_inst_n_25 ,sbox_state_2[72],\genblk1[2].round_inst_n_27 ,sbox_state_2[70],\genblk1[2].round_inst_n_29 ,sbox_state_2[65],\round_state[2]_1 [123],sbox_state_2[53:52],\genblk1[2].round_inst_n_34 ,sbox_state_2[43],sbox_state_2[40:39],sbox_state_2[24],\genblk1[2].round_inst_n_39 ,sbox_state_2[20:17],\genblk1[2].round_inst_n_44 ,\genblk1[2].round_inst_n_45 ,\genblk1[2].round_inst_n_46 ,sbox_state_2[11:10],\genblk1[2].round_inst_n_49 ,sbox_state_2[8:4],sbox_state_2[1]}),
+        .Q({\round_state[3]_2 [121],\round_state[3]_2 [63],\round_state[3]_2 [22]}),
+        .S(\genblk1[2].round_inst_n_56 ),
+        .add_const_state({add_const_state_5[20:17],add_const_state_5[11],add_const_state_5[8:4]}),
+        .s00_axi_aclk(s00_axi_aclk),
+        .s00_axi_aresetn(s00_axi_aresetn),
+        .\state_out_reg[106]_0 (\genblk1[2].round_inst_n_57 ),
+        .\state_out_reg[116]_0 ({\genblk1[2].round_inst_n_58 ,\genblk1[2].round_inst_n_59 ,\genblk1[2].round_inst_n_60 }),
+        .\state_out_reg[121]_0 ({\genblk1[3].round_inst_n_145 ,\genblk1[3].round_inst_n_146 ,\genblk1[3].round_inst_n_147 }),
+        .\state_out_reg[123] (\genblk1[3].round_inst_n_10 ),
+        .\state_out_reg[123]_0 ({sbox_state_2[106:105],sbox_state_2[51:48],sbox_state_2[46],sbox_state_2[38]}),
+        .\state_out_reg[127]_0 ({sbox_state_4[127:122],\genblk1[3].round_inst_n_28 ,sbox_state_4[120:100],\genblk1[3].round_inst_n_50 ,\genblk1[3].round_inst_n_51 ,sbox_state_4[97:96],\genblk1[3].round_inst_n_54 ,sbox_state_4[94:88],\round_state[3]_2 [87],sbox_state_4[86:80],sbox_state_4[78:65],sbox_state_4[63],\genblk1[3].round_inst_n_85 ,sbox_state_4[55:26],\genblk1[3].round_inst_n_116 ,sbox_state_4[24:4],\genblk1[3].round_inst_n_138 ,\genblk1[3].round_inst_n_139 ,sbox_state_4[1],linear_state_3}),
+        .\state_out_reg[49]_0 ({\genblk1[2].round_inst_n_61 ,\genblk1[2].round_inst_n_62 ,\genblk1[2].round_inst_n_63 }),
+        .\state_out_reg[51]_0 (\genblk1[3].round_inst_n_21 ),
+        .\state_out_reg[51]_1 (\genblk1[2].round_inst_n_64 ),
+        .\state_out_reg[57] (\genblk1[3].round_inst_n_19 ),
+        .\state_out_reg[94] (sbox_state_4[62:57]));
+  design_ascon_ascon_core_0_1_ascon_round_4 \genblk1[4].round_inst 
+       (.CO(\genblk1[5].round_inst_n_63 ),
+        .D(sbox_state_4[62:57]),
+        .Q({\round_state[4]_3 [124:97],\round_state[4]_3 [92:80],\round_state[4]_3 [78:65],\round_state[4]_3 [63:0]}),
+        .S({\genblk1[4].round_inst_n_196 ,\genblk1[4].round_inst_n_197 }),
+        .add_const_state({add_const_state_10[63:48],add_const_state_10[46:1]}),
+        .\round_state[3]_2 ({\round_state[3]_2 [121],\round_state[3]_2 [87],\round_state[3]_2 [63],\round_state[3]_2 [22]}),
+        .s00_axi_aclk(s00_axi_aclk),
+        .s00_axi_aresetn(s00_axi_aresetn),
+        .\state_out_reg[127]_0 ({sbox_state_7[127:65],sbox_state_7[63:61],sbox_state_7[32:29],linear_state_6}),
+        .\state_out_reg[127]_1 ({sbox_state_4[127:122],\genblk1[3].round_inst_n_28 ,sbox_state_4[120:100],\genblk1[3].round_inst_n_50 ,\genblk1[3].round_inst_n_51 ,sbox_state_4[97:96],\genblk1[3].round_inst_n_54 ,sbox_state_4[94:88],sbox_state_4[86:80],sbox_state_4[78:65],sbox_state_4[63],\genblk1[3].round_inst_n_85 ,sbox_state_4[55:26],\genblk1[3].round_inst_n_116 ,sbox_state_4[24:4],\genblk1[3].round_inst_n_138 ,\genblk1[3].round_inst_n_139 ,sbox_state_4[1],linear_state_3}),
+        .\state_out_reg[12]_0 ({\genblk1[4].round_inst_n_227 ,\genblk1[4].round_inst_n_228 }),
+        .\state_out_reg[16]_0 ({\genblk1[4].round_inst_n_223 ,\genblk1[4].round_inst_n_224 ,\genblk1[4].round_inst_n_225 ,\genblk1[4].round_inst_n_226 }),
+        .\state_out_reg[20]_0 ({\genblk1[4].round_inst_n_221 ,\genblk1[4].round_inst_n_222 }),
+        .\state_out_reg[23]_0 (\genblk1[4].round_inst_n_220 ),
+        .\state_out_reg[28]_0 ({\genblk1[4].round_inst_n_217 ,\genblk1[4].round_inst_n_218 ,\genblk1[4].round_inst_n_219 }),
+        .\state_out_reg[2]_0 (\genblk1[4].round_inst_n_232 ),
+        .\state_out_reg[32]_0 ({\genblk1[4].round_inst_n_214 ,\genblk1[4].round_inst_n_215 ,\genblk1[4].round_inst_n_216 }),
+        .\state_out_reg[36]_0 ({\genblk1[4].round_inst_n_211 ,\genblk1[4].round_inst_n_212 ,\genblk1[4].round_inst_n_213 }),
+        .\state_out_reg[39]_0 (\genblk1[4].round_inst_n_210 ),
+        .\state_out_reg[43]_0 ({\genblk1[4].round_inst_n_208 ,\genblk1[4].round_inst_n_209 }),
+        .\state_out_reg[48]_0 ({\genblk1[4].round_inst_n_206 ,\genblk1[4].round_inst_n_207 }),
+        .\state_out_reg[52]_0 ({\genblk1[4].round_inst_n_203 ,\genblk1[4].round_inst_n_204 ,\genblk1[4].round_inst_n_205 }),
+        .\state_out_reg[56]_0 ({\genblk1[4].round_inst_n_201 ,\genblk1[4].round_inst_n_202 }),
+        .\state_out_reg[60]_0 ({\genblk1[4].round_inst_n_198 ,\genblk1[4].round_inst_n_199 ,\genblk1[4].round_inst_n_200 }),
+        .\state_out_reg[60]_1 ({\genblk1[3].round_inst_n_145 ,\genblk1[3].round_inst_n_146 ,\genblk1[3].round_inst_n_147 }),
+        .\state_out_reg[79] (sbox_state_7[47]),
+        .\state_out_reg[8]_0 ({\genblk1[4].round_inst_n_229 ,\genblk1[4].round_inst_n_230 ,\genblk1[4].round_inst_n_231 }));
+  design_ascon_ascon_core_0_1_ascon_round_5 \genblk1[5].round_inst 
+       (.CO(\genblk1[5].round_inst_n_63 ),
+        .D(sbox_state_7[47]),
+        .Q({\round_state[4]_3 [124:97],\round_state[4]_3 [92:80],\round_state[4]_3 [78:65],\round_state[4]_3 [63:0]}),
+        .S({\genblk1[4].round_inst_n_196 ,\genblk1[4].round_inst_n_197 }),
+        .add_const_state({add_const_state_10[63:48],add_const_state_10[46:1]}),
+        .add_const_state_0(add_const_state_13),
+        .s00_axi_aclk(s00_axi_aclk),
+        .s00_axi_aresetn(s00_axi_aresetn),
+        .\state_out_reg[125]_0 ({\round_state[5]_4 [125:98],\round_state[5]_4 [93:66],\round_state[5]_4 [63:1]}),
+        .\state_out_reg[127]_0 ({sbox_state_9[127:65],sbox_state_9[63:62],sbox_state_9[33:30],\genblk1[5].round_inst_n_133 ,linear_state_8}),
+        .\state_out_reg[127]_1 ({sbox_state_7[127:65],sbox_state_7[63:61],sbox_state_7[32:29],linear_state_6}),
+        .\state_out_reg[13]_0 (\genblk1[5].round_inst_n_265 ),
+        .\state_out_reg[15]_0 ({\genblk1[5].round_inst_n_263 ,\genblk1[5].round_inst_n_264 }),
+        .\state_out_reg[21]_0 ({\genblk1[5].round_inst_n_261 ,\genblk1[5].round_inst_n_262 }),
+        .\state_out_reg[24]_0 ({\genblk1[5].round_inst_n_259 ,\genblk1[5].round_inst_n_260 }),
+        .\state_out_reg[26]_0 (\genblk1[5].round_inst_n_258 ),
+        .\state_out_reg[2]_0 (\genblk1[5].round_inst_n_270 ),
+        .\state_out_reg[32]_0 ({\genblk1[4].round_inst_n_214 ,\genblk1[4].round_inst_n_215 ,\genblk1[4].round_inst_n_216 }),
+        .\state_out_reg[33]_0 ({\genblk1[5].round_inst_n_254 ,\genblk1[5].round_inst_n_255 ,\genblk1[5].round_inst_n_256 ,\genblk1[5].round_inst_n_257 }),
+        .\state_out_reg[36]_0 (\genblk1[4].round_inst_n_232 ),
+        .\state_out_reg[36]_1 ({\genblk1[4].round_inst_n_211 ,\genblk1[4].round_inst_n_212 ,\genblk1[4].round_inst_n_213 }),
+        .\state_out_reg[40]_0 ({\genblk1[4].round_inst_n_229 ,\genblk1[4].round_inst_n_230 ,\genblk1[4].round_inst_n_231 }),
+        .\state_out_reg[40]_1 (\genblk1[4].round_inst_n_210 ),
+        .\state_out_reg[41]_0 ({\genblk1[5].round_inst_n_284 ,\genblk1[5].round_inst_n_285 ,\genblk1[5].round_inst_n_286 ,\genblk1[5].round_inst_n_287 }),
+        .\state_out_reg[44]_0 ({\genblk1[4].round_inst_n_227 ,\genblk1[4].round_inst_n_228 }),
+        .\state_out_reg[45]_0 ({\genblk1[5].round_inst_n_282 ,\genblk1[5].round_inst_n_283 }),
+        .\state_out_reg[47]_0 ({\genblk1[5].round_inst_n_280 ,\genblk1[5].round_inst_n_281 }),
+        .\state_out_reg[47]_1 ({\genblk1[4].round_inst_n_208 ,\genblk1[4].round_inst_n_209 }),
+        .\state_out_reg[47]_2 ({\genblk1[4].round_inst_n_206 ,\genblk1[4].round_inst_n_207 }),
+        .\state_out_reg[48]_0 ({\genblk1[4].round_inst_n_223 ,\genblk1[4].round_inst_n_224 ,\genblk1[4].round_inst_n_225 ,\genblk1[4].round_inst_n_226 }),
+        .\state_out_reg[52]_0 ({\genblk1[5].round_inst_n_278 ,\genblk1[5].round_inst_n_279 }),
+        .\state_out_reg[52]_1 ({\genblk1[4].round_inst_n_221 ,\genblk1[4].round_inst_n_222 }),
+        .\state_out_reg[52]_2 ({\genblk1[4].round_inst_n_203 ,\genblk1[4].round_inst_n_204 ,\genblk1[4].round_inst_n_205 }),
+        .\state_out_reg[56]_0 (\genblk1[4].round_inst_n_220 ),
+        .\state_out_reg[56]_1 ({\genblk1[4].round_inst_n_201 ,\genblk1[4].round_inst_n_202 }),
+        .\state_out_reg[57]_0 ({\genblk1[5].round_inst_n_274 ,\genblk1[5].round_inst_n_275 ,\genblk1[5].round_inst_n_276 ,\genblk1[5].round_inst_n_277 }),
+        .\state_out_reg[60]_0 ({\genblk1[5].round_inst_n_272 ,\genblk1[5].round_inst_n_273 }),
+        .\state_out_reg[60]_1 ({\genblk1[4].round_inst_n_217 ,\genblk1[4].round_inst_n_218 ,\genblk1[4].round_inst_n_219 }),
+        .\state_out_reg[60]_2 ({\genblk1[4].round_inst_n_198 ,\genblk1[4].round_inst_n_199 ,\genblk1[4].round_inst_n_200 }),
+        .\state_out_reg[63]_0 (\genblk1[5].round_inst_n_271 ),
+        .\state_out_reg[96]_0 (\genblk1[6].round_inst_n_62 ),
+        .\state_out_reg[9]_0 ({\genblk1[5].round_inst_n_266 ,\genblk1[5].round_inst_n_267 ,\genblk1[5].round_inst_n_268 ,\genblk1[5].round_inst_n_269 }));
+  design_ascon_ascon_core_0_1_ascon_round_6 \genblk1[6].round_inst 
+       (.CO(\genblk1[7].round_inst_n_62 ),
+        .D({sbox_state_12[127:65],sbox_state_12[63:62],sbox_state_12[33:30],\genblk1[6].round_inst_n_132 ,linear_state_11}),
+        .Q({\round_state[6]_5 [125:98],\round_state[6]_5 [93:66],\round_state[6]_5 [63:1]}),
+        .S(\genblk1[6].round_inst_n_253 ),
+        .add_const_state(add_const_state_13),
+        .add_const_state_0(add_const_state_16),
+        .s00_axi_aclk(s00_axi_aclk),
+        .s00_axi_aresetn(s00_axi_aresetn),
+        .\state_out_reg[127]_0 ({sbox_state_9[127:65],sbox_state_9[63:62],sbox_state_9[33:30],\genblk1[5].round_inst_n_133 ,linear_state_8}),
+        .\state_out_reg[13]_0 ({\genblk1[6].round_inst_n_287 ,\genblk1[6].round_inst_n_288 }),
+        .\state_out_reg[17]_0 ({\genblk1[6].round_inst_n_285 ,\genblk1[6].round_inst_n_286 }),
+        .\state_out_reg[20]_0 ({\genblk1[6].round_inst_n_282 ,\genblk1[6].round_inst_n_283 ,\genblk1[6].round_inst_n_284 }),
+        .\state_out_reg[25]_0 ({\genblk1[6].round_inst_n_279 ,\genblk1[6].round_inst_n_280 ,\genblk1[6].round_inst_n_281 }),
+        .\state_out_reg[29]_0 ({\genblk1[6].round_inst_n_277 ,\genblk1[6].round_inst_n_278 }),
+        .\state_out_reg[29]_1 ({\round_state[5]_4 [125:98],\round_state[5]_4 [93:66],\round_state[5]_4 [63:1]}),
+        .\state_out_reg[33]_0 ({\genblk1[6].round_inst_n_275 ,\genblk1[6].round_inst_n_276 }),
+        .\state_out_reg[33]_1 ({\genblk1[5].round_inst_n_254 ,\genblk1[5].round_inst_n_255 ,\genblk1[5].round_inst_n_256 ,\genblk1[5].round_inst_n_257 }),
+        .\state_out_reg[37]_0 ({\genblk1[6].round_inst_n_271 ,\genblk1[6].round_inst_n_272 ,\genblk1[6].round_inst_n_273 ,\genblk1[6].round_inst_n_274 }),
+        .\state_out_reg[37]_1 (\genblk1[5].round_inst_n_270 ),
+        .\state_out_reg[41]_0 ({\genblk1[6].round_inst_n_268 ,\genblk1[6].round_inst_n_269 ,\genblk1[6].round_inst_n_270 }),
+        .\state_out_reg[41]_1 ({\genblk1[5].round_inst_n_266 ,\genblk1[5].round_inst_n_267 ,\genblk1[5].round_inst_n_268 ,\genblk1[5].round_inst_n_269 }),
+        .\state_out_reg[41]_2 ({\genblk1[5].round_inst_n_284 ,\genblk1[5].round_inst_n_285 ,\genblk1[5].round_inst_n_286 ,\genblk1[5].round_inst_n_287 }),
+        .\state_out_reg[43]_0 ({\genblk1[6].round_inst_n_266 ,\genblk1[6].round_inst_n_267 }),
+        .\state_out_reg[45]_0 (\genblk1[5].round_inst_n_265 ),
+        .\state_out_reg[45]_1 ({\genblk1[5].round_inst_n_282 ,\genblk1[5].round_inst_n_283 }),
+        .\state_out_reg[49]_0 ({\genblk1[6].round_inst_n_264 ,\genblk1[6].round_inst_n_265 }),
+        .\state_out_reg[49]_1 ({\genblk1[5].round_inst_n_263 ,\genblk1[5].round_inst_n_264 }),
+        .\state_out_reg[49]_2 ({\genblk1[5].round_inst_n_280 ,\genblk1[5].round_inst_n_281 }),
+        .\state_out_reg[53]_0 ({\genblk1[6].round_inst_n_261 ,\genblk1[6].round_inst_n_262 ,\genblk1[6].round_inst_n_263 }),
+        .\state_out_reg[53]_1 ({\genblk1[5].round_inst_n_261 ,\genblk1[5].round_inst_n_262 }),
+        .\state_out_reg[53]_2 ({\genblk1[5].round_inst_n_278 ,\genblk1[5].round_inst_n_279 }),
+        .\state_out_reg[57]_0 ({\genblk1[6].round_inst_n_258 ,\genblk1[6].round_inst_n_259 ,\genblk1[6].round_inst_n_260 }),
+        .\state_out_reg[57]_1 ({\genblk1[5].round_inst_n_259 ,\genblk1[5].round_inst_n_260 }),
+        .\state_out_reg[57]_2 ({\genblk1[5].round_inst_n_274 ,\genblk1[5].round_inst_n_275 ,\genblk1[5].round_inst_n_276 ,\genblk1[5].round_inst_n_277 }),
+        .\state_out_reg[5]_0 ({\genblk1[6].round_inst_n_292 ,\genblk1[6].round_inst_n_293 ,\genblk1[6].round_inst_n_294 ,\genblk1[6].round_inst_n_295 }),
+        .\state_out_reg[61]_0 ({\genblk1[6].round_inst_n_254 ,\genblk1[6].round_inst_n_255 ,\genblk1[6].round_inst_n_256 ,\genblk1[6].round_inst_n_257 }),
+        .\state_out_reg[61]_1 (\genblk1[5].round_inst_n_258 ),
+        .\state_out_reg[61]_2 ({\genblk1[5].round_inst_n_272 ,\genblk1[5].round_inst_n_273 }),
+        .\state_out_reg[63]_0 (\genblk1[6].round_inst_n_62 ),
+        .\state_out_reg[8]_0 ({\genblk1[6].round_inst_n_289 ,\genblk1[6].round_inst_n_290 ,\genblk1[6].round_inst_n_291 }),
+        .\state_out_reg[96]_0 (\genblk1[5].round_inst_n_271 ));
+  design_ascon_ascon_core_0_1_ascon_round_7 \genblk1[7].round_inst 
+       (.CO(\genblk1[7].round_inst_n_62 ),
+        .D({sbox_state_15[127:65],sbox_state_15[63:61],sbox_state_15[32:29],linear_state_14}),
+        .Q({\round_state[6]_5 [125:98],\round_state[6]_5 [93:66],\round_state[6]_5 [63:1]}),
+        .S(\genblk1[6].round_inst_n_253 ),
+        .add_const_state(add_const_state_16),
+        .add_const_state_0(add_const_state_19),
+        .s00_axi_aclk(s00_axi_aclk),
+        .s00_axi_aresetn(s00_axi_aresetn),
+        .\state_out_reg[124]_0 ({\round_state[7]_6 [124:97],\round_state[7]_6 [92:65],\round_state[7]_6 [63:0]}),
+        .\state_out_reg[127]_0 ({sbox_state_12[127:65],sbox_state_12[63:62],sbox_state_12[33:30],\genblk1[6].round_inst_n_132 ,linear_state_11}),
+        .\state_out_reg[16]_0 ({\genblk1[7].round_inst_n_262 ,\genblk1[7].round_inst_n_263 ,\genblk1[7].round_inst_n_264 }),
+        .\state_out_reg[20]_0 (\genblk1[7].round_inst_n_261 ),
+        .\state_out_reg[23]_0 ({\genblk1[7].round_inst_n_258 ,\genblk1[7].round_inst_n_259 ,\genblk1[7].round_inst_n_260 }),
+        .\state_out_reg[28]_0 ({\genblk1[7].round_inst_n_256 ,\genblk1[7].round_inst_n_257 }),
+        .\state_out_reg[31]_0 ({\genblk1[7].round_inst_n_254 ,\genblk1[7].round_inst_n_255 }),
+        .\state_out_reg[33]_0 (\genblk1[7].round_inst_n_288 ),
+        .\state_out_reg[33]_1 ({\genblk1[6].round_inst_n_275 ,\genblk1[6].round_inst_n_276 }),
+        .\state_out_reg[37]_0 ({\genblk1[6].round_inst_n_292 ,\genblk1[6].round_inst_n_293 ,\genblk1[6].round_inst_n_294 ,\genblk1[6].round_inst_n_295 }),
+        .\state_out_reg[37]_1 ({\genblk1[6].round_inst_n_271 ,\genblk1[6].round_inst_n_272 ,\genblk1[6].round_inst_n_273 ,\genblk1[6].round_inst_n_274 }),
+        .\state_out_reg[38]_0 ({\genblk1[7].round_inst_n_286 ,\genblk1[7].round_inst_n_287 }),
+        .\state_out_reg[41]_0 ({\genblk1[6].round_inst_n_289 ,\genblk1[6].round_inst_n_290 ,\genblk1[6].round_inst_n_291 }),
+        .\state_out_reg[41]_1 ({\genblk1[6].round_inst_n_268 ,\genblk1[6].round_inst_n_269 ,\genblk1[6].round_inst_n_270 }),
+        .\state_out_reg[44]_0 ({\genblk1[7].round_inst_n_282 ,\genblk1[7].round_inst_n_283 ,\genblk1[7].round_inst_n_284 ,\genblk1[7].round_inst_n_285 }),
+        .\state_out_reg[45]_0 ({\genblk1[6].round_inst_n_287 ,\genblk1[6].round_inst_n_288 }),
+        .\state_out_reg[45]_1 ({\genblk1[6].round_inst_n_266 ,\genblk1[6].round_inst_n_267 }),
+        .\state_out_reg[49]_0 ({\genblk1[6].round_inst_n_285 ,\genblk1[6].round_inst_n_286 }),
+        .\state_out_reg[49]_1 ({\genblk1[6].round_inst_n_264 ,\genblk1[6].round_inst_n_265 }),
+        .\state_out_reg[4]_0 ({\genblk1[7].round_inst_n_268 ,\genblk1[7].round_inst_n_269 }),
+        .\state_out_reg[52]_0 ({\genblk1[7].round_inst_n_278 ,\genblk1[7].round_inst_n_279 ,\genblk1[7].round_inst_n_280 ,\genblk1[7].round_inst_n_281 }),
+        .\state_out_reg[53]_0 ({\genblk1[6].round_inst_n_282 ,\genblk1[6].round_inst_n_283 ,\genblk1[6].round_inst_n_284 }),
+        .\state_out_reg[53]_1 ({\genblk1[6].round_inst_n_261 ,\genblk1[6].round_inst_n_262 ,\genblk1[6].round_inst_n_263 }),
+        .\state_out_reg[56]_0 ({\genblk1[7].round_inst_n_274 ,\genblk1[7].round_inst_n_275 ,\genblk1[7].round_inst_n_276 ,\genblk1[7].round_inst_n_277 }),
+        .\state_out_reg[57]_0 ({\genblk1[6].round_inst_n_279 ,\genblk1[6].round_inst_n_280 ,\genblk1[6].round_inst_n_281 }),
+        .\state_out_reg[57]_1 ({\genblk1[6].round_inst_n_258 ,\genblk1[6].round_inst_n_259 ,\genblk1[6].round_inst_n_260 }),
+        .\state_out_reg[59]_0 ({\genblk1[7].round_inst_n_272 ,\genblk1[7].round_inst_n_273 }),
+        .\state_out_reg[61]_0 ({\genblk1[6].round_inst_n_277 ,\genblk1[6].round_inst_n_278 }),
+        .\state_out_reg[61]_1 ({\genblk1[6].round_inst_n_254 ,\genblk1[6].round_inst_n_255 ,\genblk1[6].round_inst_n_256 ,\genblk1[6].round_inst_n_257 }),
+        .\state_out_reg[62]_0 ({\genblk1[7].round_inst_n_270 ,\genblk1[7].round_inst_n_271 }),
+        .\state_out_reg[8]_0 ({\genblk1[7].round_inst_n_266 ,\genblk1[7].round_inst_n_267 }),
+        .\state_out_reg[96]_0 (\genblk1[8].round_inst_n_63 ),
+        .\state_out_reg[9]_0 (\genblk1[7].round_inst_n_265 ));
+  design_ascon_ascon_core_0_1_ascon_round_8 \genblk1[8].round_inst 
+       (.CO(\genblk1[9].round_inst_n_63 ),
+        .D({sbox_state_18[127:65],sbox_state_18[63:61],sbox_state_18[32:29],linear_state_17}),
+        .Q({\round_state[8]_7 [124:97],\round_state[8]_7 [92:65],\round_state[8]_7 [63:0]}),
+        .S({\genblk1[8].round_inst_n_255 ,\genblk1[8].round_inst_n_256 }),
+        .add_const_state(add_const_state_19),
+        .add_const_state_0(add_const_state_22),
+        .s00_axi_aclk(s00_axi_aclk),
+        .s00_axi_aresetn(s00_axi_aresetn),
+        .\state_out_reg[127]_0 ({sbox_state_15[127:65],sbox_state_15[63:61],sbox_state_15[32:29],linear_state_14}),
+        .\state_out_reg[12]_0 ({\genblk1[8].round_inst_n_284 ,\genblk1[8].round_inst_n_285 }),
+        .\state_out_reg[15]_0 ({\genblk1[8].round_inst_n_281 ,\genblk1[8].round_inst_n_282 ,\genblk1[8].round_inst_n_283 }),
+        .\state_out_reg[20]_0 ({\genblk1[8].round_inst_n_278 ,\genblk1[8].round_inst_n_279 ,\genblk1[8].round_inst_n_280 }),
+        .\state_out_reg[24]_0 ({\genblk1[8].round_inst_n_275 ,\genblk1[8].round_inst_n_276 ,\genblk1[8].round_inst_n_277 }),
+        .\state_out_reg[27]_0 ({\genblk1[8].round_inst_n_273 ,\genblk1[8].round_inst_n_274 }),
+        .\state_out_reg[28]_0 ({\round_state[7]_6 [124:97],\round_state[7]_6 [92:65],\round_state[7]_6 [63:0]}),
+        .\state_out_reg[32]_0 ({\genblk1[8].round_inst_n_271 ,\genblk1[8].round_inst_n_272 }),
+        .\state_out_reg[32]_1 ({\genblk1[7].round_inst_n_254 ,\genblk1[7].round_inst_n_255 }),
+        .\state_out_reg[36]_0 ({\genblk1[8].round_inst_n_268 ,\genblk1[8].round_inst_n_269 ,\genblk1[8].round_inst_n_270 }),
+        .\state_out_reg[36]_1 ({\genblk1[7].round_inst_n_268 ,\genblk1[7].round_inst_n_269 }),
+        .\state_out_reg[36]_2 (\genblk1[7].round_inst_n_288 ),
+        .\state_out_reg[39]_0 ({\genblk1[8].round_inst_n_266 ,\genblk1[8].round_inst_n_267 }),
+        .\state_out_reg[40]_0 ({\genblk1[7].round_inst_n_266 ,\genblk1[7].round_inst_n_267 }),
+        .\state_out_reg[40]_1 ({\genblk1[7].round_inst_n_286 ,\genblk1[7].round_inst_n_287 }),
+        .\state_out_reg[44]_0 ({\genblk1[8].round_inst_n_262 ,\genblk1[8].round_inst_n_263 ,\genblk1[8].round_inst_n_264 ,\genblk1[8].round_inst_n_265 }),
+        .\state_out_reg[44]_1 (\genblk1[7].round_inst_n_265 ),
+        .\state_out_reg[44]_2 ({\genblk1[7].round_inst_n_282 ,\genblk1[7].round_inst_n_283 ,\genblk1[7].round_inst_n_284 ,\genblk1[7].round_inst_n_285 }),
+        .\state_out_reg[48]_0 ({\genblk1[7].round_inst_n_262 ,\genblk1[7].round_inst_n_263 ,\genblk1[7].round_inst_n_264 }),
+        .\state_out_reg[4]_0 ({\genblk1[8].round_inst_n_288 ,\genblk1[8].round_inst_n_289 ,\genblk1[8].round_inst_n_290 }),
+        .\state_out_reg[52]_0 ({\genblk1[8].round_inst_n_258 ,\genblk1[8].round_inst_n_259 ,\genblk1[8].round_inst_n_260 ,\genblk1[8].round_inst_n_261 }),
+        .\state_out_reg[52]_1 (\genblk1[7].round_inst_n_261 ),
+        .\state_out_reg[52]_2 ({\genblk1[7].round_inst_n_278 ,\genblk1[7].round_inst_n_279 ,\genblk1[7].round_inst_n_280 ,\genblk1[7].round_inst_n_281 }),
+        .\state_out_reg[56]_0 (\genblk1[8].round_inst_n_257 ),
+        .\state_out_reg[56]_1 ({\genblk1[7].round_inst_n_258 ,\genblk1[7].round_inst_n_259 ,\genblk1[7].round_inst_n_260 }),
+        .\state_out_reg[56]_2 ({\genblk1[7].round_inst_n_274 ,\genblk1[7].round_inst_n_275 ,\genblk1[7].round_inst_n_276 ,\genblk1[7].round_inst_n_277 }),
+        .\state_out_reg[60]_0 ({\genblk1[7].round_inst_n_256 ,\genblk1[7].round_inst_n_257 }),
+        .\state_out_reg[60]_1 ({\genblk1[7].round_inst_n_272 ,\genblk1[7].round_inst_n_273 }),
+        .\state_out_reg[63]_0 (\genblk1[8].round_inst_n_63 ),
+        .\state_out_reg[8]_0 ({\genblk1[8].round_inst_n_286 ,\genblk1[8].round_inst_n_287 }),
+        .\state_out_reg[96]_0 ({\genblk1[7].round_inst_n_270 ,\genblk1[7].round_inst_n_271 }));
+  design_ascon_ascon_core_0_1_ascon_round_9 \genblk1[9].round_inst 
+       (.CO(\genblk1[9].round_inst_n_63 ),
+        .D({sbox_state_18[127:65],sbox_state_18[63:61],sbox_state_18[32:29],linear_state_17}),
+        .Q({\round_state[8]_7 [124:97],\round_state[8]_7 [92:65],\round_state[8]_7 [63:0]}),
+        .S({\genblk1[8].round_inst_n_255 ,\genblk1[8].round_inst_n_256 }),
+        .add_const_state(add_const_state_22),
+        .add_const_state_0(add_const_state),
+        .s00_axi_aclk(s00_axi_aclk),
+        .s00_axi_aresetn(s00_axi_aresetn),
+        .\state_out_reg[11]_0 (\genblk1[9].round_inst_n_263 ),
+        .\state_out_reg[123]_0 ({\round_state[9]_8 [123:100],\round_state[9]_8 [91:68],\round_state[9]_8 [63:3]}),
+        .\state_out_reg[127]_0 ({sbox_state_21[127:65],sbox_state_21[63:60],sbox_state_21[35:28],\genblk1[9].round_inst_n_139 ,sbox_state_21[2:1],linear_state_20}),
+        .\state_out_reg[18]_0 ({\genblk1[9].round_inst_n_260 ,\genblk1[9].round_inst_n_261 ,\genblk1[9].round_inst_n_262 }),
+        .\state_out_reg[23]_0 ({\genblk1[9].round_inst_n_257 ,\genblk1[9].round_inst_n_258 ,\genblk1[9].round_inst_n_259 }),
+        .\state_out_reg[26]_0 ({\genblk1[9].round_inst_n_255 ,\genblk1[9].round_inst_n_256 }),
+        .\state_out_reg[31]_0 ({\genblk1[9].round_inst_n_252 ,\genblk1[9].round_inst_n_253 ,\genblk1[9].round_inst_n_254 }),
+        .\state_out_reg[32]_0 ({\genblk1[8].round_inst_n_271 ,\genblk1[8].round_inst_n_272 }),
+        .\state_out_reg[32]_1 (\genblk1[10].round_inst_n_60 ),
+        .\state_out_reg[34]_0 (\genblk1[9].round_inst_n_279 ),
+        .\state_out_reg[36]_0 ({\genblk1[8].round_inst_n_288 ,\genblk1[8].round_inst_n_289 ,\genblk1[8].round_inst_n_290 }),
+        .\state_out_reg[36]_1 ({\genblk1[8].round_inst_n_268 ,\genblk1[8].round_inst_n_269 ,\genblk1[8].round_inst_n_270 }),
+        .\state_out_reg[39]_0 ({\genblk1[9].round_inst_n_277 ,\genblk1[9].round_inst_n_278 }),
+        .\state_out_reg[40]_0 ({\genblk1[8].round_inst_n_286 ,\genblk1[8].round_inst_n_287 }),
+        .\state_out_reg[40]_1 ({\genblk1[8].round_inst_n_266 ,\genblk1[8].round_inst_n_267 }),
+        .\state_out_reg[41]_0 (\genblk1[9].round_inst_n_276 ),
+        .\state_out_reg[44]_0 ({\genblk1[8].round_inst_n_284 ,\genblk1[8].round_inst_n_285 }),
+        .\state_out_reg[44]_1 ({\genblk1[8].round_inst_n_262 ,\genblk1[8].round_inst_n_263 ,\genblk1[8].round_inst_n_264 ,\genblk1[8].round_inst_n_265 }),
+        .\state_out_reg[45]_0 ({\genblk1[9].round_inst_n_274 ,\genblk1[9].round_inst_n_275 }),
+        .\state_out_reg[48]_0 ({\genblk1[8].round_inst_n_281 ,\genblk1[8].round_inst_n_282 ,\genblk1[8].round_inst_n_283 }),
+        .\state_out_reg[51]_0 ({\genblk1[9].round_inst_n_271 ,\genblk1[9].round_inst_n_272 ,\genblk1[9].round_inst_n_273 }),
+        .\state_out_reg[52]_0 (\genblk1[9].round_inst_n_270 ),
+        .\state_out_reg[52]_1 ({\genblk1[8].round_inst_n_278 ,\genblk1[8].round_inst_n_279 ,\genblk1[8].round_inst_n_280 }),
+        .\state_out_reg[52]_2 ({\genblk1[8].round_inst_n_258 ,\genblk1[8].round_inst_n_259 ,\genblk1[8].round_inst_n_260 ,\genblk1[8].round_inst_n_261 }),
+        .\state_out_reg[56]_0 ({\genblk1[8].round_inst_n_275 ,\genblk1[8].round_inst_n_276 ,\genblk1[8].round_inst_n_277 }),
+        .\state_out_reg[56]_1 (\genblk1[8].round_inst_n_257 ),
+        .\state_out_reg[59]_0 ({\genblk1[9].round_inst_n_266 ,\genblk1[9].round_inst_n_267 ,\genblk1[9].round_inst_n_268 ,\genblk1[9].round_inst_n_269 }),
+        .\state_out_reg[60]_0 ({\genblk1[8].round_inst_n_273 ,\genblk1[8].round_inst_n_274 }),
+        .\state_out_reg[6]_0 ({\genblk1[9].round_inst_n_264 ,\genblk1[9].round_inst_n_265 }));
 endmodule
 
 (* ORIG_REF_NAME = "ascon_add_constant" *) 
@@ -15664,7 +16389,7 @@ module design_ascon_ascon_core_0_1_ascon_core_v1_0_S00_AXI
         .D(\slv_reg9[9]_i_1_n_0 ),
         .Q(\slv_reg9_reg_n_0_[9] ),
         .R(SR));
-  design_ascon_ascon_core_0_1_ascon_top u_ascon_top
+  design_ascon_ascon_core_0_1_ascon_128 u_ascon_top
        (.D({u_ascon_top_n_0,u_ascon_top_n_1,u_ascon_top_n_2,u_ascon_top_n_3,u_ascon_top_n_4,u_ascon_top_n_5,u_ascon_top_n_6,u_ascon_top_n_7,u_ascon_top_n_8,u_ascon_top_n_9,u_ascon_top_n_10,u_ascon_top_n_11,u_ascon_top_n_12,u_ascon_top_n_13,u_ascon_top_n_14,u_ascon_top_n_15,u_ascon_top_n_16,u_ascon_top_n_17,u_ascon_top_n_18,u_ascon_top_n_19,u_ascon_top_n_20,u_ascon_top_n_21,u_ascon_top_n_22,u_ascon_top_n_23,u_ascon_top_n_24,u_ascon_top_n_25,u_ascon_top_n_26,u_ascon_top_n_27,u_ascon_top_n_28,u_ascon_top_n_29,u_ascon_top_n_30,u_ascon_top_n_31}),
         .s00_axi_aclk(s00_axi_aclk),
         .s00_axi_aresetn(s00_axi_aresetn),
@@ -35121,731 +35846,6 @@ module design_ascon_ascon_core_0_1_ascon_sbox_26
         .I1(state_out[29]),
         .I2(add_const_state[29]),
         .O(D[5]));
-endmodule
-
-(* ORIG_REF_NAME = "ascon_top" *) 
-module design_ascon_ascon_core_0_1_ascon_top
-   (D,
-    \s00_axi_wdata[31] ,
-    \s00_axi_wdata[31]_0 ,
-    \s00_axi_wdata[31]_1 ,
-    \slv_reg15_reg[31] ,
-    s00_axi_wstrb,
-    s00_axi_wdata,
-    \slv_reg13_reg[31] ,
-    \slv_reg14_reg[31] ,
-    \slv_reg12_reg[23] ,
-    \slv_reg12_reg[31] ,
-    s00_axi_aclk,
-    s00_axi_aresetn);
-  output [31:0]D;
-  output [31:0]\s00_axi_wdata[31] ;
-  output [30:0]\s00_axi_wdata[31]_0 ;
-  output [31:0]\s00_axi_wdata[31]_1 ;
-  input \slv_reg15_reg[31] ;
-  input [3:0]s00_axi_wstrb;
-  input [31:0]s00_axi_wdata;
-  input \slv_reg13_reg[31] ;
-  input \slv_reg14_reg[31] ;
-  input \slv_reg12_reg[23] ;
-  input \slv_reg12_reg[31] ;
-  input s00_axi_aclk;
-  input s00_axi_aresetn;
-
-  wire [31:0]D;
-  wire [63:4]add_const_state;
-  wire [63:1]add_const_state_0;
-  wire [63:1]add_const_state_10;
-  wire [63:2]add_const_state_13;
-  wire [63:2]add_const_state_16;
-  wire [63:1]add_const_state_19;
-  wire [63:1]add_const_state_22;
-  wire [20:4]add_const_state_5;
-  wire \genblk1[10].round_inst_n_250 ;
-  wire \genblk1[10].round_inst_n_251 ;
-  wire \genblk1[10].round_inst_n_252 ;
-  wire \genblk1[10].round_inst_n_253 ;
-  wire \genblk1[10].round_inst_n_254 ;
-  wire \genblk1[10].round_inst_n_255 ;
-  wire \genblk1[10].round_inst_n_256 ;
-  wire \genblk1[10].round_inst_n_257 ;
-  wire \genblk1[10].round_inst_n_258 ;
-  wire \genblk1[10].round_inst_n_259 ;
-  wire \genblk1[10].round_inst_n_260 ;
-  wire \genblk1[10].round_inst_n_261 ;
-  wire \genblk1[10].round_inst_n_262 ;
-  wire \genblk1[10].round_inst_n_263 ;
-  wire \genblk1[10].round_inst_n_264 ;
-  wire \genblk1[10].round_inst_n_265 ;
-  wire \genblk1[10].round_inst_n_266 ;
-  wire \genblk1[10].round_inst_n_267 ;
-  wire \genblk1[10].round_inst_n_268 ;
-  wire \genblk1[10].round_inst_n_269 ;
-  wire \genblk1[10].round_inst_n_270 ;
-  wire \genblk1[10].round_inst_n_271 ;
-  wire \genblk1[10].round_inst_n_272 ;
-  wire \genblk1[10].round_inst_n_273 ;
-  wire \genblk1[10].round_inst_n_274 ;
-  wire \genblk1[10].round_inst_n_275 ;
-  wire \genblk1[10].round_inst_n_276 ;
-  wire \genblk1[10].round_inst_n_277 ;
-  wire \genblk1[10].round_inst_n_278 ;
-  wire \genblk1[10].round_inst_n_279 ;
-  wire \genblk1[10].round_inst_n_280 ;
-  wire \genblk1[10].round_inst_n_281 ;
-  wire \genblk1[10].round_inst_n_282 ;
-  wire \genblk1[10].round_inst_n_283 ;
-  wire \genblk1[10].round_inst_n_60 ;
-  wire \genblk1[11].round_inst_n_63 ;
-  wire \genblk1[2].round_inst_n_25 ;
-  wire \genblk1[2].round_inst_n_27 ;
-  wire \genblk1[2].round_inst_n_29 ;
-  wire \genblk1[2].round_inst_n_34 ;
-  wire \genblk1[2].round_inst_n_39 ;
-  wire \genblk1[2].round_inst_n_44 ;
-  wire \genblk1[2].round_inst_n_45 ;
-  wire \genblk1[2].round_inst_n_46 ;
-  wire \genblk1[2].round_inst_n_49 ;
-  wire \genblk1[2].round_inst_n_56 ;
-  wire \genblk1[2].round_inst_n_57 ;
-  wire \genblk1[2].round_inst_n_58 ;
-  wire \genblk1[2].round_inst_n_59 ;
-  wire \genblk1[2].round_inst_n_60 ;
-  wire \genblk1[2].round_inst_n_61 ;
-  wire \genblk1[2].round_inst_n_62 ;
-  wire \genblk1[2].round_inst_n_63 ;
-  wire \genblk1[2].round_inst_n_64 ;
-  wire \genblk1[2].round_inst_n_9 ;
-  wire \genblk1[3].round_inst_n_10 ;
-  wire \genblk1[3].round_inst_n_116 ;
-  wire \genblk1[3].round_inst_n_138 ;
-  wire \genblk1[3].round_inst_n_139 ;
-  wire \genblk1[3].round_inst_n_145 ;
-  wire \genblk1[3].round_inst_n_146 ;
-  wire \genblk1[3].round_inst_n_147 ;
-  wire \genblk1[3].round_inst_n_19 ;
-  wire \genblk1[3].round_inst_n_20 ;
-  wire \genblk1[3].round_inst_n_21 ;
-  wire \genblk1[3].round_inst_n_28 ;
-  wire \genblk1[3].round_inst_n_50 ;
-  wire \genblk1[3].round_inst_n_51 ;
-  wire \genblk1[3].round_inst_n_54 ;
-  wire \genblk1[3].round_inst_n_85 ;
-  wire \genblk1[4].round_inst_n_196 ;
-  wire \genblk1[4].round_inst_n_197 ;
-  wire \genblk1[4].round_inst_n_198 ;
-  wire \genblk1[4].round_inst_n_199 ;
-  wire \genblk1[4].round_inst_n_200 ;
-  wire \genblk1[4].round_inst_n_201 ;
-  wire \genblk1[4].round_inst_n_202 ;
-  wire \genblk1[4].round_inst_n_203 ;
-  wire \genblk1[4].round_inst_n_204 ;
-  wire \genblk1[4].round_inst_n_205 ;
-  wire \genblk1[4].round_inst_n_206 ;
-  wire \genblk1[4].round_inst_n_207 ;
-  wire \genblk1[4].round_inst_n_208 ;
-  wire \genblk1[4].round_inst_n_209 ;
-  wire \genblk1[4].round_inst_n_210 ;
-  wire \genblk1[4].round_inst_n_211 ;
-  wire \genblk1[4].round_inst_n_212 ;
-  wire \genblk1[4].round_inst_n_213 ;
-  wire \genblk1[4].round_inst_n_214 ;
-  wire \genblk1[4].round_inst_n_215 ;
-  wire \genblk1[4].round_inst_n_216 ;
-  wire \genblk1[4].round_inst_n_217 ;
-  wire \genblk1[4].round_inst_n_218 ;
-  wire \genblk1[4].round_inst_n_219 ;
-  wire \genblk1[4].round_inst_n_220 ;
-  wire \genblk1[4].round_inst_n_221 ;
-  wire \genblk1[4].round_inst_n_222 ;
-  wire \genblk1[4].round_inst_n_223 ;
-  wire \genblk1[4].round_inst_n_224 ;
-  wire \genblk1[4].round_inst_n_225 ;
-  wire \genblk1[4].round_inst_n_226 ;
-  wire \genblk1[4].round_inst_n_227 ;
-  wire \genblk1[4].round_inst_n_228 ;
-  wire \genblk1[4].round_inst_n_229 ;
-  wire \genblk1[4].round_inst_n_230 ;
-  wire \genblk1[4].round_inst_n_231 ;
-  wire \genblk1[4].round_inst_n_232 ;
-  wire \genblk1[5].round_inst_n_133 ;
-  wire \genblk1[5].round_inst_n_254 ;
-  wire \genblk1[5].round_inst_n_255 ;
-  wire \genblk1[5].round_inst_n_256 ;
-  wire \genblk1[5].round_inst_n_257 ;
-  wire \genblk1[5].round_inst_n_258 ;
-  wire \genblk1[5].round_inst_n_259 ;
-  wire \genblk1[5].round_inst_n_260 ;
-  wire \genblk1[5].round_inst_n_261 ;
-  wire \genblk1[5].round_inst_n_262 ;
-  wire \genblk1[5].round_inst_n_263 ;
-  wire \genblk1[5].round_inst_n_264 ;
-  wire \genblk1[5].round_inst_n_265 ;
-  wire \genblk1[5].round_inst_n_266 ;
-  wire \genblk1[5].round_inst_n_267 ;
-  wire \genblk1[5].round_inst_n_268 ;
-  wire \genblk1[5].round_inst_n_269 ;
-  wire \genblk1[5].round_inst_n_270 ;
-  wire \genblk1[5].round_inst_n_271 ;
-  wire \genblk1[5].round_inst_n_272 ;
-  wire \genblk1[5].round_inst_n_273 ;
-  wire \genblk1[5].round_inst_n_274 ;
-  wire \genblk1[5].round_inst_n_275 ;
-  wire \genblk1[5].round_inst_n_276 ;
-  wire \genblk1[5].round_inst_n_277 ;
-  wire \genblk1[5].round_inst_n_278 ;
-  wire \genblk1[5].round_inst_n_279 ;
-  wire \genblk1[5].round_inst_n_280 ;
-  wire \genblk1[5].round_inst_n_281 ;
-  wire \genblk1[5].round_inst_n_282 ;
-  wire \genblk1[5].round_inst_n_283 ;
-  wire \genblk1[5].round_inst_n_284 ;
-  wire \genblk1[5].round_inst_n_285 ;
-  wire \genblk1[5].round_inst_n_286 ;
-  wire \genblk1[5].round_inst_n_287 ;
-  wire \genblk1[5].round_inst_n_63 ;
-  wire \genblk1[6].round_inst_n_132 ;
-  wire \genblk1[6].round_inst_n_253 ;
-  wire \genblk1[6].round_inst_n_254 ;
-  wire \genblk1[6].round_inst_n_255 ;
-  wire \genblk1[6].round_inst_n_256 ;
-  wire \genblk1[6].round_inst_n_257 ;
-  wire \genblk1[6].round_inst_n_258 ;
-  wire \genblk1[6].round_inst_n_259 ;
-  wire \genblk1[6].round_inst_n_260 ;
-  wire \genblk1[6].round_inst_n_261 ;
-  wire \genblk1[6].round_inst_n_262 ;
-  wire \genblk1[6].round_inst_n_263 ;
-  wire \genblk1[6].round_inst_n_264 ;
-  wire \genblk1[6].round_inst_n_265 ;
-  wire \genblk1[6].round_inst_n_266 ;
-  wire \genblk1[6].round_inst_n_267 ;
-  wire \genblk1[6].round_inst_n_268 ;
-  wire \genblk1[6].round_inst_n_269 ;
-  wire \genblk1[6].round_inst_n_270 ;
-  wire \genblk1[6].round_inst_n_271 ;
-  wire \genblk1[6].round_inst_n_272 ;
-  wire \genblk1[6].round_inst_n_273 ;
-  wire \genblk1[6].round_inst_n_274 ;
-  wire \genblk1[6].round_inst_n_275 ;
-  wire \genblk1[6].round_inst_n_276 ;
-  wire \genblk1[6].round_inst_n_277 ;
-  wire \genblk1[6].round_inst_n_278 ;
-  wire \genblk1[6].round_inst_n_279 ;
-  wire \genblk1[6].round_inst_n_280 ;
-  wire \genblk1[6].round_inst_n_281 ;
-  wire \genblk1[6].round_inst_n_282 ;
-  wire \genblk1[6].round_inst_n_283 ;
-  wire \genblk1[6].round_inst_n_284 ;
-  wire \genblk1[6].round_inst_n_285 ;
-  wire \genblk1[6].round_inst_n_286 ;
-  wire \genblk1[6].round_inst_n_287 ;
-  wire \genblk1[6].round_inst_n_288 ;
-  wire \genblk1[6].round_inst_n_289 ;
-  wire \genblk1[6].round_inst_n_290 ;
-  wire \genblk1[6].round_inst_n_291 ;
-  wire \genblk1[6].round_inst_n_292 ;
-  wire \genblk1[6].round_inst_n_293 ;
-  wire \genblk1[6].round_inst_n_294 ;
-  wire \genblk1[6].round_inst_n_295 ;
-  wire \genblk1[6].round_inst_n_62 ;
-  wire \genblk1[7].round_inst_n_254 ;
-  wire \genblk1[7].round_inst_n_255 ;
-  wire \genblk1[7].round_inst_n_256 ;
-  wire \genblk1[7].round_inst_n_257 ;
-  wire \genblk1[7].round_inst_n_258 ;
-  wire \genblk1[7].round_inst_n_259 ;
-  wire \genblk1[7].round_inst_n_260 ;
-  wire \genblk1[7].round_inst_n_261 ;
-  wire \genblk1[7].round_inst_n_262 ;
-  wire \genblk1[7].round_inst_n_263 ;
-  wire \genblk1[7].round_inst_n_264 ;
-  wire \genblk1[7].round_inst_n_265 ;
-  wire \genblk1[7].round_inst_n_266 ;
-  wire \genblk1[7].round_inst_n_267 ;
-  wire \genblk1[7].round_inst_n_268 ;
-  wire \genblk1[7].round_inst_n_269 ;
-  wire \genblk1[7].round_inst_n_270 ;
-  wire \genblk1[7].round_inst_n_271 ;
-  wire \genblk1[7].round_inst_n_272 ;
-  wire \genblk1[7].round_inst_n_273 ;
-  wire \genblk1[7].round_inst_n_274 ;
-  wire \genblk1[7].round_inst_n_275 ;
-  wire \genblk1[7].round_inst_n_276 ;
-  wire \genblk1[7].round_inst_n_277 ;
-  wire \genblk1[7].round_inst_n_278 ;
-  wire \genblk1[7].round_inst_n_279 ;
-  wire \genblk1[7].round_inst_n_280 ;
-  wire \genblk1[7].round_inst_n_281 ;
-  wire \genblk1[7].round_inst_n_282 ;
-  wire \genblk1[7].round_inst_n_283 ;
-  wire \genblk1[7].round_inst_n_284 ;
-  wire \genblk1[7].round_inst_n_285 ;
-  wire \genblk1[7].round_inst_n_286 ;
-  wire \genblk1[7].round_inst_n_287 ;
-  wire \genblk1[7].round_inst_n_288 ;
-  wire \genblk1[7].round_inst_n_62 ;
-  wire \genblk1[8].round_inst_n_255 ;
-  wire \genblk1[8].round_inst_n_256 ;
-  wire \genblk1[8].round_inst_n_257 ;
-  wire \genblk1[8].round_inst_n_258 ;
-  wire \genblk1[8].round_inst_n_259 ;
-  wire \genblk1[8].round_inst_n_260 ;
-  wire \genblk1[8].round_inst_n_261 ;
-  wire \genblk1[8].round_inst_n_262 ;
-  wire \genblk1[8].round_inst_n_263 ;
-  wire \genblk1[8].round_inst_n_264 ;
-  wire \genblk1[8].round_inst_n_265 ;
-  wire \genblk1[8].round_inst_n_266 ;
-  wire \genblk1[8].round_inst_n_267 ;
-  wire \genblk1[8].round_inst_n_268 ;
-  wire \genblk1[8].round_inst_n_269 ;
-  wire \genblk1[8].round_inst_n_270 ;
-  wire \genblk1[8].round_inst_n_271 ;
-  wire \genblk1[8].round_inst_n_272 ;
-  wire \genblk1[8].round_inst_n_273 ;
-  wire \genblk1[8].round_inst_n_274 ;
-  wire \genblk1[8].round_inst_n_275 ;
-  wire \genblk1[8].round_inst_n_276 ;
-  wire \genblk1[8].round_inst_n_277 ;
-  wire \genblk1[8].round_inst_n_278 ;
-  wire \genblk1[8].round_inst_n_279 ;
-  wire \genblk1[8].round_inst_n_280 ;
-  wire \genblk1[8].round_inst_n_281 ;
-  wire \genblk1[8].round_inst_n_282 ;
-  wire \genblk1[8].round_inst_n_283 ;
-  wire \genblk1[8].round_inst_n_284 ;
-  wire \genblk1[8].round_inst_n_285 ;
-  wire \genblk1[8].round_inst_n_286 ;
-  wire \genblk1[8].round_inst_n_287 ;
-  wire \genblk1[8].round_inst_n_288 ;
-  wire \genblk1[8].round_inst_n_289 ;
-  wire \genblk1[8].round_inst_n_290 ;
-  wire \genblk1[8].round_inst_n_63 ;
-  wire \genblk1[9].round_inst_n_139 ;
-  wire \genblk1[9].round_inst_n_252 ;
-  wire \genblk1[9].round_inst_n_253 ;
-  wire \genblk1[9].round_inst_n_254 ;
-  wire \genblk1[9].round_inst_n_255 ;
-  wire \genblk1[9].round_inst_n_256 ;
-  wire \genblk1[9].round_inst_n_257 ;
-  wire \genblk1[9].round_inst_n_258 ;
-  wire \genblk1[9].round_inst_n_259 ;
-  wire \genblk1[9].round_inst_n_260 ;
-  wire \genblk1[9].round_inst_n_261 ;
-  wire \genblk1[9].round_inst_n_262 ;
-  wire \genblk1[9].round_inst_n_263 ;
-  wire \genblk1[9].round_inst_n_264 ;
-  wire \genblk1[9].round_inst_n_265 ;
-  wire \genblk1[9].round_inst_n_266 ;
-  wire \genblk1[9].round_inst_n_267 ;
-  wire \genblk1[9].round_inst_n_268 ;
-  wire \genblk1[9].round_inst_n_269 ;
-  wire \genblk1[9].round_inst_n_270 ;
-  wire \genblk1[9].round_inst_n_271 ;
-  wire \genblk1[9].round_inst_n_272 ;
-  wire \genblk1[9].round_inst_n_273 ;
-  wire \genblk1[9].round_inst_n_274 ;
-  wire \genblk1[9].round_inst_n_275 ;
-  wire \genblk1[9].round_inst_n_276 ;
-  wire \genblk1[9].round_inst_n_277 ;
-  wire \genblk1[9].round_inst_n_278 ;
-  wire \genblk1[9].round_inst_n_279 ;
-  wire \genblk1[9].round_inst_n_63 ;
-  wire [0:0]linear_state;
-  wire [0:0]linear_state_11;
-  wire [0:0]linear_state_14;
-  wire [0:0]linear_state_17;
-  wire [0:0]linear_state_20;
-  wire [0:0]linear_state_3;
-  wire [0:0]linear_state_6;
-  wire [0:0]linear_state_8;
-  wire [63:7]p_0_in;
-  wire [124:0]\round_state[10]_9 ;
-  wire [127:0]\round_state[11]_10 ;
-  wire [22:22]\round_state[1]_0 ;
-  wire [123:51]\round_state[2]_1 ;
-  wire [121:22]\round_state[3]_2 ;
-  wire [124:0]\round_state[4]_3 ;
-  wire [125:1]\round_state[5]_4 ;
-  wire [125:1]\round_state[6]_5 ;
-  wire [124:0]\round_state[7]_6 ;
-  wire [124:0]\round_state[8]_7 ;
-  wire [123:3]\round_state[9]_8 ;
-  wire s00_axi_aclk;
-  wire s00_axi_aresetn;
-  wire [31:0]s00_axi_wdata;
-  wire [31:0]\s00_axi_wdata[31] ;
-  wire [30:0]\s00_axi_wdata[31]_0 ;
-  wire [31:0]\s00_axi_wdata[31]_1 ;
-  wire [3:0]s00_axi_wstrb;
-  wire [127:29]sbox_state;
-  wire [51:51]sbox_state_1;
-  wire [127:30]sbox_state_12;
-  wire [127:29]sbox_state_15;
-  wire [127:29]sbox_state_18;
-  wire [127:1]sbox_state_2;
-  wire [127:1]sbox_state_21;
-  wire [127:1]sbox_state_4;
-  wire [127:29]sbox_state_7;
-  wire [127:30]sbox_state_9;
-  wire \slv_reg12_reg[23] ;
-  wire \slv_reg12_reg[31] ;
-  wire \slv_reg13_reg[31] ;
-  wire \slv_reg14_reg[31] ;
-  wire \slv_reg15_reg[31] ;
-
-  design_ascon_ascon_core_0_1_ascon_finalization final_inst
-       (.D(D),
-        .s00_axi_aclk(s00_axi_aclk),
-        .s00_axi_aresetn(s00_axi_aresetn),
-        .s00_axi_wdata(s00_axi_wdata),
-        .\s00_axi_wdata[31] (\s00_axi_wdata[31] ),
-        .\s00_axi_wdata[31]_0 (\s00_axi_wdata[31]_0 ),
-        .\s00_axi_wdata[31]_1 (\s00_axi_wdata[31]_1 ),
-        .s00_axi_wstrb(s00_axi_wstrb),
-        .\slv_reg12_reg[23] (\slv_reg12_reg[23] ),
-        .\slv_reg12_reg[31] (\slv_reg12_reg[31] ),
-        .\slv_reg13_reg[31] (\slv_reg13_reg[31] ),
-        .\slv_reg14_reg[31] (\slv_reg14_reg[31] ),
-        .\slv_reg15_reg[31] (\slv_reg15_reg[31] ),
-        .\temp_state_reg[127]_0 ({\round_state[11]_10 [127:65],p_0_in[63],\round_state[11]_10 [62:56],p_0_in[55],\round_state[11]_10 [54:48],p_0_in[47],\round_state[11]_10 [46:40],p_0_in[39],\round_state[11]_10 [38:32],p_0_in[31],\round_state[11]_10 [30:24],p_0_in[23],\round_state[11]_10 [22:16],p_0_in[15],\round_state[11]_10 [14:8],p_0_in[7],\round_state[11]_10 [6:0]}));
-  design_ascon_ascon_core_0_1_ascon_round \genblk1[10].round_inst 
-       (.CO(\genblk1[10].round_inst_n_60 ),
-        .D({sbox_state[127:65],sbox_state[62:61],sbox_state[32],sbox_state[30:29],linear_state}),
-        .Q({\round_state[10]_9 [124:97],\round_state[10]_9 [92:65],\round_state[10]_9 [63:0]}),
-        .S({\genblk1[9].round_inst_n_264 ,\genblk1[9].round_inst_n_265 }),
-        .add_const_state(add_const_state),
-        .add_const_state_0(add_const_state_0),
-        .s00_axi_aclk(s00_axi_aclk),
-        .s00_axi_aresetn(s00_axi_aresetn),
-        .sbox_state({sbox_state[63],sbox_state[31]}),
-        .state_out({\round_state[9]_8 [123:100],\round_state[9]_8 [91:68],\round_state[9]_8 [63:3]}),
-        .\state_out_reg[127]_0 ({\genblk1[9].round_inst_n_252 ,\genblk1[9].round_inst_n_253 ,\genblk1[9].round_inst_n_254 }),
-        .\state_out_reg[127]_1 ({sbox_state_21[127:65],sbox_state_21[63:60],sbox_state_21[35:28],\genblk1[9].round_inst_n_139 ,sbox_state_21[2:1],linear_state_20}),
-        .\state_out_reg[12]_0 ({\genblk1[10].round_inst_n_279 ,\genblk1[10].round_inst_n_280 ,\genblk1[10].round_inst_n_281 }),
-        .\state_out_reg[14]_0 ({\genblk1[10].round_inst_n_277 ,\genblk1[10].round_inst_n_278 }),
-        .\state_out_reg[20]_0 ({\genblk1[10].round_inst_n_275 ,\genblk1[10].round_inst_n_276 }),
-        .\state_out_reg[22]_0 ({\genblk1[10].round_inst_n_273 ,\genblk1[10].round_inst_n_274 }),
-        .\state_out_reg[25]_0 (\genblk1[10].round_inst_n_272 ),
-        .\state_out_reg[32]_0 ({\genblk1[10].round_inst_n_268 ,\genblk1[10].round_inst_n_269 ,\genblk1[10].round_inst_n_270 ,\genblk1[10].round_inst_n_271 }),
-        .\state_out_reg[33]_0 (\genblk1[10].round_inst_n_267 ),
-        .\state_out_reg[35]_0 (\genblk1[9].round_inst_n_279 ),
-        .\state_out_reg[39]_0 ({\genblk1[9].round_inst_n_277 ,\genblk1[9].round_inst_n_278 }),
-        .\state_out_reg[40]_0 ({\genblk1[10].round_inst_n_264 ,\genblk1[10].round_inst_n_265 ,\genblk1[10].round_inst_n_266 }),
-        .\state_out_reg[43]_0 (\genblk1[9].round_inst_n_263 ),
-        .\state_out_reg[43]_1 (\genblk1[9].round_inst_n_276 ),
-        .\state_out_reg[44]_0 ({\genblk1[10].round_inst_n_261 ,\genblk1[10].round_inst_n_262 ,\genblk1[10].round_inst_n_263 }),
-        .\state_out_reg[47]_0 ({\genblk1[9].round_inst_n_274 ,\genblk1[9].round_inst_n_275 }),
-        .\state_out_reg[48]_0 ({\genblk1[10].round_inst_n_258 ,\genblk1[10].round_inst_n_259 ,\genblk1[10].round_inst_n_260 }),
-        .\state_out_reg[4]_0 ({\genblk1[10].round_inst_n_282 ,\genblk1[10].round_inst_n_283 }),
-        .\state_out_reg[51]_0 ({\genblk1[9].round_inst_n_260 ,\genblk1[9].round_inst_n_261 ,\genblk1[9].round_inst_n_262 }),
-        .\state_out_reg[51]_1 ({\genblk1[9].round_inst_n_271 ,\genblk1[9].round_inst_n_272 ,\genblk1[9].round_inst_n_273 }),
-        .\state_out_reg[52]_0 ({\genblk1[10].round_inst_n_256 ,\genblk1[10].round_inst_n_257 }),
-        .\state_out_reg[55]_0 ({\genblk1[9].round_inst_n_257 ,\genblk1[9].round_inst_n_258 ,\genblk1[9].round_inst_n_259 }),
-        .\state_out_reg[55]_1 (\genblk1[9].round_inst_n_270 ),
-        .\state_out_reg[56]_0 ({\genblk1[10].round_inst_n_254 ,\genblk1[10].round_inst_n_255 }),
-        .\state_out_reg[59]_0 ({\genblk1[9].round_inst_n_255 ,\genblk1[9].round_inst_n_256 }),
-        .\state_out_reg[59]_1 ({\genblk1[9].round_inst_n_266 ,\genblk1[9].round_inst_n_267 ,\genblk1[9].round_inst_n_268 ,\genblk1[9].round_inst_n_269 }),
-        .\state_out_reg[60]_0 ({\genblk1[10].round_inst_n_251 ,\genblk1[10].round_inst_n_252 ,\genblk1[10].round_inst_n_253 }),
-        .\state_out_reg[61]_0 (\genblk1[10].round_inst_n_250 ),
-        .\state_out_reg[96]_0 (\genblk1[11].round_inst_n_63 ));
-  design_ascon_ascon_core_0_1_ascon_round_0 \genblk1[11].round_inst 
-       (.D(linear_state),
-        .Q({\round_state[10]_9 [124:97],\round_state[10]_9 [92:65],\round_state[10]_9 [63:0]}),
-        .add_const_state(add_const_state_0),
-        .s00_axi_aclk(s00_axi_aclk),
-        .s00_axi_aresetn(s00_axi_aresetn),
-        .\state_out_reg[127]_0 ({\round_state[11]_10 [127:65],p_0_in[63],\round_state[11]_10 [62:56],p_0_in[55],\round_state[11]_10 [54:48],p_0_in[47],\round_state[11]_10 [46:40],p_0_in[39],\round_state[11]_10 [38:32],p_0_in[31],\round_state[11]_10 [30:24],p_0_in[23],\round_state[11]_10 [22:16],p_0_in[15],\round_state[11]_10 [14:8],p_0_in[7],\round_state[11]_10 [6:0]}),
-        .\state_out_reg[127]_1 ({sbox_state[127:65],sbox_state[63:61],sbox_state[32:29]}),
-        .\state_out_reg[32]_0 ({\genblk1[10].round_inst_n_268 ,\genblk1[10].round_inst_n_269 ,\genblk1[10].round_inst_n_270 ,\genblk1[10].round_inst_n_271 }),
-        .\state_out_reg[36]_0 ({\genblk1[10].round_inst_n_282 ,\genblk1[10].round_inst_n_283 }),
-        .\state_out_reg[36]_1 (\genblk1[10].round_inst_n_267 ),
-        .\state_out_reg[40]_0 ({\genblk1[10].round_inst_n_264 ,\genblk1[10].round_inst_n_265 ,\genblk1[10].round_inst_n_266 }),
-        .\state_out_reg[44]_0 ({\genblk1[10].round_inst_n_279 ,\genblk1[10].round_inst_n_280 ,\genblk1[10].round_inst_n_281 }),
-        .\state_out_reg[44]_1 ({\genblk1[10].round_inst_n_261 ,\genblk1[10].round_inst_n_262 ,\genblk1[10].round_inst_n_263 }),
-        .\state_out_reg[48]_0 ({\genblk1[10].round_inst_n_277 ,\genblk1[10].round_inst_n_278 }),
-        .\state_out_reg[48]_1 ({\genblk1[10].round_inst_n_258 ,\genblk1[10].round_inst_n_259 ,\genblk1[10].round_inst_n_260 }),
-        .\state_out_reg[52]_0 ({\genblk1[10].round_inst_n_275 ,\genblk1[10].round_inst_n_276 }),
-        .\state_out_reg[52]_1 ({\genblk1[10].round_inst_n_256 ,\genblk1[10].round_inst_n_257 }),
-        .\state_out_reg[56]_0 ({\genblk1[10].round_inst_n_273 ,\genblk1[10].round_inst_n_274 }),
-        .\state_out_reg[56]_1 ({\genblk1[10].round_inst_n_254 ,\genblk1[10].round_inst_n_255 }),
-        .\state_out_reg[60]_0 (\genblk1[10].round_inst_n_272 ),
-        .\state_out_reg[60]_1 ({\genblk1[10].round_inst_n_251 ,\genblk1[10].round_inst_n_252 ,\genblk1[10].round_inst_n_253 }),
-        .\state_out_reg[63] (\genblk1[11].round_inst_n_63 ),
-        .\state_out_reg[96]_0 (\genblk1[10].round_inst_n_250 ));
-  design_ascon_ascon_core_0_1_ascon_round_1 \genblk1[1].round_inst 
-       (.D({\round_state[1]_0 ,sbox_state_1}),
-        .s00_axi_aclk(s00_axi_aclk),
-        .s00_axi_aresetn(s00_axi_aresetn));
-  design_ascon_ascon_core_0_1_ascon_round_2 \genblk1[2].round_inst 
-       (.CO(\genblk1[3].round_inst_n_20 ),
-        .D({sbox_state_2[127],sbox_state_2[124],\round_state[2]_1 [57],sbox_state_2[120],sbox_state_2[117:113],\genblk1[2].round_inst_n_9 ,sbox_state_2[108:107],sbox_state_2[104:100],sbox_state_2[88],\round_state[2]_1 [51],sbox_state_2[84:80],sbox_state_2[78],\genblk1[2].round_inst_n_25 ,sbox_state_2[72],\genblk1[2].round_inst_n_27 ,sbox_state_2[70],\genblk1[2].round_inst_n_29 ,sbox_state_2[65],\round_state[2]_1 [123],sbox_state_2[53:52],\genblk1[2].round_inst_n_34 ,sbox_state_2[43],sbox_state_2[40:39],sbox_state_2[24],\genblk1[2].round_inst_n_39 ,sbox_state_2[20:17],\genblk1[2].round_inst_n_44 ,\genblk1[2].round_inst_n_45 ,\genblk1[2].round_inst_n_46 ,sbox_state_2[11:10],\genblk1[2].round_inst_n_49 ,sbox_state_2[8:4],sbox_state_2[1]}),
-        .S(\genblk1[2].round_inst_n_56 ),
-        .add_const_state({add_const_state_5[20:17],add_const_state_5[11],add_const_state_5[8:4]}),
-        .s00_axi_aclk(s00_axi_aclk),
-        .s00_axi_aresetn(s00_axi_aresetn),
-        .\state_out_reg[108] (\genblk1[3].round_inst_n_10 ),
-        .\state_out_reg[10] ({sbox_state_2[106:105],sbox_state_2[51:48],sbox_state_2[46],sbox_state_2[38]}),
-        .\state_out_reg[117] (\genblk1[3].round_inst_n_19 ),
-        .\state_out_reg[123]_0 (\genblk1[2].round_inst_n_57 ),
-        .\state_out_reg[51]_0 (\genblk1[2].round_inst_n_64 ),
-        .\state_out_reg[57]_0 ({\genblk1[2].round_inst_n_58 ,\genblk1[2].round_inst_n_59 ,\genblk1[2].round_inst_n_60 }),
-        .\state_out_reg[57]_1 ({\genblk1[2].round_inst_n_61 ,\genblk1[2].round_inst_n_62 ,\genblk1[2].round_inst_n_63 }),
-        .\state_out_reg[57]_2 ({\round_state[1]_0 ,sbox_state_1}),
-        .\state_out_reg[84] (\genblk1[3].round_inst_n_21 ));
-  design_ascon_ascon_core_0_1_ascon_round_3 \genblk1[3].round_inst 
-       (.CO(\genblk1[3].round_inst_n_20 ),
-        .D({sbox_state_2[127],sbox_state_2[124],\round_state[2]_1 [57],sbox_state_2[120],sbox_state_2[117:113],\genblk1[2].round_inst_n_9 ,sbox_state_2[108:107],sbox_state_2[104:100],sbox_state_2[88],\round_state[2]_1 [51],sbox_state_2[84:80],sbox_state_2[78],\genblk1[2].round_inst_n_25 ,sbox_state_2[72],\genblk1[2].round_inst_n_27 ,sbox_state_2[70],\genblk1[2].round_inst_n_29 ,sbox_state_2[65],\round_state[2]_1 [123],sbox_state_2[53:52],\genblk1[2].round_inst_n_34 ,sbox_state_2[43],sbox_state_2[40:39],sbox_state_2[24],\genblk1[2].round_inst_n_39 ,sbox_state_2[20:17],\genblk1[2].round_inst_n_44 ,\genblk1[2].round_inst_n_45 ,\genblk1[2].round_inst_n_46 ,sbox_state_2[11:10],\genblk1[2].round_inst_n_49 ,sbox_state_2[8:4],sbox_state_2[1]}),
-        .Q({\round_state[3]_2 [121],\round_state[3]_2 [63],\round_state[3]_2 [22]}),
-        .S(\genblk1[2].round_inst_n_56 ),
-        .add_const_state({add_const_state_5[20:17],add_const_state_5[11],add_const_state_5[8:4]}),
-        .s00_axi_aclk(s00_axi_aclk),
-        .s00_axi_aresetn(s00_axi_aresetn),
-        .\state_out_reg[106]_0 (\genblk1[2].round_inst_n_57 ),
-        .\state_out_reg[116]_0 ({\genblk1[2].round_inst_n_58 ,\genblk1[2].round_inst_n_59 ,\genblk1[2].round_inst_n_60 }),
-        .\state_out_reg[121]_0 ({\genblk1[3].round_inst_n_145 ,\genblk1[3].round_inst_n_146 ,\genblk1[3].round_inst_n_147 }),
-        .\state_out_reg[123] (\genblk1[3].round_inst_n_10 ),
-        .\state_out_reg[123]_0 ({sbox_state_2[106:105],sbox_state_2[51:48],sbox_state_2[46],sbox_state_2[38]}),
-        .\state_out_reg[127]_0 ({sbox_state_4[127:122],\genblk1[3].round_inst_n_28 ,sbox_state_4[120:100],\genblk1[3].round_inst_n_50 ,\genblk1[3].round_inst_n_51 ,sbox_state_4[97:96],\genblk1[3].round_inst_n_54 ,sbox_state_4[94:88],\round_state[3]_2 [87],sbox_state_4[86:80],sbox_state_4[78:65],sbox_state_4[63],\genblk1[3].round_inst_n_85 ,sbox_state_4[55:26],\genblk1[3].round_inst_n_116 ,sbox_state_4[24:4],\genblk1[3].round_inst_n_138 ,\genblk1[3].round_inst_n_139 ,sbox_state_4[1],linear_state_3}),
-        .\state_out_reg[49]_0 ({\genblk1[2].round_inst_n_61 ,\genblk1[2].round_inst_n_62 ,\genblk1[2].round_inst_n_63 }),
-        .\state_out_reg[51]_0 (\genblk1[3].round_inst_n_21 ),
-        .\state_out_reg[51]_1 (\genblk1[2].round_inst_n_64 ),
-        .\state_out_reg[57] (\genblk1[3].round_inst_n_19 ),
-        .\state_out_reg[94] (sbox_state_4[62:57]));
-  design_ascon_ascon_core_0_1_ascon_round_4 \genblk1[4].round_inst 
-       (.CO(\genblk1[5].round_inst_n_63 ),
-        .D(sbox_state_4[62:57]),
-        .Q({\round_state[4]_3 [124:97],\round_state[4]_3 [92:80],\round_state[4]_3 [78:65],\round_state[4]_3 [63:0]}),
-        .S({\genblk1[4].round_inst_n_196 ,\genblk1[4].round_inst_n_197 }),
-        .add_const_state({add_const_state_10[63:48],add_const_state_10[46:1]}),
-        .\round_state[3]_2 ({\round_state[3]_2 [121],\round_state[3]_2 [87],\round_state[3]_2 [63],\round_state[3]_2 [22]}),
-        .s00_axi_aclk(s00_axi_aclk),
-        .s00_axi_aresetn(s00_axi_aresetn),
-        .\state_out_reg[127]_0 ({sbox_state_7[127:65],sbox_state_7[63:61],sbox_state_7[32:29],linear_state_6}),
-        .\state_out_reg[127]_1 ({sbox_state_4[127:122],\genblk1[3].round_inst_n_28 ,sbox_state_4[120:100],\genblk1[3].round_inst_n_50 ,\genblk1[3].round_inst_n_51 ,sbox_state_4[97:96],\genblk1[3].round_inst_n_54 ,sbox_state_4[94:88],sbox_state_4[86:80],sbox_state_4[78:65],sbox_state_4[63],\genblk1[3].round_inst_n_85 ,sbox_state_4[55:26],\genblk1[3].round_inst_n_116 ,sbox_state_4[24:4],\genblk1[3].round_inst_n_138 ,\genblk1[3].round_inst_n_139 ,sbox_state_4[1],linear_state_3}),
-        .\state_out_reg[12]_0 ({\genblk1[4].round_inst_n_227 ,\genblk1[4].round_inst_n_228 }),
-        .\state_out_reg[16]_0 ({\genblk1[4].round_inst_n_223 ,\genblk1[4].round_inst_n_224 ,\genblk1[4].round_inst_n_225 ,\genblk1[4].round_inst_n_226 }),
-        .\state_out_reg[20]_0 ({\genblk1[4].round_inst_n_221 ,\genblk1[4].round_inst_n_222 }),
-        .\state_out_reg[23]_0 (\genblk1[4].round_inst_n_220 ),
-        .\state_out_reg[28]_0 ({\genblk1[4].round_inst_n_217 ,\genblk1[4].round_inst_n_218 ,\genblk1[4].round_inst_n_219 }),
-        .\state_out_reg[2]_0 (\genblk1[4].round_inst_n_232 ),
-        .\state_out_reg[32]_0 ({\genblk1[4].round_inst_n_214 ,\genblk1[4].round_inst_n_215 ,\genblk1[4].round_inst_n_216 }),
-        .\state_out_reg[36]_0 ({\genblk1[4].round_inst_n_211 ,\genblk1[4].round_inst_n_212 ,\genblk1[4].round_inst_n_213 }),
-        .\state_out_reg[39]_0 (\genblk1[4].round_inst_n_210 ),
-        .\state_out_reg[43]_0 ({\genblk1[4].round_inst_n_208 ,\genblk1[4].round_inst_n_209 }),
-        .\state_out_reg[48]_0 ({\genblk1[4].round_inst_n_206 ,\genblk1[4].round_inst_n_207 }),
-        .\state_out_reg[52]_0 ({\genblk1[4].round_inst_n_203 ,\genblk1[4].round_inst_n_204 ,\genblk1[4].round_inst_n_205 }),
-        .\state_out_reg[56]_0 ({\genblk1[4].round_inst_n_201 ,\genblk1[4].round_inst_n_202 }),
-        .\state_out_reg[60]_0 ({\genblk1[4].round_inst_n_198 ,\genblk1[4].round_inst_n_199 ,\genblk1[4].round_inst_n_200 }),
-        .\state_out_reg[60]_1 ({\genblk1[3].round_inst_n_145 ,\genblk1[3].round_inst_n_146 ,\genblk1[3].round_inst_n_147 }),
-        .\state_out_reg[79] (sbox_state_7[47]),
-        .\state_out_reg[8]_0 ({\genblk1[4].round_inst_n_229 ,\genblk1[4].round_inst_n_230 ,\genblk1[4].round_inst_n_231 }));
-  design_ascon_ascon_core_0_1_ascon_round_5 \genblk1[5].round_inst 
-       (.CO(\genblk1[5].round_inst_n_63 ),
-        .D(sbox_state_7[47]),
-        .Q({\round_state[4]_3 [124:97],\round_state[4]_3 [92:80],\round_state[4]_3 [78:65],\round_state[4]_3 [63:0]}),
-        .S({\genblk1[4].round_inst_n_196 ,\genblk1[4].round_inst_n_197 }),
-        .add_const_state({add_const_state_10[63:48],add_const_state_10[46:1]}),
-        .add_const_state_0(add_const_state_13),
-        .s00_axi_aclk(s00_axi_aclk),
-        .s00_axi_aresetn(s00_axi_aresetn),
-        .\state_out_reg[125]_0 ({\round_state[5]_4 [125:98],\round_state[5]_4 [93:66],\round_state[5]_4 [63:1]}),
-        .\state_out_reg[127]_0 ({sbox_state_9[127:65],sbox_state_9[63:62],sbox_state_9[33:30],\genblk1[5].round_inst_n_133 ,linear_state_8}),
-        .\state_out_reg[127]_1 ({sbox_state_7[127:65],sbox_state_7[63:61],sbox_state_7[32:29],linear_state_6}),
-        .\state_out_reg[13]_0 (\genblk1[5].round_inst_n_265 ),
-        .\state_out_reg[15]_0 ({\genblk1[5].round_inst_n_263 ,\genblk1[5].round_inst_n_264 }),
-        .\state_out_reg[21]_0 ({\genblk1[5].round_inst_n_261 ,\genblk1[5].round_inst_n_262 }),
-        .\state_out_reg[24]_0 ({\genblk1[5].round_inst_n_259 ,\genblk1[5].round_inst_n_260 }),
-        .\state_out_reg[26]_0 (\genblk1[5].round_inst_n_258 ),
-        .\state_out_reg[2]_0 (\genblk1[5].round_inst_n_270 ),
-        .\state_out_reg[32]_0 ({\genblk1[4].round_inst_n_214 ,\genblk1[4].round_inst_n_215 ,\genblk1[4].round_inst_n_216 }),
-        .\state_out_reg[33]_0 ({\genblk1[5].round_inst_n_254 ,\genblk1[5].round_inst_n_255 ,\genblk1[5].round_inst_n_256 ,\genblk1[5].round_inst_n_257 }),
-        .\state_out_reg[36]_0 (\genblk1[4].round_inst_n_232 ),
-        .\state_out_reg[36]_1 ({\genblk1[4].round_inst_n_211 ,\genblk1[4].round_inst_n_212 ,\genblk1[4].round_inst_n_213 }),
-        .\state_out_reg[40]_0 ({\genblk1[4].round_inst_n_229 ,\genblk1[4].round_inst_n_230 ,\genblk1[4].round_inst_n_231 }),
-        .\state_out_reg[40]_1 (\genblk1[4].round_inst_n_210 ),
-        .\state_out_reg[41]_0 ({\genblk1[5].round_inst_n_284 ,\genblk1[5].round_inst_n_285 ,\genblk1[5].round_inst_n_286 ,\genblk1[5].round_inst_n_287 }),
-        .\state_out_reg[44]_0 ({\genblk1[4].round_inst_n_227 ,\genblk1[4].round_inst_n_228 }),
-        .\state_out_reg[45]_0 ({\genblk1[5].round_inst_n_282 ,\genblk1[5].round_inst_n_283 }),
-        .\state_out_reg[47]_0 ({\genblk1[5].round_inst_n_280 ,\genblk1[5].round_inst_n_281 }),
-        .\state_out_reg[47]_1 ({\genblk1[4].round_inst_n_208 ,\genblk1[4].round_inst_n_209 }),
-        .\state_out_reg[47]_2 ({\genblk1[4].round_inst_n_206 ,\genblk1[4].round_inst_n_207 }),
-        .\state_out_reg[48]_0 ({\genblk1[4].round_inst_n_223 ,\genblk1[4].round_inst_n_224 ,\genblk1[4].round_inst_n_225 ,\genblk1[4].round_inst_n_226 }),
-        .\state_out_reg[52]_0 ({\genblk1[5].round_inst_n_278 ,\genblk1[5].round_inst_n_279 }),
-        .\state_out_reg[52]_1 ({\genblk1[4].round_inst_n_221 ,\genblk1[4].round_inst_n_222 }),
-        .\state_out_reg[52]_2 ({\genblk1[4].round_inst_n_203 ,\genblk1[4].round_inst_n_204 ,\genblk1[4].round_inst_n_205 }),
-        .\state_out_reg[56]_0 (\genblk1[4].round_inst_n_220 ),
-        .\state_out_reg[56]_1 ({\genblk1[4].round_inst_n_201 ,\genblk1[4].round_inst_n_202 }),
-        .\state_out_reg[57]_0 ({\genblk1[5].round_inst_n_274 ,\genblk1[5].round_inst_n_275 ,\genblk1[5].round_inst_n_276 ,\genblk1[5].round_inst_n_277 }),
-        .\state_out_reg[60]_0 ({\genblk1[5].round_inst_n_272 ,\genblk1[5].round_inst_n_273 }),
-        .\state_out_reg[60]_1 ({\genblk1[4].round_inst_n_217 ,\genblk1[4].round_inst_n_218 ,\genblk1[4].round_inst_n_219 }),
-        .\state_out_reg[60]_2 ({\genblk1[4].round_inst_n_198 ,\genblk1[4].round_inst_n_199 ,\genblk1[4].round_inst_n_200 }),
-        .\state_out_reg[63]_0 (\genblk1[5].round_inst_n_271 ),
-        .\state_out_reg[96]_0 (\genblk1[6].round_inst_n_62 ),
-        .\state_out_reg[9]_0 ({\genblk1[5].round_inst_n_266 ,\genblk1[5].round_inst_n_267 ,\genblk1[5].round_inst_n_268 ,\genblk1[5].round_inst_n_269 }));
-  design_ascon_ascon_core_0_1_ascon_round_6 \genblk1[6].round_inst 
-       (.CO(\genblk1[7].round_inst_n_62 ),
-        .D({sbox_state_12[127:65],sbox_state_12[63:62],sbox_state_12[33:30],\genblk1[6].round_inst_n_132 ,linear_state_11}),
-        .Q({\round_state[6]_5 [125:98],\round_state[6]_5 [93:66],\round_state[6]_5 [63:1]}),
-        .S(\genblk1[6].round_inst_n_253 ),
-        .add_const_state(add_const_state_13),
-        .add_const_state_0(add_const_state_16),
-        .s00_axi_aclk(s00_axi_aclk),
-        .s00_axi_aresetn(s00_axi_aresetn),
-        .\state_out_reg[127]_0 ({sbox_state_9[127:65],sbox_state_9[63:62],sbox_state_9[33:30],\genblk1[5].round_inst_n_133 ,linear_state_8}),
-        .\state_out_reg[13]_0 ({\genblk1[6].round_inst_n_287 ,\genblk1[6].round_inst_n_288 }),
-        .\state_out_reg[17]_0 ({\genblk1[6].round_inst_n_285 ,\genblk1[6].round_inst_n_286 }),
-        .\state_out_reg[20]_0 ({\genblk1[6].round_inst_n_282 ,\genblk1[6].round_inst_n_283 ,\genblk1[6].round_inst_n_284 }),
-        .\state_out_reg[25]_0 ({\genblk1[6].round_inst_n_279 ,\genblk1[6].round_inst_n_280 ,\genblk1[6].round_inst_n_281 }),
-        .\state_out_reg[29]_0 ({\genblk1[6].round_inst_n_277 ,\genblk1[6].round_inst_n_278 }),
-        .\state_out_reg[29]_1 ({\round_state[5]_4 [125:98],\round_state[5]_4 [93:66],\round_state[5]_4 [63:1]}),
-        .\state_out_reg[33]_0 ({\genblk1[6].round_inst_n_275 ,\genblk1[6].round_inst_n_276 }),
-        .\state_out_reg[33]_1 ({\genblk1[5].round_inst_n_254 ,\genblk1[5].round_inst_n_255 ,\genblk1[5].round_inst_n_256 ,\genblk1[5].round_inst_n_257 }),
-        .\state_out_reg[37]_0 ({\genblk1[6].round_inst_n_271 ,\genblk1[6].round_inst_n_272 ,\genblk1[6].round_inst_n_273 ,\genblk1[6].round_inst_n_274 }),
-        .\state_out_reg[37]_1 (\genblk1[5].round_inst_n_270 ),
-        .\state_out_reg[41]_0 ({\genblk1[6].round_inst_n_268 ,\genblk1[6].round_inst_n_269 ,\genblk1[6].round_inst_n_270 }),
-        .\state_out_reg[41]_1 ({\genblk1[5].round_inst_n_266 ,\genblk1[5].round_inst_n_267 ,\genblk1[5].round_inst_n_268 ,\genblk1[5].round_inst_n_269 }),
-        .\state_out_reg[41]_2 ({\genblk1[5].round_inst_n_284 ,\genblk1[5].round_inst_n_285 ,\genblk1[5].round_inst_n_286 ,\genblk1[5].round_inst_n_287 }),
-        .\state_out_reg[43]_0 ({\genblk1[6].round_inst_n_266 ,\genblk1[6].round_inst_n_267 }),
-        .\state_out_reg[45]_0 (\genblk1[5].round_inst_n_265 ),
-        .\state_out_reg[45]_1 ({\genblk1[5].round_inst_n_282 ,\genblk1[5].round_inst_n_283 }),
-        .\state_out_reg[49]_0 ({\genblk1[6].round_inst_n_264 ,\genblk1[6].round_inst_n_265 }),
-        .\state_out_reg[49]_1 ({\genblk1[5].round_inst_n_263 ,\genblk1[5].round_inst_n_264 }),
-        .\state_out_reg[49]_2 ({\genblk1[5].round_inst_n_280 ,\genblk1[5].round_inst_n_281 }),
-        .\state_out_reg[53]_0 ({\genblk1[6].round_inst_n_261 ,\genblk1[6].round_inst_n_262 ,\genblk1[6].round_inst_n_263 }),
-        .\state_out_reg[53]_1 ({\genblk1[5].round_inst_n_261 ,\genblk1[5].round_inst_n_262 }),
-        .\state_out_reg[53]_2 ({\genblk1[5].round_inst_n_278 ,\genblk1[5].round_inst_n_279 }),
-        .\state_out_reg[57]_0 ({\genblk1[6].round_inst_n_258 ,\genblk1[6].round_inst_n_259 ,\genblk1[6].round_inst_n_260 }),
-        .\state_out_reg[57]_1 ({\genblk1[5].round_inst_n_259 ,\genblk1[5].round_inst_n_260 }),
-        .\state_out_reg[57]_2 ({\genblk1[5].round_inst_n_274 ,\genblk1[5].round_inst_n_275 ,\genblk1[5].round_inst_n_276 ,\genblk1[5].round_inst_n_277 }),
-        .\state_out_reg[5]_0 ({\genblk1[6].round_inst_n_292 ,\genblk1[6].round_inst_n_293 ,\genblk1[6].round_inst_n_294 ,\genblk1[6].round_inst_n_295 }),
-        .\state_out_reg[61]_0 ({\genblk1[6].round_inst_n_254 ,\genblk1[6].round_inst_n_255 ,\genblk1[6].round_inst_n_256 ,\genblk1[6].round_inst_n_257 }),
-        .\state_out_reg[61]_1 (\genblk1[5].round_inst_n_258 ),
-        .\state_out_reg[61]_2 ({\genblk1[5].round_inst_n_272 ,\genblk1[5].round_inst_n_273 }),
-        .\state_out_reg[63]_0 (\genblk1[6].round_inst_n_62 ),
-        .\state_out_reg[8]_0 ({\genblk1[6].round_inst_n_289 ,\genblk1[6].round_inst_n_290 ,\genblk1[6].round_inst_n_291 }),
-        .\state_out_reg[96]_0 (\genblk1[5].round_inst_n_271 ));
-  design_ascon_ascon_core_0_1_ascon_round_7 \genblk1[7].round_inst 
-       (.CO(\genblk1[7].round_inst_n_62 ),
-        .D({sbox_state_15[127:65],sbox_state_15[63:61],sbox_state_15[32:29],linear_state_14}),
-        .Q({\round_state[6]_5 [125:98],\round_state[6]_5 [93:66],\round_state[6]_5 [63:1]}),
-        .S(\genblk1[6].round_inst_n_253 ),
-        .add_const_state(add_const_state_16),
-        .add_const_state_0(add_const_state_19),
-        .s00_axi_aclk(s00_axi_aclk),
-        .s00_axi_aresetn(s00_axi_aresetn),
-        .\state_out_reg[124]_0 ({\round_state[7]_6 [124:97],\round_state[7]_6 [92:65],\round_state[7]_6 [63:0]}),
-        .\state_out_reg[127]_0 ({sbox_state_12[127:65],sbox_state_12[63:62],sbox_state_12[33:30],\genblk1[6].round_inst_n_132 ,linear_state_11}),
-        .\state_out_reg[16]_0 ({\genblk1[7].round_inst_n_262 ,\genblk1[7].round_inst_n_263 ,\genblk1[7].round_inst_n_264 }),
-        .\state_out_reg[20]_0 (\genblk1[7].round_inst_n_261 ),
-        .\state_out_reg[23]_0 ({\genblk1[7].round_inst_n_258 ,\genblk1[7].round_inst_n_259 ,\genblk1[7].round_inst_n_260 }),
-        .\state_out_reg[28]_0 ({\genblk1[7].round_inst_n_256 ,\genblk1[7].round_inst_n_257 }),
-        .\state_out_reg[31]_0 ({\genblk1[7].round_inst_n_254 ,\genblk1[7].round_inst_n_255 }),
-        .\state_out_reg[33]_0 (\genblk1[7].round_inst_n_288 ),
-        .\state_out_reg[33]_1 ({\genblk1[6].round_inst_n_275 ,\genblk1[6].round_inst_n_276 }),
-        .\state_out_reg[37]_0 ({\genblk1[6].round_inst_n_292 ,\genblk1[6].round_inst_n_293 ,\genblk1[6].round_inst_n_294 ,\genblk1[6].round_inst_n_295 }),
-        .\state_out_reg[37]_1 ({\genblk1[6].round_inst_n_271 ,\genblk1[6].round_inst_n_272 ,\genblk1[6].round_inst_n_273 ,\genblk1[6].round_inst_n_274 }),
-        .\state_out_reg[38]_0 ({\genblk1[7].round_inst_n_286 ,\genblk1[7].round_inst_n_287 }),
-        .\state_out_reg[41]_0 ({\genblk1[6].round_inst_n_289 ,\genblk1[6].round_inst_n_290 ,\genblk1[6].round_inst_n_291 }),
-        .\state_out_reg[41]_1 ({\genblk1[6].round_inst_n_268 ,\genblk1[6].round_inst_n_269 ,\genblk1[6].round_inst_n_270 }),
-        .\state_out_reg[44]_0 ({\genblk1[7].round_inst_n_282 ,\genblk1[7].round_inst_n_283 ,\genblk1[7].round_inst_n_284 ,\genblk1[7].round_inst_n_285 }),
-        .\state_out_reg[45]_0 ({\genblk1[6].round_inst_n_287 ,\genblk1[6].round_inst_n_288 }),
-        .\state_out_reg[45]_1 ({\genblk1[6].round_inst_n_266 ,\genblk1[6].round_inst_n_267 }),
-        .\state_out_reg[49]_0 ({\genblk1[6].round_inst_n_285 ,\genblk1[6].round_inst_n_286 }),
-        .\state_out_reg[49]_1 ({\genblk1[6].round_inst_n_264 ,\genblk1[6].round_inst_n_265 }),
-        .\state_out_reg[4]_0 ({\genblk1[7].round_inst_n_268 ,\genblk1[7].round_inst_n_269 }),
-        .\state_out_reg[52]_0 ({\genblk1[7].round_inst_n_278 ,\genblk1[7].round_inst_n_279 ,\genblk1[7].round_inst_n_280 ,\genblk1[7].round_inst_n_281 }),
-        .\state_out_reg[53]_0 ({\genblk1[6].round_inst_n_282 ,\genblk1[6].round_inst_n_283 ,\genblk1[6].round_inst_n_284 }),
-        .\state_out_reg[53]_1 ({\genblk1[6].round_inst_n_261 ,\genblk1[6].round_inst_n_262 ,\genblk1[6].round_inst_n_263 }),
-        .\state_out_reg[56]_0 ({\genblk1[7].round_inst_n_274 ,\genblk1[7].round_inst_n_275 ,\genblk1[7].round_inst_n_276 ,\genblk1[7].round_inst_n_277 }),
-        .\state_out_reg[57]_0 ({\genblk1[6].round_inst_n_279 ,\genblk1[6].round_inst_n_280 ,\genblk1[6].round_inst_n_281 }),
-        .\state_out_reg[57]_1 ({\genblk1[6].round_inst_n_258 ,\genblk1[6].round_inst_n_259 ,\genblk1[6].round_inst_n_260 }),
-        .\state_out_reg[59]_0 ({\genblk1[7].round_inst_n_272 ,\genblk1[7].round_inst_n_273 }),
-        .\state_out_reg[61]_0 ({\genblk1[6].round_inst_n_277 ,\genblk1[6].round_inst_n_278 }),
-        .\state_out_reg[61]_1 ({\genblk1[6].round_inst_n_254 ,\genblk1[6].round_inst_n_255 ,\genblk1[6].round_inst_n_256 ,\genblk1[6].round_inst_n_257 }),
-        .\state_out_reg[62]_0 ({\genblk1[7].round_inst_n_270 ,\genblk1[7].round_inst_n_271 }),
-        .\state_out_reg[8]_0 ({\genblk1[7].round_inst_n_266 ,\genblk1[7].round_inst_n_267 }),
-        .\state_out_reg[96]_0 (\genblk1[8].round_inst_n_63 ),
-        .\state_out_reg[9]_0 (\genblk1[7].round_inst_n_265 ));
-  design_ascon_ascon_core_0_1_ascon_round_8 \genblk1[8].round_inst 
-       (.CO(\genblk1[9].round_inst_n_63 ),
-        .D({sbox_state_18[127:65],sbox_state_18[63:61],sbox_state_18[32:29],linear_state_17}),
-        .Q({\round_state[8]_7 [124:97],\round_state[8]_7 [92:65],\round_state[8]_7 [63:0]}),
-        .S({\genblk1[8].round_inst_n_255 ,\genblk1[8].round_inst_n_256 }),
-        .add_const_state(add_const_state_19),
-        .add_const_state_0(add_const_state_22),
-        .s00_axi_aclk(s00_axi_aclk),
-        .s00_axi_aresetn(s00_axi_aresetn),
-        .\state_out_reg[127]_0 ({sbox_state_15[127:65],sbox_state_15[63:61],sbox_state_15[32:29],linear_state_14}),
-        .\state_out_reg[12]_0 ({\genblk1[8].round_inst_n_284 ,\genblk1[8].round_inst_n_285 }),
-        .\state_out_reg[15]_0 ({\genblk1[8].round_inst_n_281 ,\genblk1[8].round_inst_n_282 ,\genblk1[8].round_inst_n_283 }),
-        .\state_out_reg[20]_0 ({\genblk1[8].round_inst_n_278 ,\genblk1[8].round_inst_n_279 ,\genblk1[8].round_inst_n_280 }),
-        .\state_out_reg[24]_0 ({\genblk1[8].round_inst_n_275 ,\genblk1[8].round_inst_n_276 ,\genblk1[8].round_inst_n_277 }),
-        .\state_out_reg[27]_0 ({\genblk1[8].round_inst_n_273 ,\genblk1[8].round_inst_n_274 }),
-        .\state_out_reg[28]_0 ({\round_state[7]_6 [124:97],\round_state[7]_6 [92:65],\round_state[7]_6 [63:0]}),
-        .\state_out_reg[32]_0 ({\genblk1[8].round_inst_n_271 ,\genblk1[8].round_inst_n_272 }),
-        .\state_out_reg[32]_1 ({\genblk1[7].round_inst_n_254 ,\genblk1[7].round_inst_n_255 }),
-        .\state_out_reg[36]_0 ({\genblk1[8].round_inst_n_268 ,\genblk1[8].round_inst_n_269 ,\genblk1[8].round_inst_n_270 }),
-        .\state_out_reg[36]_1 ({\genblk1[7].round_inst_n_268 ,\genblk1[7].round_inst_n_269 }),
-        .\state_out_reg[36]_2 (\genblk1[7].round_inst_n_288 ),
-        .\state_out_reg[39]_0 ({\genblk1[8].round_inst_n_266 ,\genblk1[8].round_inst_n_267 }),
-        .\state_out_reg[40]_0 ({\genblk1[7].round_inst_n_266 ,\genblk1[7].round_inst_n_267 }),
-        .\state_out_reg[40]_1 ({\genblk1[7].round_inst_n_286 ,\genblk1[7].round_inst_n_287 }),
-        .\state_out_reg[44]_0 ({\genblk1[8].round_inst_n_262 ,\genblk1[8].round_inst_n_263 ,\genblk1[8].round_inst_n_264 ,\genblk1[8].round_inst_n_265 }),
-        .\state_out_reg[44]_1 (\genblk1[7].round_inst_n_265 ),
-        .\state_out_reg[44]_2 ({\genblk1[7].round_inst_n_282 ,\genblk1[7].round_inst_n_283 ,\genblk1[7].round_inst_n_284 ,\genblk1[7].round_inst_n_285 }),
-        .\state_out_reg[48]_0 ({\genblk1[7].round_inst_n_262 ,\genblk1[7].round_inst_n_263 ,\genblk1[7].round_inst_n_264 }),
-        .\state_out_reg[4]_0 ({\genblk1[8].round_inst_n_288 ,\genblk1[8].round_inst_n_289 ,\genblk1[8].round_inst_n_290 }),
-        .\state_out_reg[52]_0 ({\genblk1[8].round_inst_n_258 ,\genblk1[8].round_inst_n_259 ,\genblk1[8].round_inst_n_260 ,\genblk1[8].round_inst_n_261 }),
-        .\state_out_reg[52]_1 (\genblk1[7].round_inst_n_261 ),
-        .\state_out_reg[52]_2 ({\genblk1[7].round_inst_n_278 ,\genblk1[7].round_inst_n_279 ,\genblk1[7].round_inst_n_280 ,\genblk1[7].round_inst_n_281 }),
-        .\state_out_reg[56]_0 (\genblk1[8].round_inst_n_257 ),
-        .\state_out_reg[56]_1 ({\genblk1[7].round_inst_n_258 ,\genblk1[7].round_inst_n_259 ,\genblk1[7].round_inst_n_260 }),
-        .\state_out_reg[56]_2 ({\genblk1[7].round_inst_n_274 ,\genblk1[7].round_inst_n_275 ,\genblk1[7].round_inst_n_276 ,\genblk1[7].round_inst_n_277 }),
-        .\state_out_reg[60]_0 ({\genblk1[7].round_inst_n_256 ,\genblk1[7].round_inst_n_257 }),
-        .\state_out_reg[60]_1 ({\genblk1[7].round_inst_n_272 ,\genblk1[7].round_inst_n_273 }),
-        .\state_out_reg[63]_0 (\genblk1[8].round_inst_n_63 ),
-        .\state_out_reg[8]_0 ({\genblk1[8].round_inst_n_286 ,\genblk1[8].round_inst_n_287 }),
-        .\state_out_reg[96]_0 ({\genblk1[7].round_inst_n_270 ,\genblk1[7].round_inst_n_271 }));
-  design_ascon_ascon_core_0_1_ascon_round_9 \genblk1[9].round_inst 
-       (.CO(\genblk1[9].round_inst_n_63 ),
-        .D({sbox_state_18[127:65],sbox_state_18[63:61],sbox_state_18[32:29],linear_state_17}),
-        .Q({\round_state[8]_7 [124:97],\round_state[8]_7 [92:65],\round_state[8]_7 [63:0]}),
-        .S({\genblk1[8].round_inst_n_255 ,\genblk1[8].round_inst_n_256 }),
-        .add_const_state(add_const_state_22),
-        .add_const_state_0(add_const_state),
-        .s00_axi_aclk(s00_axi_aclk),
-        .s00_axi_aresetn(s00_axi_aresetn),
-        .\state_out_reg[11]_0 (\genblk1[9].round_inst_n_263 ),
-        .\state_out_reg[123]_0 ({\round_state[9]_8 [123:100],\round_state[9]_8 [91:68],\round_state[9]_8 [63:3]}),
-        .\state_out_reg[127]_0 ({sbox_state_21[127:65],sbox_state_21[63:60],sbox_state_21[35:28],\genblk1[9].round_inst_n_139 ,sbox_state_21[2:1],linear_state_20}),
-        .\state_out_reg[18]_0 ({\genblk1[9].round_inst_n_260 ,\genblk1[9].round_inst_n_261 ,\genblk1[9].round_inst_n_262 }),
-        .\state_out_reg[23]_0 ({\genblk1[9].round_inst_n_257 ,\genblk1[9].round_inst_n_258 ,\genblk1[9].round_inst_n_259 }),
-        .\state_out_reg[26]_0 ({\genblk1[9].round_inst_n_255 ,\genblk1[9].round_inst_n_256 }),
-        .\state_out_reg[31]_0 ({\genblk1[9].round_inst_n_252 ,\genblk1[9].round_inst_n_253 ,\genblk1[9].round_inst_n_254 }),
-        .\state_out_reg[32]_0 ({\genblk1[8].round_inst_n_271 ,\genblk1[8].round_inst_n_272 }),
-        .\state_out_reg[32]_1 (\genblk1[10].round_inst_n_60 ),
-        .\state_out_reg[34]_0 (\genblk1[9].round_inst_n_279 ),
-        .\state_out_reg[36]_0 ({\genblk1[8].round_inst_n_288 ,\genblk1[8].round_inst_n_289 ,\genblk1[8].round_inst_n_290 }),
-        .\state_out_reg[36]_1 ({\genblk1[8].round_inst_n_268 ,\genblk1[8].round_inst_n_269 ,\genblk1[8].round_inst_n_270 }),
-        .\state_out_reg[39]_0 ({\genblk1[9].round_inst_n_277 ,\genblk1[9].round_inst_n_278 }),
-        .\state_out_reg[40]_0 ({\genblk1[8].round_inst_n_286 ,\genblk1[8].round_inst_n_287 }),
-        .\state_out_reg[40]_1 ({\genblk1[8].round_inst_n_266 ,\genblk1[8].round_inst_n_267 }),
-        .\state_out_reg[41]_0 (\genblk1[9].round_inst_n_276 ),
-        .\state_out_reg[44]_0 ({\genblk1[8].round_inst_n_284 ,\genblk1[8].round_inst_n_285 }),
-        .\state_out_reg[44]_1 ({\genblk1[8].round_inst_n_262 ,\genblk1[8].round_inst_n_263 ,\genblk1[8].round_inst_n_264 ,\genblk1[8].round_inst_n_265 }),
-        .\state_out_reg[45]_0 ({\genblk1[9].round_inst_n_274 ,\genblk1[9].round_inst_n_275 }),
-        .\state_out_reg[48]_0 ({\genblk1[8].round_inst_n_281 ,\genblk1[8].round_inst_n_282 ,\genblk1[8].round_inst_n_283 }),
-        .\state_out_reg[51]_0 ({\genblk1[9].round_inst_n_271 ,\genblk1[9].round_inst_n_272 ,\genblk1[9].round_inst_n_273 }),
-        .\state_out_reg[52]_0 (\genblk1[9].round_inst_n_270 ),
-        .\state_out_reg[52]_1 ({\genblk1[8].round_inst_n_278 ,\genblk1[8].round_inst_n_279 ,\genblk1[8].round_inst_n_280 }),
-        .\state_out_reg[52]_2 ({\genblk1[8].round_inst_n_258 ,\genblk1[8].round_inst_n_259 ,\genblk1[8].round_inst_n_260 ,\genblk1[8].round_inst_n_261 }),
-        .\state_out_reg[56]_0 ({\genblk1[8].round_inst_n_275 ,\genblk1[8].round_inst_n_276 ,\genblk1[8].round_inst_n_277 }),
-        .\state_out_reg[56]_1 (\genblk1[8].round_inst_n_257 ),
-        .\state_out_reg[59]_0 ({\genblk1[9].round_inst_n_266 ,\genblk1[9].round_inst_n_267 ,\genblk1[9].round_inst_n_268 ,\genblk1[9].round_inst_n_269 }),
-        .\state_out_reg[60]_0 ({\genblk1[8].round_inst_n_273 ,\genblk1[8].round_inst_n_274 }),
-        .\state_out_reg[6]_0 ({\genblk1[9].round_inst_n_264 ,\genblk1[9].round_inst_n_265 }));
 endmodule
 `ifndef GLBL
 `define GLBL

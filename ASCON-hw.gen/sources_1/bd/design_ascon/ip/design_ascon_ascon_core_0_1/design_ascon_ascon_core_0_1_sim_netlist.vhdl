@@ -2,7 +2,7 @@
 -- Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2023.2 (lin64) Build 4029153 Fri Oct 13 20:13:54 MDT 2023
--- Date        : Mon Apr 29 12:04:38 2024
+-- Date        : Mon Apr 29 12:18:24 2024
 -- Host        : archbook running 64-bit Arch Linux
 -- Command     : write_vhdl -force -mode funcsim
 --               /home/monsud/Scrivania/ASCON-hw/ASCON-hw.gen/sources_1/bd/design_ascon/ip/design_ascon_ascon_core_0_1/design_ascon_ascon_core_0_1_sim_netlist.vhdl
@@ -29881,7 +29881,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity design_ascon_ascon_core_0_1_ascon_top is
+entity design_ascon_ascon_core_0_1_ascon_128 is
   port (
     D : out STD_LOGIC_VECTOR ( 31 downto 0 );
     \s00_axi_wdata[31]\ : out STD_LOGIC_VECTOR ( 31 downto 0 );
@@ -29898,10 +29898,10 @@ entity design_ascon_ascon_core_0_1_ascon_top is
     s00_axi_aresetn : in STD_LOGIC
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_ascon_ascon_core_0_1_ascon_top : entity is "ascon_top";
-end design_ascon_ascon_core_0_1_ascon_top;
+  attribute ORIG_REF_NAME of design_ascon_ascon_core_0_1_ascon_128 : entity is "ascon_128";
+end design_ascon_ascon_core_0_1_ascon_128;
 
-architecture STRUCTURE of design_ascon_ascon_core_0_1_ascon_top is
+architecture STRUCTURE of design_ascon_ascon_core_0_1_ascon_128 is
   signal add_const_state : STD_LOGIC_VECTOR ( 63 downto 4 );
   signal add_const_state_0 : STD_LOGIC_VECTOR ( 63 downto 1 );
   signal add_const_state_10 : STD_LOGIC_VECTOR ( 63 downto 1 );
@@ -46427,7 +46427,7 @@ axi_wready_reg: unisim.vcomponents.FDRE
       Q => \slv_reg9_reg_n_0_[9]\,
       R => SR(0)
     );
-u_ascon_top: entity work.design_ascon_ascon_core_0_1_ascon_top
+u_ascon_top: entity work.design_ascon_ascon_core_0_1_ascon_128
      port map (
       D(31) => u_ascon_top_n_0,
       D(30) => u_ascon_top_n_1,

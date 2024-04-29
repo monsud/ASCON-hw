@@ -42,53 +42,53 @@ vlog -work xilinx_vip -64 -incr -mfcu  -sv -L axi_vip_v1_1_15 -L processing_syst
 "/home/monsud/Xilinx/Vivado/2023.2/data/xilinx_vip/hdl/clk_vip_if.sv" \
 "/home/monsud/Xilinx/Vivado/2023.2/data/xilinx_vip/hdl/rst_vip_if.sv" \
 
-vlog -work xpm -64 -incr -mfcu  -sv -L axi_vip_v1_1_15 -L processing_system7_vip_v1_0_17 -L xilinx_vip "+incdir+../../../../ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/9a5b/ASCON-hw.srcs/sources_1/new" "+incdir+../../../../ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/ec67/hdl" "+incdir+../../../../ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/6b2b/hdl" "+incdir+/home/monsud/Xilinx/Vivado/2023.2/data/xilinx_vip/include" \
+vlog -work xpm -64 -incr -mfcu  -sv -L axi_vip_v1_1_15 -L processing_system7_vip_v1_0_17 -L xilinx_vip "+incdir+../../../bd/design_ascon/ipshared/329f/ASCON-hw.srcs/sources_1/new" "+incdir+../../../../ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/329f/ASCON-hw.srcs/sources_1/new" "+incdir+../../../../ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/ec67/hdl" "+incdir+../../../../ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/6b2b/hdl" "+incdir+/home/monsud/Xilinx/Vivado/2023.2/data/xilinx_vip/include" \
 "/home/monsud/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv" \
 "/home/monsud/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv" \
 
 vcom -work xpm -64 -93  \
 "/home/monsud/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_VCOMP.vhd" \
 
-vlog -work xil_defaultlib -64 -incr -mfcu  -sv -L axi_vip_v1_1_15 -L processing_system7_vip_v1_0_17 -L xilinx_vip "+incdir+../../../../ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/9a5b/ASCON-hw.srcs/sources_1/new" "+incdir+../../../../ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/ec67/hdl" "+incdir+../../../../ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/6b2b/hdl" "+incdir+/home/monsud/Xilinx/Vivado/2023.2/data/xilinx_vip/include" \
-"../../../bd/design_ascon/ipshared/9a5b/src/ascon_core_v1_0_S00_AXI.sv" \
-"../../../bd/design_ascon/ipshared/9a5b/src/ascon_core_v1_0_S_AXI_INTR.sv" \
-"../../../bd/design_ascon/ipshared/9a5b/src/ascon_core_v1_0.sv" \
+vlog -work xil_defaultlib -64 -incr -mfcu  -sv -L axi_vip_v1_1_15 -L processing_system7_vip_v1_0_17 -L xilinx_vip "+incdir+../../../bd/design_ascon/ipshared/329f/ASCON-hw.srcs/sources_1/new" "+incdir+../../../../ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/329f/ASCON-hw.srcs/sources_1/new" "+incdir+../../../../ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/ec67/hdl" "+incdir+../../../../ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/6b2b/hdl" "+incdir+/home/monsud/Xilinx/Vivado/2023.2/data/xilinx_vip/include" \
+"../../../bd/design_ascon/ipshared/329f/src/ascon_core_v1_0_S00_AXI.sv" \
+"../../../bd/design_ascon/ipshared/329f/src/ascon_core_v1_0_S_AXI_INTR.sv" \
+"../../../bd/design_ascon/ipshared/329f/src/ascon_core_v1_0.sv" \
 "../../../bd/design_ascon/ip/design_ascon_ascon_core_0_1/sim/design_ascon_ascon_core_0_1.sv" \
 
-vlog -work generic_baseblocks_v2_1_1 -64 -incr -mfcu  "+incdir+../../../../ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/9a5b/ASCON-hw.srcs/sources_1/new" "+incdir+../../../../ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/ec67/hdl" "+incdir+../../../../ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/6b2b/hdl" "+incdir+/home/monsud/Xilinx/Vivado/2023.2/data/xilinx_vip/include" \
+vlog -work generic_baseblocks_v2_1_1 -64 -incr -mfcu  "+incdir+../../../bd/design_ascon/ipshared/329f/ASCON-hw.srcs/sources_1/new" "+incdir+../../../../ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/329f/ASCON-hw.srcs/sources_1/new" "+incdir+../../../../ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/ec67/hdl" "+incdir+../../../../ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/6b2b/hdl" "+incdir+/home/monsud/Xilinx/Vivado/2023.2/data/xilinx_vip/include" \
 "../../../../ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/10ab/hdl/generic_baseblocks_v2_1_vl_rfs.v" \
 
-vlog -work axi_infrastructure_v1_1_0 -64 -incr -mfcu  "+incdir+../../../../ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/9a5b/ASCON-hw.srcs/sources_1/new" "+incdir+../../../../ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/ec67/hdl" "+incdir+../../../../ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/6b2b/hdl" "+incdir+/home/monsud/Xilinx/Vivado/2023.2/data/xilinx_vip/include" \
+vlog -work axi_infrastructure_v1_1_0 -64 -incr -mfcu  "+incdir+../../../bd/design_ascon/ipshared/329f/ASCON-hw.srcs/sources_1/new" "+incdir+../../../../ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/329f/ASCON-hw.srcs/sources_1/new" "+incdir+../../../../ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/ec67/hdl" "+incdir+../../../../ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/6b2b/hdl" "+incdir+/home/monsud/Xilinx/Vivado/2023.2/data/xilinx_vip/include" \
 "../../../../ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v" \
 
-vlog -work axi_register_slice_v2_1_29 -64 -incr -mfcu  "+incdir+../../../../ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/9a5b/ASCON-hw.srcs/sources_1/new" "+incdir+../../../../ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/ec67/hdl" "+incdir+../../../../ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/6b2b/hdl" "+incdir+/home/monsud/Xilinx/Vivado/2023.2/data/xilinx_vip/include" \
+vlog -work axi_register_slice_v2_1_29 -64 -incr -mfcu  "+incdir+../../../bd/design_ascon/ipshared/329f/ASCON-hw.srcs/sources_1/new" "+incdir+../../../../ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/329f/ASCON-hw.srcs/sources_1/new" "+incdir+../../../../ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/ec67/hdl" "+incdir+../../../../ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/6b2b/hdl" "+incdir+/home/monsud/Xilinx/Vivado/2023.2/data/xilinx_vip/include" \
 "../../../../ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/ff9f/hdl/axi_register_slice_v2_1_vl_rfs.v" \
 
-vlog -work fifo_generator_v13_2_9 -64 -incr -mfcu  "+incdir+../../../../ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/9a5b/ASCON-hw.srcs/sources_1/new" "+incdir+../../../../ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/ec67/hdl" "+incdir+../../../../ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/6b2b/hdl" "+incdir+/home/monsud/Xilinx/Vivado/2023.2/data/xilinx_vip/include" \
+vlog -work fifo_generator_v13_2_9 -64 -incr -mfcu  "+incdir+../../../bd/design_ascon/ipshared/329f/ASCON-hw.srcs/sources_1/new" "+incdir+../../../../ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/329f/ASCON-hw.srcs/sources_1/new" "+incdir+../../../../ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/ec67/hdl" "+incdir+../../../../ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/6b2b/hdl" "+incdir+/home/monsud/Xilinx/Vivado/2023.2/data/xilinx_vip/include" \
 "../../../../ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/ac72/simulation/fifo_generator_vlog_beh.v" \
 
 vcom -work fifo_generator_v13_2_9 -64 -93  \
 "../../../../ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/ac72/hdl/fifo_generator_v13_2_rfs.vhd" \
 
-vlog -work fifo_generator_v13_2_9 -64 -incr -mfcu  "+incdir+../../../../ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/9a5b/ASCON-hw.srcs/sources_1/new" "+incdir+../../../../ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/ec67/hdl" "+incdir+../../../../ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/6b2b/hdl" "+incdir+/home/monsud/Xilinx/Vivado/2023.2/data/xilinx_vip/include" \
+vlog -work fifo_generator_v13_2_9 -64 -incr -mfcu  "+incdir+../../../bd/design_ascon/ipshared/329f/ASCON-hw.srcs/sources_1/new" "+incdir+../../../../ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/329f/ASCON-hw.srcs/sources_1/new" "+incdir+../../../../ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/ec67/hdl" "+incdir+../../../../ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/6b2b/hdl" "+incdir+/home/monsud/Xilinx/Vivado/2023.2/data/xilinx_vip/include" \
 "../../../../ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/ac72/hdl/fifo_generator_v13_2_rfs.v" \
 
-vlog -work axi_data_fifo_v2_1_28 -64 -incr -mfcu  "+incdir+../../../../ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/9a5b/ASCON-hw.srcs/sources_1/new" "+incdir+../../../../ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/ec67/hdl" "+incdir+../../../../ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/6b2b/hdl" "+incdir+/home/monsud/Xilinx/Vivado/2023.2/data/xilinx_vip/include" \
+vlog -work axi_data_fifo_v2_1_28 -64 -incr -mfcu  "+incdir+../../../bd/design_ascon/ipshared/329f/ASCON-hw.srcs/sources_1/new" "+incdir+../../../../ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/329f/ASCON-hw.srcs/sources_1/new" "+incdir+../../../../ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/ec67/hdl" "+incdir+../../../../ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/6b2b/hdl" "+incdir+/home/monsud/Xilinx/Vivado/2023.2/data/xilinx_vip/include" \
 "../../../../ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/279e/hdl/axi_data_fifo_v2_1_vl_rfs.v" \
 
-vlog -work axi_crossbar_v2_1_30 -64 -incr -mfcu  "+incdir+../../../../ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/9a5b/ASCON-hw.srcs/sources_1/new" "+incdir+../../../../ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/ec67/hdl" "+incdir+../../../../ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/6b2b/hdl" "+incdir+/home/monsud/Xilinx/Vivado/2023.2/data/xilinx_vip/include" \
+vlog -work axi_crossbar_v2_1_30 -64 -incr -mfcu  "+incdir+../../../bd/design_ascon/ipshared/329f/ASCON-hw.srcs/sources_1/new" "+incdir+../../../../ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/329f/ASCON-hw.srcs/sources_1/new" "+incdir+../../../../ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/ec67/hdl" "+incdir+../../../../ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/6b2b/hdl" "+incdir+/home/monsud/Xilinx/Vivado/2023.2/data/xilinx_vip/include" \
 "../../../../ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/fb47/hdl/axi_crossbar_v2_1_vl_rfs.v" \
 
-vlog -work xil_defaultlib -64 -incr -mfcu  "+incdir+../../../../ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/9a5b/ASCON-hw.srcs/sources_1/new" "+incdir+../../../../ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/ec67/hdl" "+incdir+../../../../ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/6b2b/hdl" "+incdir+/home/monsud/Xilinx/Vivado/2023.2/data/xilinx_vip/include" \
+vlog -work xil_defaultlib -64 -incr -mfcu  "+incdir+../../../bd/design_ascon/ipshared/329f/ASCON-hw.srcs/sources_1/new" "+incdir+../../../../ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/329f/ASCON-hw.srcs/sources_1/new" "+incdir+../../../../ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/ec67/hdl" "+incdir+../../../../ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/6b2b/hdl" "+incdir+/home/monsud/Xilinx/Vivado/2023.2/data/xilinx_vip/include" \
 "../../../bd/design_ascon/ip/design_ascon_xbar_1/sim/design_ascon_xbar_1.v" \
 
-vlog -work axi_vip_v1_1_15 -64 -incr -mfcu  -sv -L axi_vip_v1_1_15 -L processing_system7_vip_v1_0_17 -L xilinx_vip "+incdir+../../../../ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/9a5b/ASCON-hw.srcs/sources_1/new" "+incdir+../../../../ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/ec67/hdl" "+incdir+../../../../ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/6b2b/hdl" "+incdir+/home/monsud/Xilinx/Vivado/2023.2/data/xilinx_vip/include" \
+vlog -work axi_vip_v1_1_15 -64 -incr -mfcu  -sv -L axi_vip_v1_1_15 -L processing_system7_vip_v1_0_17 -L xilinx_vip "+incdir+../../../bd/design_ascon/ipshared/329f/ASCON-hw.srcs/sources_1/new" "+incdir+../../../../ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/329f/ASCON-hw.srcs/sources_1/new" "+incdir+../../../../ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/ec67/hdl" "+incdir+../../../../ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/6b2b/hdl" "+incdir+/home/monsud/Xilinx/Vivado/2023.2/data/xilinx_vip/include" \
 "../../../../ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/5753/hdl/axi_vip_v1_1_vl_rfs.sv" \
 
-vlog -work processing_system7_vip_v1_0_17 -64 -incr -mfcu  -sv -L axi_vip_v1_1_15 -L processing_system7_vip_v1_0_17 -L xilinx_vip "+incdir+../../../../ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/9a5b/ASCON-hw.srcs/sources_1/new" "+incdir+../../../../ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/ec67/hdl" "+incdir+../../../../ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/6b2b/hdl" "+incdir+/home/monsud/Xilinx/Vivado/2023.2/data/xilinx_vip/include" \
+vlog -work processing_system7_vip_v1_0_17 -64 -incr -mfcu  -sv -L axi_vip_v1_1_15 -L processing_system7_vip_v1_0_17 -L xilinx_vip "+incdir+../../../bd/design_ascon/ipshared/329f/ASCON-hw.srcs/sources_1/new" "+incdir+../../../../ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/329f/ASCON-hw.srcs/sources_1/new" "+incdir+../../../../ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/ec67/hdl" "+incdir+../../../../ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/6b2b/hdl" "+incdir+/home/monsud/Xilinx/Vivado/2023.2/data/xilinx_vip/include" \
 "../../../../ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/6b2b/hdl/processing_system7_vip_v1_0_vl_rfs.sv" \
 
-vlog -work xil_defaultlib -64 -incr -mfcu  "+incdir+../../../../ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/9a5b/ASCON-hw.srcs/sources_1/new" "+incdir+../../../../ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/ec67/hdl" "+incdir+../../../../ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/6b2b/hdl" "+incdir+/home/monsud/Xilinx/Vivado/2023.2/data/xilinx_vip/include" \
+vlog -work xil_defaultlib -64 -incr -mfcu  "+incdir+../../../bd/design_ascon/ipshared/329f/ASCON-hw.srcs/sources_1/new" "+incdir+../../../../ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/329f/ASCON-hw.srcs/sources_1/new" "+incdir+../../../../ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/ec67/hdl" "+incdir+../../../../ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/6b2b/hdl" "+incdir+/home/monsud/Xilinx/Vivado/2023.2/data/xilinx_vip/include" \
 "../../../bd/design_ascon/ip/design_ascon_processing_system7_0_4/sim/design_ascon_processing_system7_0_4.v" \
 
 vcom -work lib_cdc_v1_0_2 -64 -93  \
@@ -100,10 +100,10 @@ vcom -work proc_sys_reset_v5_0_14 -64 -93  \
 vcom -work xil_defaultlib -64 -93  \
 "../../../bd/design_ascon/ip/design_ascon_rst_ps7_0_100M_2/sim/design_ascon_rst_ps7_0_100M_2.vhd" \
 
-vlog -work axi_protocol_converter_v2_1_29 -64 -incr -mfcu  "+incdir+../../../../ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/9a5b/ASCON-hw.srcs/sources_1/new" "+incdir+../../../../ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/ec67/hdl" "+incdir+../../../../ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/6b2b/hdl" "+incdir+/home/monsud/Xilinx/Vivado/2023.2/data/xilinx_vip/include" \
+vlog -work axi_protocol_converter_v2_1_29 -64 -incr -mfcu  "+incdir+../../../bd/design_ascon/ipshared/329f/ASCON-hw.srcs/sources_1/new" "+incdir+../../../../ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/329f/ASCON-hw.srcs/sources_1/new" "+incdir+../../../../ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/ec67/hdl" "+incdir+../../../../ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/6b2b/hdl" "+incdir+/home/monsud/Xilinx/Vivado/2023.2/data/xilinx_vip/include" \
 "../../../../ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/a63f/hdl/axi_protocol_converter_v2_1_vl_rfs.v" \
 
-vlog -work xil_defaultlib -64 -incr -mfcu  "+incdir+../../../../ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/9a5b/ASCON-hw.srcs/sources_1/new" "+incdir+../../../../ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/ec67/hdl" "+incdir+../../../../ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/6b2b/hdl" "+incdir+/home/monsud/Xilinx/Vivado/2023.2/data/xilinx_vip/include" \
+vlog -work xil_defaultlib -64 -incr -mfcu  "+incdir+../../../bd/design_ascon/ipshared/329f/ASCON-hw.srcs/sources_1/new" "+incdir+../../../../ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/329f/ASCON-hw.srcs/sources_1/new" "+incdir+../../../../ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/ec67/hdl" "+incdir+../../../../ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/6b2b/hdl" "+incdir+/home/monsud/Xilinx/Vivado/2023.2/data/xilinx_vip/include" \
 "../../../bd/design_ascon/ip/design_ascon_auto_pc_0/sim/design_ascon_auto_pc_0.v" \
 "../../../bd/design_ascon/sim/design_ascon.v" \
 

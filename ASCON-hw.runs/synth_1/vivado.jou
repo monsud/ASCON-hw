@@ -3,12 +3,12 @@
 # SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
 # IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
 # SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
-# Start of session at: Mon Apr 29 12:05:22 2024
-# Process ID: 9099
+# Start of session at: Mon Apr 29 12:19:06 2024
+# Process ID: 17490
 # Current directory: /home/monsud/Scrivania/ASCON-hw/ASCON-hw.runs/synth_1
 # Command line: vivado -log design_ascon_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_ascon_wrapper.tcl
 # Log file: /home/monsud/Scrivania/ASCON-hw/ASCON-hw.runs/synth_1/design_ascon_wrapper.vds
 # Journal file: /home/monsud/Scrivania/ASCON-hw/ASCON-hw.runs/synth_1/vivado.jou
-# Running On: archbook, OS: Linux, CPU Frequency: 3077.062 MHz, CPU Physical cores: 4, Host memory: 8057 MB
+# Running On: archbook, OS: Linux, CPU Frequency: 3390.689 MHz, CPU Physical cores: 4, Host memory: 8057 MB
 #-----------------------------------------------------------
 source design_ascon_wrapper.tcl -notrace
