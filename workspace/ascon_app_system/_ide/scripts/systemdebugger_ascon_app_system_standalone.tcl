@@ -16,7 +16,7 @@ after 3000
 targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279651712A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279651712A-13722093-0"}
 fpga -file /home/monsud/Scrivania/ASCON-hw/workspace/ascon_app/_ide/bitstream/design_ascon_wrapper.bit
 targets -set -nocase -filter {name =~"APU*"}
-loadhw -hw /home/monsud/Scrivania/ascon_project/workspace/design_ascon_wrapper/export/design_ascon_wrapper/hw/design_ascon_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+loadhw -hw /home/monsud/Scrivania/ASCON-hw/workspace/design_ascon_wrapper/export/design_ascon_wrapper/hw/design_ascon_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
 configparams force-mem-access 1
 targets -set -nocase -filter {name =~"APU*"}
 source /home/monsud/Scrivania/ASCON-hw/workspace/ascon_app/_ide/psinit/ps7_init.tcl

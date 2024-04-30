@@ -9,7 +9,7 @@
 
 // Memory structure
 #define BASE_ADDRESS 0x40200000
-#define DELAY 1000000000
+#define DELAY 1000000
 
 // Register offsets
 #define REG_KEY_0_OFFSET    0x0

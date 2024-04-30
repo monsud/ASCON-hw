@@ -26,11 +26,12 @@ void initialize_registers(uint8_t *ptr) {
 
 // Function to perform ASCON-128 encryption
 void ascon_128_encrypt(uint8_t *ptr) {
-    int Delay;
+	int Delay;
     u32 key[4] = {0x01234567, 0x89ABCDEF, 0x01234567, 0x89ABCDEF};
     u32 nonce[4] = {0x01234567, 0x89ABCDEF, 0x01234567, 0x89ABCDEF};
     u32 plaintext[4] = {0x01234567, 0x89ABCDEF, 0x01234567, 0x89ABCDEF};
     u32 ciphertext[4];
+    ControlRegister control_reg;
 
     printf("ASCON-128 processing\n");
 
@@ -44,35 +45,44 @@ void ascon_128_encrypt(uint8_t *ptr) {
     printf("Waiting 1\n\r");
     for (Delay = 0; Delay < DELAY; Delay++);
 
-    // Create a control register instance
-    ControlRegister control_reg;
-
     // Set control register to start ASCON-128 encryption
     control_reg.start = 1;
     control_reg.mode_select = 1;
     Xil_Out32((uint32_t *)(ptr + REG_CTRL_OFFSET), *((uint32_t *)&control_reg));
+    printf("Current register 1: %d\n", control_reg.start, control_reg.stop, control_reg.mode_select);
 
     printf("Waiting 2\n\r");
     for (Delay = 0; Delay < DELAY; Delay++);
 
+	State current_state = (State)Xil_In32(ptr + REG_STATE_OFFSET);
+    printf("Current state: %d\n", current_state);
 
-    // Poll the status register until the stop bit is 1
+
+    // Poll the status until the stop bit is 1
     while (Delay > 0) {
     	State current_state = (State)Xil_In32(ptr + REG_STATE_OFFSET);
-        printf("Current state: %d\n", current_state);
+        //printf("Current state: %d\n", current_state);
 
-        if (current_state == ASCON_128) {
-            break;  // ASCON-128 mode reached, exit loop
-        }
+        if (current_state == ASCON_128) { break; }
 
         Delay--;
     }
+
+    printf("Current register 2: %d\n", control_reg.start, control_reg.stop, control_reg.mode_select);
+
+    //CCheck if encryption is complete or timeout occurred
+    if (Delay == 0){
+    	printf("Encryption timeout occurred\n");
+    	return;
+    }
+
+    printf("Current state: %d\n", current_state);
 
     // Reset control register to stop ASCON-128 encryption
     control_reg.start = 0;
     Xil_Out32((uint32_t *)(ptr + REG_CTRL_OFFSET), *((uint32_t *)&control_reg));
 
-    printf("Waiting 4\n\r");
+    printf("Waiting 3\n\r");
     for (Delay = 0; Delay < DELAY; Delay++);
 
     // Load ciphertext from hardware registers

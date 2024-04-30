@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7z010clg400-1" LaunchTime="1714385943">
+<GenRun Id="impl_1" LaunchPart="xc7z010clg400-1" LaunchTime="1714479607">
   <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
   <File Type="POSTROUTE-PHYSOPT-RQS" Name="design_ascon_wrapper_postroute_physopted.rqs"/>
   <File Type="ROUTE-RQS" Name="design_ascon_wrapper_routed.rqs"/>
@@ -104,16 +104,6 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/ascon_fsm.sv">
-      <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="ImportPath" Val="$PPRDIR/../ascon_project/ascon_project.srcs/sources_1/new/ascon_fsm.sv"/>
-        <Attr Name="ImportTime" Val="1702406163"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
     <File Path="$PSRCDIR/sources_1/new/ascon_add_constant.sv">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
@@ -134,21 +124,31 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/ascon_initialization.sv">
+    <File Path="$PSRCDIR/sources_1/new/ascon_fsm.sv">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="ImportPath" Val="$PPRDIR/../ascon_project/ascon_project.srcs/sources_1/new/ascon_initialization.sv"/>
-        <Attr Name="ImportTime" Val="1702405389"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ascon_project/ascon_project.srcs/sources_1/new/ascon_fsm.sv"/>
+        <Attr Name="ImportTime" Val="1702406163"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/ascon_key_schedule.sv">
+    <File Path="$PSRCDIR/sources_1/new/ascon_hash.sv">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="ImportPath" Val="$PPRDIR/../ascon_project/ascon_project.srcs/sources_1/new/ascon_key_schedule.sv"/>
-        <Attr Name="ImportTime" Val="1702405491"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ascon_project/ascon_project.srcs/sources_1/new/ascon_hash.sv"/>
+        <Attr Name="ImportTime" Val="1700320705"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/ascon_initialization.sv">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ascon_project/ascon_project.srcs/sources_1/new/ascon_initialization.sv"/>
+        <Attr Name="ImportTime" Val="1702405389"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -184,26 +184,6 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/ascon_128.sv">
-      <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="ImportPath" Val="$PSRCDIR/sources_1/new/ascon_128.sv"/>
-        <Attr Name="ImportTime" Val="1714385620"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/new/ascon_hash.sv">
-      <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="ImportPath" Val="$PPRDIR/../ascon_project/ascon_project.srcs/sources_1/new/ascon_hash.sv"/>
-        <Attr Name="ImportTime" Val="1700320705"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
     <File Path="$PSRCDIR/sources_1/new/ascon_hmac.sv">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
@@ -214,7 +194,35 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PSRCDIR/sources_1/new/ascon_128.sv">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PSRCDIR/sources_1/new/ascon_128.sv"/>
+        <Attr Name="ImportTime" Val="1714385620"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/ascon_key_schedule.sv">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ascon_project/ascon_project.srcs/sources_1/new/ascon_key_schedule.sv"/>
+        <Attr Name="ImportTime" Val="1702405491"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PSRCDIR/sources_1/new/ascon_kmac.sv">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/top_module.sv">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>

@@ -1,4 +1,4 @@
 Time resolution is 1 ps
-Time: 30000, Status: 00000001
-Time: 540000, Status: 00000000
-Ciphertext: 19714801f49ff5de77edb2999a030f46
+Time: 30000, Status: 00000003
+Time: 580000, Status: 00000000
+HMAC Output: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx

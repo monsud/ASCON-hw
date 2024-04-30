@@ -68,20 +68,20 @@
     <Option Name="DSADesignIntentEmbedded" Val="true"/>
     <Option Name="DSADesignIntentDatacenter" Val="false"/>
     <Option Name="FeatureSet" Val="FeatureSet_Classic"/>
-    <Option Name="WTXSimLaunchSim" Val="244"/>
+    <Option Name="WTXSimLaunchSim" Val="298"/>
     <Option Name="WTModelSimLaunchSim" Val="0"/>
     <Option Name="WTQuestaLaunchSim" Val="0"/>
     <Option Name="WTIesLaunchSim" Val="0"/>
     <Option Name="WTVcsLaunchSim" Val="0"/>
     <Option Name="WTRivieraLaunchSim" Val="0"/>
     <Option Name="WTActivehdlLaunchSim" Val="0"/>
-    <Option Name="WTXSimExportSim" Val="51"/>
-    <Option Name="WTModelSimExportSim" Val="51"/>
-    <Option Name="WTQuestaExportSim" Val="51"/>
+    <Option Name="WTXSimExportSim" Val="62"/>
+    <Option Name="WTModelSimExportSim" Val="62"/>
+    <Option Name="WTQuestaExportSim" Val="62"/>
     <Option Name="WTIesExportSim" Val="0"/>
-    <Option Name="WTVcsExportSim" Val="51"/>
-    <Option Name="WTRivieraExportSim" Val="51"/>
-    <Option Name="WTActivehdlExportSim" Val="51"/>
+    <Option Name="WTVcsExportSim" Val="62"/>
+    <Option Name="WTRivieraExportSim" Val="62"/>
+    <Option Name="WTActivehdlExportSim" Val="62"/>
     <Option Name="GenerateIPUpgradeLog" Val="TRUE"/>
     <Option Name="XSimRadix" Val="hex"/>
     <Option Name="XSimTimeUnit" Val="ns"/>
@@ -130,16 +130,6 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/new/ascon_fsm.sv">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../ascon_project/ascon_project.srcs/sources_1/new/ascon_fsm.sv"/>
-          <Attr Name="ImportTime" Val="1702406163"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
       <File Path="$PSRCDIR/sources_1/new/ascon_add_constant.sv">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
@@ -160,21 +150,31 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/new/ascon_initialization.sv">
+      <File Path="$PSRCDIR/sources_1/new/ascon_fsm.sv">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../ascon_project/ascon_project.srcs/sources_1/new/ascon_initialization.sv"/>
-          <Attr Name="ImportTime" Val="1702405389"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../ascon_project/ascon_project.srcs/sources_1/new/ascon_fsm.sv"/>
+          <Attr Name="ImportTime" Val="1702406163"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/new/ascon_key_schedule.sv">
+      <File Path="$PSRCDIR/sources_1/new/ascon_hash.sv">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../ascon_project/ascon_project.srcs/sources_1/new/ascon_key_schedule.sv"/>
-          <Attr Name="ImportTime" Val="1702405491"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../ascon_project/ascon_project.srcs/sources_1/new/ascon_hash.sv"/>
+          <Attr Name="ImportTime" Val="1700320705"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/ascon_initialization.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../ascon_project/ascon_project.srcs/sources_1/new/ascon_initialization.sv"/>
+          <Attr Name="ImportTime" Val="1702405389"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -210,6 +210,16 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
+      <File Path="$PSRCDIR/sources_1/new/ascon_hmac.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../ascon_project/ascon_project.srcs/sources_1/new/ascon_hmac.sv"/>
+          <Attr Name="ImportTime" Val="1700222954"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
       <File Path="$PSRCDIR/sources_1/new/ascon_128.sv">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
@@ -220,21 +230,11 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/new/ascon_hash.sv">
+      <File Path="$PSRCDIR/sources_1/new/ascon_key_schedule.sv">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../ascon_project/ascon_project.srcs/sources_1/new/ascon_hash.sv"/>
-          <Attr Name="ImportTime" Val="1700320705"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/new/ascon_hmac.sv">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../ascon_project/ascon_project.srcs/sources_1/new/ascon_hmac.sv"/>
-          <Attr Name="ImportTime" Val="1700222954"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../ascon_project/ascon_project.srcs/sources_1/new/ascon_key_schedule.sv"/>
+          <Attr Name="ImportTime" Val="1702405491"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -278,10 +278,17 @@
     </FileSet>
     <FileSet Name="sim_1" Type="SimulationSrcs" RelSrcDir="$PSRCDIR/sim_1" RelGenDir="$PGENDIR/sim_1">
       <Filter Type="Srcs"/>
-      <File Path="$PSRCDIR/sim_1/new/tb_ascon_top.sv">
+      <File Path="$PSRCDIR/sim_1/new/tb_top_module.sv">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../ascon_project/ascon_project.srcs/sim_1/new/tb_ascon_top.sv"/>
-          <Attr Name="ImportTime" Val="1702405719"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sim_1/new/tb_ascon_hmac.sv">
+        <FileInfo>
+          <Attr Name="Library" Val="xil_defaultlib"/>
+          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -297,9 +304,27 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
+      <File Path="$PSRCDIR/sim_1/new/tb_ascon_kmac.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sim_1/new/tb_ascon_128.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PSRCDIR/sim_1/new/tb_ascon_128.sv"/>
+          <Attr Name="ImportTime" Val="1714425298"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
-        <Option Name="TopModule" Val="tb_ascon_top"/>
+        <Option Name="TopModule" Val="tb_top_module"/>
         <Option Name="TopLib" Val="xil_defaultlib"/>
         <Option Name="TransportPathDelay" Val="0"/>
         <Option Name="TransportIntDelay" Val="0"/>

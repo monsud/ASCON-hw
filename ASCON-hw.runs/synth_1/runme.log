@@ -11,7 +11,7 @@
     ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 
 source design_ascon_wrapper.tcl -notrace
-create_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 1259.328 ; gain = 5.961 ; free physical = 1664 ; free virtual = 3758
+create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1261.645 ; gain = 12.898 ; free physical = 686 ; free virtual = 3196
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/monsud/Scrivania/ASCON-hw/ip_repo/ascon_core_1_0'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/monsud/Xilinx/Vivado/2023.2/data/ip'.
@@ -27,18 +27,18 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 17520
+INFO: [Synth 8-7075] Helper process launched with PID 58565
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2025.043 ; gain = 404.684 ; free physical = 573 ; free virtual = 2678
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2025.320 ; gain = 403.715 ; free physical = 233 ; free virtual = 2270
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'design_ascon_wrapper' [/home/monsud/Scrivania/ASCON-hw/ASCON-hw.gen/sources_1/bd/design_ascon/hdl/design_ascon_wrapper.v:13]
 INFO: [Synth 8-6157] synthesizing module 'design_ascon' [/home/monsud/Scrivania/ASCON-hw/ASCON-hw.gen/sources_1/bd/design_ascon/synth/design_ascon.v:13]
-INFO: [Synth 8-6157] synthesizing module 'design_ascon_ascon_core_0_1' [/home/monsud/Scrivania/ASCON-hw/ASCON-hw.runs/synth_1/.Xil/Vivado-17490-archbook/realtime/design_ascon_ascon_core_0_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_ascon_ascon_core_0_1' (0#1) [/home/monsud/Scrivania/ASCON-hw/ASCON-hw.runs/synth_1/.Xil/Vivado-17490-archbook/realtime/design_ascon_ascon_core_0_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_ascon_ascon_core_0_1' [/home/monsud/Scrivania/ASCON-hw/ASCON-hw.runs/synth_1/.Xil/Vivado-58520-archbook/realtime/design_ascon_ascon_core_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_ascon_ascon_core_0_1' (0#1) [/home/monsud/Scrivania/ASCON-hw/ASCON-hw.runs/synth_1/.Xil/Vivado-58520-archbook/realtime/design_ascon_ascon_core_0_1_stub.v:6]
 WARNING: [Synth 8-7071] port 'irq' of module 'design_ascon_ascon_core_0_1' is unconnected for instance 'ascon_core_0' [/home/monsud/Scrivania/ASCON-hw/ASCON-hw.gen/sources_1/bd/design_ascon/synth/design_ascon.v:159]
 WARNING: [Synth 8-7023] instance 'ascon_core_0' of module 'design_ascon_ascon_core_0_1' has 43 connections declared, but only 42 given [/home/monsud/Scrivania/ASCON-hw/ASCON-hw.gen/sources_1/bd/design_ascon/synth/design_ascon.v:159]
-INFO: [Synth 8-6157] synthesizing module 'design_ascon_processing_system7_0_4' [/home/monsud/Scrivania/ASCON-hw/ASCON-hw.runs/synth_1/.Xil/Vivado-17490-archbook/realtime/design_ascon_processing_system7_0_4_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_ascon_processing_system7_0_4' (0#1) [/home/monsud/Scrivania/ASCON-hw/ASCON-hw.runs/synth_1/.Xil/Vivado-17490-archbook/realtime/design_ascon_processing_system7_0_4_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_ascon_processing_system7_0_4' [/home/monsud/Scrivania/ASCON-hw/ASCON-hw.runs/synth_1/.Xil/Vivado-58520-archbook/realtime/design_ascon_processing_system7_0_4_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_ascon_processing_system7_0_4' (0#1) [/home/monsud/Scrivania/ASCON-hw/ASCON-hw.runs/synth_1/.Xil/Vivado-58520-archbook/realtime/design_ascon_processing_system7_0_4_stub.v:6]
 WARNING: [Synth 8-7071] port 'TTC0_WAVE0_OUT' of module 'design_ascon_processing_system7_0_4' is unconnected for instance 'processing_system7_0' [/home/monsud/Scrivania/ASCON-hw/ASCON-hw.gen/sources_1/bd/design_ascon/synth/design_ascon.v:202]
 WARNING: [Synth 8-7071] port 'TTC0_WAVE1_OUT' of module 'design_ascon_processing_system7_0_4' is unconnected for instance 'processing_system7_0' [/home/monsud/Scrivania/ASCON-hw/ASCON-hw.gen/sources_1/bd/design_ascon/synth/design_ascon.v:202]
 WARNING: [Synth 8-7071] port 'TTC0_WAVE2_OUT' of module 'design_ascon_processing_system7_0_4' is unconnected for instance 'processing_system7_0' [/home/monsud/Scrivania/ASCON-hw/ASCON-hw.gen/sources_1/bd/design_ascon/synth/design_ascon.v:202]
@@ -51,14 +51,14 @@ INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_192XI7X' (0#1) [
 INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_1EB53NH' [/home/monsud/Scrivania/ASCON-hw/ASCON-hw.gen/sources_1/bd/design_ascon/synth/design_ascon.v:1082]
 INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_1EB53NH' (0#1) [/home/monsud/Scrivania/ASCON-hw/ASCON-hw.gen/sources_1/bd/design_ascon/synth/design_ascon.v:1082]
 INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_1H17FZI' [/home/monsud/Scrivania/ASCON-hw/ASCON-hw.gen/sources_1/bd/design_ascon/synth/design_ascon.v:1228]
-INFO: [Synth 8-6157] synthesizing module 'design_ascon_auto_pc_0' [/home/monsud/Scrivania/ASCON-hw/ASCON-hw.runs/synth_1/.Xil/Vivado-17490-archbook/realtime/design_ascon_auto_pc_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_ascon_auto_pc_0' (0#1) [/home/monsud/Scrivania/ASCON-hw/ASCON-hw.runs/synth_1/.Xil/Vivado-17490-archbook/realtime/design_ascon_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_ascon_auto_pc_0' [/home/monsud/Scrivania/ASCON-hw/ASCON-hw.runs/synth_1/.Xil/Vivado-58520-archbook/realtime/design_ascon_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_ascon_auto_pc_0' (0#1) [/home/monsud/Scrivania/ASCON-hw/ASCON-hw.runs/synth_1/.Xil/Vivado-58520-archbook/realtime/design_ascon_auto_pc_0_stub.v:6]
 INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_1H17FZI' (0#1) [/home/monsud/Scrivania/ASCON-hw/ASCON-hw.gen/sources_1/bd/design_ascon/synth/design_ascon.v:1228]
-INFO: [Synth 8-6157] synthesizing module 'design_ascon_xbar_1' [/home/monsud/Scrivania/ASCON-hw/ASCON-hw.runs/synth_1/.Xil/Vivado-17490-archbook/realtime/design_ascon_xbar_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_ascon_xbar_1' (0#1) [/home/monsud/Scrivania/ASCON-hw/ASCON-hw.runs/synth_1/.Xil/Vivado-17490-archbook/realtime/design_ascon_xbar_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_ascon_xbar_1' [/home/monsud/Scrivania/ASCON-hw/ASCON-hw.runs/synth_1/.Xil/Vivado-58520-archbook/realtime/design_ascon_xbar_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_ascon_xbar_1' (0#1) [/home/monsud/Scrivania/ASCON-hw/ASCON-hw.runs/synth_1/.Xil/Vivado-58520-archbook/realtime/design_ascon_xbar_1_stub.v:6]
 INFO: [Synth 8-6155] done synthesizing module 'design_ascon_ps7_0_axi_periph_1' (0#1) [/home/monsud/Scrivania/ASCON-hw/ASCON-hw.gen/sources_1/bd/design_ascon/synth/design_ascon.v:361]
-INFO: [Synth 8-6157] synthesizing module 'design_ascon_rst_ps7_0_100M_2' [/home/monsud/Scrivania/ASCON-hw/ASCON-hw.runs/synth_1/.Xil/Vivado-17490-archbook/realtime/design_ascon_rst_ps7_0_100M_2_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_ascon_rst_ps7_0_100M_2' (0#1) [/home/monsud/Scrivania/ASCON-hw/ASCON-hw.runs/synth_1/.Xil/Vivado-17490-archbook/realtime/design_ascon_rst_ps7_0_100M_2_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_ascon_rst_ps7_0_100M_2' [/home/monsud/Scrivania/ASCON-hw/ASCON-hw.runs/synth_1/.Xil/Vivado-58520-archbook/realtime/design_ascon_rst_ps7_0_100M_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_ascon_rst_ps7_0_100M_2' (0#1) [/home/monsud/Scrivania/ASCON-hw/ASCON-hw.runs/synth_1/.Xil/Vivado-58520-archbook/realtime/design_ascon_rst_ps7_0_100M_2_stub.v:6]
 WARNING: [Synth 8-7071] port 'mb_reset' of module 'design_ascon_rst_ps7_0_100M_2' is unconnected for instance 'rst_ps7_0_100M' [/home/monsud/Scrivania/ASCON-hw/ASCON-hw.gen/sources_1/bd/design_ascon/synth/design_ascon.v:352]
 WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'design_ascon_rst_ps7_0_100M_2' is unconnected for instance 'rst_ps7_0_100M' [/home/monsud/Scrivania/ASCON-hw/ASCON-hw.gen/sources_1/bd/design_ascon/synth/design_ascon.v:352]
 WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'design_ascon_rst_ps7_0_100M_2' is unconnected for instance 'rst_ps7_0_100M' [/home/monsud/Scrivania/ASCON-hw/ASCON-hw.gen/sources_1/bd/design_ascon/synth/design_ascon.v:352]
@@ -83,18 +83,18 @@ WARNING: [Synth 8-7129] Port M01_ARESETN in module design_ascon_ps7_0_axi_periph
 WARNING: [Synth 8-7129] Port S00_ACLK in module design_ascon_ps7_0_axi_periph_1 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port S00_ARESETN in module design_ascon_ps7_0_axi_periph_1 is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2104.980 ; gain = 484.621 ; free physical = 474 ; free virtual = 2581
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2105.258 ; gain = 483.652 ; free physical = 213 ; free virtual = 2159
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2119.824 ; gain = 499.465 ; free physical = 473 ; free virtual = 2580
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2120.102 ; gain = 498.496 ; free physical = 180 ; free virtual = 2141
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2119.824 ; gain = 499.465 ; free physical = 473 ; free virtual = 2580
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2120.102 ; gain = 498.496 ; free physical = 180 ; free virtual = 2141
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2119.824 ; gain = 0.000 ; free physical = 472 ; free virtual = 2579
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2120.102 ; gain = 0.000 ; free physical = 161 ; free virtual = 2126
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -115,22 +115,22 @@ Parsing XDC File [/home/monsud/Scrivania/ASCON-hw/ASCON-hw.runs/synth_1/dont_tou
 Finished Parsing XDC File [/home/monsud/Scrivania/ASCON-hw/ASCON-hw.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2192.762 ; gain = 0.000 ; free physical = 461 ; free virtual = 2568
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2193.039 ; gain = 0.000 ; free physical = 229 ; free virtual = 2093
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2192.797 ; gain = 0.000 ; free physical = 461 ; free virtual = 2568
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.03 . Memory (MB): peak = 2193.074 ; gain = 0.000 ; free physical = 220 ; free virtual = 2093
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 2192.797 ; gain = 572.438 ; free physical = 458 ; free virtual = 2565
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2193.074 ; gain = 571.469 ; free physical = 220 ; free virtual = 2099
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z010clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 2192.797 ; gain = 572.438 ; free physical = 458 ; free virtual = 2565
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2193.074 ; gain = 571.469 ; free physical = 220 ; free virtual = 2099
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -403,10 +403,10 @@ Applied set_property KEEP_HIERARCHY = SOFT for design_ascon_i/ps7_0_axi_periph. 
 Applied set_property KEEP_HIERARCHY = SOFT for design_ascon_i/processing_system7_0. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_ascon_i/rst_ps7_0_100M. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2192.797 ; gain = 572.438 ; free physical = 458 ; free virtual = 2565
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2193.074 ; gain = 571.469 ; free physical = 220 ; free virtual = 2100
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 2192.797 ; gain = 572.438 ; free physical = 457 ; free virtual = 2565
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2193.074 ; gain = 571.469 ; free physical = 264 ; free virtual = 2103
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -435,25 +435,25 @@ WARNING: [Synth 8-7129] Port M01_ARESETN in module design_ascon_ps7_0_axi_periph
 WARNING: [Synth 8-7129] Port S00_ACLK in module design_ascon_ps7_0_axi_periph_1 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port S00_ARESETN in module design_ascon_ps7_0_axi_periph_1 is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 2192.797 ; gain = 572.438 ; free physical = 456 ; free virtual = 2568
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2193.074 ; gain = 571.469 ; free physical = 243 ; free virtual = 2098
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 2192.797 ; gain = 572.438 ; free physical = 462 ; free virtual = 2573
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 2193.074 ; gain = 571.469 ; free physical = 248 ; free virtual = 2100
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 2192.797 ; gain = 572.438 ; free physical = 462 ; free virtual = 2573
+Finished Timing Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 2193.074 ; gain = 571.469 ; free physical = 248 ; free virtual = 2101
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 2192.797 ; gain = 572.438 ; free physical = 462 ; free virtual = 2573
+Finished Technology Mapping : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 2193.074 ; gain = 571.469 ; free physical = 240 ; free virtual = 2093
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -471,37 +471,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 2192.797 ; gain = 572.438 ; free physical = 468 ; free virtual = 2580
+Finished IO Insertion : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 2193.074 ; gain = 571.469 ; free physical = 248 ; free virtual = 2101
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 2192.797 ; gain = 572.438 ; free physical = 468 ; free virtual = 2580
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 2193.074 ; gain = 571.469 ; free physical = 248 ; free virtual = 2101
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 2192.797 ; gain = 572.438 ; free physical = 468 ; free virtual = 2580
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 2193.074 ; gain = 571.469 ; free physical = 248 ; free virtual = 2101
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 2192.797 ; gain = 572.438 ; free physical = 468 ; free virtual = 2580
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 2193.074 ; gain = 571.469 ; free physical = 248 ; free virtual = 2101
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 2192.797 ; gain = 572.438 ; free physical = 468 ; free virtual = 2580
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 2193.074 ; gain = 571.469 ; free physical = 248 ; free virtual = 2101
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 2192.797 ; gain = 572.438 ; free physical = 468 ; free virtual = 2580
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 2193.074 ; gain = 571.469 ; free physical = 248 ; free virtual = 2101
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -529,16 +529,16 @@ Report Cell Usage:
 |5     |design_ascon_xbar                 |     1|
 +------+----------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 2192.797 ; gain = 572.438 ; free physical = 468 ; free virtual = 2580
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 2193.074 ; gain = 571.469 ; free physical = 248 ; free virtual = 2101
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 7 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 2192.797 ; gain = 499.465 ; free physical = 468 ; free virtual = 2580
-Synthesis Optimization Complete : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 2192.797 ; gain = 572.438 ; free physical = 468 ; free virtual = 2580
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 2193.074 ; gain = 498.496 ; free physical = 248 ; free virtual = 2102
+Synthesis Optimization Complete : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 2193.074 ; gain = 571.469 ; free physical = 248 ; free virtual = 2102
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2192.797 ; gain = 0.000 ; free physical = 468 ; free virtual = 2580
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2193.074 ; gain = 0.000 ; free physical = 240 ; free virtual = 2102
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2192.797 ; gain = 0.000 ; free physical = 751 ; free virtual = 2863
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2193.074 ; gain = 0.000 ; free physical = 512 ; free virtual = 2395
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
@@ -546,9 +546,9 @@ Synth Design complete | Checksum: 5de4209
 INFO: [Common 17-83] Releasing license: Synthesis
 43 Infos, 36 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:28 ; elapsed = 00:00:25 . Memory (MB): peak = 2192.797 ; gain = 901.711 ; free physical = 751 ; free virtual = 2863
-INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1820.233; main = 1484.325; forked = 385.789
-INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3143.891; main = 2160.750; forked = 983.141
+synth_design: Time (s): cpu = 00:00:32 ; elapsed = 00:00:30 . Memory (MB): peak = 2193.074 ; gain = 901.711 ; free physical = 511 ; free virtual = 2395
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1753.174; main = 1456.553; forked = 365.272
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3144.164; main = 2161.027; forked = 983.137
 INFO: [Common 17-1381] The checkpoint '/home/monsud/Scrivania/ASCON-hw/ASCON-hw.runs/synth_1/design_ascon_wrapper.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file design_ascon_wrapper_utilization_synth.rpt -pb design_ascon_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Mon Apr 29 12:19:42 2024...
+INFO: [Common 17-206] Exiting Vivado at Tue Apr 30 14:20:56 2024...

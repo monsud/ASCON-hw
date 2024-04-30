@@ -48,7 +48,7 @@ module tb_ascon_fsm;
     // Apply reset
     rst = 1;
     control = 32'b0;
-    #10 rst = 0;
+    #20 rst = 0;
 
     // Scenario 1: Start and Stop
     control = 32'b01; // Start
