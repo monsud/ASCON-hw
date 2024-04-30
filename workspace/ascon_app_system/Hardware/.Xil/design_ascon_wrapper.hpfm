@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!-- design_ascon_wrapper.hpfm -->
+<xd:repository xmlns:xd="http://www.xilinx.com/xd" xd:name="ascon_platform" xd:library="zybo" xd:version="1.0" xd:vendor="xilinx">
+  <xd:component xd:name="ascon_platform" xd:library="zybo" xd:version="1.0" xd:vendor="xilinx" xd:type="platform" xd:BRAM="60" xd:DSP="80" xd:FF="35200" xd:LUT="17600">
+    <xd:platformInfo>
+      <xd:deviceInfo xd:name="xc7z010clg400-1" xd:architecture="zynq" xd:device="xc7z010" xd:package="clg400" xd:speedGrade="-1"/>
+      <xd:registeredDevices xd:kio="0" xd:uio="0"/>
+      <xd:description></xd:description>
+      <xd:systemClocks xd:defaultClock="4">
+        <xd:clock xd:name="CPU" xd:instanceRef="processing_system7_0" xd:componentRef="processing_system7" xd:frequency="650.000000" xd:period="1.538462" xd:status="reserved"/>
+        <xd:clock xd:name="processing_system7_0_FCLK_CLK0" xd:instanceRef="processing_system7_0" xd:componentRef="processing_system7" xd:id="4" xd:frequency="100.000000" xd:period="10.000000" xd:normalizedPeriod="6.500000" xd:clkDomain="design_ascon_processing_system7_0_4_FCLK_CLK0" xd:status="fixed"/>
+      </xd:systemClocks>
+    </xd:platformInfo>
+    <xd:parameter xd:name="NUM_SI" xd:instanceRef="ps7_0_axi_periph" xd:componentRef="axi_interconnect" xd:isValid="'true'" xd:value="number(count($designComponent/xd:connection/xd:busInterface[@xd:instanceRef=$instance and starts-with(@xd:name,'ps7_0_axi_periph_S') and starts-with(substring(@xd:name, string-length(@xd:name)-3, 4),'_AXI')])+1)"/>
+    <xd:parameter xd:name="NUM_MI" xd:instanceRef="ps7_0_axi_periph" xd:componentRef="axi_interconnect" xd:isValid="'true'" xd:value="number(count($designComponent/xd:connection/xd:busInterface[@xd:instanceRef=$instance and starts-with(@xd:name,'ps7_0_axi_periph_M') and starts-with(substring(@xd:name, string-length(@xd:name)-3, 4),'_AXI')])+2)"/>
+    <xd:parameter xd:name="M02_HAS_REGSLICE" xd:instanceRef="ps7_0_axi_periph" xd:componentRef="axi_interconnect" xd:isValid="count($designComponent/xd:connection/xd:busInterface[@xd:instanceRef=$instance and @xd:name='ps7_0_axi_periph_M02_AXI'])>0" xd:value="1"/>
+    <xd:busInterface xd:busTypeRef="aximm" xd:name="ps7_0_axi_periph_M02_AXI" xd:instanceRef="ps7_0_axi_periph" xd:componentRef="axi_interconnect" xd:mode="master" xd:dataWidth="32" xd:clockRef="ps7_0_axi_periph_M02_ACLK" xd:busInterfaceRef="M02_AXI" xd:memport="M_AXI_GP" xd:sptag="GP" xd:slr="default" xd:auto="true" xd:idBits="2" xd:resetRef="ps7_0_axi_periph_M02_ARESETN"/>
+    <xd:busInterface xd:busTypeRef="clock" xd:name="processing_system7_0_FCLK_CLK0" xd:instanceRef="processing_system7_0" xd:componentRef="processing_system7" xd:mode="master" xd:busInterfaceRef="FCLK_CLK0"/>
+    <xd:busInterface xd:busTypeRef="clock" xd:name="ps7_0_axi_periph_M02_ACLK" xd:instanceRef="ps7_0_axi_periph" xd:componentRef="axi_interconnect" xd:mode="slave" xd:busInterfaceRef="M02_ACLK"/>
+    <xd:busInterface xd:busTypeRef="reset" xd:name="rst_ps7_0_100M_peripheral_reset" xd:instanceRef="rst_ps7_0_100M" xd:componentRef="proc_sys_reset" xd:mode="master" xd:clockRef="processing_system7_0_FCLK_CLK0" xd:busInterfaceRef="peripheral_reset" xd:clkDomain="design_ascon_processing_system7_0_4_FCLK_CLK0" xd:slr="default"/>
+    <xd:busInterface xd:busTypeRef="reset" xd:name="rst_ps7_0_100M_interconnect_aresetn" xd:instanceRef="rst_ps7_0_100M" xd:componentRef="proc_sys_reset" xd:mode="master" xd:clockRef="processing_system7_0_FCLK_CLK0" xd:busInterfaceRef="interconnect_aresetn" xd:clkDomain="design_ascon_processing_system7_0_4_FCLK_CLK0" xd:slr="default"/>
+    <xd:busInterface xd:busTypeRef="reset" xd:name="rst_ps7_0_100M_peripheral_aresetn" xd:instanceRef="rst_ps7_0_100M" xd:componentRef="proc_sys_reset" xd:mode="master" xd:clockRef="processing_system7_0_FCLK_CLK0" xd:busInterfaceRef="peripheral_aresetn" xd:clkDomain="design_ascon_processing_system7_0_4_FCLK_CLK0" xd:slr="default"/>
+    <xd:busInterface xd:busTypeRef="reset" xd:name="ps7_0_axi_periph_M02_ARESETN" xd:instanceRef="ps7_0_axi_periph" xd:componentRef="axi_interconnect" xd:mode="slave" xd:clockRef="ps7_0_axi_periph_M02_ACLK" xd:busInterfaceRef="M02_ARESETN"/>
+    <xd:resourceEstimates xd:BRAM="0" xd:DSP="0" xd:FF="0" xd:LUT="0"/>
+  </xd:component>
+</xd:repository>

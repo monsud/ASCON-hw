@@ -1,0 +1,6 @@
+2023-12-12T22:03:10.76366800255-22:03:10 **** Build of configuration Emulation-SW for project ascon_app_system ****
+000-make all 
+000-Package not supported, if the system project is in Emulation Target, and only Baremetal Or Embedded Linux Applications present
+00255-
+22:03:11 Build Finished (took 424ms)
+
