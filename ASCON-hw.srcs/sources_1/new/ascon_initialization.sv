@@ -22,6 +22,7 @@
 module ascon_initialization (
   input logic clk,
   input logic rst,
+  input logic enable,
   input logic [127:0] key,
   input logic [127:0] nonce,
   output logic [127:0] state_out
@@ -40,7 +41,7 @@ module ascon_initialization (
   always @(posedge clk or posedge rst) begin
     if (rst) begin
       state_out <= 128'h00000000000000000000000000000000;
-    end else begin
+    end else if (enable) begin
       state_out <= round_state;
     end
   end

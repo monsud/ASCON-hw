@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2023.2 (lin64) Build 4029153 Fri Oct 13 20:13:54 MDT 2023
-| Date         : Tue Apr 30 14:20:56 2024
+| Date         : Fri May  3 18:11:42 2024
 | Host         : archbook running 64-bit Arch Linux
 | Command      : report_utilization -file design_ascon_wrapper_utilization_synth.rpt -pb design_ascon_wrapper_utilization_synth.pb
 | Design       : design_ascon_wrapper
@@ -180,8 +180,7 @@ Table of Contents
 | design_ascon_xbar_1                 |    1 |
 | design_ascon_rst_ps7_0_100M_2       |    1 |
 | design_ascon_processing_system7_0_4 |    1 |
-| design_ascon_auto_pc_0              |    1 |
-| design_ascon_ascon_core_0_1         |    1 |
+| design_ascon_ascon_core_0_3         |    1 |
 +-------------------------------------+------+
 
 

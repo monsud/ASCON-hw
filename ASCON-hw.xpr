@@ -48,6 +48,7 @@
     <Option Name="DefaultLib" Val="xil_defaultlib"/>
     <Option Name="ProjectType" Val="Default"/>
     <Option Name="IPRepoPath" Val="$PPRDIR/ip_repo/ascon_core_1_0"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/ip_repo/ascon_core_1_1"/>
     <Option Name="IPOutputRepo" Val="$PCACHEDIR/ip"/>
     <Option Name="IPDefaultOutputPath" Val="$PGENDIR/sources_1"/>
     <Option Name="IPCachePermission" Val="read"/>
@@ -68,20 +69,20 @@
     <Option Name="DSADesignIntentEmbedded" Val="true"/>
     <Option Name="DSADesignIntentDatacenter" Val="false"/>
     <Option Name="FeatureSet" Val="FeatureSet_Classic"/>
-    <Option Name="WTXSimLaunchSim" Val="298"/>
+    <Option Name="WTXSimLaunchSim" Val="385"/>
     <Option Name="WTModelSimLaunchSim" Val="0"/>
     <Option Name="WTQuestaLaunchSim" Val="0"/>
     <Option Name="WTIesLaunchSim" Val="0"/>
     <Option Name="WTVcsLaunchSim" Val="0"/>
     <Option Name="WTRivieraLaunchSim" Val="0"/>
     <Option Name="WTActivehdlLaunchSim" Val="0"/>
-    <Option Name="WTXSimExportSim" Val="62"/>
-    <Option Name="WTModelSimExportSim" Val="62"/>
-    <Option Name="WTQuestaExportSim" Val="62"/>
+    <Option Name="WTXSimExportSim" Val="63"/>
+    <Option Name="WTModelSimExportSim" Val="63"/>
+    <Option Name="WTQuestaExportSim" Val="63"/>
     <Option Name="WTIesExportSim" Val="0"/>
-    <Option Name="WTVcsExportSim" Val="62"/>
-    <Option Name="WTRivieraExportSim" Val="62"/>
-    <Option Name="WTActivehdlExportSim" Val="62"/>
+    <Option Name="WTVcsExportSim" Val="63"/>
+    <Option Name="WTRivieraExportSim" Val="63"/>
+    <Option Name="WTActivehdlExportSim" Val="63"/>
     <Option Name="GenerateIPUpgradeLog" Val="TRUE"/>
     <Option Name="XSimRadix" Val="hex"/>
     <Option Name="XSimTimeUnit" Val="ns"/>
@@ -108,8 +109,8 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
-        <CompFileExtendedInfo CompFileName="design_ascon.bd" FileRelPathName="ip/design_ascon_ascon_core_0_1/design_ascon_ascon_core_0_1.xci">
-          <Proxy FileSetName="design_ascon_ascon_core_0_1"/>
+        <CompFileExtendedInfo CompFileName="design_ascon.bd" FileRelPathName="ip/design_ascon_ascon_core_0_3/design_ascon_ascon_core_0_3.xci">
+          <Proxy FileSetName="design_ascon_ascon_core_0_3"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="design_ascon.bd" FileRelPathName="ip/design_ascon_processing_system7_0_4/design_ascon_processing_system7_0_4.xci">
           <Proxy FileSetName="design_ascon_processing_system7_0_4"/>
@@ -294,16 +295,6 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sim_1/new/tb_ascon_fsm.sv">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../ascon_project/ascon_project.srcs/sim_1/new/tb_ascon_fsm.sv"/>
-          <Attr Name="ImportTime" Val="1702056015"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
       <File Path="$PSRCDIR/sim_1/new/tb_ascon_kmac.sv">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
@@ -317,6 +308,16 @@
           <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="ImportPath" Val="$PSRCDIR/sim_1/new/tb_ascon_128.sv"/>
           <Attr Name="ImportTime" Val="1714425298"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sim_1/new/tb_ascon_fsm.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../ascon_project/ascon_project.srcs/sim_1/new/tb_ascon_fsm.sv"/>
+          <Attr Name="ImportTime" Val="1702056015"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -370,9 +371,9 @@
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
-    <FileSet Name="design_ascon_ascon_core_0_1" Type="BlockSrcs" RelSrcDir="$PSRCDIR/design_ascon_ascon_core_0_1" RelGenDir="$PGENDIR/design_ascon_ascon_core_0_1">
+    <FileSet Name="design_ascon_ascon_core_0_3" Type="BlockSrcs" RelSrcDir="$PSRCDIR/design_ascon_ascon_core_0_3" RelGenDir="$PGENDIR/design_ascon_ascon_core_0_3">
       <Config>
-        <Option Name="TopModule" Val="design_ascon_ascon_core_0_1"/>
+        <Option Name="TopModule" Val="design_ascon_ascon_core_0_3"/>
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
@@ -439,11 +440,9 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="design_ascon_ascon_core_0_1_synth_1" Type="Ft3:Synth" SrcSet="design_ascon_ascon_core_0_1" Part="xc7z010clg400-1" ConstrsSet="design_ascon_ascon_core_0_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/design_ascon_ascon_core_0_1_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/design_ascon_ascon_core_0_1_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/design_ascon_ascon_core_0_1_synth_1">
+    <Run Id="design_ascon_ascon_core_0_3_synth_1" Type="Ft3:Synth" SrcSet="design_ascon_ascon_core_0_3" Part="xc7z010clg400-1" ConstrsSet="design_ascon_ascon_core_0_3" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/design_ascon_ascon_core_0_3_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/design_ascon_ascon_core_0_3_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/design_ascon_ascon_core_0_3_synth_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -520,11 +519,9 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="design_ascon_ascon_core_0_1_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="design_ascon_ascon_core_0_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="design_ascon_ascon_core_0_1_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/design_ascon_ascon_core_0_1_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/design_ascon_ascon_core_0_1_impl_1">
+    <Run Id="design_ascon_ascon_core_0_3_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="design_ascon_ascon_core_0_3" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="design_ascon_ascon_core_0_3_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/design_ascon_ascon_core_0_3_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/design_ascon_ascon_core_0_3_impl_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>

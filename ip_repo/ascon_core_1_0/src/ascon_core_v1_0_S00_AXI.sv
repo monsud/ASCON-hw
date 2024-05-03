@@ -10,8 +10,7 @@
 `include "ascon_hash.sv"
 `include "ascon_hmac.sv"
 `include "ascon_kmac.sv"
-
-
+`include "top_module.sv"
 
 `timescale 1 ns / 1 ps
 
@@ -107,12 +106,8 @@
 	logic  	axi_rvalid;
 	
 	// ASCON signals
-    logic [127:0] key;
-    logic [127:0] nonce;
-    logic [127:0] plaintext;
-    logic [127:0] ciphertext;
-    logic [127:0] control_register;
-    logic [127:0] status_register;
+    logic [127:0] key, nonce, plaintext, ciphertext, hmac_output, kmac_output;
+    logic [31:0] control_register, status_register;
 
 	// Example-specific design signals
 	// local parameter for addressing 32 bit / 64 bit C_S_AXI_DATA_WIDTH
@@ -608,13 +603,15 @@ always @( posedge S_AXI_ACLK )
 
 	// Add user logic here
     // Instantiate your_ascon_top module
-      ascon_128 u_ascon_top (
+      top_module u_ascon_top (
         .clk(S_AXI_ACLK),
         .rst(S_AXI_ARESETN),
         .key(key),
         .nonce(nonce),
         .plaintext(plaintext),
         .ciphertext(ciphertext),
+        .hmac_output(hmac_output),
+        .kmac_output(kmac_output),
         .control_register(control_register),
         .status_register(status_register)
       );

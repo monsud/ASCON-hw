@@ -134,7 +134,10 @@ OPTRACE "create in-memory project" END { }
 OPTRACE "set parameters" START { }
   set_property webtalk.parent_dir /home/monsud/Scrivania/ASCON-hw/ASCON-hw.cache/wt [current_project]
   set_property parent.project_path /home/monsud/Scrivania/ASCON-hw/ASCON-hw.xpr [current_project]
-  set_property ip_repo_paths /home/monsud/Scrivania/ASCON-hw/ip_repo/ascon_core_1_0 [current_project]
+  set_property ip_repo_paths {
+  /home/monsud/Scrivania/ASCON-hw/ip_repo/ascon_core_1_0
+  /home/monsud/Scrivania/ASCON-hw/ip_repo/ascon_core_1_1
+} [current_project]
   update_ip_catalog
   set_property ip_output_repo /home/monsud/Scrivania/ASCON-hw/ASCON-hw.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]

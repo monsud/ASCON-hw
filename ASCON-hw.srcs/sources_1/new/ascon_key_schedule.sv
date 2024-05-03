@@ -22,6 +22,7 @@
 module ascon_key_schedule (
   input logic clk,
   input logic rst,
+  input logic enable,
   input logic [127:0] state,
   input logic [127:0] key,
   output logic [127:0] state_out
@@ -39,7 +40,7 @@ module ascon_key_schedule (
       round_key[3] <= 0;
       round_key[4] <= 0;
       temp <= 0;
-    end else begin
+    end else if (enable) begin
       round_key[0] <= key ^ state;
       round_key[1] <= round_key[0] ^ state[63:0] ^ state[127:64];
       round_key[2] <= round_key[1] ^ state[95:32] ^ state[127:96];

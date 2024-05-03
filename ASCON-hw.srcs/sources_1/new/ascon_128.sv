@@ -25,6 +25,7 @@
 module ascon_128 (
   input logic clk,
   input logic rst,
+  input enable,
   input logic [127:0] key,
   input logic [127:0] nonce,
   input logic [127:0] plaintext,
@@ -33,12 +34,15 @@ module ascon_128 (
   output logic [31:0] status_register
 );
 
+  localparam int LENGTH = 128;
+  localparam int ROUNDS = 12;
+
   logic [LENGTH-1:0] initialization_state;
   logic [LENGTH-1:0] key_schedule_state;
   logic [LENGTH-1:0] round_state [12];
   logic [LENGTH-1:0] finalization_state;
   
-  // Istantiate state machine
+  // Instantiate FSM module
   ascon_fsm fsm_inst(
     .clk(clk),
     .rst(rst),
@@ -50,6 +54,7 @@ module ascon_128 (
   ascon_initialization init_inst(
     .clk(clk),
     .rst(rst),
+    .enable(enable),
     .key(key),
     .nonce(nonce),
     .state_out(initialization_state)
@@ -59,12 +64,13 @@ module ascon_128 (
   ascon_key_schedule ks_inst(
     .clk(clk),
     .rst(rst),
+    .enable(enable),
     .state(initialization_state),
     .key(key),
     .state_out(key_schedule_state)
   );
   
-  //Instantiate 12 round modules
+  // Instantiate 12 round modules
   assign round_state[0] = key_schedule_state ^ plaintext;
   genvar i;
   generate
@@ -72,6 +78,7 @@ module ascon_128 (
       ascon_round round_inst (
         .clk(clk),
         .rst(rst),
+        .enable(enable),
         .state_in(round_state[i-1]),
         .state_out(round_state[i]),
         .round_number(i)
@@ -83,10 +90,12 @@ module ascon_128 (
   ascon_finalization final_inst(
     .clk(clk),
     .rst(rst),
+    .enable(enable),
     .state(round_state[11]),
     .state_out(finalization_state)
   );
 
     assign ciphertext = finalization_state;
-    
+
+
 endmodule

@@ -3,12 +3,12 @@
 # SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
 # IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
 # SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
-# Start of session at: Tue Dec 12 20:46:16 2023
-# Process ID: 232655
-# Current directory: /home/monsud/Scrivania/ascon_project/ascon_project.runs/design_ascon_processing_system7_0_4_synth_1
+# Start of session at: Fri May  3 18:09:56 2024
+# Process ID: 17633
+# Current directory: /home/monsud/Scrivania/ASCON-hw/ASCON-hw.runs/design_ascon_processing_system7_0_4_synth_1
 # Command line: vivado -log design_ascon_processing_system7_0_4.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_ascon_processing_system7_0_4.tcl
-# Log file: /home/monsud/Scrivania/ascon_project/ascon_project.runs/design_ascon_processing_system7_0_4_synth_1/design_ascon_processing_system7_0_4.vds
-# Journal file: /home/monsud/Scrivania/ascon_project/ascon_project.runs/design_ascon_processing_system7_0_4_synth_1/vivado.jou
-# Running On: archbook, OS: Linux, CPU Frequency: 3399.918 MHz, CPU Physical cores: 4, Host memory: 8057 MB
+# Log file: /home/monsud/Scrivania/ASCON-hw/ASCON-hw.runs/design_ascon_processing_system7_0_4_synth_1/design_ascon_processing_system7_0_4.vds
+# Journal file: /home/monsud/Scrivania/ASCON-hw/ASCON-hw.runs/design_ascon_processing_system7_0_4_synth_1/vivado.jou
+# Running On: archbook, OS: Linux, CPU Frequency: 3079.477 MHz, CPU Physical cores: 4, Host memory: 8057 MB
 #-----------------------------------------------------------
 source design_ascon_processing_system7_0_4.tcl -notrace

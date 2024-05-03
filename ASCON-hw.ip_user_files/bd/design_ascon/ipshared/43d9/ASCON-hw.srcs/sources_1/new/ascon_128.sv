@@ -29,21 +29,26 @@ module ascon_128 (
   input logic [127:0] nonce,
   input logic [127:0] plaintext,
   output logic [127:0] ciphertext,
+  input logic [1:0] enable, // Combined start and ready signals
   input logic [31:0] control_register,
   output logic [31:0] status_register
 );
+
+  localparam int LENGTH = 128;
+  localparam int ROUNDS = 12;
 
   logic [LENGTH-1:0] initialization_state;
   logic [LENGTH-1:0] key_schedule_state;
   logic [LENGTH-1:0] round_state [12];
   logic [LENGTH-1:0] finalization_state;
   
-  // Istantiate state machine
+  // Instantiate FSM module
   ascon_fsm fsm_inst(
     .clk(clk),
     .rst(rst),
     .control(control_register),
     .status(status_register)
+    .enable(enable)  
   );
 
   // Instantiate initialization module
@@ -64,7 +69,7 @@ module ascon_128 (
     .state_out(key_schedule_state)
   );
   
-  //Instantiate 12 round modules
+  // Instantiate 12 round modules
   assign round_state[0] = key_schedule_state ^ plaintext;
   genvar i;
   generate
@@ -87,6 +92,15 @@ module ascon_128 (
     .state_out(finalization_state)
   );
 
-    assign ciphertext = finalization_state;
-    
+  // Output ciphertext when enabled
+  always_ff @(posedge clk) begin
+    if (rst) begin
+      ciphertext <= 0;
+    end else begin
+      if (enable[1]) begin
+        ciphertext <= finalization_state;
+      end
+    end
+  end
+
 endmodule

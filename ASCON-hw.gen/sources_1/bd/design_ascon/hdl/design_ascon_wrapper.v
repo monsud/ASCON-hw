@@ -2,7 +2,7 @@
 //Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2023.2 (lin64) Build 4029153 Fri Oct 13 20:13:54 MDT 2023
-//Date        : Tue Apr 30 14:20:01 2024
+//Date        : Fri May  3 18:03:39 2024
 //Host        : archbook running 64-bit Arch Linux
 //Command     : generate_target design_ascon_wrapper.bd
 //Design      : design_ascon_wrapper

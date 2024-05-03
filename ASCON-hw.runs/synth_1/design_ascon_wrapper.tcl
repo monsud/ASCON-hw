@@ -70,7 +70,6 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_param chipscope.maxJobs 1
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7z010clg400-1
 
@@ -85,7 +84,10 @@ set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property board_part_repo_paths {/home/monsud/.Xilinx/Vivado/2023.2/xhub/board_store/xilinx_board_store} [current_project]
 set_property board_part digilentinc.com:zybo:part0:1.0 [current_project]
-set_property ip_repo_paths /home/monsud/Scrivania/ASCON-hw/ip_repo/ascon_core_1_0 [current_project]
+set_property ip_repo_paths {
+  /home/monsud/Scrivania/ASCON-hw/ip_repo/ascon_core_1_0
+  /home/monsud/Scrivania/ASCON-hw/ip_repo/ascon_core_1_1
+} [current_project]
 update_ip_catalog
 set_property ip_output_repo /home/monsud/Scrivania/ASCON-hw/ASCON-hw.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
@@ -98,7 +100,6 @@ set_property used_in_implementation false [get_files -all /home/monsud/Scrivania
 set_property used_in_implementation false [get_files -all /home/monsud/Scrivania/ASCON-hw/ASCON-hw.gen/sources_1/bd/design_ascon/ip/design_ascon_rst_ps7_0_100M_2/design_ascon_rst_ps7_0_100M_2_board.xdc]
 set_property used_in_implementation false [get_files -all /home/monsud/Scrivania/ASCON-hw/ASCON-hw.gen/sources_1/bd/design_ascon/ip/design_ascon_rst_ps7_0_100M_2/design_ascon_rst_ps7_0_100M_2.xdc]
 set_property used_in_implementation false [get_files -all /home/monsud/Scrivania/ASCON-hw/ASCON-hw.gen/sources_1/bd/design_ascon/ip/design_ascon_rst_ps7_0_100M_2/design_ascon_rst_ps7_0_100M_2_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/monsud/Scrivania/ASCON-hw/ASCON-hw.gen/sources_1/bd/design_ascon/ip/design_ascon_auto_pc_0/design_ascon_auto_pc_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/monsud/Scrivania/ASCON-hw/ASCON-hw.gen/sources_1/bd/design_ascon/design_ascon_ooc.xdc]
 
 OPTRACE "Adding files" END { }

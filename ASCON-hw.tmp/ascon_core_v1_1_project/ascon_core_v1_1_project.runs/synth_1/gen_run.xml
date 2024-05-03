@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1714778319">
+  <File Type="VDS-TIMINGSUMMARY" Name="ascon_core_v1_1_timing_summary_synth.rpt"/>
+  <File Type="RDS-DCP" Name="ascon_core_v1_1.dcp"/>
+  <File Type="RDS-UTIL-PB" Name="ascon_core_v1_1_utilization_synth.pb"/>
+  <File Type="RDS-UTIL" Name="ascon_core_v1_1_utilization_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="ascon_core_v1_1_timing_summary_synth.pb"/>
+  <File Type="PA-TCL" Name="ascon_core_v1_1.tcl"/>
+  <File Type="REPORTS-TCL" Name="ascon_core_v1_1_reports.tcl"/>
+  <File Type="RDS-RDS" Name="ascon_core_v1_1.vds"/>
+  <File Type="RDS-PROPCONSTRS" Name="ascon_core_v1_1_drc_synth.rpt"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PPRDIR/../../ip_repo/ascon_core_1_1/hdl/ascon_core_v1_1_S_AXI_INTR.sv">
+      <FileInfo SFType="Verilog">
+        <Attr Name="Library" Val=""/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../ip_repo/ascon_core_1_1/src/ascon_128.sv">
+      <FileInfo SFType="VHeader">
+        <Attr Name="Library" Val=""/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+        <Attr Name="IsVisible" Val="1"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../ip_repo/ascon_core_1_1/src/ascon_add_constant.sv">
+      <FileInfo SFType="VHeader">
+        <Attr Name="Library" Val=""/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+        <Attr Name="IsVisible" Val="1"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../ip_repo/ascon_core_1_1/src/ascon_finalization.sv">
+      <FileInfo SFType="VHeader">
+        <Attr Name="Library" Val=""/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+        <Attr Name="IsVisible" Val="1"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../ip_repo/ascon_core_1_1/src/ascon_fsm.sv">
+      <FileInfo SFType="VHeader">
+        <Attr Name="Library" Val=""/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+        <Attr Name="IsVisible" Val="1"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../ip_repo/ascon_core_1_1/src/ascon_hash.sv">
+      <FileInfo SFType="VHeader">
+        <Attr Name="Library" Val=""/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+        <Attr Name="IsVisible" Val="1"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../ip_repo/ascon_core_1_1/src/ascon_hmac.sv">
+      <FileInfo SFType="VHeader">
+        <Attr Name="Library" Val=""/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+        <Attr Name="IsVisible" Val="1"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../ip_repo/ascon_core_1_1/src/ascon_initialization.sv">
+      <FileInfo SFType="VHeader">
+        <Attr Name="Library" Val=""/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+        <Attr Name="IsVisible" Val="1"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../ip_repo/ascon_core_1_1/src/ascon_key_schedule.sv">
+      <FileInfo SFType="VHeader">
+        <Attr Name="Library" Val=""/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+        <Attr Name="IsVisible" Val="1"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../ip_repo/ascon_core_1_1/src/ascon_kmac.sv">
+      <FileInfo SFType="VHeader">
+        <Attr Name="Library" Val=""/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+        <Attr Name="IsVisible" Val="1"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../ip_repo/ascon_core_1_1/src/ascon_linear_diffusion.sv">
+      <FileInfo SFType="VHeader">
+        <Attr Name="Library" Val=""/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+        <Attr Name="IsVisible" Val="1"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../ip_repo/ascon_core_1_1/src/ascon_round.sv">
+      <FileInfo SFType="VHeader">
+        <Attr Name="Library" Val=""/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+        <Attr Name="IsVisible" Val="1"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../ip_repo/ascon_core_1_1/src/ascon_sbox.sv">
+      <FileInfo SFType="VHeader">
+        <Attr Name="Library" Val=""/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+        <Attr Name="IsVisible" Val="1"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../ip_repo/ascon_core_1_1/src/top_module.sv">
+      <FileInfo SFType="VHeader">
+        <Attr Name="Library" Val=""/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+        <Attr Name="IsVisible" Val="1"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../ip_repo/ascon_core_1_1/hdl/ascon_core_v1_1_S00_AXI.sv">
+      <FileInfo>
+        <Attr Name="Library" Val=""/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../ip_repo/ascon_core_1_1/hdl/ascon_core_v1_1.sv">
+      <FileInfo>
+        <Attr Name="Library" Val=""/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../ip_repo/ascon_core_1_1/component.xml">
+      <FileInfo SFType="IPXACT"/>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="ascon_core_v1_1"/>
+      <Option Name="TopRTLFile" Val="$PPRDIR/../../ip_repo/ascon_core_1_1/hdl/ascon_core_v1_1.sv"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1" RelGenDir="$PGENDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023">
+      <Desc>Vivado Synthesis Defaults</Desc>
+    </StratHandle>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

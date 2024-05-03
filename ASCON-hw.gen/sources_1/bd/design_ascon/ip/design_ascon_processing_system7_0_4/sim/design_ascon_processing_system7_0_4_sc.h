@@ -2,7 +2,7 @@
 #define IP_DESIGN_ASCON_PROCESSING_SYSTEM7_0_4_SC_H_
 
 // (c) Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
-// (c) Copyright 2022-2023 Advanced Micro Devices, Inc. All rights reserved.
+// (c) Copyright 2022-2024 Advanced Micro Devices, Inc. All rights reserved.
 // 
 // This file contains confidential and proprietary information
 // of AMD and is protected under U.S. and international copyright
@@ -76,8 +76,6 @@ public:
 
   // module socket-to-socket AXI TLM interfaces
 
-  xtlm::xtlm_aximm_initiator_socket* M_AXI_GP0_rd_socket;
-  xtlm::xtlm_aximm_initiator_socket* M_AXI_GP0_wr_socket;
 
   // module socket-to-socket TLM interfaces
 

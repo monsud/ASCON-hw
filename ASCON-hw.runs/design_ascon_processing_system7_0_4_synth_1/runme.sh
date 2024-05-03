@@ -21,7 +21,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='/home/monsud/Scrivania/ascon_project/ascon_project.runs/design_ascon_processing_system7_0_4_synth_1'
+HD_PWD='/home/monsud/Scrivania/ASCON-hw/ASCON-hw.runs/design_ascon_processing_system7_0_4_synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

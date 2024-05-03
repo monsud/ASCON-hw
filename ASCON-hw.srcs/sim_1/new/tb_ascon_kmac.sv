@@ -25,8 +25,9 @@
     module tb_ascon_kmac();
     
       // Inputs
-      logic clk, rst;
-      logic [127:0] key, data;
+      logic clk, rst, enable;
+      logic [127:0] key, nonce;
+      logic [7:0] data;
       logic [31:0] control_register;
       
       // Outputs
@@ -37,7 +38,9 @@
       ascon_kmac dut(
         .clk(clk),
         .rst(rst),
+        .enable(enable),
         .key(key),
+        .nonce(nonce),
         .data(data),
         .kmac_output(kmac_output),
         .control_register(control_register),
@@ -51,41 +54,33 @@
         clk = 1;
         #5;
       end
+      
+  // Apply reset
+  initial begin
+    rst = 1;
+    enable = 0;
+    control_register = 32'b0;
+    key = 128'h0;
+    data = 128'h0;
+    #10 rst = 0;
     
-      // Reset process
-      initial begin
-        rst = 1;
-        control_register = 32'b0;
-        key = 128'h0;
-        data = 128'h0;
-        #10 rst = 0;
-      end
+    // Start the initialization phase
+    key = 128'h0123456789abcdef0123456789abcdef;
+    nonce = 128'h0123456789abcdef0123456789abcdef;
+    data = 8'hEF;
+    #10 control_register = 32'b101001; // Enable ASCON KMAC
+    enable = 1; // Assert enable signal
+    #10;
     
-      // Apply stimulus process
-      initial begin
-        // Wait for reset to complete
-        #20;
-        
-        // Set key and data values
-        key = 128'h0123456789abcdef0123456789abcdef;
-        data = 128'h0123456789abcdef0123456789abcdef;
-        
-        // Start the module
-        control_register = 32'b101001;
-        #10;
-        
-        // Wait for the module to finish
-        #100;
-        
-        // Stop the module
-        control_register = 32'b10;
-        #10;
-        
-        // Display output
-        $display("KMAC Output: %h", kmac_output);
-        
-        // Expected output: 020294400217c048022309b002365db8
-        $finish; // End simulation
-      end
+    // Stop the initialization phase
+    #100 control_register = 32'b10; // Disable
+    enable = 0; // De-assert enable signal
+    #10;
+    
+    // Display HMAC output
+    $display("KMAC Output: %h", kmac_output);
+    // Expected status: IDLE (0)
+    // Expected output: 9a322888cfefd3f6e64e0e40b393f500
+  end
     
     endmodule

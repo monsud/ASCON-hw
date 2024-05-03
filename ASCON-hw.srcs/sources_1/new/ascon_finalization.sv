@@ -23,6 +23,7 @@
 module ascon_finalization (
   input logic clk,
   input logic rst,
+  input logic enable,
   input logic [127:0] state,
   output logic [127:0] state_out
 );
@@ -32,7 +33,7 @@ module ascon_finalization (
   always @(posedge clk or posedge rst) begin
     if (rst) begin
       temp_state <= 0;
-    end else begin
+    end else if (enable) begin
       temp_state <= state ^ 64'h8080808080808080;
     end
   end

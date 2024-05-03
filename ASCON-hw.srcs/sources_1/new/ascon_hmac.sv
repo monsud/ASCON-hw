@@ -24,10 +24,12 @@ localparam ASCON_BLOCK_SIZE = 16; // Block size of ASCON-128
 
 module ascon_hmac (
     input clk, 
-    input rst, 
-    input  [127:0] key, // HMAC key input
-    input  [127:0] data, // Data input
-    output logic [127:0] hmac_output, // HMAC output
+    input rst,
+    input enable, 
+    input  [127:0] key, 
+    input  [127:0] nonce,
+    input  [7:0] data, 
+    output logic [127:0] hmac_output, 
     input logic [31:0] control_register,
     output logic [31:0] status_register
 );
@@ -52,7 +54,9 @@ module ascon_hmac (
     ascon_hash inner_hash_instance (
         .clk(clk),
         .rst(rst),
+        .enable(enable),
         .key(key),
+        .nonce(nonce),
         .data(data),
         .hash_output(inner_hash_result)
     );
@@ -60,8 +64,10 @@ module ascon_hmac (
     ascon_hash outer_hash_instance (
         .clk(clk),
         .rst(rst),
+        .enable(enable),
         .key(key),
-        .data(inner_hash_result), // Connect to inner hash result
+        .nonce(nonce),
+        .data(inner_hash_result), 
         .hash_output(outer_hash_result)
     );
     
@@ -71,6 +77,15 @@ module ascon_hmac (
             key_state = {key, 128'b0}; // Pad key with zeros if shorter than 128 bits
         end else begin
             key_state = key;
+        end
+    end
+    
+    // Data Padding (if needed)
+    always_comb begin
+        if ($bits(data) < 128) begin
+            data_state = {data, 128'b0}; // Pad data with zeros if shorter than 128 bits
+        end else begin
+            data_state = data;
         end
     end
     

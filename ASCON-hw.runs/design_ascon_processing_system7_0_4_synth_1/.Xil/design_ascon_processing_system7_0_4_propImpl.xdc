@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:/home/monsud/Scrivania/ascon_project/ascon_project.gen/sources_1/bd/design_ascon/ip/design_ascon_processing_system7_0_4/design_ascon_processing_system7_0_4.xdc rfile:../../../ascon_project.gen/sources_1/bd/design_ascon/ip/design_ascon_processing_system7_0_4/design_ascon_processing_system7_0_4.xdc id:1 order:EARLY scoped_inst:inst} [current_design]
+set_property SRC_FILE_INFO {cfile:/home/monsud/Scrivania/ASCON-hw/ASCON-hw.gen/sources_1/bd/design_ascon/ip/design_ascon_processing_system7_0_4/design_ascon_processing_system7_0_4.xdc rfile:../../../ASCON-hw.gen/sources_1/bd/design_ascon/ip/design_ascon_processing_system7_0_4/design_ascon_processing_system7_0_4.xdc id:1 order:EARLY scoped_inst:inst} [current_design]
 current_instance inst
 set_property src_info {type:SCOPED_XDC file:1 line:21 export:INPUT save:INPUT read:READ} [current_design]
 set_input_jitter clk_fpga_0 0.3

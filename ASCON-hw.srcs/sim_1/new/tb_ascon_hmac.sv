@@ -3,8 +3,9 @@
 module tb_ascon_hmac();
 
   // Inputs
-  logic clk, rst;
-  logic [127:0] key, data;
+  logic clk, rst, enable;
+  logic [127:0] key, nonce;
+  logic [7:0] data;
   logic [31:0] control_register;
   
   // Outputs
@@ -15,7 +16,9 @@ module tb_ascon_hmac();
   ascon_hmac dut(
     .clk(clk),
     .rst(rst),
+    .enable(enable),
     .key(key),
+    .nonce(nonce),
     .data(data),
     .hmac_output(hmac_output),
     .control_register(control_register),
@@ -29,30 +32,33 @@ module tb_ascon_hmac();
     clk = 1;
     #5;
   end
-
-  // Reset process
+  
+  // Apply reset
   initial begin
     rst = 1;
+    enable = 0;
     control_register = 32'b0;
     key = 128'h0;
     data = 128'h0;
     #10 rst = 0;
-  end
-
-  // Apply stimulus process
-  initial begin
+    
+    // Start the initialization phase
     key = 128'h0123456789abcdef0123456789abcdef;
-    data = 128'h0123456789abcdef0123456789abcdef;
-    // Start the module
-    #10 control_register = 32'b011001;
-    #20 $display("Time: %0t, Status: %h", $time, status_register);
-    // Stop the module
-    #500 control_register = 32'b10;
-    #50 $display("Time: %0t, Status: %h", $time, status_register);
-    // Display output
-    #50 $display("HMAC Output: %h", hmac_output);
-    // Expected output: 6057144093ab67be38fc3288cb004176
-    //#60 $finish; // End simulation
+    nonce = 128'h0123456789abcdef0123456789abcdef;
+    data = 8'hEF;
+    #10 control_register = 32'b011001; // Enable ASCON HMAC
+    enable = 1; // Assert enable signal
+    #10;
+    
+    // Stop the initialization phase
+    #100 control_register = 32'b10; // Disable
+    enable = 0; // De-assert enable signal
+    #10;
+    
+    // Display HMAC output
+    $display("HMAC Output: %h", hmac_output);
+    // Expected status: IDLE (0)
+    // Expected output: 9a322888cfefd3f6e64e0e40b393f53e
   end
 
 endmodule

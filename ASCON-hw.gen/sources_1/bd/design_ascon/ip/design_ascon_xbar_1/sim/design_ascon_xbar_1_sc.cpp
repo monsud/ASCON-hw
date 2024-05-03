@@ -1,5 +1,5 @@
 // (c) Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
-// (c) Copyright 2022-2023 Advanced Micro Devices, Inc. All rights reserved.
+// (c) Copyright 2022-2024 Advanced Micro Devices, Inc. All rights reserved.
 // 
 // This file contains confidential and proprietary information
 // of AMD and is protected under U.S. and international copyright
@@ -77,8 +77,8 @@ design_ascon_xbar_1_sc::design_ascon_xbar_1_sc(const sc_core::sc_module_name& nm
     model_param_props.addLong("C_R_REGISTER", "1");
     model_param_props.addLong("C_CONNECTIVITY_MODE", "0");
     model_param_props.addString("C_FAMILY", "zynq");
-    model_param_props.addBitString("C_M_AXI_BASE_ADDR", "00000000000000000000000000000000010000111100000100000000000000000000000000000000000000000000000001000000001000000000000000000000", 128);
-    model_param_props.addBitString("C_M_AXI_ADDR_WIDTH", "0000000000000000000000000000011100000000000000000000000000000111", 64);
+    model_param_props.addBitString("C_M_AXI_BASE_ADDR", "11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111", 128);
+    model_param_props.addBitString("C_M_AXI_ADDR_WIDTH", "0000000000000000000000000000000000000000000000000000000000000000", 64);
     model_param_props.addBitString("C_S_AXI_BASE_ID", "00000000000000000000000000000000", 32);
     model_param_props.addBitString("C_S_AXI_THREAD_ID_WIDTH", "00000000000000000000000000000000", 32);
     model_param_props.addBitString("C_M_AXI_WRITE_CONNECTIVITY", "1111111111111111111111111111111111111111111111111111111111111111", 64);

@@ -1,4 +1,9 @@
 Time resolution is 1 ps
-Time: 30000, Status: 00000003
-Time: 580000, Status: 00000000
-HMAC Output: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Time: 200000, Status: 00000000
+Ciphertext: 256028dbfbfd77b445ac0e039b31516c
+Time: 500000, Status: 00000000
+HMAC Output: 6045144893ab6bbe38f17a90cb1f0566
+Time: 800000, Status: 00000000
+KMAC Output: 6250d44091bb7fbe3acc2688c9278db8
+Time: 1000000, Status: 00000000
+Ciphertext: 00605406dedfb9fc60132ed7beacc32d

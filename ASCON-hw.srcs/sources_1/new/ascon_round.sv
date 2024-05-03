@@ -22,6 +22,7 @@
 module ascon_round (
   input logic clk,
   input logic rst,
+  input logic enable,
   input logic [127:0] state_in,
   output logic [127:0] state_out,
   input logic [3:0] round_number
@@ -52,7 +53,7 @@ module ascon_round (
   always @(posedge clk or posedge rst) begin
     if (rst) begin
       state_out <= 128'h00000000000000000000000000000000;
-    end else begin
+    end else if (enable) begin
       state_out <= linear_state;
     end
   end
