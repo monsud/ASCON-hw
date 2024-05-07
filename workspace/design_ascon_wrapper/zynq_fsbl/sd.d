@@ -15,10 +15,7 @@ sd.o: sd.c zynq_fsbl_bsp/ps7_cortexa9_0/include/xparameters.h \
  zynq_fsbl_bsp/ps7_cortexa9_0/include/xdevcfg.h \
  zynq_fsbl_bsp/ps7_cortexa9_0/include/xdevcfg_hw.h \
  zynq_fsbl_bsp/ps7_cortexa9_0/include/xil_io.h \
- zynq_fsbl_bsp/ps7_cortexa9_0/include/xtime_l.h fsbl_debug.h ps7_init.h \
- zynq_fsbl_bsp/ps7_cortexa9_0/include/xstatus.h \
- zynq_fsbl_bsp/ps7_cortexa9_0/include/ff.h \
- zynq_fsbl_bsp/ps7_cortexa9_0/include/ffconf.h sd.h
+ zynq_fsbl_bsp/ps7_cortexa9_0/include/xtime_l.h fsbl_debug.h ps7_init.h
 zynq_fsbl_bsp/ps7_cortexa9_0/include/xparameters.h:
 zynq_fsbl_bsp/ps7_cortexa9_0/include/xparameters_ps.h:
 fsbl.h:
@@ -41,7 +38,3 @@ zynq_fsbl_bsp/ps7_cortexa9_0/include/xil_io.h:
 zynq_fsbl_bsp/ps7_cortexa9_0/include/xtime_l.h:
 fsbl_debug.h:
 ps7_init.h:
-zynq_fsbl_bsp/ps7_cortexa9_0/include/xstatus.h:
-zynq_fsbl_bsp/ps7_cortexa9_0/include/ff.h:
-zynq_fsbl_bsp/ps7_cortexa9_0/include/ffconf.h:
-sd.h:

@@ -1,7 +1,0 @@
-Running: xsim.dir/tb_ascon_kmac_behav/xsimk -simmode gui -wdb tb_ascon_kmac_behav.wdb -simrunnum 0 -socket 39583
-Design successfully loaded
-Design Loading Memory Usage: 23556 KB (Peak: 23968 KB)
-Design Loading CPU Usage: 30 ms
-Simulation completed
-Simulation Memory Usage: 105552 KB (Peak: 162824 KB)
-Simulation CPU Usage: 40 ms

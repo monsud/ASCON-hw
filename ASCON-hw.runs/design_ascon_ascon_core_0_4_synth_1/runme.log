@@ -1,0 +1,404 @@
+
+*** Running vivado
+    with args -log design_ascon_ascon_core_0_4.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_ascon_ascon_core_0_4.tcl
+
+
+****** Vivado v2023.2 (64-bit)
+  **** SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+  **** IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+  **** SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source design_ascon_ascon_core_0_4.tcl -notrace
+create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1258.758 ; gain = 3.992 ; free physical = 1269 ; free virtual = 3184
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/monsud/Scrivania/ASCON-hw/ip_repo/ascon_core_1_0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/monsud/Scrivania/ASCON-hw/ip_repo/ascon_core_1_1'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/monsud/Xilinx/Vivado/2023.2/data/ip'.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_ascon_ascon_core_0_4
+Command: synth_design -top design_ascon_ascon_core_0_4 -part xc7z010clg400-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 34222
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2009.621 ; gain = 402.746 ; free physical = 128 ; free virtual = 1844
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_ascon_ascon_core_0_4' [/home/monsud/Scrivania/ASCON-hw/ASCON-hw.gen/sources_1/bd/design_ascon/ip/design_ascon_ascon_core_0_4/synth/design_ascon_ascon_core_0_4.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'ascon_core_v1_1' [/home/monsud/Scrivania/ASCON-hw/ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/1136/hdl/ascon_core_v1_1.sv:4]
+INFO: [Synth 8-6157] synthesizing module 'ascon_core_v1_1_S00_AXI' [/home/monsud/Scrivania/ASCON-hw/ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/1136/hdl/ascon_core_v1_1_S00_AXI.sv:18]
+INFO: [Synth 8-6157] synthesizing module 'top_module' [/home/monsud/Scrivania/ASCON-hw/ASCON-hw.srcs/sources_1/new/top_module.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'ascon_fsm' [/home/monsud/Scrivania/ASCON-hw/ASCON-hw.srcs/sources_1/new/ascon_fsm.sv:32]
+INFO: [Synth 8-6155] done synthesizing module 'ascon_fsm' (0#1) [/home/monsud/Scrivania/ASCON-hw/ASCON-hw.srcs/sources_1/new/ascon_fsm.sv:32]
+INFO: [Synth 8-6157] synthesizing module 'ascon_128' [/home/monsud/Scrivania/ASCON-hw/ASCON-hw.srcs/sources_1/new/ascon_128.sv:25]
+INFO: [Synth 8-6157] synthesizing module 'ascon_round' [/home/monsud/Scrivania/ASCON-hw/ASCON-hw.srcs/sources_1/new/ascon_round.sv:22]
+INFO: [Synth 8-6157] synthesizing module 'ascon_add_constant' [/home/monsud/Scrivania/ASCON-hw/ASCON-hw.srcs/sources_1/new/ascon_add_constant.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'ascon_add_constant' (0#1) [/home/monsud/Scrivania/ASCON-hw/ASCON-hw.srcs/sources_1/new/ascon_add_constant.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ascon_sbox' [/home/monsud/Scrivania/ASCON-hw/ASCON-hw.srcs/sources_1/new/ascon_sbox.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'ascon_sbox' (0#1) [/home/monsud/Scrivania/ASCON-hw/ASCON-hw.srcs/sources_1/new/ascon_sbox.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ascon_linear_diffusion' [/home/monsud/Scrivania/ASCON-hw/ASCON-hw.srcs/sources_1/new/ascon_linear_diffusion.sv:22]
+INFO: [Synth 8-6155] done synthesizing module 'ascon_linear_diffusion' (0#1) [/home/monsud/Scrivania/ASCON-hw/ASCON-hw.srcs/sources_1/new/ascon_linear_diffusion.sv:22]
+INFO: [Synth 8-6155] done synthesizing module 'ascon_round' (0#1) [/home/monsud/Scrivania/ASCON-hw/ASCON-hw.srcs/sources_1/new/ascon_round.sv:22]
+INFO: [Synth 8-6157] synthesizing module 'ascon_initialization' [/home/monsud/Scrivania/ASCON-hw/ASCON-hw.srcs/sources_1/new/ascon_initialization.sv:22]
+WARNING: [Synth 8-7071] port 'enable' of module 'ascon_round' is unconnected for instance 'round_inst' [/home/monsud/Scrivania/ASCON-hw/ASCON-hw.srcs/sources_1/new/ascon_initialization.sv:33]
+WARNING: [Synth 8-7023] instance 'round_inst' of module 'ascon_round' has 6 connections declared, but only 5 given [/home/monsud/Scrivania/ASCON-hw/ASCON-hw.srcs/sources_1/new/ascon_initialization.sv:33]
+INFO: [Synth 8-6155] done synthesizing module 'ascon_initialization' (0#1) [/home/monsud/Scrivania/ASCON-hw/ASCON-hw.srcs/sources_1/new/ascon_initialization.sv:22]
+INFO: [Synth 8-6157] synthesizing module 'ascon_key_schedule' [/home/monsud/Scrivania/ASCON-hw/ASCON-hw.srcs/sources_1/new/ascon_key_schedule.sv:22]
+INFO: [Synth 8-6155] done synthesizing module 'ascon_key_schedule' (0#1) [/home/monsud/Scrivania/ASCON-hw/ASCON-hw.srcs/sources_1/new/ascon_key_schedule.sv:22]
+INFO: [Synth 8-6157] synthesizing module 'ascon_finalization' [/home/monsud/Scrivania/ASCON-hw/ASCON-hw.srcs/sources_1/new/ascon_finalization.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'ascon_finalization' (0#1) [/home/monsud/Scrivania/ASCON-hw/ASCON-hw.srcs/sources_1/new/ascon_finalization.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'ascon_128' (0#1) [/home/monsud/Scrivania/ASCON-hw/ASCON-hw.srcs/sources_1/new/ascon_128.sv:25]
+INFO: [Synth 8-6157] synthesizing module 'ascon_hmac' [/home/monsud/Scrivania/ASCON-hw/ASCON-hw.srcs/sources_1/new/ascon_hmac.sv:25]
+INFO: [Synth 8-6157] synthesizing module 'ascon_hash' [/home/monsud/Scrivania/ASCON-hw/ASCON-hw.srcs/sources_1/new/ascon_hash.sv:22]
+INFO: [Synth 8-6155] done synthesizing module 'ascon_hash' (0#1) [/home/monsud/Scrivania/ASCON-hw/ASCON-hw.srcs/sources_1/new/ascon_hash.sv:22]
+WARNING: [Synth 8-689] width (128) of port connection 'data' does not match port width (8) of module 'ascon_hash' [/home/monsud/Scrivania/ASCON-hw/ASCON-hw.srcs/sources_1/new/ascon_hmac.sv:70]
+INFO: [Synth 8-6155] done synthesizing module 'ascon_hmac' (0#1) [/home/monsud/Scrivania/ASCON-hw/ASCON-hw.srcs/sources_1/new/ascon_hmac.sv:25]
+WARNING: [Synth 8-689] width (128) of port connection 'data' does not match port width (8) of module 'ascon_hmac' [/home/monsud/Scrivania/ASCON-hw/ASCON-hw.srcs/sources_1/new/top_module.sv:51]
+INFO: [Synth 8-6157] synthesizing module 'ascon_kmac' [/home/monsud/Scrivania/ASCON-hw/ASCON-hw.srcs/sources_1/new/ascon_kmac.sv:25]
+WARNING: [Synth 8-689] width (8) of port connection 'hash_output' does not match port width (128) of module 'ascon_hash' [/home/monsud/Scrivania/ASCON-hw/ASCON-hw.srcs/sources_1/new/ascon_kmac.sv:68]
+INFO: [Synth 8-6155] done synthesizing module 'ascon_kmac' (0#1) [/home/monsud/Scrivania/ASCON-hw/ASCON-hw.srcs/sources_1/new/ascon_kmac.sv:25]
+WARNING: [Synth 8-689] width (128) of port connection 'data' does not match port width (8) of module 'ascon_kmac' [/home/monsud/Scrivania/ASCON-hw/ASCON-hw.srcs/sources_1/new/top_module.sv:63]
+WARNING: [Synth 8-7071] port 'nonce' of module 'ascon_kmac' is unconnected for instance 'ascon_kmac_inst' [/home/monsud/Scrivania/ASCON-hw/ASCON-hw.srcs/sources_1/new/top_module.sv:58]
+WARNING: [Synth 8-7023] instance 'ascon_kmac_inst' of module 'ascon_kmac' has 9 connections declared, but only 8 given [/home/monsud/Scrivania/ASCON-hw/ASCON-hw.srcs/sources_1/new/top_module.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'top_module' (0#1) [/home/monsud/Scrivania/ASCON-hw/ASCON-hw.srcs/sources_1/new/top_module.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'ascon_core_v1_1_S00_AXI' (0#1) [/home/monsud/Scrivania/ASCON-hw/ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/1136/hdl/ascon_core_v1_1_S00_AXI.sv:18]
+INFO: [Synth 8-6157] synthesizing module 'ascon_core_v1_1_S_AXI_INTR' [/home/monsud/Scrivania/ASCON-hw/ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/1136/hdl/ascon_core_v1_1_S_AXI_INTR.sv:4]
+INFO: [Synth 8-6155] done synthesizing module 'ascon_core_v1_1_S_AXI_INTR' (0#1) [/home/monsud/Scrivania/ASCON-hw/ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/1136/hdl/ascon_core_v1_1_S_AXI_INTR.sv:4]
+INFO: [Synth 8-6155] done synthesizing module 'ascon_core_v1_1' (0#1) [/home/monsud/Scrivania/ASCON-hw/ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/1136/hdl/ascon_core_v1_1.sv:4]
+INFO: [Synth 8-6155] done synthesizing module 'design_ascon_ascon_core_0_4' (0#1) [/home/monsud/Scrivania/ASCON-hw/ASCON-hw.gen/sources_1/bd/design_ascon/ip/design_ascon_ascon_core_0_4/synth/design_ascon_ascon_core_0_4.sv:53]
+WARNING: [Synth 8-6014] Unused sequential element prev_ciphertext_reg was removed.  [/home/monsud/Scrivania/ASCON-hw/ASCON-hw.srcs/sources_1/new/top_module.sv:71]
+WARNING: [Synth 8-6014] Unused sequential element prev_hmac_output_reg was removed.  [/home/monsud/Scrivania/ASCON-hw/ASCON-hw.srcs/sources_1/new/top_module.sv:72]
+WARNING: [Synth 8-6014] Unused sequential element prev_kmac_output_reg was removed.  [/home/monsud/Scrivania/ASCON-hw/ASCON-hw.srcs/sources_1/new/top_module.sv:73]
+WARNING: [Synth 8-3848] Net key in module/entity ascon_core_v1_1_S00_AXI does not have driver. [/home/monsud/Scrivania/ASCON-hw/ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/1136/hdl/ascon_core_v1_1_S00_AXI.sv:111]
+WARNING: [Synth 8-3848] Net nonce in module/entity ascon_core_v1_1_S00_AXI does not have driver. [/home/monsud/Scrivania/ASCON-hw/ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/1136/hdl/ascon_core_v1_1_S00_AXI.sv:111]
+WARNING: [Synth 8-3848] Net plaintext in module/entity ascon_core_v1_1_S00_AXI does not have driver. [/home/monsud/Scrivania/ASCON-hw/ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/1136/hdl/ascon_core_v1_1_S00_AXI.sv:111]
+WARNING: [Synth 8-3848] Net control_register in module/entity ascon_core_v1_1_S00_AXI does not have driver. [/home/monsud/Scrivania/ASCON-hw/ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/1136/hdl/ascon_core_v1_1_S00_AXI.sv:112]
+WARNING: [Synth 8-6014] Unused sequential element intr_all_ff_reg was removed.  [/home/monsud/Scrivania/ASCON-hw/ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/1136/hdl/ascon_core_v1_1_S_AXI_INTR.sv:512]
+WARNING: [Synth 8-7129] Port S_AXI_AWPROT[2] in module ascon_core_v1_1_S_AXI_INTR is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWPROT[1] in module ascon_core_v1_1_S_AXI_INTR is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWPROT[0] in module ascon_core_v1_1_S_AXI_INTR is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WDATA[31] in module ascon_core_v1_1_S_AXI_INTR is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WDATA[30] in module ascon_core_v1_1_S_AXI_INTR is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WDATA[29] in module ascon_core_v1_1_S_AXI_INTR is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WDATA[28] in module ascon_core_v1_1_S_AXI_INTR is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WDATA[27] in module ascon_core_v1_1_S_AXI_INTR is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WDATA[26] in module ascon_core_v1_1_S_AXI_INTR is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WDATA[25] in module ascon_core_v1_1_S_AXI_INTR is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WDATA[24] in module ascon_core_v1_1_S_AXI_INTR is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WDATA[23] in module ascon_core_v1_1_S_AXI_INTR is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WDATA[22] in module ascon_core_v1_1_S_AXI_INTR is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WDATA[21] in module ascon_core_v1_1_S_AXI_INTR is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WDATA[20] in module ascon_core_v1_1_S_AXI_INTR is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WDATA[19] in module ascon_core_v1_1_S_AXI_INTR is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WDATA[18] in module ascon_core_v1_1_S_AXI_INTR is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WDATA[17] in module ascon_core_v1_1_S_AXI_INTR is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WDATA[16] in module ascon_core_v1_1_S_AXI_INTR is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WDATA[15] in module ascon_core_v1_1_S_AXI_INTR is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WDATA[14] in module ascon_core_v1_1_S_AXI_INTR is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WDATA[13] in module ascon_core_v1_1_S_AXI_INTR is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WDATA[12] in module ascon_core_v1_1_S_AXI_INTR is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WDATA[11] in module ascon_core_v1_1_S_AXI_INTR is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WDATA[10] in module ascon_core_v1_1_S_AXI_INTR is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WDATA[9] in module ascon_core_v1_1_S_AXI_INTR is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WDATA[8] in module ascon_core_v1_1_S_AXI_INTR is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WDATA[7] in module ascon_core_v1_1_S_AXI_INTR is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WDATA[6] in module ascon_core_v1_1_S_AXI_INTR is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WDATA[5] in module ascon_core_v1_1_S_AXI_INTR is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WDATA[4] in module ascon_core_v1_1_S_AXI_INTR is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WDATA[3] in module ascon_core_v1_1_S_AXI_INTR is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WDATA[2] in module ascon_core_v1_1_S_AXI_INTR is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WDATA[1] in module ascon_core_v1_1_S_AXI_INTR is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WSTRB[3] in module ascon_core_v1_1_S_AXI_INTR is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WSTRB[2] in module ascon_core_v1_1_S_AXI_INTR is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WSTRB[1] in module ascon_core_v1_1_S_AXI_INTR is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WSTRB[0] in module ascon_core_v1_1_S_AXI_INTR is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARPROT[2] in module ascon_core_v1_1_S_AXI_INTR is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARPROT[1] in module ascon_core_v1_1_S_AXI_INTR is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARPROT[0] in module ascon_core_v1_1_S_AXI_INTR is either unconnected or has no load
+WARNING: [Synth 8-7129] Port control[31] in module ascon_fsm is either unconnected or has no load
+WARNING: [Synth 8-7129] Port control[30] in module ascon_fsm is either unconnected or has no load
+WARNING: [Synth 8-7129] Port control[29] in module ascon_fsm is either unconnected or has no load
+WARNING: [Synth 8-7129] Port control[28] in module ascon_fsm is either unconnected or has no load
+WARNING: [Synth 8-7129] Port control[27] in module ascon_fsm is either unconnected or has no load
+WARNING: [Synth 8-7129] Port control[26] in module ascon_fsm is either unconnected or has no load
+WARNING: [Synth 8-7129] Port control[25] in module ascon_fsm is either unconnected or has no load
+WARNING: [Synth 8-7129] Port control[24] in module ascon_fsm is either unconnected or has no load
+WARNING: [Synth 8-7129] Port control[23] in module ascon_fsm is either unconnected or has no load
+WARNING: [Synth 8-7129] Port control[22] in module ascon_fsm is either unconnected or has no load
+WARNING: [Synth 8-7129] Port control[21] in module ascon_fsm is either unconnected or has no load
+WARNING: [Synth 8-7129] Port control[20] in module ascon_fsm is either unconnected or has no load
+WARNING: [Synth 8-7129] Port control[19] in module ascon_fsm is either unconnected or has no load
+WARNING: [Synth 8-7129] Port control[18] in module ascon_fsm is either unconnected or has no load
+WARNING: [Synth 8-7129] Port control[17] in module ascon_fsm is either unconnected or has no load
+WARNING: [Synth 8-7129] Port control[16] in module ascon_fsm is either unconnected or has no load
+WARNING: [Synth 8-7129] Port control[15] in module ascon_fsm is either unconnected or has no load
+WARNING: [Synth 8-7129] Port control[14] in module ascon_fsm is either unconnected or has no load
+WARNING: [Synth 8-7129] Port control[13] in module ascon_fsm is either unconnected or has no load
+WARNING: [Synth 8-7129] Port control[12] in module ascon_fsm is either unconnected or has no load
+WARNING: [Synth 8-7129] Port control[11] in module ascon_fsm is either unconnected or has no load
+WARNING: [Synth 8-7129] Port control[10] in module ascon_fsm is either unconnected or has no load
+WARNING: [Synth 8-7129] Port control[9] in module ascon_fsm is either unconnected or has no load
+WARNING: [Synth 8-7129] Port control[8] in module ascon_fsm is either unconnected or has no load
+WARNING: [Synth 8-7129] Port control[7] in module ascon_fsm is either unconnected or has no load
+WARNING: [Synth 8-7129] Port control[6] in module ascon_fsm is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWPROT[2] in module ascon_core_v1_1_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWPROT[1] in module ascon_core_v1_1_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWPROT[0] in module ascon_core_v1_1_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARPROT[2] in module ascon_core_v1_1_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARPROT[1] in module ascon_core_v1_1_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARPROT[0] in module ascon_core_v1_1_S00_AXI is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2104.590 ; gain = 497.715 ; free physical = 146 ; free virtual = 1762
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2122.402 ; gain = 515.527 ; free physical = 145 ; free virtual = 1762
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2122.402 ; gain = 515.527 ; free physical = 145 ; free virtual = 1762
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.42 ; elapsed = 00:00:00.42 . Memory (MB): peak = 2122.402 ; gain = 0.000 ; free physical = 151 ; free virtual = 1768
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2275.152 ; gain = 0.000 ; free physical = 230 ; free virtual = 1861
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.52 ; elapsed = 00:00:00.15 . Memory (MB): peak = 2275.188 ; gain = 0.000 ; free physical = 224 ; free virtual = 1856
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:17 . Memory (MB): peak = 2275.188 ; gain = 668.312 ; free physical = 202 ; free virtual = 1849
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:17 . Memory (MB): peak = 2275.188 ; gain = 668.312 ; free physical = 202 ; free virtual = 1849
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:17 . Memory (MB): peak = 2275.188 ; gain = 668.312 ; free physical = 202 ; free virtual = 1849
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'ascon_fsm'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                           000001 |                              000
+                   START |                           000010 |                              001
+               ASCON_128 |                           000100 |                              010
+             SELECT_HASH |                           001000 |                              011
+                    HMAC |                           010000 |                              100
+                    KMAC |                           100000 |                              101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'one-hot' in module 'ascon_fsm'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:18 . Memory (MB): peak = 2275.188 ; gain = 668.312 ; free physical = 197 ; free virtual = 1846
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input  128 Bit       Adders := 60    
+	   2 Input    4 Bit       Adders := 1     
++---XORs : 
+	   2 Input    128 Bit         XORs := 19    
+	   3 Input    128 Bit         XORs := 3     
+	   4 Input    128 Bit         XORs := 1     
+	   4 Input     64 Bit         XORs := 60    
+	   3 Input     64 Bit         XORs := 60    
+	   2 Input     32 Bit         XORs := 240   
++---Registers : 
+	              128 Bit    Registers := 76    
+	               32 Bit    Registers := 28    
+	                7 Bit    Registers := 2     
+	                5 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 4     
+	                1 Bit    Registers := 23    
++---Muxes : 
+	   5 Input   32 Bit        Muxes := 4     
+	   2 Input   32 Bit        Muxes := 28    
+	  27 Input   32 Bit        Muxes := 2     
+	   2 Input    8 Bit        Muxes := 104   
+	   5 Input    6 Bit        Muxes := 4     
+	   2 Input    6 Bit        Muxes := 24    
+	   2 Input    3 Bit        Muxes := 4     
+	   5 Input    1 Bit        Muxes := 4     
+	   4 Input    1 Bit        Muxes := 3     
+	   2 Input    1 Bit        Muxes := 11    
+	  28 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port s00_axi_awprot[2] in module design_ascon_ascon_core_0_4 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axi_awprot[1] in module design_ascon_ascon_core_0_4 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axi_awprot[0] in module design_ascon_ascon_core_0_4 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axi_arprot[2] in module design_ascon_ascon_core_0_4 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axi_arprot[1] in module design_ascon_ascon_core_0_4 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axi_arprot[0] in module design_ascon_ascon_core_0_4 is either unconnected or has no load
+WARNING: [Synth 8-3332] Sequential element (FSM_onehot_current_state_reg[3]) is unused and will be removed from module ascon_fsm__3.
+WARNING: [Synth 8-3332] Sequential element (FSM_onehot_current_state_reg[0]) is unused and will be removed from module ascon_fsm__3.
+WARNING: [Synth 8-3332] Sequential element (FSM_onehot_current_state_reg[3]) is unused and will be removed from module ascon_fsm__1__GU.
+WARNING: [Synth 8-3332] Sequential element (FSM_onehot_current_state_reg[0]) is unused and will be removed from module ascon_fsm__1__GU.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:36 ; elapsed = 00:00:36 . Memory (MB): peak = 2275.188 ; gain = 668.312 ; free physical = 310 ; free virtual = 1345
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:41 ; elapsed = 00:00:41 . Memory (MB): peak = 2275.188 ; gain = 668.312 ; free physical = 329 ; free virtual = 1389
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:41 ; elapsed = 00:00:41 . Memory (MB): peak = 2275.188 ; gain = 668.312 ; free physical = 321 ; free virtual = 1381
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin status[2] with 1st driver pin 'fsm_inst/i_9810/O'
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin status[2] with 2nd driver pin 'GND'
+CRITICAL WARNING: [Synth 8-6858] multi-driven net status[2] is connected to at least one constant driver which has been preserved, other driver is ignored
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin status[0] with 1st driver pin 'fsm_inst/i_9811/O'
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin status[0] with 2nd driver pin 'GND'
+CRITICAL WARNING: [Synth 8-6858] multi-driven net status[0] is connected to at least one constant driver which has been preserved, other driver is ignored
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin status[1] with 1st driver pin 'fsm_inst/i_9812/O'
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin status[1] with 2nd driver pin 'GND'
+CRITICAL WARNING: [Synth 8-6858] multi-driven net status[1] is connected to at least one constant driver which has been preserved, other driver is ignored
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:42 ; elapsed = 00:00:42 . Memory (MB): peak = 2275.188 ; gain = 668.312 ; free physical = 305 ; free virtual = 1365
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:46 ; elapsed = 00:00:47 . Memory (MB): peak = 2275.188 ; gain = 668.312 ; free physical = 297 ; free virtual = 1358
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:46 ; elapsed = 00:00:47 . Memory (MB): peak = 2275.188 ; gain = 668.312 ; free physical = 297 ; free virtual = 1358
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:46 ; elapsed = 00:00:47 . Memory (MB): peak = 2275.188 ; gain = 668.312 ; free physical = 297 ; free virtual = 1358
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:46 ; elapsed = 00:00:47 . Memory (MB): peak = 2275.188 ; gain = 668.312 ; free physical = 297 ; free virtual = 1358
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:47 ; elapsed = 00:00:47 . Memory (MB): peak = 2275.188 ; gain = 668.312 ; free physical = 296 ; free virtual = 1357
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:47 ; elapsed = 00:00:47 . Memory (MB): peak = 2275.188 ; gain = 668.312 ; free physical = 296 ; free virtual = 1357
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+------+------+
+|      |Cell  |Count |
++------+------+------+
+|1     |LUT1  |     3|
+|2     |LUT2  |     8|
+|3     |LUT3  |   770|
+|4     |LUT4  |    15|
+|5     |LUT5  |    97|
+|6     |LUT6  |   302|
+|7     |MUXF7 |    64|
+|8     |MUXF8 |    32|
+|9     |FDRE  |   904|
+|10    |FDSE  |     6|
++------+------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:47 ; elapsed = 00:00:47 . Memory (MB): peak = 2275.188 ; gain = 668.312 ; free physical = 295 ; free virtual = 1356
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 9 critical warnings and 11 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 2275.188 ; gain = 515.527 ; free physical = 295 ; free virtual = 1357
+Synthesis Optimization Complete : Time (s): cpu = 00:00:47 ; elapsed = 00:00:47 . Memory (MB): peak = 2275.188 ; gain = 668.312 ; free physical = 295 ; free virtual = 1357
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2275.188 ; gain = 0.000 ; free physical = 260 ; free virtual = 1351
+INFO: [Netlist 29-17] Analyzing 96 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'design_ascon_ascon_core_0_4' is not ideal for floorplanning, since the cellview 'ascon_core_v1_1_S00_AXI' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2275.188 ; gain = 0.000 ; free physical = 444 ; free virtual = 1605
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 3c268050
+INFO: [Common 17-83] Releasing license: Synthesis
+56 Infos, 101 Warnings, 9 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:56 ; elapsed = 00:00:52 . Memory (MB): peak = 2275.188 ; gain = 994.617 ; free physical = 443 ; free virtual = 1606
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1814.946; main = 1441.529; forked = 373.481
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3226.105; main = 2275.156; forked = 982.965
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2299.164 ; gain = 0.000 ; free physical = 443 ; free virtual = 1608
+INFO: [Common 17-1381] The checkpoint '/home/monsud/Scrivania/ASCON-hw/ASCON-hw.runs/design_ascon_ascon_core_0_4_synth_1/design_ascon_ascon_core_0_4.dcp' has been generated.
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+INFO: [Coretcl 2-1174] Renamed 3 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2299.164 ; gain = 0.000 ; free physical = 433 ; free virtual = 1608
+INFO: [Common 17-1381] The checkpoint '/home/monsud/Scrivania/ASCON-hw/ASCON-hw.runs/design_ascon_ascon_core_0_4_synth_1/design_ascon_ascon_core_0_4.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_ascon_ascon_core_0_4_utilization_synth.rpt -pb design_ascon_ascon_core_0_4_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue May  7 01:28:58 2024...

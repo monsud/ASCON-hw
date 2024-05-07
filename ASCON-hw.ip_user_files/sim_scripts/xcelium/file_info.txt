@@ -1,0 +1,4 @@
+ascon_core_v1_1_S_AXI_INTR.sv,verilog,,../../monsud/Scrivania/ASCON-hw/ip_repo/ascon_core_1_1/hdl/ascon_core_v1_1_S_AXI_INTR.sv,incdir="../../../ASCON-hw.srcs/sources_1/new"
+ascon_core_v1_1_S00_AXI.sv,systemverilog,,../../monsud/Scrivania/ASCON-hw/ip_repo/ascon_core_1_1/hdl/ascon_core_v1_1_S00_AXI.sv,incdir="../../../ASCON-hw.srcs/sources_1/new"
+ascon_core_v1_1.sv,systemverilog,,../../monsud/Scrivania/ASCON-hw/ip_repo/ascon_core_1_1/hdl/ascon_core_v1_1.sv,incdir="../../../ASCON-hw.srcs/sources_1/new"
+glbl.v,Verilog,xil_defaultlib,glbl.v

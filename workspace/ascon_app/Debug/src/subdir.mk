@@ -7,17 +7,17 @@ LD_SRCS += \
 ../src/lscript.ld 
 
 C_SRCS += \
-../src/ascon_hw.c \
+../src/ascon.c \
 ../src/main.c \
 ../src/platform.c 
 
 OBJS += \
-./src/ascon_hw.o \
+./src/ascon.o \
 ./src/main.o \
 ./src/platform.o 
 
 C_DEPS += \
-./src/ascon_hw.d \
+./src/ascon.d \
 ./src/main.d \
 ./src/platform.d 
 

@@ -7,7 +7,7 @@
 <Project Product="Vivado" Version="7" Minor="65" Path="/home/monsud/Scrivania/ASCON-hw/ASCON-hw.tmp/ascon_core_v1_0_project/ascon_core_v1_0_project.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
-    <Option Name="Id" Val="ad05fe43d7a245fdb7179dc9e492d0ff"/>
+    <Option Name="Id" Val="a9e37caa9bad490ebe9b5a153d50b925"/>
     <Option Name="Part" Val="xc7z010clg400-1"/>
     <Option Name="CompiledLibDir" Val="$PCACHEDIR/compile_simlib"/>
     <Option Name="CompiledLibDirXSim" Val=""/>
@@ -48,8 +48,8 @@
     <Option Name="ActiveSimSet" Val="sim_1"/>
     <Option Name="DefaultLib" Val="xil_defaultlib"/>
     <Option Name="ProjectType" Val="Default"/>
-    <Option Name="IPRepoPath" Val="$PPRDIR/../ip_repo/ascon_core_1_1"/>
     <Option Name="IPRepoPath" Val="$PPRDIR/../../ip_repo/ascon_core_1_0"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/../../ip_repo/ascon_core_1_1"/>
     <Option Name="IPOutputRepo" Val="$PCACHEDIR/ip"/>
     <Option Name="IPDefaultOutputPath" Val="$PGENDIR/sources_1"/>
     <Option Name="IPCachePermission" Val="read"/>
@@ -94,6 +94,14 @@
   <FileSets Version="1" Minor="32">
     <FileSet Name="sources_1" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
       <Filter Type="Srcs"/>
+      <File Path="$PPRDIR/../../ASCON-hw.srcs/sources_1/new/top_module.sv">
+        <FileInfo SFType="VHeader">
+          <Attr Name="Library" Val=""/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+          <Attr Name="IsVisible" Val="1"/>
+        </FileInfo>
+      </File>
       <File Path="$PPRDIR/../../ASCON-hw.srcs/sources_1/new/ascon_128.sv">
         <FileInfo SFType="VHeader">
           <Attr Name="Library" Val=""/>
@@ -102,61 +110,7 @@
           <Attr Name="IsVisible" Val="1"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../../ASCON-hw.srcs/sources_1/new/ascon_add_constant.sv">
-        <FileInfo SFType="VHeader">
-          <Attr Name="Library" Val=""/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="ipstatic"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-          <Attr Name="IsVisible" Val="1"/>
-        </FileInfo>
-      </File>
-      <File Path="$PPRDIR/../../ASCON-hw.srcs/sources_1/new/ascon_finalization.sv">
-        <FileInfo SFType="VHeader">
-          <Attr Name="Library" Val=""/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="ipstatic"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-          <Attr Name="IsVisible" Val="1"/>
-        </FileInfo>
-      </File>
       <File Path="$PPRDIR/../../ASCON-hw.srcs/sources_1/new/ascon_fsm.sv">
-        <FileInfo SFType="VHeader">
-          <Attr Name="Library" Val=""/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="ipstatic"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-          <Attr Name="IsVisible" Val="1"/>
-        </FileInfo>
-      </File>
-      <File Path="$PPRDIR/../../ASCON-hw.srcs/sources_1/new/ascon_hash.sv">
-        <FileInfo SFType="VHeader">
-          <Attr Name="Library" Val=""/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="ipstatic"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-          <Attr Name="IsVisible" Val="1"/>
-        </FileInfo>
-      </File>
-      <File Path="$PPRDIR/../../ASCON-hw.srcs/sources_1/new/ascon_hmac.sv">
-        <FileInfo SFType="VHeader">
-          <Attr Name="Library" Val=""/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="ipstatic"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-          <Attr Name="IsVisible" Val="1"/>
-        </FileInfo>
-      </File>
-      <File Path="$PPRDIR/../../ASCON-hw.srcs/sources_1/new/ascon_initialization.sv">
-        <FileInfo SFType="VHeader">
-          <Attr Name="Library" Val=""/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="ipstatic"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-          <Attr Name="IsVisible" Val="1"/>
-        </FileInfo>
-      </File>
-      <File Path="$PPRDIR/../../ASCON-hw.srcs/sources_1/new/ascon_key_schedule.sv">
         <FileInfo SFType="VHeader">
           <Attr Name="Library" Val=""/>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -174,7 +128,7 @@
           <Attr Name="IsVisible" Val="1"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../../ASCON-hw.srcs/sources_1/new/ascon_linear_diffusion.sv">
+      <File Path="$PPRDIR/../../ASCON-hw.srcs/sources_1/new/ascon_hmac.sv">
         <FileInfo SFType="VHeader">
           <Attr Name="Library" Val=""/>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -183,7 +137,43 @@
           <Attr Name="IsVisible" Val="1"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../../ASCON-hw.srcs/sources_1/new/ascon_round.sv">
+      <File Path="$PPRDIR/../../ASCON-hw.srcs/sources_1/new/ascon_hash.sv">
+        <FileInfo SFType="VHeader">
+          <Attr Name="Library" Val=""/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="ipstatic"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+          <Attr Name="IsVisible" Val="1"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../../ASCON-hw.srcs/sources_1/new/ascon_finalization.sv">
+        <FileInfo SFType="VHeader">
+          <Attr Name="Library" Val=""/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="ipstatic"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+          <Attr Name="IsVisible" Val="1"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../../ASCON-hw.srcs/sources_1/new/ascon_key_schedule.sv">
+        <FileInfo SFType="VHeader">
+          <Attr Name="Library" Val=""/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="ipstatic"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+          <Attr Name="IsVisible" Val="1"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../../ASCON-hw.srcs/sources_1/new/ascon_initialization.sv">
+        <FileInfo SFType="VHeader">
+          <Attr Name="Library" Val=""/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="ipstatic"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+          <Attr Name="IsVisible" Val="1"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../../ASCON-hw.srcs/sources_1/new/ascon_linear_diffusion.sv">
         <FileInfo SFType="VHeader">
           <Attr Name="Library" Val=""/>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -201,10 +191,20 @@
           <Attr Name="IsVisible" Val="1"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../../ASCON-hw.srcs/sources_1/new/top_module.sv">
+      <File Path="$PPRDIR/../../ASCON-hw.srcs/sources_1/new/ascon_add_constant.sv">
         <FileInfo SFType="VHeader">
           <Attr Name="Library" Val=""/>
           <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="ipstatic"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+          <Attr Name="IsVisible" Val="1"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../../ASCON-hw.srcs/sources_1/new/ascon_round.sv">
+        <FileInfo SFType="VHeader">
+          <Attr Name="Library" Val=""/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="ipstatic"/>
           <Attr Name="UsedIn" Val="simulation"/>
           <Attr Name="IsVisible" Val="1"/>
         </FileInfo>

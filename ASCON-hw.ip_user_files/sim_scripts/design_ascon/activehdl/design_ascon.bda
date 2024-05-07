@@ -202,7 +202,7 @@
                 "SX": "/ascon_core_0",
                 "SI": "S00_AXI",
                 "SS": "S00_AXI_reg",
-                "SV": "user.org:user:ascon_core:1.0",
+                "SV": "user.org:user:ascon_core:1.1",
                 "TM": "both",
                 "TU": "register"
             },
@@ -220,7 +220,7 @@
                 "SX": "/ascon_core_0",
                 "SI": "S_AXI_INTR",
                 "SS": "S_AXI_INTR_reg",
-                "SV": "user.org:user:ascon_core:1.0",
+                "SV": "user.org:user:ascon_core:1.1",
                 "TM": "both",
                 "TU": "register"
             }

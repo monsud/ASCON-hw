@@ -1,0 +1,11 @@
+verilog  --include "../../../ASCON-hw.srcs/sources_1/new" \
+"../../../ip_repo/ascon_core_1_1/hdl/ascon_core_v1_1_S_AXI_INTR.sv" \
+
+sv  --include "../../../ASCON-hw.srcs/sources_1/new" \
+"../../../ip_repo/ascon_core_1_1/hdl/ascon_core_v1_1_S00_AXI.sv" \
+"../../../ip_repo/ascon_core_1_1/hdl/ascon_core_v1_1.sv" \
+
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

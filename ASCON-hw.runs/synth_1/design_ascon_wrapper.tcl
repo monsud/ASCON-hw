@@ -70,6 +70,7 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
+set_msg_config -id {HDL-1065} -limit 10000
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7z010clg400-1
 
@@ -95,11 +96,12 @@ OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_verilog -library xil_defaultlib /home/monsud/Scrivania/ASCON-hw/ASCON-hw.gen/sources_1/bd/design_ascon/hdl/design_ascon_wrapper.v
 add_files /home/monsud/Scrivania/ASCON-hw/ASCON-hw.srcs/sources_1/bd/design_ascon/design_ascon.bd
-set_property used_in_implementation false [get_files -all /home/monsud/Scrivania/ASCON-hw/ASCON-hw.gen/sources_1/bd/design_ascon/ip/design_ascon_xbar_1/design_ascon_xbar_1_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/monsud/Scrivania/ASCON-hw/ASCON-hw.gen/sources_1/bd/design_ascon/ip/design_ascon_processing_system7_0_4/design_ascon_processing_system7_0_4.xdc]
-set_property used_in_implementation false [get_files -all /home/monsud/Scrivania/ASCON-hw/ASCON-hw.gen/sources_1/bd/design_ascon/ip/design_ascon_rst_ps7_0_100M_2/design_ascon_rst_ps7_0_100M_2_board.xdc]
-set_property used_in_implementation false [get_files -all /home/monsud/Scrivania/ASCON-hw/ASCON-hw.gen/sources_1/bd/design_ascon/ip/design_ascon_rst_ps7_0_100M_2/design_ascon_rst_ps7_0_100M_2.xdc]
-set_property used_in_implementation false [get_files -all /home/monsud/Scrivania/ASCON-hw/ASCON-hw.gen/sources_1/bd/design_ascon/ip/design_ascon_rst_ps7_0_100M_2/design_ascon_rst_ps7_0_100M_2_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/monsud/Scrivania/ASCON-hw/ASCON-hw.gen/sources_1/bd/design_ascon/ip/design_ascon_xbar_0/design_ascon_xbar_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/monsud/Scrivania/ASCON-hw/ASCON-hw.gen/sources_1/bd/design_ascon/ip/design_ascon_rst_ps7_0_50M_0/design_ascon_rst_ps7_0_50M_0_board.xdc]
+set_property used_in_implementation false [get_files -all /home/monsud/Scrivania/ASCON-hw/ASCON-hw.gen/sources_1/bd/design_ascon/ip/design_ascon_rst_ps7_0_50M_0/design_ascon_rst_ps7_0_50M_0.xdc]
+set_property used_in_implementation false [get_files -all /home/monsud/Scrivania/ASCON-hw/ASCON-hw.gen/sources_1/bd/design_ascon/ip/design_ascon_rst_ps7_0_50M_0/design_ascon_rst_ps7_0_50M_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/monsud/Scrivania/ASCON-hw/ASCON-hw.gen/sources_1/bd/design_ascon/ip/design_ascon_processing_system7_0_6/design_ascon_processing_system7_0_6.xdc]
+set_property used_in_implementation false [get_files -all /home/monsud/Scrivania/ASCON-hw/ASCON-hw.gen/sources_1/bd/design_ascon/ip/design_ascon_auto_pc_0/design_ascon_auto_pc_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/monsud/Scrivania/ASCON-hw/ASCON-hw.gen/sources_1/bd/design_ascon/design_ascon_ooc.xdc]
 
 OPTRACE "Adding files" END { }

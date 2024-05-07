@@ -2,7 +2,7 @@
 //Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2023.2 (lin64) Build 4029153 Fri Oct 13 20:13:54 MDT 2023
-//Date        : Fri May  3 18:03:39 2024
+//Date        : Tue May  7 01:27:46 2024
 //Host        : archbook running 64-bit Arch Linux
 //Command     : generate_target design_ascon_wrapper.bd
 //Design      : design_ascon_wrapper
@@ -26,12 +26,12 @@ module design_ascon_wrapper
     DDR_ras_n,
     DDR_reset_n,
     DDR_we_n,
-    FIXED_IO_0_ddr_vrn,
-    FIXED_IO_0_ddr_vrp,
-    FIXED_IO_0_mio,
-    FIXED_IO_0_ps_clk,
-    FIXED_IO_0_ps_porb,
-    FIXED_IO_0_ps_srstb);
+    FIXED_IO_ddr_vrn,
+    FIXED_IO_ddr_vrp,
+    FIXED_IO_mio,
+    FIXED_IO_ps_clk,
+    FIXED_IO_ps_porb,
+    FIXED_IO_ps_srstb);
   inout [14:0]DDR_addr;
   inout [2:0]DDR_ba;
   inout DDR_cas_n;
@@ -47,12 +47,12 @@ module design_ascon_wrapper
   inout DDR_ras_n;
   inout DDR_reset_n;
   inout DDR_we_n;
-  inout FIXED_IO_0_ddr_vrn;
-  inout FIXED_IO_0_ddr_vrp;
-  inout [53:0]FIXED_IO_0_mio;
-  inout FIXED_IO_0_ps_clk;
-  inout FIXED_IO_0_ps_porb;
-  inout FIXED_IO_0_ps_srstb;
+  inout FIXED_IO_ddr_vrn;
+  inout FIXED_IO_ddr_vrp;
+  inout [53:0]FIXED_IO_mio;
+  inout FIXED_IO_ps_clk;
+  inout FIXED_IO_ps_porb;
+  inout FIXED_IO_ps_srstb;
 
   wire [14:0]DDR_addr;
   wire [2:0]DDR_ba;
@@ -69,12 +69,12 @@ module design_ascon_wrapper
   wire DDR_ras_n;
   wire DDR_reset_n;
   wire DDR_we_n;
-  wire FIXED_IO_0_ddr_vrn;
-  wire FIXED_IO_0_ddr_vrp;
-  wire [53:0]FIXED_IO_0_mio;
-  wire FIXED_IO_0_ps_clk;
-  wire FIXED_IO_0_ps_porb;
-  wire FIXED_IO_0_ps_srstb;
+  wire FIXED_IO_ddr_vrn;
+  wire FIXED_IO_ddr_vrp;
+  wire [53:0]FIXED_IO_mio;
+  wire FIXED_IO_ps_clk;
+  wire FIXED_IO_ps_porb;
+  wire FIXED_IO_ps_srstb;
 
   design_ascon design_ascon_i
        (.DDR_addr(DDR_addr),
@@ -92,10 +92,10 @@ module design_ascon_wrapper
         .DDR_ras_n(DDR_ras_n),
         .DDR_reset_n(DDR_reset_n),
         .DDR_we_n(DDR_we_n),
-        .FIXED_IO_0_ddr_vrn(FIXED_IO_0_ddr_vrn),
-        .FIXED_IO_0_ddr_vrp(FIXED_IO_0_ddr_vrp),
-        .FIXED_IO_0_mio(FIXED_IO_0_mio),
-        .FIXED_IO_0_ps_clk(FIXED_IO_0_ps_clk),
-        .FIXED_IO_0_ps_porb(FIXED_IO_0_ps_porb),
-        .FIXED_IO_0_ps_srstb(FIXED_IO_0_ps_srstb));
+        .FIXED_IO_ddr_vrn(FIXED_IO_ddr_vrn),
+        .FIXED_IO_ddr_vrp(FIXED_IO_ddr_vrp),
+        .FIXED_IO_mio(FIXED_IO_mio),
+        .FIXED_IO_ps_clk(FIXED_IO_ps_clk),
+        .FIXED_IO_ps_porb(FIXED_IO_ps_porb),
+        .FIXED_IO_ps_srstb(FIXED_IO_ps_srstb));
 endmodule

@@ -1,30 +1,31 @@
 {
    "ActiveEmotionalView":"Default View",
-   "Default View_ScaleFactor":"0.868284",
-   "Default View_TopLeft":"-131,0",
+   "Default View_ScaleFactor":"1.0",
+   "Default View_TopLeft":"-38,13",
    "ExpandedHierarchyInLayout":"",
    "guistr":"# # String gsaved with Nlview 7.5.8 2022-09-21 7111 VDI=41 GEI=38 GUI=JA:10.0 TLS
 #  -string -flagsOSRD
-preplace port DDR -pg 1 -lvl 4 -x 970 -y 360 -defaultsOSRD
-preplace port FIXED_IO_0 -pg 1 -lvl 4 -x 970 -y 380 -defaultsOSRD
-preplace inst ps7_0_axi_periph -pg 1 -lvl 2 -x 550 -y 150 -defaultsOSRD
-preplace inst processing_system7_0 -pg 1 -lvl 2 -x 550 -y 440 -defaultsOSRD
-preplace inst rst_ps7_0_100M -pg 1 -lvl 1 -x 200 -y 200 -defaultsOSRD
-preplace inst ascon_core_0 -pg 1 -lvl 3 -x 840 -y 190 -defaultsOSRD
-preplace netloc processing_system7_0_FCLK_CLK0 1 0 3 20 100 390 290 730
-preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 3 20 300 NJ 300 710
-preplace netloc rst_ps7_0_100M_peripheral_aresetn 1 1 2 380 10 720
-preplace netloc processing_system7_0_DDR 1 2 2 NJ 360 NJ
-preplace netloc processing_system7_0_FIXED_IO 1 2 2 NJ 380 NJ
+preplace port DDR -pg 1 -lvl 4 -x 1030 -y 300 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -lvl 4 -x 1030 -y 320 -defaultsOSRD
+preplace inst ascon_core_0 -pg 1 -lvl 3 -x 900 -y 190 -defaultsOSRD
+preplace inst ps7_0_axi_periph -pg 1 -lvl 2 -x 630 -y 150 -defaultsOSRD
+preplace inst rst_ps7_0_50M -pg 1 -lvl 1 -x 240 -y 160 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 1 -x 240 -y 380 -defaultsOSRD
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 3 20 50 460 290 790
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 2 30 60 450
+preplace netloc rst_ps7_0_50M_peripheral_aresetn 1 1 2 480 10 780
+preplace netloc processing_system7_0_DDR 1 1 3 NJ 300 NJ 300 NJ
+preplace netloc processing_system7_0_FIXED_IO 1 1 3 NJ 320 NJ 320 NJ
+preplace netloc processing_system7_0_M_AXI_GP0 1 1 1 470 70n
 preplace netloc ps7_0_axi_periph_M00_AXI 1 2 1 N 140
 preplace netloc ps7_0_axi_periph_M01_AXI 1 2 1 N 160
-levelinfo -pg 1 0 200 550 840 970
-pagesize -pg 1 -db -bbox -sgen 0 0 1100 580
+levelinfo -pg 1 0 240 630 900 1030
+pagesize -pg 1 -db -bbox -sgen 0 0 1150 520
 "
 }
 {
-   "da_axi4_cnt":"20",
-   "da_board_cnt":"1",
-   "da_clkrst_cnt":"2",
-   "da_ps7_cnt":"5"
+   "da_axi4_cnt":"23",
+   "da_board_cnt":"2",
+   "da_clkrst_cnt":"3",
+   "da_ps7_cnt":"7"
 }

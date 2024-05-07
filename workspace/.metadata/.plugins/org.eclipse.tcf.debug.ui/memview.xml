@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <Memory>
-    <Block Addr="0x40200000" Context="JTAG-jsn-Zybo-210279651712A-4ba00477-0.0" Size="-1"/>
+    <Block Addr="0x40200000" Context="JTAG-jsn-Zybo-210279651712A-4ba00477-0.0" Size="-1">
+        <Rendering ID="org.eclipse.cdt.debug.ui.memory.traditional.TraditionalRendering" Pane="org.eclipse.debug.ui.MemoryView.RenderingViewPane.1"/>
+    </Block>
 </Memory>

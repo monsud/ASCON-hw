@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Root VersionMajor="1" VersionMinor="15">
-  <GenAppInfo Name="Vivado" Version="2023.2" CL="4029153" TimeStamp="Tue Dec 12 20:51:39 2023"/>
+  <GenAppInfo Name="Vivado" Version="2023.2" CL="4029153" TimeStamp="Mon May  6 19:58:58 2024"/>
   <DSA Vendor="xilinx" BoardId="zybo" Name="ascon_platform" VersionMajor="1" VersionMinor="0" Description="" FeatureRomTimestamp="0" DcpLogicFunctionStripped="false" DcpEncrypt="false" Unified="true" Fixed="false" DefaultOutputType="sd_card">
     <Build UsesPR="false" PlatformState="pre_synth" AcceleratorBinaryContent="bitstream" ValidBinaryContentValues="dcp,bitstream" TopModuleName="design_ascon_wrapper"/>
     <Board Name="digilentinc.com:zybo:1.0" Vendor="digilentinc.com" Part="xc7z010clg400-1" BoardPart="digilentinc.com:zybo:part0:1.0">
@@ -19,7 +19,7 @@
       <File Type="FULL_BIT" Name="design_ascon_wrapper.bit"/>
       <File Type="HPFM" Name="design_ascon_wrapper.hpfm"/>
       <File Type="REBUILD_TCL" Name="prj/rebuild.tcl"/>
-      <File Type="TOP_BD" Name="prj/ascon_project.srcs/sources_1/bd/design_ascon/design_ascon.bd"/>
+      <File Type="TOP_BD" Name="prj/ASCON-hw.srcs/sources_1/bd/design_ascon/design_ascon.bd"/>
       <File Type="IP_REPO_PATH" Name="iprepo"/>
       <File Type="IP_CACHE_DIR" Name="ipcache"/>
       <File Type="BOARD_REPO_PATH" Name="board"/>

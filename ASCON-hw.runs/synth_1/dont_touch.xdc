@@ -6,19 +6,22 @@
 # Block Designs: bd/design_ascon/design_ascon.bd
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_ascon || ORIG_REF_NAME==design_ascon} -quiet] -quiet
 
-# IP: bd/design_ascon/ip/design_ascon_xbar_1/design_ascon_xbar_1.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_ascon_xbar_1 || ORIG_REF_NAME==design_ascon_xbar_1} -quiet] -quiet
+# IP: bd/design_ascon/ip/design_ascon_ascon_core_0_4/design_ascon_ascon_core_0_4.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_ascon_ascon_core_0_4 || ORIG_REF_NAME==design_ascon_ascon_core_0_4} -quiet] -quiet
 
-# IP: bd/design_ascon/ip/design_ascon_ps7_0_axi_periph_1/design_ascon_ps7_0_axi_periph_1.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_ascon_ps7_0_axi_periph_1 || ORIG_REF_NAME==design_ascon_ps7_0_axi_periph_1} -quiet] -quiet
+# IP: bd/design_ascon/ip/design_ascon_xbar_0/design_ascon_xbar_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_ascon_xbar_0 || ORIG_REF_NAME==design_ascon_xbar_0} -quiet] -quiet
 
-# IP: bd/design_ascon/ip/design_ascon_processing_system7_0_4/design_ascon_processing_system7_0_4.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_ascon_processing_system7_0_4 || ORIG_REF_NAME==design_ascon_processing_system7_0_4} -quiet] -quiet
+# IP: bd/design_ascon/ip/design_ascon_ps7_0_axi_periph_2/design_ascon_ps7_0_axi_periph_2.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_ascon_ps7_0_axi_periph_2 || ORIG_REF_NAME==design_ascon_ps7_0_axi_periph_2} -quiet] -quiet
 
-# IP: bd/design_ascon/ip/design_ascon_rst_ps7_0_100M_2/design_ascon_rst_ps7_0_100M_2.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_ascon_rst_ps7_0_100M_2 || ORIG_REF_NAME==design_ascon_rst_ps7_0_100M_2} -quiet] -quiet
+# IP: bd/design_ascon/ip/design_ascon_rst_ps7_0_50M_0/design_ascon_rst_ps7_0_50M_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_ascon_rst_ps7_0_50M_0 || ORIG_REF_NAME==design_ascon_rst_ps7_0_50M_0} -quiet] -quiet
 
-# IP: bd/design_ascon/ip/design_ascon_ascon_core_0_3/design_ascon_ascon_core_0_3.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_ascon_ascon_core_0_3 || ORIG_REF_NAME==design_ascon_ascon_core_0_3} -quiet] -quiet
+# IP: bd/design_ascon/ip/design_ascon_processing_system7_0_6/design_ascon_processing_system7_0_6.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_ascon_processing_system7_0_6 || ORIG_REF_NAME==design_ascon_processing_system7_0_6} -quiet] -quiet
+
+# IP: bd/design_ascon/ip/design_ascon_auto_pc_0/design_ascon_auto_pc_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_ascon_auto_pc_0 || ORIG_REF_NAME==design_ascon_auto_pc_0} -quiet] -quiet
 
 # XDC: /home/monsud/Scrivania/ASCON-hw/ASCON-hw.gen/sources_1/bd/design_ascon/design_ascon_ooc.xdc

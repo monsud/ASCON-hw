@@ -187,6 +187,42 @@
                 "VH": "2",
                 "VT": "PM",
                 "TU": "active"
+            },
+            "V3": {
+                "VT": "AC",
+                "BA": "0x40200000",
+                "HA": "0x4020007F",
+                "BP": "C_S00_AXI_BASEADDR",
+                "HP": "C_S00_AXI_HIGHADDR",
+                "MA": "Data",
+                "MX": "/processing_system7_0",
+                "MI": "M_AXI_GP0",
+                "MS": "SEG_ascon_core_0_S00_AXI_reg",
+                "MV": "xilinx.com:ip:processing_system7:5.5",
+                "SX": "/ascon_core_0",
+                "SI": "S00_AXI",
+                "SS": "S00_AXI_reg",
+                "SV": "user.org:user:ascon_core:1.1",
+                "TM": "both",
+                "TU": "register"
+            },
+            "V4": {
+                "VT": "AC",
+                "BA": "0x43C10000",
+                "HA": "0x43C1007F",
+                "BP": "C_S_AXI_INTR_BASEADDR",
+                "HP": "C_S_AXI_INTR_HIGHADDR",
+                "MA": "Data",
+                "MX": "/processing_system7_0",
+                "MI": "M_AXI_GP0",
+                "MS": "SEG_ascon_core_0_S_AXI_INTR_reg",
+                "MV": "xilinx.com:ip:processing_system7:5.5",
+                "SX": "/ascon_core_0",
+                "SI": "S_AXI_INTR",
+                "SS": "S_AXI_INTR_reg",
+                "SV": "user.org:user:ascon_core:1.1",
+                "TM": "both",
+                "TU": "register"
             }
         },
         "edges": [
@@ -197,6 +233,16 @@
             {
                 "src": "V1",
                 "trg": "V2"
+            },
+            {
+                "src": "V3",
+                "trg": "V2",
+                "EH": "2"
+            },
+            {
+                "src": "V4",
+                "trg": "V2",
+                "EH": "2"
             }
         ]
     }
