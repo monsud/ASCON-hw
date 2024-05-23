@@ -11,12 +11,12 @@ preplace inst ascon_core_0 -pg 1 -lvl 3 -x 900 -y 190 -defaultsOSRD
 preplace inst ps7_0_axi_periph -pg 1 -lvl 2 -x 630 -y 150 -defaultsOSRD
 preplace inst rst_ps7_0_50M -pg 1 -lvl 1 -x 240 -y 160 -defaultsOSRD
 preplace inst processing_system7_0 -pg 1 -lvl 1 -x 240 -y 380 -defaultsOSRD
-preplace netloc processing_system7_0_FCLK_CLK0 1 0 3 20 50 460 290 790
-preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 2 30 60 450
-preplace netloc rst_ps7_0_50M_peripheral_aresetn 1 1 2 480 10 780
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 3 40 50 470 290 790
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 2 50 60 430
+preplace netloc rst_ps7_0_50M_peripheral_aresetn 1 1 2 490 10 780
 preplace netloc processing_system7_0_DDR 1 1 3 NJ 300 NJ 300 NJ
 preplace netloc processing_system7_0_FIXED_IO 1 1 3 NJ 320 NJ 320 NJ
-preplace netloc processing_system7_0_M_AXI_GP0 1 1 1 470 70n
+preplace netloc processing_system7_0_M_AXI_GP0 1 1 1 480 70n
 preplace netloc ps7_0_axi_periph_M00_AXI 1 2 1 N 140
 preplace netloc ps7_0_axi_periph_M01_AXI 1 2 1 N 160
 levelinfo -pg 1 0 240 630 900 1030

@@ -48,7 +48,7 @@
 
 
 // IP VLNV: user.org:user:ascon_core:1.1
-// IP Revision: 21
+// IP Revision: 27
 
 `timescale 1ns/1ps
 

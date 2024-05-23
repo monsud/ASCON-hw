@@ -197,7 +197,7 @@
     "components": {
       "ascon_core_0": {
         "vlnv": "user.org:user:ascon_core:1.1",
-        "ip_revision": "21",
+        "ip_revision": "27",
         "xci_name": "design_ascon_ascon_core_0_4",
         "xci_path": "ip/design_ascon_ascon_core_0_4/design_ascon_ascon_core_0_4.xci",
         "inst_hier_path": "ascon_core_0"

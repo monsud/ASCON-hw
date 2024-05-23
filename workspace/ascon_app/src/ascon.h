@@ -12,38 +12,38 @@
 #define BASE_ADDRESS 0x40200000
 
 // Register offsets
-#define REG_KEY_0_OFFSET    0
-#define REG_KEY_1_OFFSET    4
-#define REG_KEY_2_OFFSET    8
-#define REG_KEY_3_OFFSET    12
+#define REG_KEY_0_OFFSET    0x0
+#define REG_KEY_1_OFFSET    0x4
+#define REG_KEY_2_OFFSET    0x8
+#define REG_KEY_3_OFFSET    0xC
 
-#define REG_NONCE_0_OFFSET  16
-#define REG_NONCE_1_OFFSET  20
-#define REG_NONCE_2_OFFSET  24
-#define REG_NONCE_3_OFFSET  28
+#define REG_NONCE_0_OFFSET  0x10
+#define REG_NONCE_1_OFFSET  0x14
+#define REG_NONCE_2_OFFSET  0x18
+#define REG_NONCE_3_OFFSET  0x1C
 
-#define REG_PT_0_OFFSET     32
-#define REG_PT_1_OFFSET     36
-#define REG_PT_2_OFFSET     40
-#define REG_PT_3_OFFSET     44
+#define REG_PT_0_OFFSET     0x20
+#define REG_PT_1_OFFSET     0x24
+#define REG_PT_2_OFFSET     0x28
+#define REG_PT_3_OFFSET     0x2C
 
-#define REG_CT_0_OFFSET     48
-#define REG_CT_1_OFFSET     52
-#define REG_CT_2_OFFSET     56
-#define REG_CT_3_OFFSET     60
+#define REG_CT_0_OFFSET     0x30
+#define REG_CT_1_OFFSET     0x34
+#define REG_CT_2_OFFSET     0x38
+#define REG_CT_3_OFFSET     0x3C
 
-#define REG_HO_0_OFFSET     64
-#define REG_HO_1_OFFSET     68
-#define REG_HO_2_OFFSET     72
-#define REG_HO_3_OFFSET     76
+#define REG_HO_0_OFFSET     0x40
+#define REG_HO_1_OFFSET     0x44
+#define REG_HO_2_OFFSET     0x48
+#define REG_HO_3_OFFSET     0x4C
 
-#define REG_KO_0_OFFSET     80
-#define REG_KO_1_OFFSET     84
-#define REG_KO_2_OFFSET     88
-#define REG_KO_3_OFFSET     92
+#define REG_KO_0_OFFSET     0x50
+#define REG_KO_1_OFFSET     0x54
+#define REG_KO_2_OFFSET     0x58
+#define REG_KO_3_OFFSET     0x5C
 
-#define REG_CTRL_OFFSET     96
-#define REG_STATE_OFFSET    100
+#define REG_CTRL_OFFSET     0x60
+#define REG_STATE_OFFSET    0x64
 
 typedef struct {
     uint32_t reserved : 26;  // Bits 6-31: Reserved for future use or extensions

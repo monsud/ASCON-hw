@@ -44,7 +44,7 @@ GENERATE_BIF_XSCT_CMD = ${GENERATE_BIF} -xpfm ${XPFM_PATH} -domains ${DOMAINS} -
 package:
 	-@echo Generating bif file for the system project
 	-@echo Executing command \'${GENERATE_BIF_XSCT_CMD}\' on XSCT
-	-@echo "connect -u TCP:localhost:35881; tcf send_command $$::xsdb::curchan xsdb eval s es [list \"${GENERATE_BIF_XSCT_CMD}\"]" | xsct
+	-@echo "connect -u TCP:localhost:38745; tcf send_command $$::xsdb::curchan xsdb eval s es [list \"${GENERATE_BIF_XSCT_CMD}\"]" | xsct
 	${SDCARD_GEN} --xpfm ${XPFM_PATH} --sys_config ${SYS_CONFIG} --bif ${BIF_PATH} --bitstream ${BITSTREAM_PATH} ${SD_FILES}
 
 clean:

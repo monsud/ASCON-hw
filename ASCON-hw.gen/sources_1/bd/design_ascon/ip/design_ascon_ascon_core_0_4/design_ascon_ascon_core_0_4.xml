@@ -1205,11 +1205,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Mon May 06 23:28:58 UTC 2024</spirit:value>
+            <spirit:value>Mon May 20 10:40:29 UTC 2024</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:90de2986</spirit:value>
+            <spirit:value>9:62440441</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1223,11 +1223,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Mon May 06 23:27:46 UTC 2024</spirit:value>
+            <spirit:value>Mon May 20 10:39:27 UTC 2024</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:90de2986</spirit:value>
+            <spirit:value>9:62440441</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1238,7 +1238,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:90de2986</spirit:value>
+            <spirit:value>9:62440441</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1254,11 +1254,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Mon May 06 23:27:46 UTC 2024</spirit:value>
+            <spirit:value>Mon May 20 10:39:27 UTC 2024</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:1af1ae26</spirit:value>
+            <spirit:value>9:e86b83e1</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1274,11 +1274,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Mon May 06 23:27:46 UTC 2024</spirit:value>
+            <spirit:value>Mon May 20 10:39:27 UTC 2024</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:1af1ae26</spirit:value>
+            <spirit:value>9:e86b83e1</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1294,11 +1294,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Mon May 06 23:27:46 UTC 2024</spirit:value>
+            <spirit:value>Mon May 20 10:39:27 UTC 2024</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:90de2986</spirit:value>
+            <spirit:value>9:62440441</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1314,11 +1314,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Mon May 06 23:27:46 UTC 2024</spirit:value>
+            <spirit:value>Mon May 20 10:39:27 UTC 2024</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:90de2986</spirit:value>
+            <spirit:value>9:62440441</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -2103,80 +2103,80 @@
     <spirit:fileSet>
       <spirit:name>xilinx_verilogbehavioralsimulation_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>../../ipshared/1136/ASCON-hw.srcs/sources_1/new/ascon_kmac.sv</spirit:name>
+        <spirit:name>../../ipshared/d7a1/ASCON-hw.srcs/sources_1/new/ascon_kmac.sv</spirit:name>
         <spirit:fileType>systemVerilogSource</spirit:fileType>
         <spirit:isIncludeFile>true</spirit:isIncludeFile>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/1136/ASCON-hw.srcs/sources_1/new/top_module.sv</spirit:name>
+        <spirit:name>../../ipshared/d7a1/ASCON-hw.srcs/sources_1/new/top_module.sv</spirit:name>
         <spirit:fileType>systemVerilogSource</spirit:fileType>
         <spirit:isIncludeFile>true</spirit:isIncludeFile>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/1136/ASCON-hw.srcs/sources_1/new/ascon_hmac.sv</spirit:name>
+        <spirit:name>../../ipshared/d7a1/ASCON-hw.srcs/sources_1/new/ascon_hmac.sv</spirit:name>
         <spirit:fileType>systemVerilogSource</spirit:fileType>
         <spirit:isIncludeFile>true</spirit:isIncludeFile>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/1136/ASCON-hw.srcs/sources_1/new/ascon_hash.sv</spirit:name>
+        <spirit:name>../../ipshared/d7a1/ASCON-hw.srcs/sources_1/new/ascon_hash.sv</spirit:name>
         <spirit:fileType>systemVerilogSource</spirit:fileType>
         <spirit:isIncludeFile>true</spirit:isIncludeFile>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/1136/ASCON-hw.srcs/sources_1/new/ascon_128.sv</spirit:name>
+        <spirit:name>../../ipshared/d7a1/ASCON-hw.srcs/sources_1/new/ascon_128.sv</spirit:name>
         <spirit:fileType>systemVerilogSource</spirit:fileType>
         <spirit:isIncludeFile>true</spirit:isIncludeFile>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/1136/ASCON-hw.srcs/sources_1/new/ascon_fsm.sv</spirit:name>
+        <spirit:name>../../ipshared/d7a1/ASCON-hw.srcs/sources_1/new/ascon_fsm.sv</spirit:name>
         <spirit:fileType>systemVerilogSource</spirit:fileType>
         <spirit:isIncludeFile>true</spirit:isIncludeFile>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/1136/ASCON-hw.srcs/sources_1/new/ascon_finalization.sv</spirit:name>
+        <spirit:name>../../ipshared/d7a1/ASCON-hw.srcs/sources_1/new/ascon_finalization.sv</spirit:name>
         <spirit:fileType>systemVerilogSource</spirit:fileType>
         <spirit:isIncludeFile>true</spirit:isIncludeFile>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/1136/ASCON-hw.srcs/sources_1/new/ascon_key_schedule.sv</spirit:name>
+        <spirit:name>../../ipshared/d7a1/ASCON-hw.srcs/sources_1/new/ascon_key_schedule.sv</spirit:name>
         <spirit:fileType>systemVerilogSource</spirit:fileType>
         <spirit:isIncludeFile>true</spirit:isIncludeFile>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/1136/ASCON-hw.srcs/sources_1/new/ascon_initialization.sv</spirit:name>
+        <spirit:name>../../ipshared/d7a1/ASCON-hw.srcs/sources_1/new/ascon_initialization.sv</spirit:name>
         <spirit:fileType>systemVerilogSource</spirit:fileType>
         <spirit:isIncludeFile>true</spirit:isIncludeFile>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/1136/ASCON-hw.srcs/sources_1/new/ascon_linear_diffusion.sv</spirit:name>
+        <spirit:name>../../ipshared/d7a1/ASCON-hw.srcs/sources_1/new/ascon_linear_diffusion.sv</spirit:name>
         <spirit:fileType>systemVerilogSource</spirit:fileType>
         <spirit:isIncludeFile>true</spirit:isIncludeFile>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/1136/ASCON-hw.srcs/sources_1/new/ascon_sbox.sv</spirit:name>
+        <spirit:name>../../ipshared/d7a1/ASCON-hw.srcs/sources_1/new/ascon_sbox.sv</spirit:name>
         <spirit:fileType>systemVerilogSource</spirit:fileType>
         <spirit:isIncludeFile>true</spirit:isIncludeFile>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/1136/ASCON-hw.srcs/sources_1/new/ascon_add_constant.sv</spirit:name>
+        <spirit:name>../../ipshared/d7a1/ASCON-hw.srcs/sources_1/new/ascon_add_constant.sv</spirit:name>
         <spirit:fileType>systemVerilogSource</spirit:fileType>
         <spirit:isIncludeFile>true</spirit:isIncludeFile>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/1136/ASCON-hw.srcs/sources_1/new/ascon_round.sv</spirit:name>
+        <spirit:name>../../ipshared/d7a1/ASCON-hw.srcs/sources_1/new/ascon_round.sv</spirit:name>
         <spirit:fileType>systemVerilogSource</spirit:fileType>
         <spirit:isIncludeFile>true</spirit:isIncludeFile>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/1136/hdl/ascon_core_v1_1_S_AXI_INTR.sv</spirit:name>
+        <spirit:name>../../ipshared/d7a1/hdl/ascon_core_v1_1_S_AXI_INTR.sv</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/1136/hdl/ascon_core_v1_1_S00_AXI.sv</spirit:name>
+        <spirit:name>../../ipshared/d7a1/hdl/ascon_core_v1_1_S00_AXI.sv</spirit:name>
         <spirit:fileType>systemVerilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/1136/hdl/ascon_core_v1_1.sv</spirit:name>
+        <spirit:name>../../ipshared/d7a1/hdl/ascon_core_v1_1.sv</spirit:name>
         <spirit:fileType>systemVerilogSource</spirit:fileType>
       </spirit:file>
     </spirit:fileSet>
@@ -2191,80 +2191,80 @@
     <spirit:fileSet>
       <spirit:name>xilinx_verilogsynthesis_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>../../ipshared/1136/ASCON-hw.srcs/sources_1/new/ascon_kmac.sv</spirit:name>
+        <spirit:name>../../ipshared/d7a1/ASCON-hw.srcs/sources_1/new/ascon_kmac.sv</spirit:name>
         <spirit:fileType>systemVerilogSource</spirit:fileType>
         <spirit:isIncludeFile>true</spirit:isIncludeFile>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/1136/ASCON-hw.srcs/sources_1/new/top_module.sv</spirit:name>
+        <spirit:name>../../ipshared/d7a1/ASCON-hw.srcs/sources_1/new/top_module.sv</spirit:name>
         <spirit:fileType>systemVerilogSource</spirit:fileType>
         <spirit:isIncludeFile>true</spirit:isIncludeFile>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/1136/ASCON-hw.srcs/sources_1/new/ascon_hmac.sv</spirit:name>
+        <spirit:name>../../ipshared/d7a1/ASCON-hw.srcs/sources_1/new/ascon_hmac.sv</spirit:name>
         <spirit:fileType>systemVerilogSource</spirit:fileType>
         <spirit:isIncludeFile>true</spirit:isIncludeFile>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/1136/ASCON-hw.srcs/sources_1/new/ascon_hash.sv</spirit:name>
+        <spirit:name>../../ipshared/d7a1/ASCON-hw.srcs/sources_1/new/ascon_hash.sv</spirit:name>
         <spirit:fileType>systemVerilogSource</spirit:fileType>
         <spirit:isIncludeFile>true</spirit:isIncludeFile>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/1136/ASCON-hw.srcs/sources_1/new/ascon_128.sv</spirit:name>
+        <spirit:name>../../ipshared/d7a1/ASCON-hw.srcs/sources_1/new/ascon_128.sv</spirit:name>
         <spirit:fileType>systemVerilogSource</spirit:fileType>
         <spirit:isIncludeFile>true</spirit:isIncludeFile>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/1136/ASCON-hw.srcs/sources_1/new/ascon_fsm.sv</spirit:name>
+        <spirit:name>../../ipshared/d7a1/ASCON-hw.srcs/sources_1/new/ascon_fsm.sv</spirit:name>
         <spirit:fileType>systemVerilogSource</spirit:fileType>
         <spirit:isIncludeFile>true</spirit:isIncludeFile>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/1136/ASCON-hw.srcs/sources_1/new/ascon_finalization.sv</spirit:name>
+        <spirit:name>../../ipshared/d7a1/ASCON-hw.srcs/sources_1/new/ascon_finalization.sv</spirit:name>
         <spirit:fileType>systemVerilogSource</spirit:fileType>
         <spirit:isIncludeFile>true</spirit:isIncludeFile>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/1136/ASCON-hw.srcs/sources_1/new/ascon_key_schedule.sv</spirit:name>
+        <spirit:name>../../ipshared/d7a1/ASCON-hw.srcs/sources_1/new/ascon_key_schedule.sv</spirit:name>
         <spirit:fileType>systemVerilogSource</spirit:fileType>
         <spirit:isIncludeFile>true</spirit:isIncludeFile>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/1136/ASCON-hw.srcs/sources_1/new/ascon_initialization.sv</spirit:name>
+        <spirit:name>../../ipshared/d7a1/ASCON-hw.srcs/sources_1/new/ascon_initialization.sv</spirit:name>
         <spirit:fileType>systemVerilogSource</spirit:fileType>
         <spirit:isIncludeFile>true</spirit:isIncludeFile>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/1136/ASCON-hw.srcs/sources_1/new/ascon_linear_diffusion.sv</spirit:name>
+        <spirit:name>../../ipshared/d7a1/ASCON-hw.srcs/sources_1/new/ascon_linear_diffusion.sv</spirit:name>
         <spirit:fileType>systemVerilogSource</spirit:fileType>
         <spirit:isIncludeFile>true</spirit:isIncludeFile>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/1136/ASCON-hw.srcs/sources_1/new/ascon_sbox.sv</spirit:name>
+        <spirit:name>../../ipshared/d7a1/ASCON-hw.srcs/sources_1/new/ascon_sbox.sv</spirit:name>
         <spirit:fileType>systemVerilogSource</spirit:fileType>
         <spirit:isIncludeFile>true</spirit:isIncludeFile>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/1136/ASCON-hw.srcs/sources_1/new/ascon_add_constant.sv</spirit:name>
+        <spirit:name>../../ipshared/d7a1/ASCON-hw.srcs/sources_1/new/ascon_add_constant.sv</spirit:name>
         <spirit:fileType>systemVerilogSource</spirit:fileType>
         <spirit:isIncludeFile>true</spirit:isIncludeFile>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/1136/ASCON-hw.srcs/sources_1/new/ascon_round.sv</spirit:name>
+        <spirit:name>../../ipshared/d7a1/ASCON-hw.srcs/sources_1/new/ascon_round.sv</spirit:name>
         <spirit:fileType>systemVerilogSource</spirit:fileType>
         <spirit:isIncludeFile>true</spirit:isIncludeFile>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/1136/hdl/ascon_core_v1_1_S_AXI_INTR.sv</spirit:name>
+        <spirit:name>../../ipshared/d7a1/hdl/ascon_core_v1_1_S_AXI_INTR.sv</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/1136/hdl/ascon_core_v1_1_S00_AXI.sv</spirit:name>
+        <spirit:name>../../ipshared/d7a1/hdl/ascon_core_v1_1_S00_AXI.sv</spirit:name>
         <spirit:fileType>systemVerilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/1136/hdl/ascon_core_v1_1.sv</spirit:name>
+        <spirit:name>../../ipshared/d7a1/hdl/ascon_core_v1_1.sv</spirit:name>
         <spirit:fileType>systemVerilogSource</spirit:fileType>
       </spirit:file>
     </spirit:fileSet>
@@ -2417,7 +2417,7 @@
   <spirit:vendorExtensions>
     <xilinx:coreExtensions>
       <xilinx:displayName>ascon_core_v1.1</xilinx:displayName>
-      <xilinx:coreRevision>21</xilinx:coreRevision>
+      <xilinx:coreRevision>27</xilinx:coreRevision>
       <xilinx:configElementInfos>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.IRQ.PortWidth" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.IRQ.SENSITIVITY" xilinx:valuePermission="bd"/>
@@ -2507,7 +2507,7 @@
       <xilinx:xilinxVersion>2023.2</xilinx:xilinxVersion>
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="e90a8bb4"/>
       <xilinx:checksum xilinx:scope="memoryMaps" xilinx:value="74e1175e"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="cefa5495"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="70d440a5"/>
       <xilinx:checksum xilinx:scope="ports" xilinx:value="860cac90"/>
       <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="98eb793d"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="38eec9b7"/>

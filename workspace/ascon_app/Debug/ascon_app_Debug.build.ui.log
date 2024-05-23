@@ -1,4 +1,4 @@
-2024-05-07T01:12:09.27287600255-01:12:09 **** Incremental Build of configuration Debug for project ascon_app ****
+2024-05-20T13:15:44.2714100255-13:15:44 **** Build of configuration Debug for project ascon_app ****
 000-make all 
 000-make --no-print-directory pre-build
 000-a9-linaro-pre-build-step
@@ -74,60 +74,70 @@
 000/design_ascon_wrapper/export/design_ascon_wrapper/sw/design_ascon_wrapper/standalone_ps7_cortexa9_0/bspinclude/include/xil_io.h209-1-1expected 'UINTPTR' {aka 'unsigned int'} but argument is of type 'uint32_t *' {aka 'long unsigned int *'}0-/home/monsud/Scrivania/ASCON-hw/workspace/design_ascon_wrapper/export/design_ascon_wrapper/sw/design_ascon_wrapper/standalone_ps7_cortexa9_0/bspinclude/include/xil_io.h:209:38: note: expected 'UINTPTR' {aka 'unsigned int'} but argument is of type 'uint32_t *' {aka 'long unsigned int *'}
 000-  209 | static INLINE void Xil_Out32(UINTPTR Addr, u32 Value)
 000-      |                              ~~~~~~~~^~~~
-000/ascon_app/src/ascon.c41-1-1format '%X' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]1-../src/ascon.c:41:47: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
-000-   41 |     printf("Writing to control register: 0x%08X\n", *((uint32_t *)&controlReg));
+000/ascon_app/src/ascon.c44-1-1format '%X' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]1-../src/ascon.c:44:47: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+000-   44 |     printf("Writing to control register: 0x%08X\n", *((uint32_t *)&controlReg));
 000-      |                                            ~~~^     ~~~~~~~~~~~~~~~~~~~~~~~~~~
 000-      |                                               |     |
 000-      |                                               |     uint32_t {aka long unsigned int}
 000-      |                                               unsigned int
 000-      |                                            %08lX
-000/ascon_app/src/ascon.c42-1-1passing argument 1 of 'Xil_Out32' makes integer from pointer without a cast [-Wint-conversion]1-../src/ascon.c:42:15: warning: passing argument 1 of 'Xil_Out32' makes integer from pointer without a cast [-Wint-conversion]
-000-   42 |     Xil_Out32((uint32_t *)(ptr + REG_CTRL_OFFSET), *((uint32_t *)&controlReg));
+000/ascon_app/src/ascon.c45-1-1passing argument 1 of 'Xil_Out32' makes integer from pointer without a cast [-Wint-conversion]1-../src/ascon.c:45:15: warning: passing argument 1 of 'Xil_Out32' makes integer from pointer without a cast [-Wint-conversion]
+000-   45 |     Xil_Out32((uint32_t *)(ptr + REG_CTRL_OFFSET), *((uint32_t *)&controlReg));
 000-      |               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 000-      |               |
 000-      |               uint32_t * {aka long unsigned int *}
 000/design_ascon_wrapper/export/design_ascon_wrapper/sw/design_ascon_wrapper/standalone_ps7_cortexa9_0/bspinclude/include/xil_io.h209-1-1expected 'UINTPTR' {aka 'unsigned int'} but argument is of type 'uint32_t *' {aka 'long unsigned int *'}0-/home/monsud/Scrivania/ASCON-hw/workspace/design_ascon_wrapper/export/design_ascon_wrapper/sw/design_ascon_wrapper/standalone_ps7_cortexa9_0/bspinclude/include/xil_io.h:209:38: note: expected 'UINTPTR' {aka 'unsigned int'} but argument is of type 'uint32_t *' {aka 'long unsigned int *'}
 000-  209 | static INLINE void Xil_Out32(UINTPTR Addr, u32 Value)
 000-      |                              ~~~~~~~~^~~~
-000/ascon_app/src/ascon.c46-1-1passing argument 1 of 'Xil_In32' makes integer from pointer without a cast [-Wint-conversion]1-../src/ascon.c:46:40: warning: passing argument 1 of 'Xil_In32' makes integer from pointer without a cast [-Wint-conversion]
-000-   46 |         uint32_t ciphertext = Xil_In32((uint32_t *)(ptr + REG_CT_0_OFFSET + i * sizeof(uint32_t)));
+000/ascon_app/src/ascon.c49-1-1passing argument 1 of 'Xil_In32' makes integer from pointer without a cast [-Wint-conversion]1-../src/ascon.c:49:40: warning: passing argument 1 of 'Xil_In32' makes integer from pointer without a cast [-Wint-conversion]
+000-   49 |         uint32_t ciphertext = Xil_In32((uint32_t *)(ptr + REG_CT_0_OFFSET + i * sizeof(uint32_t)));
 000-      |                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 000-      |                                        |
 000-      |                                        uint32_t * {aka long unsigned int *}
 000/design_ascon_wrapper/export/design_ascon_wrapper/sw/design_ascon_wrapper/standalone_ps7_cortexa9_0/bspinclude/include/xil_io.h135-1-1expected 'UINTPTR' {aka 'unsigned int'} but argument is of type 'uint32_t *' {aka 'long unsigned int *'}0-/home/monsud/Scrivania/ASCON-hw/workspace/design_ascon_wrapper/export/design_ascon_wrapper/sw/design_ascon_wrapper/standalone_ps7_cortexa9_0/bspinclude/include/xil_io.h:135:36: note: expected 'UINTPTR' {aka 'unsigned int'} but argument is of type 'uint32_t *' {aka 'long unsigned int *'}
 000-  135 | static INLINE u32 Xil_In32(UINTPTR Addr)
 000-      |                            ~~~~~~~~^~~~
-000/ascon_app/src/ascon.c47-1-1format '%X' expects argument of type 'unsigned int', but argument 3 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]1-../src/ascon.c:47:38: warning: format '%X' expects argument of type 'unsigned int', but argument 3 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
-000-   47 |         printf("Ciphertext[%d]: 0x%08X\n", i, ciphertext);
+000/ascon_app/src/ascon.c50-1-1format '%X' expects argument of type 'unsigned int', but argument 3 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]1-../src/ascon.c:50:38: warning: format '%X' expects argument of type 'unsigned int', but argument 3 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+000-   50 |         printf("Ciphertext[%d]: 0x%08X\n", i, ciphertext);
 000-      |                                   ~~~^        ~~~~~~~~~~
 000-      |                                      |        |
 000-      |                                      |        uint32_t {aka long unsigned int}
 000-      |                                      unsigned int
 000-      |                                   %08lX
-000/ascon_app/src/ascon.c51-1-1passing argument 1 of 'Xil_In32' makes integer from pointer without a cast [-Wint-conversion]1-../src/ascon.c:51:36: warning: passing argument 1 of 'Xil_In32' makes integer from pointer without a cast [-Wint-conversion]
-000-   51 |     State status = (State)Xil_In32((uint32_t *)(ptr + REG_STATE_OFFSET));
+000/ascon_app/src/ascon.c54-1-1passing argument 1 of 'Xil_In32' makes integer from pointer without a cast [-Wint-conversion]1-../src/ascon.c:54:36: warning: passing argument 1 of 'Xil_In32' makes integer from pointer without a cast [-Wint-conversion]
+000-   54 |     State status = (State)Xil_In32((uint32_t *)(ptr + REG_STATE_OFFSET));
 000-      |                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 000-      |                                    |
 000-      |                                    uint32_t * {aka long unsigned int *}
 000/design_ascon_wrapper/export/design_ascon_wrapper/sw/design_ascon_wrapper/standalone_ps7_cortexa9_0/bspinclude/include/xil_io.h135-1-1expected 'UINTPTR' {aka 'unsigned int'} but argument is of type 'uint32_t *' {aka 'long unsigned int *'}0-/home/monsud/Scrivania/ASCON-hw/workspace/design_ascon_wrapper/export/design_ascon_wrapper/sw/design_ascon_wrapper/standalone_ps7_cortexa9_0/bspinclude/include/xil_io.h:135:36: note: expected 'UINTPTR' {aka 'unsigned int'} but argument is of type 'uint32_t *' {aka 'long unsigned int *'}
 000-  135 | static INLINE u32 Xil_In32(UINTPTR Addr)
 000-      |                            ~~~~~~~~^~~~
-000/ascon_app/src/ascon.c55-1-1passing argument 1 of 'Xil_In32' makes integer from pointer without a cast [-Wint-conversion]1-../src/ascon.c:55:41: warning: passing argument 1 of 'Xil_In32' makes integer from pointer without a cast [-Wint-conversion]
-000-   55 |     uint32_t controlRegValue = Xil_In32((uint32_t *)(ptr + REG_CTRL_OFFSET));
+000-Finished building: ../src/ascon.c
+000/ascon_app/src/ascon.c58-1-1passing argument 1 of 'Xil_In32' makes integer from pointer without a cast [-Wint-conversion]1-../src/ascon.c:58:41: warning: passing argument 1 of 'Xil_In32' makes integer from pointer without a cast [-Wint-conversion]
+000- 
+000-   58 |     uint32_t controlRegValue = Xil_In32((uint32_t *)(ptr + REG_CTRL_OFFSET));
 000-      |                                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 000-      |                                         |
 000-      |                                         uint32_t * {aka long unsigned int *}
+000-Building file: ../src/main.c
 000/design_ascon_wrapper/export/design_ascon_wrapper/sw/design_ascon_wrapper/standalone_ps7_cortexa9_0/bspinclude/include/xil_io.h135-1-1expected 'UINTPTR' {aka 'unsigned int'} but argument is of type 'uint32_t *' {aka 'long unsigned int *'}0-/home/monsud/Scrivania/ASCON-hw/workspace/design_ascon_wrapper/export/design_ascon_wrapper/sw/design_ascon_wrapper/standalone_ps7_cortexa9_0/bspinclude/include/xil_io.h:135:36: note: expected 'UINTPTR' {aka 'unsigned int'} but argument is of type 'uint32_t *' {aka 'long unsigned int *'}
 000-  135 | static INLINE u32 Xil_In32(UINTPTR Addr)
+000-Invoking: ARM v7 gcc compiler
 000-      |                            ~~~~~~~~^~~~
-000/ascon_app/src/ascon.c56-1-1format '%X' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]1-../src/ascon.c:56:42: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
-000-   56 |     printf("Control Register Value: 0x%08X\n", controlRegValue);
+000-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I/home/monsud/Scrivania/ASCON-hw/workspace/design_ascon_wrapper/export/design_ascon_wrapper/sw/design_ascon_wrapper/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+000/ascon_app/src/ascon.c59-1-1format '%X' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]1-../src/ascon.c:59:42: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+000-   59 |     printf("Control Register Value: 0x%08X\n", controlRegValue);
 000-      |                                       ~~~^     ~~~~~~~~~~~~~~~
 000-      |                                          |     |
 000-      |                                          |     uint32_t {aka long unsigned int}
 000-      |                                          unsigned int
 000-      |                                       %08lX
-000-Finished building: ../src/ascon.c
+000-Finished building: ../src/main.c
+000- 
+000-Building file: ../src/platform.c
+000-Invoking: ARM v7 gcc compiler
+000-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I/home/monsud/Scrivania/ASCON-hw/workspace/design_ascon_wrapper/export/design_ascon_wrapper/sw/design_ascon_wrapper/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+000-Finished building: ../src/platform.c
 000- 
 000-Building target: ascon_app.elf
 000-Invoking: ARM v7 gcc linker
@@ -141,5 +151,5 @@
 000-Finished building: ascon_app.elf.size
 000- 
 00255-
-01:12:10 Build Finished (took 832ms)
+13:15:45 Build Finished (took 921ms)
 

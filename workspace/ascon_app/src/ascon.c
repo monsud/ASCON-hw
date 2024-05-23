@@ -33,11 +33,14 @@ void ascon_128_encrypt(uint8_t *ptr) {
         Xil_Out32((uint32_t *)(ptr + REG_PT_0_OFFSET + i * sizeof(uint32_t)), plaintext[i]);
     }
 
-    usleep(200000); // Wait for ASCON-128 processing
+    usleep(20000); // Wait for ASCON-128 processing
 
     // Stop ASCON-128 encryption
     controlReg.start = 0;
-    controlReg.stop = 1; // Assuming you want to stop the process
+    controlReg.stop = 1;
+    controlReg.mode_select = 0;
+    controlReg.hmac_select = 0;
+    controlReg.kmac_select = 0;
     printf("Writing to control register: 0x%08X\n", *((uint32_t *)&controlReg));
     Xil_Out32((uint32_t *)(ptr + REG_CTRL_OFFSET), *((uint32_t *)&controlReg));
 

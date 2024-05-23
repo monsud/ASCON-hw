@@ -1,6 +1,342 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2023.2 (lin64) Build 4029153 Fri Oct 13 20:13:54 MDT 2023
+| Date         : Mon May 20 12:39:19 2024
+| Host         : archbook running 64-bit Arch Linux
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_ascon_ascon_core_0_4'
+
+1. Summary
+----------
+
+SUCCESS in the update of design_ascon_ascon_core_0_4 (user.org:user:ascon_core:1.1 (Rev. 27)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (lin64) Build 4029153 Fri Oct 13 20:13:54 MDT 2023
+| Date         : Mon May 20 12:27:05 2024
+| Host         : archbook running 64-bit Arch Linux
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_ascon_ascon_core_0_4'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_ascon_ascon_core_0_4 (user.org:user:ascon_core:1.1) from (Rev. 26) to (Rev. 27)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (lin64) Build 4029153 Fri Oct 13 20:13:54 MDT 2023
+| Date         : Wed May  8 16:10:34 2024
+| Host         : archbook running 64-bit Arch Linux
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_ascon_ascon_core_0_4'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_ascon_ascon_core_0_4 (user.org:user:ascon_core:1.1) from (Rev. 25) to (Rev. 26)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (lin64) Build 4029153 Fri Oct 13 20:13:54 MDT 2023
+| Date         : Wed May  8 15:05:58 2024
+| Host         : archbook running 64-bit Arch Linux
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_ascon_ascon_core_0_4'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_ascon_ascon_core_0_4 (user.org:user:ascon_core:1.1) from (Rev. 24) to (Rev. 25)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (lin64) Build 4029153 Fri Oct 13 20:13:54 MDT 2023
+| Date         : Tue May  7 20:29:32 2024
+| Host         : archbook running 64-bit Arch Linux
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_ascon_ascon_core_0_4'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_ascon_ascon_core_0_4 (user.org:user:ascon_core:1.1) from (Rev. 23) to (Rev. 24)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (lin64) Build 4029153 Fri Oct 13 20:13:54 MDT 2023
+| Date         : Tue May  7 20:27:36 2024
+| Host         : archbook running 64-bit Arch Linux
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_ascon_ascon_core_0_4'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_ascon_ascon_core_0_4 (user.org:user:ascon_core:1.1) from (Rev. 22) to (Rev. 23)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (lin64) Build 4029153 Fri Oct 13 20:13:54 MDT 2023
+| Date         : Tue May  7 19:30:32 2024
+| Host         : archbook running 64-bit Arch Linux
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_ascon_ascon_core_0_4'
+
+1. Summary
+----------
+
+SUCCESS in the update of design_ascon_ascon_core_0_4 (user.org:user:ascon_core:1.1 (Rev. 22)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (lin64) Build 4029153 Fri Oct 13 20:13:54 MDT 2023
+| Date         : Tue May  7 19:27:17 2024
+| Host         : archbook running 64-bit Arch Linux
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_ascon_ascon_core_0_4'
+
+1. Summary
+----------
+
+SUCCESS in the update of design_ascon_ascon_core_0_4 (user.org:user:ascon_core:1.1 (Rev. 22)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (lin64) Build 4029153 Fri Oct 13 20:13:54 MDT 2023
+| Date         : Tue May  7 19:25:50 2024
+| Host         : archbook running 64-bit Arch Linux
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_ascon_ascon_core_0_4'
+
+1. Summary
+----------
+
+SUCCESS in the update of design_ascon_ascon_core_0_4 (user.org:user:ascon_core:1.1 (Rev. 22)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (lin64) Build 4029153 Fri Oct 13 20:13:54 MDT 2023
+| Date         : Tue May  7 19:24:10 2024
+| Host         : archbook running 64-bit Arch Linux
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_ascon_ascon_core_0_4'
+
+1. Summary
+----------
+
+SUCCESS in the update of design_ascon_ascon_core_0_4 (user.org:user:ascon_core:1.1 (Rev. 22)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (lin64) Build 4029153 Fri Oct 13 20:13:54 MDT 2023
+| Date         : Tue May  7 19:12:44 2024
+| Host         : archbook running 64-bit Arch Linux
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_ascon_ascon_core_0_4'
+
+1. Summary
+----------
+
+SUCCESS in the update of design_ascon_ascon_core_0_4 (user.org:user:ascon_core:1.1 (Rev. 22)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (lin64) Build 4029153 Fri Oct 13 20:13:54 MDT 2023
+| Date         : Tue May  7 19:07:55 2024
+| Host         : archbook running 64-bit Arch Linux
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_ascon_ascon_core_0_4'
+
+1. Summary
+----------
+
+SUCCESS in the update of design_ascon_ascon_core_0_4 (user.org:user:ascon_core:1.1 (Rev. 22)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (lin64) Build 4029153 Fri Oct 13 20:13:54 MDT 2023
+| Date         : Tue May  7 19:07:27 2024
+| Host         : archbook running 64-bit Arch Linux
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_ascon_ascon_core_0_4'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_ascon_ascon_core_0_4 (user.org:user:ascon_core:1.1) from (Rev. 21) to (Rev. 22)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (lin64) Build 4029153 Fri Oct 13 20:13:54 MDT 2023
+| Date         : Tue May  7 18:59:59 2024
+| Host         : archbook running 64-bit Arch Linux
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_ascon_ascon_core_0_4'
+
+1. Summary
+----------
+
+SUCCESS in the update of design_ascon_ascon_core_0_4 (user.org:user:ascon_core:1.1 (Rev. 21)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (lin64) Build 4029153 Fri Oct 13 20:13:54 MDT 2023
+| Date         : Tue May  7 18:59:33 2024
+| Host         : archbook running 64-bit Arch Linux
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_ascon_ascon_core_0_4'
+
+1. Summary
+----------
+
+SUCCESS in the update of design_ascon_ascon_core_0_4 (user.org:user:ascon_core:1.1 (Rev. 21)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (lin64) Build 4029153 Fri Oct 13 20:13:54 MDT 2023
+| Date         : Tue May  7 18:37:26 2024
+| Host         : archbook running 64-bit Arch Linux
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_ascon_ascon_core_0_4'
+
+1. Summary
+----------
+
+SUCCESS in the update of design_ascon_ascon_core_0_4 (user.org:user:ascon_core:1.1 (Rev. 21)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (lin64) Build 4029153 Fri Oct 13 20:13:54 MDT 2023
 | Date         : Tue May  7 01:27:39 2024
 | Host         : archbook running 64-bit Arch Linux
 | Command      : upgrade_ip
