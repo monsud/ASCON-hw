@@ -48,7 +48,7 @@
 
 
 // IP VLNV: user.org:user:ascon_core:1.1
-// IP Revision: 27
+// IP Revision: 33
 
 (* X_CORE_INFO = "ascon_core_v1_1,Vivado 2023.2" *)
 (* CHECK_LICENSE_TYPE = "design_ascon_ascon_core_0_4,ascon_core_v1_1,{}" *)

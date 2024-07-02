@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no" ?>
 <!-- design_ascon_wrapper.hpfm -->
-<xd:repository xmlns:xd="http://www.xilinx.com/xd" xd:name="ascon_platform" xd:library="zybo" xd:version="1.0" xd:vendor="xilinx">
-  <xd:component xd:name="ascon_platform" xd:library="zybo" xd:version="1.0" xd:vendor="xilinx" xd:type="platform" xd:BRAM="60" xd:DSP="80" xd:FF="35200" xd:LUT="17600">
+<xd:repository xmlns:xd="http://www.xilinx.com/xd" xd:name="ascon_platform" xd:library="zybo" xd:version="1.1" xd:vendor="xilinx">
+  <xd:component xd:name="ascon_platform" xd:library="zybo" xd:version="1.1" xd:vendor="xilinx" xd:type="platform" xd:BRAM="60" xd:DSP="80" xd:FF="35200" xd:LUT="17600">
     <xd:platformInfo>
       <xd:deviceInfo xd:name="xc7z010clg400-1" xd:architecture="zynq" xd:device="xc7z010" xd:package="clg400" xd:speedGrade="-1"/>
       <xd:registeredDevices xd:kio="0" xd:uio="0"/>

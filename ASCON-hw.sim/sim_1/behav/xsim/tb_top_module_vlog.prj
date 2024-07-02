@@ -1,5 +1,5 @@
 # compile verilog/system verilog design source files
-sv xil_defaultlib  --include "../../../../ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/d467/ASCON-hw.srcs/sources_1/new" --include "../../../../ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/ec67/hdl" --include "../../../../ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/6b2b/hdl" --include "/home/monsud/Xilinx/Vivado/2023.2/data/xilinx_vip/include" \
+sv xil_defaultlib  --include "../../../../ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/d958/ASCON-hw.srcs/sources_1/new" --include "../../../../ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/ec67/hdl" --include "../../../../ASCON-hw.gen/sources_1/bd/design_ascon/ipshared/6b2b/hdl" --include "/home/monsud/Xilinx/Vivado/2023.2/data/xilinx_vip/include" \
 "../../../../ASCON-hw.srcs/sources_1/new/ascon_128.sv" \
 "../../../../ASCON-hw.srcs/sources_1/new/ascon_add_constant.sv" \
 "../../../../ASCON-hw.srcs/sources_1/new/ascon_finalization.sv" \

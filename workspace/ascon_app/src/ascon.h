@@ -1,17 +1,11 @@
 #include <stdio.h>
-#include <stdlib.h>
 #include <stdint.h>
 #include <unistd.h>
 #include "xparameters.h"
-#include "xil_printf.h"
-#include "platform.h"
-#include "xil_types.h"
 #include "xil_io.h"
 
-// Memory structure
-#define BASE_ADDRESS 0x40200000
+#define BASE_ADDRESS XPAR_ASCON_CORE_0_S00_AXI_BASEADDR
 
-// Register offsets
 #define REG_KEY_0_OFFSET    0x0
 #define REG_KEY_1_OFFSET    0x4
 #define REG_KEY_2_OFFSET    0x8
@@ -64,10 +58,16 @@ typedef enum {
     KMAC = 5
 } State;
 
-void initialize_registers(uint8_t *ptr);
+void initialize_registers(uint32_t base_addr);
 
-void ascon_128_encrypt(uint8_t *ptr);
+void set_control_register(uint32_t base_addr, ControlRegister controlReg);
 
-void ascon_hmac_hashing(uint8_t *ptr);
+void wait_for_idle(uint32_t base_addr);
 
-void ascon_kmac_hashing(uint8_t *ptr);
+void load_data_to_registers(uint32_t base_addr, uint32_t *key, uint32_t *nonce, uint32_t *plaintext);
+
+void ascon_128_encrypt(uint32_t base_addr);
+
+void ascon_hmac_hashing(uint32_t base_addr);
+
+void ascon_kmac_hashing(uint32_t base_addr);

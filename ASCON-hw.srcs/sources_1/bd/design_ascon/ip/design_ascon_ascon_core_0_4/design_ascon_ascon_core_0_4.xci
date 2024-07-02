@@ -4,7 +4,7 @@
     "xci_name": "design_ascon_ascon_core_0_4",
     "cell_name": "ascon_core_0",
     "component_reference": "user.org:user:ascon_core:1.1",
-    "ip_revision": "27",
+    "ip_revision": "33",
     "gen_directory": "../../../../../../ASCON-hw.gen/sources_1/bd/design_ascon/ip/design_ascon_ascon_core_0_4",
     "parameters": {
       "component_parameters": {
@@ -49,7 +49,7 @@
       },
       "runtime_parameters": {
         "IPCONTEXT": [ { "value": "IP_Integrator" } ],
-        "IPREVISION": [ { "value": "27" } ],
+        "IPREVISION": [ { "value": "33" } ],
         "MANAGED": [ { "value": "TRUE" } ],
         "OUTPUTDIR": [ { "value": "../../../../../../ASCON-hw.gen/sources_1/bd/design_ascon/ip/design_ascon_ascon_core_0_4" } ],
         "SELECTEDSIMMODEL": [ { "value": "" } ],

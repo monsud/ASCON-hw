@@ -1,0 +1,78 @@
+#include <stdio.h>
+#include <stdint.h>
+#include "platform.h"
+#include "xil_types.h"
+#include "xil_io.h"
+#include "ascon.h"
+
+int main() {
+    uint32_t base_addr = XPAR_ASCON_CORE_0_S00_AXI_BASEADDR;
+
+    init_platform();
+
+    initialize_registers(base_addr);
+
+    // Initialize FSM to ASCON_128 mode
+    ControlRegister controlReg = {0};
+    controlReg.start = 1;       // Start the FSM
+    controlReg.mode_select = 1; // Set mode to ASCON-128
+
+    set_control_register(base_addr, controlReg);
+
+    // Ensure the FSM has time to start
+    usleep(10000);
+
+//    // Perform FSM operation
+	State status_reg;
+	do {
+		// Read current status register
+		status_reg = Xil_In32(base_addr + REG_STATE_OFFSET);
+
+		// Print status register
+		printf("Status Register: 0x%08X\n", status_reg);
+
+		// Switch-case to handle FSM states
+		switch (status_reg & 0x07) { // Mask to get lower 3 bits for state
+			case IDLE:
+				printf("Current State: IDLE\n");
+				usleep(10000);
+				break;
+			case START:
+				printf("Current State: START\n");
+				usleep(10000);
+				break;
+			case ASCON_128:
+				printf("Current State: ASCON_128\n");
+				ascon_128_encrypt(base_addr);
+				usleep(10000);
+				break;
+			case SELECT_HASH:
+				printf("Current State: SELECT_HASH\n");
+				usleep(10000);
+				break;
+			case HMAC:
+				printf("Current State: HMAC\n");
+				ascon_hmac_hashing(base_addr);
+				usleep(10000);
+				break;
+			case KMAC:
+				printf("Current State: KMAC\n");
+				ascon_kmac_hashing(base_addr);
+				usleep(10000);
+				break;
+			default:
+				printf("Unknown State\n");
+				usleep(10000);
+				break;
+		}
+
+	} while (!(status_reg & 0x08)); // Check if stop bit is set (bit 3)
+
+
+	printf("Encryption process completed.\n");
+
+	// Cleanup platform (Assuming this cleans up necessary hardware and configurations)
+	cleanup_platform();
+
+	return 0;
+}

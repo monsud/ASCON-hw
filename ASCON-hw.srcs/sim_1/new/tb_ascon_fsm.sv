@@ -31,8 +31,8 @@ module tb_ascon_fsm;
   ascon_fsm uut (
     .clk(clk),
     .rst(rst),
-    .control(control),
-    .status(status)
+    .control_register(control),
+    .status_register(status)
   );
 
   // Generate clock signal

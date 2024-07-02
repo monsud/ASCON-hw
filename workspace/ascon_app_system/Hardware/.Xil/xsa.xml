@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Root VersionMajor="1" VersionMinor="15">
-  <GenAppInfo Name="Vivado" Version="2023.2" CL="4029153" TimeStamp="Mon May  6 19:58:58 2024"/>
-  <DSA Vendor="xilinx" BoardId="zybo" Name="ascon_platform" VersionMajor="1" VersionMinor="0" Description="" FeatureRomTimestamp="0" DcpLogicFunctionStripped="false" DcpEncrypt="false" Unified="true" Fixed="false" DefaultOutputType="sd_card">
+  <GenAppInfo Name="Vivado" Version="2023.2" CL="4029153" TimeStamp="Thu Jun 20 12:27:53 2024"/>
+  <DSA Vendor="xilinx" BoardId="zybo" Name="ascon_platform" VersionMajor="1" VersionMinor="1" Description="" FeatureRomTimestamp="0" DcpLogicFunctionStripped="false" DcpEncrypt="false" Unified="true" Fixed="false" DefaultOutputType="sd_card">
     <Build UsesPR="false" PlatformState="pre_synth" AcceleratorBinaryContent="bitstream" ValidBinaryContentValues="dcp,bitstream" TopModuleName="design_ascon_wrapper"/>
     <Board Name="digilentinc.com:zybo:1.0" Vendor="digilentinc.com" Part="xc7z010clg400-1" BoardPart="digilentinc.com:zybo:part0:1.0">
       <Images>

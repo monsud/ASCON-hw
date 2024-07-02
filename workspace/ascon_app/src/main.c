@@ -1,23 +1,89 @@
-#include <string.h>
+#define ASCON_128_MODE 0
+#define HMAC_MODE 1
+#define KMAC_MODE 2
+#include <stdio.h>
+#include <stdint.h>
+#include "platform.h"
+#include "xil_types.h"
+#include "xil_io.h"
 #include "ascon.h"
 
 int main() {
-    uint8_t *ptr = (uint8_t *)BASE_ADDRESS;
+    uint32_t base_addr = XPAR_ASCON_CORE_0_S00_AXI_BASEADDR;
 
     init_platform();
+    initialize_registers(base_addr);
 
-    initialize_registers(ptr);
+    // Initialize FSM to ASCON_128 mode
+    ControlRegister controlReg = {0};
+    controlReg.start = 1;
+    controlReg.mode_select = ASCON_128_MODE;
 
-    // Perform ASCON-128 encryption
-    ascon_128_encrypt(ptr);
+    set_control_register(base_addr, controlReg);
 
-    // Perform ASCON hashing (HMAC mode)
-    //ascon_hashing(ptr);
+    usleep(10000);
 
-    // Perform ASCON hashing (KMAC mode)
-    //ascon_hashing(ptr);
+    // Perform FSM operation
+    uint32_t status_reg;
+    uint8_t next_state = START;
 
-    cleanup_platform();
+    do {
+        status_reg = Xil_In32(base_addr + REG_STATE_OFFSET);
 
+        // Print status register
+        printf("Status Register: 0x%08X\n", status_reg);
+
+        // Determine next state
+        switch (status_reg & 0x07) { // Mask to get lower 3 bits for state
+            case IDLE:
+                printf("Current State: IDLE\n");
+                next_state = START;
+                break;
+            case START:
+                printf("Current State: START\n");
+                next_state = ASCON_128;
+                break;
+            case ASCON_128:
+                printf("Current State: ASCON_128\n");
+                ascon_128_encrypt(base_addr);
+                next_state = IDLE;
+                break;
+            case SELECT_HASH:
+                printf("Current State: SELECT_HASH\n");
+                if (status_reg & HMAC_MODE) {
+                    next_state = HMAC;
+                } else {
+                    next_state = KMAC;
+                }
+                break;
+            case HMAC:
+                printf("Current State: HMAC\n");
+                ascon_hmac_hashing(base_addr);
+                next_state = IDLE;
+                break;
+            case KMAC:
+                printf("Current State: KMAC\n");
+                ascon_kmac_hashing(base_addr);
+                next_state = IDLE;
+                break;
+            default:
+                printf("Unknown State\n");
+                next_state = IDLE;
+                break;
+        }
+
+        // Set next state if not in idle state
+        if (next_state != IDLE) {
+            controlReg.start = 1;
+            controlReg.mode_select = next_state;
+            set_control_register(base_addr, controlReg);
+
+            usleep(10000);
+        }
+
+    } while (!(status_reg & 0x08)); // Check if stop bit is set (bit 3)
+
+    printf("Process completed.\n");
     return 0;
 }
+

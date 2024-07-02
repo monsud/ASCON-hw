@@ -7,10 +7,9 @@ module tb_top_module();
   logic [127:0] key, nonce, plaintext;
   logic [31:0] control_register;
   
+
   // Outputs
-  logic [127:0] ciphertext;
-  logic [127:0] hmac_output;
-  logic [127:0] kmac_output;
+  logic [127:0] ciphertext, hmac_output, kmac_output;
   logic [31:0] status_register;
 
   // Instantiate the top module

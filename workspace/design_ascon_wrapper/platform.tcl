@@ -22,3 +22,18 @@ platform generate -quick
 platform generate
 platform generate
 platform generate
+platform generate
+platform generate
+platform active {design_ascon_wrapper}
+platform config -updatehw {/home/monsud/Scrivania/ASCON-hw/design_ascon_wrapper.xsa}
+platform generate -domains 
+platform active {design_ascon_wrapper}
+platform config -updatehw {/home/monsud/Scrivania/ASCON-hw/design_ascon_wrapper.xsa}
+platform generate -domains 
+platform generate -domains standalone_ps7_cortexa9_0 
+platform active {design_ascon_wrapper}
+platform config -updatehw {/home/monsud/Scrivania/ASCON-hw/design_ascon_wrapper.xsa}
+platform generate -domains 
+platform generate
+platform generate
+platform generate
